@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { NextPage } from "next";
 import React from "react";
+import styles from "../styles/Home.module.css";
 
 interface Props {
     test?: {
@@ -16,7 +17,7 @@ const IndexPage: NextPage<Props> = (props: Props) => {
             </Head>
             <main>
                 <div>
-                    <h1>index.tsx</h1>
+                    <div>index.tsx</div>
                 </div>
             </main>
         </div>
