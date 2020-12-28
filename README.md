@@ -28,7 +28,7 @@ Frontend-Project to create my personal website. The backend-code can be found [h
 
 -   yarn v1
 -   React v17
--   Next.js
+-   Next.js v10
 -   TypeScript
 -   Redux
 -   Redux-Thunk
