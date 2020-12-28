@@ -13,6 +13,7 @@ const IndexPage: NextPage<Props> = (props: Props) => {
     return (
         <div className="p-5 text-center bg-gray-100">
             <Head>
+                <link rel="icon" href="/home_fill.svg" />
                 <title>Florian Thom</title>
             </Head>
             <main>
