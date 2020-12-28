@@ -2,7 +2,6 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { GetServerSideProps, NextPage } from "next";
 import React from "react";
-import type { AppProps } from "next/app";
 
 interface Props {
     test?: {
