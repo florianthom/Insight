@@ -20,14 +20,13 @@ Frontend-Project to create my personal website. The backend-code can be found [h
 
 ## Important commands
 
---
+`$ yarn format`
 
-## TL;DR
-
---
+`$ yarn lint`
 
 ## Build with
 
+-   yarn v1
 -   React v17
 -   Next.js
 -   TypeScript
