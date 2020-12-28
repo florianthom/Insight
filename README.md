@@ -8,15 +8,17 @@ Frontend-Project to create my personal website. The backend-code can be found [h
 
 ## Prerequisites
 
-- node v12+
+- yarn v1.22+
 
 ## Getting Started
 
-```$ git@github.com:FlorianTh2/React-Counter.git```
+```$ git clone git@github.com:FlorianTh2/Personal-Website.git```
 
 ```$ cd ./Personal-Website```
 
-```$ npm install```
+```$ yarn install```
+
+```$ yarn dev```
 
 ## Important commands
 
@@ -34,7 +36,7 @@ Frontend-Project to create my personal website. The backend-code can be found [h
 - Redux
 - Redux-Thunk
 - ESLint / Prettier
-- Bootstrap v4
+- Tailwindcss v2
 
 ## Acknowledgements
 --
