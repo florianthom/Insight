@@ -1,7 +1,14 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import { GetServerSideProps, NextPage } from "next";
 
-export default function Home() {
+interface Props {
+    launch?: {
+        mission: string;
+    };
+}
+
+const IndexPage: NextPage<Props> = (props) => {
     return (
         <div className={styles.container}>
             <Head>
@@ -14,4 +21,6 @@ export default function Home() {
             </main>
         </div>
     );
-}
+};
+
+export default IndexPage;
