@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { NextPage } from "next";
 import React from "react";
+import { Home } from "src/app/home/home";
 
 interface Props {
     test?: {
@@ -15,9 +16,7 @@ const IndexPage: NextPage<Props> = (props: Props) => {
                 <link rel="icon" href="/home_fill.svg" />
                 <title>Florian Thom</title>
             </Head>
-            <div className="p-5 text-center bg-gray-100">
-                <div>index.tsx</div>
-            </div>
+            <Home></Home>
         </div>
     );
 };

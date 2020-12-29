@@ -1,12 +1,16 @@
 import React from "react";
-import { Home } from "./home/home";
+import { NavBar } from "./shared/navbar/navbar";
+import type { AppProps } from "next/app";
 
-export interface Props {}
+export interface Props {
+    appProps: AppProps;
+}
 
-const App: React.FC<Props> = (props: Props) => {
+export const App: React.FC<Props> = (props: Props) => {
     return (
         <div>
-            <Home></Home>
+            <NavBar></NavBar>
+            <props.appProps.Component {...props.appProps.pageProps} />
         </div>
     );
 };
