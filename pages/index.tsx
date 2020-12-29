@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { NextPage } from "next";
 import React from "react";
+import { Html } from "next/document";
 
 interface Props {
     test?: {
@@ -10,16 +11,14 @@ interface Props {
 
 const IndexPage: NextPage<Props> = (props: Props) => {
     return (
-        <div className="p-5 text-center bg-gray-100">
+        <div>
             <Head>
                 <link rel="icon" href="/home_fill.svg" />
                 <title>Florian Thom</title>
             </Head>
-            <main>
-                <div>
-                    <div>index.tsx</div>
-                </div>
-            </main>
+            <div className="p-5 text-center bg-gray-100">
+                <div>index.tsx</div>
+            </div>
         </div>
     );
 };
