@@ -1,7 +1,7 @@
 import Document, { Html, Head, Main, NextScript, DocumentContext } from "next/document";
 import React from "react";
 
-class CustomDocument extends Document {
+export default class CustomDocument extends Document {
     static async getInitialProps(ctx: DocumentContext) {
         const originalRenderPage = ctx.renderPage;
         ctx.renderPage = () =>
