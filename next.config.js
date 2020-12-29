@@ -1,8 +1,8 @@
-require("dotenv").config();
+console.log(process.env.ENVIRONMENT);
 
 module.exports = {
     publicRuntimeConfig: {
-        NODE_ENV: process.env.NODE_ENV,
-        PORT: process.env.PORT || 3000,
+        NODE_ENV: process.env.ENVIRONMENT,
+        PORT: process.env.PORT,
     },
 };
