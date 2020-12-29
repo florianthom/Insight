@@ -1,4 +1,4 @@
-import "../styles/globals.scss";
+import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import { NextPage } from "next";
 // needs to be imported to be able to use this font in tailwind.config.js
