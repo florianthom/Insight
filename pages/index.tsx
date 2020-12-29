@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { NextPage } from "next";
 import React from "react";
-import { Html } from "next/document";
 
 interface Props {
     test?: {
