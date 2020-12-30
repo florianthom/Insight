@@ -1,5 +1,5 @@
 import React from "react";
-import { Counter } from "./counter/counter";
+import { Counter } from "@/src/app/home/counter/counter";
 
 export interface Props {}
 

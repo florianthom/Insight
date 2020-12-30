@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { NextPage } from "next";
 import React from "react";
-import { Home } from "src/app/home/home";
+import { Home } from "@/src/app/home/home";
 
 interface Props {
     test?: {

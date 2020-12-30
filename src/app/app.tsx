@@ -1,5 +1,5 @@
 import React from "react";
-import { NavBar } from "./shared/navbar/navbar";
+import { NavBar } from "@/src/app/shared/navbar/navbar";
 import type { AppProps } from "next/app";
 
 export interface Props {
