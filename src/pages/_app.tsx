@@ -1,10 +1,11 @@
-import "@/src/styles/globals.scss";
+import "@/src/app/app.scss";
 import type { AppProps } from "next/app";
 import { NextPage } from "next";
 // needs to be imported to be able to use this font in tailwind.config.js
 import "@fontsource/inter";
 import React from "react";
-import { NavBar } from "@/src/app/shared/navbar/navbar";
+import { App } from "@/src/app/app";
+import "@/src/app/app.scss";
 
 // getServerSideProps = Retrieve the payload on the client-side, at run time (such as implementing)
 //                      - not recommended except in some szenarios where latency is a problem (e.g. dashboard)
@@ -25,8 +26,7 @@ import { NavBar } from "@/src/app/shared/navbar/navbar";
 const MyApp: NextPage<AppProps> = (props: AppProps) => {
     return (
         <div>
-            <NavBar></NavBar>
-            <props.Component {...props.pageProps} />
+            <App appProps={props}></App>
         </div>
     );
 };
