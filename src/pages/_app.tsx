@@ -1,8 +1,6 @@
 import "@/src/app/app.scss";
 import type { AppProps } from "next/app";
 import { NextPage } from "next";
-// needs to be imported to be able to use this font in tailwind.config.js
-import "@fontsource/inter";
 import React from "react";
 import { App } from "@/src/app/app";
 import "@/src/app/app.scss";
