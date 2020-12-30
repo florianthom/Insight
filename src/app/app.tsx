@@ -1,6 +1,7 @@
 import React from "react";
 import { NavBar } from "@/src/app/shared/navbar/navbar";
 import type { AppProps } from "next/app";
+import { Provider } from "@reduxjs/toolkit";
 
 export interface Props {
     appProps: AppProps;
