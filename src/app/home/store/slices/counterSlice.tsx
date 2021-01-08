@@ -19,23 +19,14 @@ export const counterSlice = createSlice({
     name: "counter",
     initialState: countersInitialState,
     reducers: {
-        increment: function (
-            state: CounterState,
-            action: PayloadAction<{ numbertoAdjustCounter: number }>,
-        ): CounterState {
-            return {
-                ...state,
-                Counter: state.Counter + action.payload.numbertoAdjustCounter,
-            };
+        increment: function (state: CounterState, action: PayloadAction<{ numbertoAdjustCounter: number }>) {
+            state.Counter = state.Counter + action.payload.numbertoAdjustCounter;
         },
         decrement: function (
             state: CounterState,
             action: PayloadAction<{ numbertoAdjustCounter: number; isCompleted: boolean }>,
-        ): CounterState {
-            return {
-                ...state,
-                Counter: state.Counter - action.payload.numbertoAdjustCounter,
-            };
+        ) {
+            state.Counter = state.Counter - action.payload.numbertoAdjustCounter;
         },
     },
 });
