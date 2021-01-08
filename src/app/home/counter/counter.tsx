@@ -1,28 +1,27 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "@/src/app/store/reducers/rootReducer";
-import { CounterState } from "../store/reducers/counterReducer";
-import { incrementConterActionCreator, decrementConterActionCreator } from "@/src/app/home/store/actionCreators";
+import { RootState } from "@/src/app/store/store";
+import { incrementConterActionCreator, decrementConterActionCreator } from "@/src/app/home/store/slices/counterSlice";
 
 import styles from "@/src/app/home/counter/counter.module.scss";
 
 export interface Props {}
 
 export const Counter: React.FC<Props> = (props: Props) => {
-    const state: CounterState = useSelector((state: RootState) => state.CounterState);
+    const counterState = useSelector((state: RootState) => state.counter);
     const dispatch = useDispatch();
 
     function handleIncrementCounterButton(): void {
-        dispatch(incrementConterActionCreator());
+        dispatch(incrementConterActionCreator({ numbertoAdjustCounter: 1 }));
     }
 
     function handleDecrementCounterButton(): void {
-        dispatch(decrementConterActionCreator());
+        dispatch(decrementConterActionCreator({ numbertoAdjustCounter: 1, isCompleted: true }));
     }
 
     return (
         <div className="flex justify-center">
-            <h1>Counter: {state.Counter}</h1>
+            <h1>Counter: {counterState.Counter}</h1>
             <div className="pl-5 pr-5">
                 <span className="p-5">
                     <button
