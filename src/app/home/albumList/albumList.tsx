@@ -1,5 +1,7 @@
 import { useQuery } from "react-query";
 import { useEffect, useState } from "react";
+import { IAlbum } from "@/src/app/home/shared/models/ialbum";
+import { Album } from "@/src/app/home/album/album";
 
 export interface Props {}
 
@@ -7,28 +9,33 @@ export const AlbumList: React.FC<Props> = (props: Props) => {
     const API: string = "https://jsonplaceholder.typicode.com";
     const DEFAULT_QUERY: string = "/albums";
 
-    const [albums, setAlbums] = useState(null);
+    const [albums, setAlbums] = useState([] as IAlbum[]);
 
     async function fetchAlbums() {
         const res = await fetch(API + DEFAULT_QUERY);
         return res.json();
     }
 
-    // const { data, status } = useQuery("albums", fetchAlbums);
-    // console.log(data);
-
-    let test = null;
-
     useEffect(() => {
         fetchAlbums().then((data) => {
-            setAlbums(data);
+            setAlbums(
+                data.map((a) => {
+                    return {
+                        id: a.id,
+                        userId: a.userId,
+                        title: a.title,
+                    } as IAlbum;
+                }),
+            );
         });
     }, []);
 
     return (
         <div>
-            <p>albumList</p>
-            <pre>{JSON.stringify(albums, null, 2)}</pre>
+            <h2>AlbumList</h2>
+            {albums.map((a) => (
+                <Album album={a}></Album>
+            ))}
         </div>
     );
 };
