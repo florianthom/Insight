@@ -5,20 +5,27 @@ import { Post } from "@/src/app/home/post/post";
 
 interface Props {}
 
+interface FetchPostsQueryParams {
+    default_query: string;
+    page: string;
+}
+
 export const PostList: React.FC<Props> = (props: Props) => {
     const API: string = "https://jsonplaceholder.typicode.com";
     const DEFAULT_QUERY: string = "/posts";
 
     const [posts, setPosts] = useState([] as IPost[]);
-    const postsQuery = useQuery(["posts", DEFAULT_QUERY, null] as QueryKey, fetchPosts, {
+    const postsQuery = useQuery({
+        queryKey: ["posts", { default_query: DEFAULT_QUERY, page: null } as FetchPostsQueryParams],
+        queryFn: fetchPosts,
         staleTime: 0,
         cacheTime: 5000,
     });
 
-    // ich kann irgendwie nicht so richtig mehrere parameter bestimmen für fetchPosts
-    async function fetchPosts(test) {
-        const res = await fetch(API + default_query);
-        return res.json() as Promise<IPost[]>;
+    async function fetchPosts(reactQueryInput): Promise<IPost[]> {
+        const [_key, queryParams]: [string, FetchPostsQueryParams] = reactQueryInput.queryKey;
+        const res = await fetch(API + queryParams.default_query);
+        return res.json();
     }
 
     if (postsQuery.status === "loading") return <h1>Loading...</h1>;
@@ -31,7 +38,7 @@ export const PostList: React.FC<Props> = (props: Props) => {
             <div>
                 {postsQuery.data
                     .map((a) => {
-                        return <Post post={a}></Post>;
+                        return <Post key={a.id} post={a}></Post>;
                     })
                     .slice(0, 5)}
             </div>
