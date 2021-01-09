@@ -1,8 +1,7 @@
 import { QueryClient, useQuery } from "react-query";
-import { IPost } from "@/src/app/home/shared/models/ipost";
 import { dehydrate } from "react-query/hydration";
-import { Post } from "@/src/app/home/post/post";
 import { ITodo } from "@/src/app/home/shared/models/itodo";
+import { Todo } from "@/src/app/home/todo/todo";
 
 const API: string = "https://jsonplaceholder.typicode.com";
 const DEFAULT_QUERY: string = "/todos";
@@ -10,7 +9,12 @@ const DEFAULT_QUERY: string = "/todos";
 export async function getStaticProps() {
     const queryClient = new QueryClient();
 
-    await queryClient.prefetchQuery("posts", fetchPosts);
+    await queryClient.prefetchQuery({
+        queryKey: ["todos", { default_query: DEFAULT_QUERY, page: null } as FetchTodosQueryParams],
+        queryFn: fetchTodos,
+        staleTime: 50000,
+        cacheTime: 50000,
+    });
 
     return {
         props: {
@@ -19,40 +23,43 @@ export async function getStaticProps() {
     };
 }
 
-async function fetchPosts(reactQueryInput): Promise<ITodo[]> {
-    const [_key, queryParams]: [string, FetchPostsQueryParams] = reactQueryInput.queryKey;
+async function fetchTodos(reactQueryInput): Promise<ITodo[]> {
+    const [_key, queryParams]: [string, FetchTodosQueryParams] = reactQueryInput.queryKey;
     const res = await fetch(API + queryParams.default_query);
     if (!res.ok) {
         throw new Error("Network response was not ok");
     }
+
+    await setTimeout(() => console.log("finished timeout"), 5000);
+
     return res.json();
 }
 
 interface Props {}
 
-interface FetchPostsQueryParams {
+interface FetchTodosQueryParams {
     default_query: string;
     page: string;
 }
 
 export const TodoList: React.FC<Props> = (props: Props) => {
-    const postsQuery = useQuery({
-        queryKey: ["posts", { default_query: DEFAULT_QUERY, page: null } as FetchPostsQueryParams],
-        queryFn: fetchPosts,
-        staleTime: 0,
-        cacheTime: 5000,
+    const todosQuery = useQuery({
+        queryKey: ["todos", { default_query: DEFAULT_QUERY, page: null } as FetchTodosQueryParams],
+        queryFn: fetchTodos,
+        staleTime: 50000,
+        cacheTime: 50000,
     });
 
-    if (postsQuery.status === "loading") return <h1>Loading...</h1>;
-    if (postsQuery.status === "error") return <span>{postsQuery.error.toString()}</span>;
+    if (todosQuery.status === "loading") return <h1>Loading...</h1>;
+    if (todosQuery.status === "error") return <span>{todosQuery.error.toString()}</span>;
 
     return (
         <div>
             <h2>TodoList</h2>
             <div>
-                {postsQuery.data
+                {todosQuery.data
                     .map((a) => {
-                        return <Post key={a.id} post={a}></Post>;
+                        return <Todo key={a.id} todo={a}></Todo>;
                     })
                     .slice(0, 5)}
             </div>
