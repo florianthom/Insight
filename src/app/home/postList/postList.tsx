@@ -12,7 +12,7 @@ interface FetchPostsQueryParams {
 
 export const PostList: React.FC<Props> = (props: Props) => {
     const API: string = "https://jsonplaceholder.typicode.com";
-    const DEFAULT_QUERY: string = "/posts12";
+    const DEFAULT_QUERY: string = "/posts";
 
     const [posts, setPosts] = useState([] as IPost[]);
     const postsQuery = useQuery({
@@ -32,11 +32,7 @@ export const PostList: React.FC<Props> = (props: Props) => {
     }
 
     if (postsQuery.status === "loading") return <h1>Loading...</h1>;
-    if (postsQuery.status === "error") {
-        console.log(postsQuery.error);
-        return <span>Error: {postsQuery.error.message}</span>;
-    }
-    if (postsQuery.status === "success" && !postsQuery.data.length) return <span>There are no posts!</span>;
+    if (postsQuery.status === "error") return <span>{postsQuery.error.toString()}</span>;
 
     return (
         <div>
