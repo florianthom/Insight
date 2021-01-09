@@ -28,7 +28,7 @@ const IndexPage: NextPage<Props> = (props: Props) => {
     return (
         <div>
             <Head>
-                <link rel="shortcut icon" href="/homeFill.svg" />
+                <link rel="icon" href="/homeFill.svg" />
                 <title>Florian Thom</title>
             </Head>
             <Home></Home>
