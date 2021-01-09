@@ -6,6 +6,7 @@ import { App } from "@/src/app/app";
 import "@/src/app/app.scss";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
+import axios from "axios";
 
 // getServerSideProps = Retrieve the payload on the client-side, at run time (such as implementing)
 //                      - not recommended except in some szenarios where latency is a problem (e.g. dashboard)
@@ -23,7 +24,18 @@ import { ReactQueryDevtools } from "react-query/devtools";
 //                  then getInitialProps will run on the server.
 //                  - not recommended: used other two method for a more granular featch-method
 
-const queryClient = new QueryClient();
+const defaultQueryFn = async ({ queryKey }) => {
+    const { data } = await axios.get(`https://jsonplaceholder.typicode.com${queryKey[0]}`);
+    return data;
+};
+
+const queryClient = new QueryClient({
+    defaultOptions: {
+        queries: {
+            queryFn: defaultQueryFn,
+        },
+    },
+});
 
 const MyApp: NextPage<AppProps> = (props: AppProps) => {
     return (

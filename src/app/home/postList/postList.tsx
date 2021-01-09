@@ -12,7 +12,7 @@ interface FetchPostsQueryParams {
 
 export const PostList: React.FC<Props> = (props: Props) => {
     const API: string = "https://jsonplaceholder.typicode.com";
-    const DEFAULT_QUERY: string = "/posts";
+    const DEFAULT_QUERY: string = "/posts12";
 
     const [posts, setPosts] = useState([] as IPost[]);
     const postsQuery = useQuery({
@@ -25,11 +25,17 @@ export const PostList: React.FC<Props> = (props: Props) => {
     async function fetchPosts(reactQueryInput): Promise<IPost[]> {
         const [_key, queryParams]: [string, FetchPostsQueryParams] = reactQueryInput.queryKey;
         const res = await fetch(API + queryParams.default_query);
+        if (!res.ok) {
+            throw new Error("Network response was not ok");
+        }
         return res.json();
     }
 
     if (postsQuery.status === "loading") return <h1>Loading...</h1>;
-    if (postsQuery.status === "error") return <span>Error: {postsQuery.error}</span>;
+    if (postsQuery.status === "error") {
+        console.log(postsQuery.error);
+        return <span>Error: {postsQuery.error.message}</span>;
+    }
     if (postsQuery.status === "success" && !postsQuery.data.length) return <span>There are no posts!</span>;
 
     return (
