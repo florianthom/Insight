@@ -4,6 +4,8 @@ import { NextPage } from "next";
 import React from "react";
 import { App } from "@/src/app/app";
 import "@/src/app/app.scss";
+import { QueryClient, QueryClientProvider } from "react-query";
+import { ReactQueryDevtools } from "react-query/devtools";
 
 // getServerSideProps = Retrieve the payload on the client-side, at run time (such as implementing)
 //                      - not recommended except in some szenarios where latency is a problem (e.g. dashboard)
@@ -21,10 +23,15 @@ import "@/src/app/app.scss";
 //                  then getInitialProps will run on the server.
 //                  - not recommended: used other two method for a more granular featch-method
 
+const queryClient = new QueryClient();
+
 const MyApp: NextPage<AppProps> = (props: AppProps) => {
     return (
         <div>
-            <App appProps={props}></App>
+            <QueryClientProvider client={queryClient}>
+                <App appProps={props}></App>
+                <ReactQueryDevtools initialIsOpen={false} />
+            </QueryClientProvider>
         </div>
     );
 };

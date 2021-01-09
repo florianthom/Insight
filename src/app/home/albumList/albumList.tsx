@@ -33,9 +33,7 @@ export const AlbumList: React.FC<Props> = (props: Props) => {
     return (
         <div>
             <h2>AlbumList</h2>
-            {albums.map((a) => (
-                <Album album={a}></Album>
-            ))}
+            {albums.map((a) => <Album album={a}></Album>).slice(0, 5)}
         </div>
     );
 };

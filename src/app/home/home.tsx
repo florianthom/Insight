@@ -11,9 +11,15 @@ export const Home: React.FC<Props> = (props: Props) => {
         <div>
             <h1>Home.tsx</h1>
             <div className="p-5">
-                <Counter></Counter>
-                <PostList></PostList>
-                <AlbumList></AlbumList>
+                <div className="p-5">
+                    <Counter></Counter>
+                </div>
+                <div className="p-5">
+                    <PostList></PostList>
+                </div>
+                <div className="p-5">
+                    <AlbumList></AlbumList>
+                </div>
             </div>
         </div>
     );
