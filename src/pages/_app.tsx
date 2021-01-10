@@ -8,6 +8,7 @@ import { QueryClient, QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
 import axios from "axios";
 import { Hydrate } from "react-query/hydration";
+import { LayoutWrapper } from "@/src/app/shared/layoutWrapper/layoutWrapper";
 
 // getServerSideProps = Retrieve the payload on the client-side, at run time (such as implementing)
 //                      - not recommended except in some szenarios where latency is a problem (e.g. dashboard)
@@ -43,7 +44,9 @@ const MyApp: NextPage<AppProps> = (props: AppProps) => {
         <div>
             <QueryClientProvider client={queryClient}>
                 <Hydrate state={props.pageProps.dehydratedState}>
-                    <App appProps={props}></App>
+                    <App>
+                        <props.Component {...props.pageProps} />
+                    </App>
                 </Hydrate>
                 <ReactQueryDevtools initialIsOpen={false} />
             </QueryClientProvider>

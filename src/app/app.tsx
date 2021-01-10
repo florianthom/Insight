@@ -5,7 +5,7 @@ import { Provider } from "react-redux";
 import { store } from "./store/store";
 
 export interface Props {
-    appProps: AppProps;
+    children: React.ReactNode;
 }
 
 export const App: React.FC<Props> = (props: Props) => {
@@ -13,7 +13,7 @@ export const App: React.FC<Props> = (props: Props) => {
         <div>
             <Provider store={store}>
                 <LayoutWrapper>
-                    <props.appProps.Component {...props.appProps.pageProps} />
+                    <div>{props.children}</div>
                 </LayoutWrapper>
             </Provider>
         </div>
