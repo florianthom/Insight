@@ -1,4 +1,3 @@
-import Head from "next/head";
 import { NextPage } from "next";
 import React from "react";
 import { Home } from "@/src/app/home/home";
@@ -27,11 +26,6 @@ interface Props {}
 const IndexPage: NextPage<Props> = (props: Props) => {
     return (
         <div>
-            <Head>
-                <link rel="icon" href="/homeFill.svg" />
-                <title>Florian Thom</title>
-                <meta property="og:title" content="Florian Thom" key="title" />
-            </Head>
             <Home></Home>
         </div>
     );
