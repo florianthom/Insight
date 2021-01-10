@@ -20,12 +20,7 @@ export default class CustomDocument extends Document {
         super.render();
         return (
             <Html lang="en">
-                <Head>
-                    {/*The <Head /> component used here is not the same one from next/head*/}
-                    <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-                    <meta name="viewport" content="width=device-width, initial-scale=1" />
-                    <meta name="robots" content="index,follow" />
-                </Head>
+                <Head>{/*The <Head /> component used here is not the same one from next/head*/}</Head>
                 <body>
                     <Main />
                     <NextScript />
