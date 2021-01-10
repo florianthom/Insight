@@ -48,18 +48,16 @@ export const NavBar: React.FC<Props> = (props: Props) => {
                                         Home
                                     </a>
                                 </Link>
-                                <a
-                                    href="#"
-                                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                                >
-                                    Documents
-                                </a>
-                                <a
-                                    href="#"
-                                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                                >
-                                    Projects
-                                </a>
+                                <Link href="/documents">
+                                    <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                                        Documents
+                                    </a>
+                                </Link>
+                                <Link href="/projects">
+                                    <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                                        Projects
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -69,12 +67,11 @@ export const NavBar: React.FC<Props> = (props: Props) => {
                                 Impressum
                             </a>
                         </Link>
-                        <a
-                            href="#"
-                            className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                        >
-                            Datenschutzerklärung
-                        </a>
+                        <Link href="/privacy">
+                            <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                                Privacy
+                            </a>
+                        </Link>
                     </div>
                 </div>
             </div>
