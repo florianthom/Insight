@@ -9,7 +9,6 @@ interface Props {
 export const DefaultLayout: React.FC<Props> = (props: Props) => {
     return (
         <div>
-            <Meta />
             <div>
                 <NavBar></NavBar>
                 <div className="md:container md:mx-auto p-5">

@@ -13,9 +13,8 @@ export const Meta: React.FC<Props> = (props: Props) => (
         <title>Florian Thom</title>
         <meta key="og:title" property="og:title" content="Florian Thom" />
         <meta key="description" property="description" content={MY_SEO.description} />
-        <meta key="og:type" property="og:type" content={MY_SEO.openGraph.type} />
-        <meta key="og:title" property="og:title" content={MY_SEO.openGraph.title} />
         <meta key="og:description" property="og:description" content={MY_SEO.openGraph.description} />
+        <meta key="og:type" property="og:type" content={MY_SEO.openGraph.type} />
         <meta key="og:url" property="og:url" content={MY_SEO.openGraph.url} />
         <meta key="og:image" property="og:image" content={MY_SEO.openGraph.image} />
     </Head>
