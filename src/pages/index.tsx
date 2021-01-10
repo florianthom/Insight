@@ -30,6 +30,7 @@ const IndexPage: NextPage<Props> = (props: Props) => {
             <Head>
                 <link rel="icon" href="/homeFill.svg" />
                 <title>Florian Thom</title>
+                <meta property="og:title" content="Florian Thom" key="title" />
             </Head>
             <Home></Home>
         </div>
