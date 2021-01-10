@@ -7,7 +7,8 @@
         "build": "next build",
         "start": "next start",
         "lint": "eslint --fix .",
-        "format": "prettier --write . --config .prettierrc.js"
+        "format": "prettier --write . --config .prettierrc.js",
+        "test": "jest"
     },
     "dependencies": {
         "@fontsource/inter": "^4.0.1",
