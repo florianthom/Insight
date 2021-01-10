@@ -4,7 +4,7 @@ import React from "react";
 
 interface Props {}
 
-const IndexPage: NextPage<Props> = (props: Props) => {
+const ImpressumPage: NextPage<Props> = (props: Props) => {
     return (
         <div>
             <Impressum></Impressum>
@@ -12,4 +12,4 @@ const IndexPage: NextPage<Props> = (props: Props) => {
     );
 };
 
-export default IndexPage;
+export default ImpressumPage;
