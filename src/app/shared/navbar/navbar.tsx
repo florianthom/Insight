@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export interface Props {}
 
@@ -42,9 +43,11 @@ export const NavBar: React.FC<Props> = (props: Props) => {
                         </div>
                         <div className="hidden sm:block sm:ml-6">
                             <div className="flex space-x-4">
-                                <a href="#" className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">
-                                    Home
-                                </a>
+                                <Link href="/">
+                                    <a className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">
+                                        Home
+                                    </a>
+                                </Link>
                                 <a
                                     href="#"
                                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
@@ -61,12 +64,11 @@ export const NavBar: React.FC<Props> = (props: Props) => {
                         </div>
                     </div>
                     <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                        <a
-                            href="#"
-                            className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                        >
-                            Impressum
-                        </a>
+                        <Link href="/impressum">
+                            <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                                Impressum
+                            </a>
+                        </Link>
                         <a
                             href="#"
                             className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
