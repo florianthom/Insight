@@ -10,7 +10,7 @@ export interface Props {}
 export const Home: React.FC<Props> = (props: Props) => {
     return (
         <div>
-            <h1>Home.tsx</h1>
+            <h1>Home</h1>
             <div className="p-5">
                 <div className="p-5">
                     <Counter></Counter>

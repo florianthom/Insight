@@ -1,6 +1,6 @@
 import { Home } from "@/src/app/home/home";
-import { render } from "@/src/app/shared/tests/test-utils";
-import IndexPage from "@/src/pages";
+import { LayoutRenderer } from "@/src/app/shared/tests/test-utils";
+import { render, RenderResult } from "@testing-library/react";
 
 describe("HomeComponent", () => {
     let expectedProps;
@@ -9,8 +9,8 @@ describe("HomeComponent", () => {
         expectedProps = {};
     });
 
-    test("Should render h1-tag", () => {
-        const a = render(<Home />, expectedProps);
-        expect(true).toBe(true);
+    test("Should render h1-tag with content: Home", () => {
+        const renderResult: RenderResult = render(<Home />, { wrapper: LayoutRenderer, ...expectedProps });
+        expect(renderResult.container.querySelector("h1")).toHaveTextContent("Home");
     });
 });

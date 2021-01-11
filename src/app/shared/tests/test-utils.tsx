@@ -26,7 +26,7 @@ export interface Props {
     children: React.ReactNode;
 }
 
-const LayoutRenderer: React.FC = (props: Props) => {
+export const LayoutRenderer: React.FC = (props: Props) => {
     return (
         <div>
             <QueryClientProvider client={queryClient}>
@@ -39,12 +39,3 @@ const LayoutRenderer: React.FC = (props: Props) => {
         </div>
     );
 };
-
-const customRender = (ui, options) =>
-    render(ui, {
-        wrapper: LayoutRenderer,
-        ...options,
-    });
-
-export * from "@testing-library/react";
-export { customRender as render };
