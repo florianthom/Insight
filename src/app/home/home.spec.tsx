@@ -1,5 +1,6 @@
 import { Home } from "@/src/app/home/home";
 import { render } from "@/src/app/shared/tests/test-utils";
+import IndexPage from "@/src/pages";
 
 describe("HomeComponent", () => {
     let expectedProps;
