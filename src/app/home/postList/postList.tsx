@@ -11,8 +11,8 @@ interface FetchPostsQueryParams {
 }
 
 export const PostList: React.FC<Props> = (props: Props) => {
-    const API: string = "https://jsonplaceholder.typicode.com";
-    const DEFAULT_QUERY: string = "/posts";
+    const API = "https://jsonplaceholder.typicode.com";
+    const DEFAULT_QUERY = "/posts";
 
     const postsQuery = useQuery({
         queryKey: ["posts", { default_query: DEFAULT_QUERY, page: null } as FetchPostsQueryParams],

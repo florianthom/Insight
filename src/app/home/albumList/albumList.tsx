@@ -6,8 +6,8 @@ import { Album } from "@/src/app/home/album/album";
 export interface Props {}
 
 export const AlbumList: React.FC<Props> = (props: Props) => {
-    const API: string = "https://jsonplaceholder.typicode.com";
-    const DEFAULT_QUERY: string = "/albums";
+    const API = "https://jsonplaceholder.typicode.com";
+    const DEFAULT_QUERY = "/albums";
 
     const [albums, setAlbums] = useState([] as IAlbum[]);
 
