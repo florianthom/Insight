@@ -7,6 +7,7 @@ Frontend-Project to create my personal website. The backend-code can be found [h
 ## Prerequisites
 
 -   yarn v1.22+
+-   node v12+
 
 ## Getting Started
 
@@ -29,10 +30,13 @@ Frontend-Project to create my personal website. The backend-code can be found [h
 -   yarn v1
 -   React v17
 -   Next.js v10
--   TypeScript
--   Redux
--   Redux-Thunk
--   ESLint / Prettier
+-   React-Query v3
+-   reduxjs-toolkit
+-   jest
+-   React Testing Library
+-   TypeScript v4
+-   ESLint
+-   Prettier
 -   Tailwindcss v2
 
 ## Acknowledgements
