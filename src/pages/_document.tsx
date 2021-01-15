@@ -2,7 +2,7 @@ import Document, { Html, Head, Main, NextScript, DocumentContext } from "next/do
 import React from "react";
 
 export default class CustomDocument extends Document {
-    static async getInitialProps(ctx: DocumentContext) {
+    static async getInitialProps(ctx: DocumentContext): Promise<any> {
         const originalRenderPage = ctx.renderPage;
         ctx.renderPage = () =>
             originalRenderPage({

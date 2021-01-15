@@ -1,19 +1,42 @@
-import Error from "next/error";
+import { NextPage } from "next";
+import Link from "next/link";
+import React from "react";
 
-// export async function getServerSideProps() {
-//     const res = await fetch("https://api.github.com/repos/vercel/next.js");
-//     const errorCode = res.ok ? false : res.status;
-//     const json = await res.json();
-//
-//     return {
-//         props: { errorCode, stars: json.stargazers_count },
-//     };
-// }
-
-export default function Page({ errorCode, stars }) {
-    if (errorCode) {
-        return <Error statusCode={errorCode} />;
-    }
-
-    return <div>Next stars: {stars}</div>;
+interface Props {
+    statusCode?: number | null | undefined;
 }
+
+const Error: NextPage<Props> = ({ statusCode }) => {
+    return (
+        <section
+            className="flex flex-row items-center justify-center px-4 py-12 text-center"
+            style={{ minHeight: "calc(100vh - 150px)" }}
+        >
+            <div>
+                <img
+                    className="mx-auto max-w-auto md:max-w-sm"
+                    src="/images/error.svg"
+                    alt={statusCode ? `${statusCode}` : "error occurred"}
+                />
+                <p className="mb-6 text-xl">
+                    {statusCode ? `An error ${statusCode} occurred on server` : "An error occurred on client"}
+                </p>
+                <Link href="/">
+                    <a
+                        className="inline-block px-8 py-4 leading-none text-white rounded shadow bg-primary-500 hover:bg-green-400"
+                        href="/"
+                    >
+                        Return to the homepage
+                    </a>
+                </Link>
+            </div>
+        </section>
+    );
+};
+
+Error.getInitialProps = ({ res, err }) => {
+    const statusCode = res ? res.statusCode : err ? err.statusCode : 404;
+    return { statusCode };
+};
+
+export default Error;

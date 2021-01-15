@@ -5,7 +5,7 @@ export const DEFAULT_QUERY = "/todos";
 
 export const FETCHTODOS_KEY = "todos";
 
-export async function fetchTodos(reactQueryInput) {
+export async function fetchTodos(reactQueryInput: any) {
     const [_key, queryParams]: [string, FetchTodosQueryParams] = reactQueryInput.queryKey;
     const res = await fetch(API + queryParams.default_query);
     if (!res.ok) {

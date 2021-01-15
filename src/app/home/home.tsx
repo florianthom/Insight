@@ -1,6 +1,5 @@
 import React from "react";
 import { Counter } from "@/src/app/home/counter/counter";
-import styles from "@/src/app/home/home.module.scss";
 import { TodoList } from "@/src/app/home/todosList/todoList";
 
 export interface Props {}
