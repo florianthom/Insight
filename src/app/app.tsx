@@ -10,11 +10,11 @@ export interface Props {
 
 export const App: React.FC<Props> = (props: Props) => {
     return (
-        <div>
+        <div className="">
             <Provider store={store}>
-                <LayoutWrapper>
-                    <div>{props.children}</div>
-                </LayoutWrapper>
+                {/*<LayoutWrapper>*/}
+                <div className="">{props.children}</div>
+                {/*</LayoutWrapper>*/}
             </Provider>
         </div>
     );

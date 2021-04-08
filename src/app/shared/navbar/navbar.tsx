@@ -1,11 +1,40 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 
 export interface Props {}
 
 export const NavBar: React.FC<Props> = (props: Props) => {
+    let listener = null;
+    const [scrollState, setScrollState] = useState("top");
+
+    useEffect(() => {
+        listener = document.addEventListener("scroll", (e) => {
+            var scrolled = document.scrollingElement.scrollTop;
+            console.log(scrolled);
+            if (scrolled >= 100) {
+                if (scrollState !== "down") setScrollState("down");
+            } else {
+                if (scrollState !== "top") setScrollState("top");
+            }
+        });
+        return () => {
+            document.removeEventListener("scroll", listener);
+        };
+    }, [scrollState]);
+
     return (
-        <nav className="bg-gray-800">
+        // <nav className="bg-opacity-100 main-color">
+        <nav
+            style={{
+                backgroundColor: scrollState === "top" ? "rgba(27, 38, 44, 0)" : "rgba(27, 38, 44, 1)",
+                // color: scrollState === "top" ? "white" : "blue",
+                top: 0,
+                right: 0,
+                left: 0,
+                transition: "background-color 250ms linear",
+                position: "fixed",
+            }}
+        >
             <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
                 <div className="relative flex items-center justify-between h-16">
                     <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -38,38 +67,48 @@ export const NavBar: React.FC<Props> = (props: Props) => {
                     </div>
 
                     <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-                        <div className="flex-shrink-0 flex items-center">
-                            <div className="text-white text-xl">Florian Thom</div>
-                        </div>
+                        {/*<div className="flex-shrink-0 flex items-center">*/}
+                        {/*    <div className="text-white text-xs">FLORIAN THOM</div>*/}
+                        {/*</div>*/}
+                        <Link href="/">
+                            <a className="text-gray-300 text-xs font-medium flex-shrink-0 flex items-center">
+                                FLORIAN THOM
+                            </a>
+                        </Link>
                         <div className="hidden sm:block sm:ml-6">
                             <div className="flex space-x-4">
                                 <Link href="/">
-                                    <a className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">
-                                        Home
+                                    <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xs font-medium whitespace-nowrap">
+                                        WORK & CV
                                     </a>
                                 </Link>
                                 <Link href="/documents">
-                                    <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-                                        Documents
+                                    <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xs font-medium whitespace-nowrap">
+                                        REPORTS & TALKS
                                     </a>
                                 </Link>
                                 <Link href="/projects">
-                                    <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-                                        Projects
+                                    <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xs font-medium">
+                                        PROJECTS
+                                    </a>
+                                </Link>
+                                <Link href="/projects">
+                                    <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xs font-medium">
+                                        GEAR
                                     </a>
                                 </Link>
                             </div>
                         </div>
                     </div>
-                    <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                    <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 hidden sm:block sm:ml-6">
                         <Link href="/impressum">
-                            <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-                                Impressum
+                            <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xs font-medium">
+                                CONTACT
                             </a>
                         </Link>
-                        <Link href="/privacy">
-                            <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-                                Privacy
+                        <Link href="/impressum">
+                            <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xs font-medium">
+                                IMPRESSUM
                             </a>
                         </Link>
                     </div>

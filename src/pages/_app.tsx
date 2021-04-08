@@ -12,6 +12,9 @@ import { LayoutWrapper } from "@/src/app/shared/layoutWrapper/layoutWrapper";
 import { Head } from "next/document";
 import { Meta } from "@/src/app/shared/meta/meta";
 
+// call order: _document.tsx -> app.tsx -> app.tsx -> layout -> children
+//  _document.tsx gets only rendered server-side
+
 // getServerSideProps = Retrieve the payload on the client-side, at run time (such as implementing)
 //                      - not recommended except in some szenarios where latency is a problem (e.g. dashboard)
 //                          - reason: lose many static-optimization benefits
