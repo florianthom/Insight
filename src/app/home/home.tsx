@@ -3,6 +3,8 @@ import { Counter } from "@/src/app/home/counter/counter";
 import { TodoList } from "@/src/app/home/todosList/todoList";
 import { NavBar } from "@/src/app/shared/navbar/navbar";
 import Image from "next/image";
+import Link from "next/link";
+import { Footer } from "@/src/app/shared/footer/footer";
 
 {
     /*        <Counter></Counter>*/
@@ -105,18 +107,17 @@ export const Home: React.FC<Props> = (props: Props) => {
                                     </ul>
                                 </li>
                                 <li>
-                                    IT Secruity - Handling of Numbers > 2^64
+                                    IT Secruity - Handling of Numbers {">"} 2^64
                                     <ul className="list-inside pl-4">
-                                        <li>
-                                            Implemented own BigInteger-Representation through bit-shift-operations
-                                        </li>
+                                        <li>Implemented own BigInteger-Representation through bit-shift-operations</li>
                                     </ul>
                                 </li>
                                 <li>
                                     NVIDIA - CUDA programming
                                     <ul className="list-inside pl-4">
                                         <li>
-                                            The calculation of the gaussian convolution of an image and the conversation of rgb to ycbcr
+                                            The calculation of the gaussian convolution of an image and the conversation
+                                            of rgb to ycbcr
                                         </li>
                                     </ul>
                                 </li>
@@ -129,14 +130,14 @@ export const Home: React.FC<Props> = (props: Props) => {
                 <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
                     <h2 className="text-black text-3xl tracking-more-than-wide">SIGNIFICANT PROJECTS</h2>
                     <div className="text-base text-black pt-24">
-                        I have worked on a couple of projects till today. Here  I like to present a list with selected projects from github I like most.
-                        This are projects I spend a lot of time on while having a lot of fun. Feel free to check them out on github.
+                        I have worked on a couple of projects till today. Here I like to present a list with selected
+                        projects from github I like most. This are projects I spend a lot of time on while having a lot
+                        of fun. Feel free to check them out on github.
                     </div>
+                    <div className="text-base text-black pt-24">table</div>
                     <div className="text-base text-black pt-24">
-                        table
-                    </div>
-                    <div className="text-base text-black pt-24">
-                        This represents only a small snipped of projects. If you want to check out my other projects, I provide a separate projects page
+                        This represents only a small snipped of projects. If you want to check out my other projects, I
+                        provide a separate projects page
                     </div>
                 </div>
             </div>
@@ -144,11 +145,12 @@ export const Home: React.FC<Props> = (props: Props) => {
                 <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
                     <h2 className="text-white text-3xl tracking-more-than-wide">MY SKILLS</h2>
                     <div className="text-base text-white pt-24">
-                        Over the course of my career I have encountered many technologies and gained experience in numerous areas.
-                        I love to learn new technologies and to examine them for advantages and disadvantages compared to the already known alternatives.
+                        Over the course of my career I have encountered many technologies and gained experience in
+                        numerous areas. I love to learn new technologies and to examine them for advantages and
+                        disadvantages compared to the already known alternatives.
                     </div>
                     <div className="text-base text-white pt-24">
-                        <div className="flex justify-evenly">
+                        <div className="flex justify-between">
                             <div>
                                 <h3 className="text-2xl text-white">Frontend</h3>
                                 <ul className="list-disc text-base text-white list-inside">
@@ -166,16 +168,6 @@ export const Home: React.FC<Props> = (props: Props) => {
                                 </ul>
                             </div>
                             <div>
-                                <h3 className="text-2xl text-white">Mobile & Game</h3>
-                                <ul className="list-disc text-base text-white list-inside">
-                                    <li>Flutter</li>
-                                    <li>Responsive Design</li>
-                                    <li>Android Studios</li>
-                                    <li>Unity</li>
-                                    <li>OpenGL</li>
-                                </ul>
-                            </div>
-                            <div>
                                 <h3 className="text-2xl text-white">Backend</h3>
                                 <ul className="list-disc text-base text-white list-inside">
                                     <li>Node.js</li>
@@ -190,8 +182,18 @@ export const Home: React.FC<Props> = (props: Props) => {
                                     <li>Hangfire</li>
                                 </ul>
                             </div>
+                            <div>
+                                <h3 className="text-2xl text-white">Mobile & Game</h3>
+                                <ul className="list-disc text-base text-white list-inside">
+                                    <li>Flutter</li>
+                                    <li>Responsive Design</li>
+                                    <li>Android Studios</li>
+                                    <li>Unity</li>
+                                    <li>OpenGL</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div className="flex justify-evenly pt-16">
+                        <div className="flex justify-between pt-16">
                             <div>
                                 <h3 className="text-2xl text-white">IOT</h3>
                                 <ul className="list-disc text-base text-white list-inside">
@@ -269,21 +271,23 @@ export const Home: React.FC<Props> = (props: Props) => {
                 <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
                     <h2 className="text-black text-3xl tracking-more-than-wide">FUTURE VENTURES</h2>
                     <div className="text-base text-black pt-24">
-                        I always like to test new stuff. Here I present a small list of technologies that i will probably try to learn in upcoming projects.
-                        I divided the list into Software Architecture, Distributed Systems and Machine Learning. These are probably the areas, i will spend most time on.
+                        I always like to test new stuff. Here I present a small list of technologies that i will
+                        probably try to learn in upcoming projects. I divided the list into Software Architecture,
+                        Distributed Systems and Machine Learning. These are probably the areas, i will spend most time
+                        on.
                     </div>
                     <div className="text-base text-black pt-24">
                         <div className="flex justify-evenly">
-                                <div>
-                                    <h3 className="text-2xl text-black">Software Architecture</h3>
-                                    <ul className="list-disc text-base text-black list-inside">
-                                        <li>Clean Architecture</li>
-                                        <li>mediatr</li>
-                                        <li>cqrs</li>
-                                        <li>GraphQL in .net (hotchocolate)</li>
-                                        <li>SignalR / Socker.io</li>
-                                    </ul>
-                                </div>
+                            <div>
+                                <h3 className="text-2xl text-black">Software Architecture</h3>
+                                <ul className="list-disc text-base text-black list-inside">
+                                    <li>Clean Architecture</li>
+                                    <li>mediatr</li>
+                                    <li>cqrs</li>
+                                    <li>GraphQL in .net (hotchocolate)</li>
+                                    <li>SignalR / Socker.io</li>
+                                </ul>
+                            </div>
                             <div>
                                 <h3 className="text-2xl text-black">Distributed Systems Development</h3>
                                 <ul className="list-disc text-base text-black list-inside">
@@ -307,15 +311,17 @@ export const Home: React.FC<Props> = (props: Props) => {
                             <div>
                                 <h3 className="text-2xl text-black">Machine Learning</h3>
                                 <ul className="list-disc text-base text-black list-inside">
-                                    <li>Unity ml-agents: integrate <br/>
-                                        other reinforcement approach</li>
+                                    <li>
+                                        Unity ml-agents: integrate <br />
+                                        other reinforcement approach
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <footer></footer>
+            <Footer></Footer>
         </div>
     );
 };

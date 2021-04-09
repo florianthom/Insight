@@ -33,6 +33,7 @@ export const NavBar: React.FC<Props> = (props: Props) => {
                 left: 0,
                 transition: "background-color 250ms linear, padding-top 250ms linear",
                 position: "fixed",
+                zIndex: 50,
             }}
         >
             <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
