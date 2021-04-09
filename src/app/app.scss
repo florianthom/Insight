@@ -12,7 +12,7 @@
 }
 
 .main-color{
-    background-color: rgba(27, 38, 44, 0);
+    background-color: rgba(27, 38, 44, 1);
 }
 
 .custom-background-image{
@@ -21,4 +21,12 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.custom-transform-mid{
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.tracking-more-than-wide{
+    letter-spacing: 0.5em;
 }

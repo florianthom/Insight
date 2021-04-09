@@ -10,7 +10,6 @@ export const NavBar: React.FC<Props> = (props: Props) => {
     useEffect(() => {
         listener = document.addEventListener("scroll", (e) => {
             var scrolled = document.scrollingElement.scrollTop;
-            console.log(scrolled);
             if (scrolled >= 100) {
                 if (scrollState !== "down") setScrollState("down");
             } else {
@@ -26,16 +25,17 @@ export const NavBar: React.FC<Props> = (props: Props) => {
         // <nav className="bg-opacity-100 main-color">
         <nav
             style={{
+                paddingTop: scrollState === "top" ? 32 : 0,
                 backgroundColor: scrollState === "top" ? "rgba(27, 38, 44, 0)" : "rgba(27, 38, 44, 1)",
                 // color: scrollState === "top" ? "white" : "blue",
                 top: 0,
                 right: 0,
                 left: 0,
-                transition: "background-color 250ms linear",
+                transition: "background-color 250ms linear, padding-top 250ms linear",
                 position: "fixed",
             }}
         >
-            <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
                 <div className="relative flex items-center justify-between h-16">
                     <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                         <button
@@ -71,29 +71,29 @@ export const NavBar: React.FC<Props> = (props: Props) => {
                         {/*    <div className="text-white text-xs">FLORIAN THOM</div>*/}
                         {/*</div>*/}
                         <Link href="/">
-                            <a className="text-gray-300 text-xs font-medium flex-shrink-0 flex items-center">
+                            <a className="text-gray-300 text-base font-medium flex-shrink-0 flex items-center">
                                 FLORIAN THOM
                             </a>
                         </Link>
                         <div className="hidden sm:block sm:ml-6">
                             <div className="flex space-x-4">
                                 <Link href="/">
-                                    <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xs font-medium whitespace-nowrap">
+                                    <a className="text-gray-300 hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium whitespace-nowrap">
                                         WORK & CV
                                     </a>
                                 </Link>
                                 <Link href="/documents">
-                                    <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xs font-medium whitespace-nowrap">
+                                    <a className="text-gray-300 hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium whitespace-nowrap">
                                         REPORTS & TALKS
                                     </a>
                                 </Link>
                                 <Link href="/projects">
-                                    <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xs font-medium">
+                                    <a className="text-gray-300 hover:bg-gray-300 hover:bg-opacity-30  hover:text-white px-3 py-2 rounded-md text-base font-medium">
                                         PROJECTS
                                     </a>
                                 </Link>
                                 <Link href="/projects">
-                                    <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xs font-medium">
+                                    <a className="text-gray-300 hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium">
                                         GEAR
                                     </a>
                                 </Link>
@@ -102,12 +102,12 @@ export const NavBar: React.FC<Props> = (props: Props) => {
                     </div>
                     <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 hidden sm:block sm:ml-6">
                         <Link href="/impressum">
-                            <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xs font-medium">
+                            <a className="text-gray-300 hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium">
                                 CONTACT
                             </a>
                         </Link>
                         <Link href="/impressum">
-                            <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xs font-medium">
+                            <a className="text-gray-300 hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium">
                                 IMPRESSUM
                             </a>
                         </Link>
