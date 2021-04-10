@@ -6,7 +6,7 @@ interface Props {}
 
 export const RecordButton: React.FC<Props> = (props: Props) => {
     return (
-        <div className="border border-main-color hover:bg-main-color transition hover:text-white text-black py-2 px-4 rounded cursor-pointer">
+        <div className="border border-main-color hover:bg-main-color transition hover:text-white text-black py-2 px-4 cursor-pointer shadow-md">
             <Link href="/">
                 <a className="">
                     <div className="flex justify-between">
