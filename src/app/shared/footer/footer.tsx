@@ -37,7 +37,7 @@ export const Footer: React.FC<Props> = (props: Props) => {
                             <a className="whitespace-nowrap hover:underline">Work & CV</a>
                         </Link>
                         <div className="text-gray-600">|</div>
-                        <Link href="/documents">
+                        <Link href="/reports">
                             <a className="whitespace-nowrap hover:underline">Reports & Talks</a>
                         </Link>
                         <div className="text-gray-600">|</div>

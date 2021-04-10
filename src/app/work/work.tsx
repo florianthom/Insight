@@ -182,14 +182,14 @@ export const Work: React.FC<Props> = (props: Props) => {
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="main-color hover:bg-yellow-600 transition text-white font-bold py-2 px-4 rounded w-1/4 text-center cursor-pointer"
+                            className="main-color hover:bg-yellow-600  transition text-white font-bold py-2 px-4 rounded w-1/4 text-center cursor-pointer active:bg-yellow-800"
                         >
                             CV - International
                         </a>
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="main-color hover:bg-yellow-600 transition text-white font-bold py-2 px-4 rounded w-1/4 text-center cursor-pointer"
+                            className="main-color hover:bg-yellow-600 transition text-white font-bold py-2 px-4 rounded w-1/4 text-center cursor-pointer active:bg-yellow-800"
                         >
                             CV - Germany
                         </a>

@@ -75,9 +75,6 @@ export const NavBar: React.FC<Props> = (props: Props) => {
                         </button>
                     </div>
                     <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-                        {/*<div className="flex-shrink-0 flex items-center">*/}
-                        {/*    <div className="text-white text-xs">FLORIAN THOM</div>*/}
-                        {/*</div>*/}
                         <Link href="/">
                             <a className="transition text-white text-base font-medium flex-shrink-0 flex items-center">
                                 FLORIAN THOM
@@ -90,7 +87,7 @@ export const NavBar: React.FC<Props> = (props: Props) => {
                                         WORK & CV
                                     </a>
                                 </Link>
-                                <Link href="/documents">
+                                <Link href="/reports">
                                     <a className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium whitespace-nowrap">
                                         REPORTS & TALKS
                                     </a>

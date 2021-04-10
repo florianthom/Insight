@@ -2,19 +2,20 @@ import { NextPage } from "next";
 import React from "react";
 import Head from "next/head";
 import { Work } from "@/src/app/work/work";
+import { Reports } from "@/src/app/reports/reports";
 
 interface Props {}
 
-const WorkPage: NextPage<Props> = (props: Props) => {
+const ReportsPage: NextPage<Props> = (props: Props) => {
     return (
         <main>
             <Head>
-                <title>Work & CV - Florian Thom</title>
+                <title>Reports & Talks- Florian Thom</title>
                 <meta name="description" content="Test Application: Index-Page" />
             </Head>
-            <Work></Work>
+            <Reports></Reports>
         </main>
     );
 };
 
-export default WorkPage;
+export default ReportsPage;
