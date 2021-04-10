@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export interface Props {}
 
 export const NavBar: React.FC<Props> = (props: Props) => {
     let listener = null;
     const [scrollState, setScrollState] = useState("top");
+
+    const router = useRouter();
 
     useEffect(() => {
         listener = document.addEventListener("scroll", (e) => {
@@ -22,17 +25,22 @@ export const NavBar: React.FC<Props> = (props: Props) => {
     }, [scrollState]);
 
     return (
-        // <nav className="bg-opacity-100 main-color">
         <nav
             style={{
-                paddingTop: scrollState === "top" ? 32 : 0,
-                backgroundColor: scrollState === "top" ? "rgba(27, 38, 44, 0)" : "rgba(27, 38, 44, 1)",
+                padding: scrollState === "top" ? 16 : 0,
+                backgroundColor:
+                    scrollState === "top"
+                        ? router.pathname === "/" || router.pathname === "/home"
+                            ? "rgba(27, 38, 44, 0)"
+                            : "rgba(27, 38, 44, 1)"
+                        : "rgba(27, 38, 44, 1)",
                 // color: scrollState === "top" ? "white" : "blue",
                 top: 0,
                 right: 0,
                 left: 0,
-                transition: "background-color 250ms linear, padding-top 250ms linear",
+                transition: "background-color 250ms linear, padding 250ms linear",
                 position: "fixed",
+                overflow: "hidden",
                 zIndex: 50,
             }}
         >
@@ -66,35 +74,34 @@ export const NavBar: React.FC<Props> = (props: Props) => {
                             </svg>
                         </button>
                     </div>
-
                     <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                         {/*<div className="flex-shrink-0 flex items-center">*/}
                         {/*    <div className="text-white text-xs">FLORIAN THOM</div>*/}
                         {/*</div>*/}
                         <Link href="/">
-                            <a className="text-gray-300 text-base font-medium flex-shrink-0 flex items-center">
+                            <a className="transition text-white text-base font-medium flex-shrink-0 flex items-center">
                                 FLORIAN THOM
                             </a>
                         </Link>
                         <div className="hidden sm:block sm:ml-6">
                             <div className="flex space-x-4">
-                                <Link href="/">
-                                    <a className="text-gray-300 hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium whitespace-nowrap">
+                                <Link href="/work">
+                                    <a className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium whitespace-nowrap">
                                         WORK & CV
                                     </a>
                                 </Link>
                                 <Link href="/documents">
-                                    <a className="text-gray-300 hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium whitespace-nowrap">
+                                    <a className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium whitespace-nowrap">
                                         REPORTS & TALKS
                                     </a>
                                 </Link>
                                 <Link href="/projects">
-                                    <a className="text-gray-300 hover:bg-gray-300 hover:bg-opacity-30  hover:text-white px-3 py-2 rounded-md text-base font-medium">
+                                    <a className="transition text-white hover:bg-gray-300 hover:bg-opacity-30  hover:text-white px-3 py-2 rounded-md text-base font-medium">
                                         PROJECTS
                                     </a>
                                 </Link>
                                 <Link href="/projects">
-                                    <a className="text-gray-300 hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium">
+                                    <a className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium">
                                         GEAR
                                     </a>
                                 </Link>
@@ -103,12 +110,12 @@ export const NavBar: React.FC<Props> = (props: Props) => {
                     </div>
                     <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 hidden sm:block sm:ml-6">
                         <Link href="/impressum">
-                            <a className="text-gray-300 hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium">
+                            <a className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium">
                                 CONTACT
                             </a>
                         </Link>
                         <Link href="/impressum">
-                            <a className="text-gray-300 hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium">
+                            <a className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium">
                                 IMPRESSUM
                             </a>
                         </Link>

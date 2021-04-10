@@ -11,17 +11,17 @@ export const Footer: React.FC<Props> = (props: Props) => {
                 <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
                     <div className="text-white text-base tracking-more-than-wide text-center">KEEP IN TOUCH</div>
                     <div className="pt-16 flex justify-evenly">
-                        <a href="https://www.linkedin.com/in/florianthom/" className="pr-4">
-                            <Image src="/linkedIn_transparent.png" alt="me" width="32" height="32" />
+                        <a href="https://www.linkedin.com/in/florianthom/">
+                            <Image src="/linkedIn_transparent.png" alt="linkedIn-link" width="32" height="32" />
                         </a>
-                        <a href="https://github.com/FlorianTh2" className="pr-4">
-                            <Image src="/github_transparent.png" alt="me" width="32" height="32" />
+                        <a href="https://github.com/FlorianTh2">
+                            <Image src="/github_transparent.png" alt="github-link" width="32" height="32" />
                         </a>
-                        <a href="mailto:thom.florian@yahoo.de" className="pr-4">
-                            <Image src="/mail_tranparent.png" alt="me" width="32" height="32" />
+                        <a href="mailto:thom.florian@yahoo.de">
+                            <Image src="/mail_tranparent.png" alt="mail-adresse" width="32" height="32" />
                         </a>
-                        <a href="https://www.linkedin.com/in/florianthom/" className="pr-4">
-                            <Image src="/discord_transparent.png" alt="me" width="32" height="32" />
+                        <a href="https://www.linkedin.com/in/florianthom/">
+                            <Image src="/discord_transparent.png" alt="discordServer-link" width="32" height="32" />
                         </a>
                     </div>
                 </div>
@@ -30,31 +30,31 @@ export const Footer: React.FC<Props> = (props: Props) => {
                 <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
                     <div className="flex justify-evenly">
                         <Link href="/">
-                            <a className="whitespace-nowrap">Home</a>
+                            <a className="whitespace-nowrap hover:underline">Home</a>
                         </Link>
                         <div className="text-gray-600">|</div>
-                        <Link href="/">
-                            <a className="whitespace-nowrap">Work & CV</a>
+                        <Link href="/work">
+                            <a className="whitespace-nowrap hover:underline">Work & CV</a>
                         </Link>
                         <div className="text-gray-600">|</div>
                         <Link href="/documents">
-                            <a className="whitespace-nowrap">Reports & Talks</a>
+                            <a className="whitespace-nowrap hover:underline">Reports & Talks</a>
                         </Link>
                         <div className="text-gray-600">|</div>
                         <Link href="/projects">
-                            <a className="">Projects</a>
+                            <a className="hover:underline">Projects</a>
                         </Link>
                         <div className="text-gray-600">|</div>
                         <Link href="/projects">
-                            <a className="">Gear</a>
+                            <a className="hover:underline">Gear</a>
                         </Link>
                         <div className="text-gray-600">|</div>
                         <Link href="/projects">
-                            <a className="">Contact</a>
+                            <a className="hover:underline">Contact</a>
                         </Link>
                         <div className="text-gray-600">|</div>
                         <Link href="/projects">
-                            <a className="">Impressum</a>
+                            <a className="hover:underline">Impressum</a>
                         </Link>
                     </div>
                 </div>
