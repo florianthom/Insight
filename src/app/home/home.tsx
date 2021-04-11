@@ -5,6 +5,7 @@ import { NavBar } from "@/src/app/shared/navbar/navbar";
 import Image from "next/image";
 import Link from "next/link";
 import { Footer } from "@/src/app/shared/footer/footer";
+import { SignificantProjectsTable } from "@/src/app/home/significantProjectsTable/significantProjectsTable";
 
 {
     /*        <Counter></Counter>*/
@@ -134,7 +135,9 @@ export const Home: React.FC<Props> = (props: Props) => {
                         projects from github I like most. This are projects I spend a lot of time on while having a lot
                         of fun. Feel free to check them out on github.
                     </div>
-                    <div className="text-base text-black pt-24">table</div>
+                    <div className="pt-24">
+                        <SignificantProjectsTable></SignificantProjectsTable>
+                    </div>
                     <div className="text-base text-black pt-24">
                         This represents only a small snipped of projects. If you want to check out my other projects, I
                         provide a separate projects page
