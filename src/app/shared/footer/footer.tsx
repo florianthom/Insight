@@ -45,15 +45,15 @@ export const Footer: React.FC<Props> = (props: Props) => {
                             <a className="hover:underline">Projects</a>
                         </Link>
                         <div className="text-gray-600">|</div>
-                        <Link href="/projects">
+                        <Link href="/gear">
                             <a className="hover:underline">Gear</a>
                         </Link>
                         <div className="text-gray-600">|</div>
-                        <Link href="/projects">
+                        <Link href="/contact">
                             <a className="hover:underline">Contact</a>
                         </Link>
                         <div className="text-gray-600">|</div>
-                        <Link href="/projects">
+                        <Link href="/impressum">
                             <a className="hover:underline">Impressum</a>
                         </Link>
                     </div>
