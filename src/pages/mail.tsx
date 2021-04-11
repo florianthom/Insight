@@ -10,7 +10,7 @@ const Mail: NextPage<Props> = (props: Props) => {
         window.location.replace("mailto:thom.florian@yahoo.de");
     });
 
-    return <div>You should be redirected to: thom.florian@yahoo.de</div>;
+    return <div>Your email-provider should be open up with my inserted email (thom.florian@yahoo.de).</div>;
 };
 
 export default Mail;

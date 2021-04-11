@@ -22,6 +22,8 @@ export const Impressum: React.FC<Props> = (props: Props) => {
                         <a
                             className="hover:underline"
                             href="https://www.iubenda.com/en/help/7816-impressum-what-is-it-and-when-is-it-needed#required"
+                            target="_blank"
+                            rel="noopener noreferrer"
                         >
                             "Iubenda"
                         </a>

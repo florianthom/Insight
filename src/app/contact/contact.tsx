@@ -24,12 +24,14 @@ export const Contact: React.FC<Props> = (props: Props) => {
                                 platform_name="LinkedIn"
                                 user_name="Florian Thom"
                                 text="Just “Connect” with me."
+                                link_string="https://www.linkedin.com/in/florianthom/"
                             ></PlatformCard>
                             <PlatformCard
                                 image_path="/xing_transparent_svg.svg"
                                 platform_name="Xing"
                                 user_name="Florian Thom"
                                 text="Just add me to your network."
+                                link_string="https://www.xing.com/profile/Florian_Thom9"
                             ></PlatformCard>
                         </div>
                         <div className="pt-16 flex justify-around">
@@ -38,12 +40,14 @@ export const Contact: React.FC<Props> = (props: Props) => {
                                 platform_name="Mail"
                                 user_name="thom.florian@yahoo.de"
                                 text="Just write me an email."
+                                link_string="mailto:thom.florian@yahoo.de"
                             ></PlatformCard>
                             <PlatformCard
                                 image_path="/discord_transparent_svg.svg"
                                 platform_name="Discord"
                                 user_name="FlorianTh"
                                 text="Just join my discord-server and write a private or public message"
+                                link_string="https://discord.gg/quMb9N42Uj"
                             ></PlatformCard>
                         </div>
                     </div>

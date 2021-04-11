@@ -11,16 +11,16 @@ export const Footer: React.FC<Props> = (props: Props) => {
                 <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
                     <div className="text-white text-base tracking-more-than-wide text-center">KEEP IN TOUCH</div>
                     <div className="pt-16 flex justify-evenly">
-                        <a href="https://www.linkedin.com/in/florianthom/">
+                        <a href="https://www.linkedin.com/in/florianthom/" target="_blank" rel="noopener noreferrer">
                             <Image src="/linkedIn_transparent.png" alt="linkedIn-link" width="32" height="32" />
                         </a>
-                        <a href="https://github.com/FlorianTh2">
+                        <a href="https://github.com/FlorianTh2" target="_blank" rel="noopener noreferrer">
                             <Image src="/github_transparent.png" alt="github-link" width="32" height="32" />
                         </a>
-                        <a href="mailto:thom.florian@yahoo.de">
+                        <a href="mailto:thom.florian@yahoo.de" target="_blank" rel="noopener noreferrer">
                             <Image src="/mail_tranparent.png" alt="mail-adresse" width="32" height="32" />
                         </a>
-                        <a href="https://www.linkedin.com/in/florianthom/">
+                        <a href="https://discord.gg/quMb9N42Uj" target="_blank" rel="noopener noreferrer">
                             <Image src="/discord_transparent.png" alt="discordServer-link" width="32" height="32" />
                         </a>
                     </div>
