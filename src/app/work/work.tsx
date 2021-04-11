@@ -1,6 +1,8 @@
 import { NavBar } from "@/src/app/shared/navbar/navbar";
 import { Footer } from "@/src/app/shared/footer/footer";
 import React from "react";
+import { IndividualWork } from "@/src/app/shared/workIndividualOrGroup/individualWork";
+import { GroupWork } from "@/src/app/shared/workIndividualOrGroup/groupWork";
 
 interface Props {}
 
@@ -19,7 +21,10 @@ export const Work: React.FC<Props> = (props: Props) => {
                     </div>
                     <div className="pt-24">
                         <h3 className="text-2xl text-black">During freetime</h3>
-                        <div>
+                        <div className="pl-1">
+                            <IndividualWork color="black"></IndividualWork>
+                        </div>
+                        <div className="pt-4">
                             <ul className="list-disc text-base text-black list-inside">
                                 <li>
                                     Personal Website
@@ -60,7 +65,10 @@ export const Work: React.FC<Props> = (props: Props) => {
                         <h3 className="text-2xl text-black">
                             Results of course work at university - M.Sc. Computer Science
                         </h3>
-                        <div>
+                        <div className="pl-1">
+                            <GroupWork color="black"></GroupWork>
+                        </div>
+                        <div className="pt-4">
                             <ul className="list-disc text-base text-black list-inside">
                                 <li>
                                     “Conino” Maturity Index
@@ -103,7 +111,10 @@ export const Work: React.FC<Props> = (props: Props) => {
             <div className="main-color">
                 <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
                     <h3 className="text-2xl text-white">Big Data - Research Group & internship</h3>
-                    <div>
+                    <div className="pl-1">
+                        <GroupWork color="white"></GroupWork>
+                    </div>
+                    <div className="pt-4">
                         <ul className="list-disc text-base text-white list-inside">
                             <li>
                                 AI - libraries
@@ -129,7 +140,10 @@ export const Work: React.FC<Props> = (props: Props) => {
                         <h3 className="text-2xl text-white">
                             Results of course work at university - B.A. Computer Science
                         </h3>
-                        <div>
+                        <div className="pl-1">
+                            <GroupWork color="white"></GroupWork>
+                        </div>
+                        <div className="pt-4">
                             <ul className="list-disc text-base text-white list-inside">
                                 <li>
                                     Thesis: “Neuronale Netze - Prognosen zum Caching von Dokumenten”
@@ -185,6 +199,8 @@ export const Work: React.FC<Props> = (props: Props) => {
                             className="main-color hover:bg-yellow-600  transition text-white font-bold py-2 px-4 rounded w-1/4 text-center cursor-pointer active:bg-yellow-800"
                         >
                             CV - International
+                            <br />
+                            <div className="text-xs pt-2">(without personal data like image)</div>
                         </a>
                         <a
                             target="_blank"
@@ -192,6 +208,8 @@ export const Work: React.FC<Props> = (props: Props) => {
                             className="main-color hover:bg-yellow-600 transition text-white font-bold py-2 px-4 rounded w-1/4 text-center cursor-pointer active:bg-yellow-800"
                         >
                             CV - Germany
+                            <br />
+                            <div className="text-xs pt-2">(including personal data like image)</div>
                         </a>
                     </div>
                 </div>

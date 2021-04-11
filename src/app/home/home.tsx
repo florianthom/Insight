@@ -6,6 +6,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { Footer } from "@/src/app/shared/footer/footer";
 import { SignificantProjectsTable } from "@/src/app/home/significantProjectsTable/significantProjectsTable";
+import { IndividualWork } from "@/src/app/shared/workIndividualOrGroup/individualWork";
+import { GroupWork } from "@/src/app/shared/workIndividualOrGroup/groupWork";
 
 {
     /*        <Counter></Counter>*/
@@ -28,16 +30,36 @@ export const Home: React.FC<Props> = (props: Props) => {
                     </h2>
                     {/*social home group*/}
                     <div className="pt-5">
-                        <a href="https://www.linkedin.com/in/florianthom/" className="pr-4">
+                        <a
+                            href="https://www.linkedin.com/in/florianthom/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="pr-4"
+                        >
                             <Image src="/linkedIn_transparent.png" alt="me" width="32" height="32" />
                         </a>
-                        <a href="https://github.com/FlorianTh2" className="pr-4">
+                        <a
+                            href="https://github.com/FlorianTh2"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="pr-4"
+                        >
                             <Image src="/github_transparent.png" alt="me" width="32" height="32" />
                         </a>
-                        <a href="mailto:thom.florian@yahoo.de" className="pr-4">
+                        <a
+                            href="mailto:thom.florian@yahoo.de"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="pr-4"
+                        >
                             <Image src="/mail_tranparent.png" alt="me" width="32" height="32" />
                         </a>
-                        <a href="https://www.linkedin.com/in/florianthom/" className="pr-4">
+                        <a
+                            href="https://discord.gg/quMb9N42Uj"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="pr-4"
+                        >
                             <Image src="/discord_transparent.png" alt="me" width="32" height="32" />
                         </a>
                     </div>
@@ -54,7 +76,10 @@ export const Home: React.FC<Props> = (props: Props) => {
                     </div>
                     <div className="pt-24">
                         <h3 className="text-2xl text-white">During freetime</h3>
-                        <div>
+                        <div className="pl-1">
+                            <IndividualWork color="white"></IndividualWork>
+                        </div>
+                        <div className="pt-4">
                             <ul className="list-disc text-base text-white list-inside">
                                 <li>
                                     Personal Website
@@ -87,7 +112,10 @@ export const Home: React.FC<Props> = (props: Props) => {
                         <h3 className="text-2xl text-white">
                             Results of course work at university - M.Sc. Computer Science
                         </h3>
-                        <div>
+                        <div className="pl-1">
+                            <GroupWork color="white"></GroupWork>
+                        </div>
+                        <div className="pt-4">
                             <ul className="list-disc text-base text-white list-inside">
                                 <li>
                                     “Conino” Maturity Index
