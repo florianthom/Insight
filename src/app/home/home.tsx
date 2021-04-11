@@ -20,7 +20,7 @@ export const Home: React.FC<Props> = (props: Props) => {
         <div>
             <div className="custom-background-image">
                 <NavBar></NavBar>
-                <div className="absolute top-1/2 left-1/2 custom-transform-mid pt-32">
+                <div className="absolute top-1/2 left-1/2 custom-transform-mid">
                     <h1 className="text-white text-5xl tracking-more-than-wide">FLORIAN THOM</h1>
                     <h2 className="text-white text-3xl pt-5">
                         Computer science enthusiast - Interested in research & development. Open to new technologies in
