@@ -1,6 +1,7 @@
 import { NavBar } from "@/src/app/shared/navbar/navbar";
 import { Footer } from "@/src/app/shared/footer/footer";
 import React from "react";
+import { PlatformCard } from "@/src/app/contact/platformCard/platformCard";
 
 interface Props {}
 
@@ -16,7 +17,36 @@ export const Contact: React.FC<Props> = (props: Props) => {
                         you can do today and since platform like Xing or LinkedIn exist it is not even hard. So just
                         send me a message on one of the following platform.
                     </div>
-                    <div className="pt-24">tmp</div>
+                    <div className="pt-24">
+                        <div className="flex justify-around">
+                            <PlatformCard
+                                image_path="/linkedIn_transparent_svg.svg"
+                                platform_name="LinkedIn"
+                                user_name="Florian Thom"
+                                text="Just “Connect” with me."
+                            ></PlatformCard>
+                            <PlatformCard
+                                image_path="/xing_transparent_svg.svg"
+                                platform_name="Xing"
+                                user_name="Florian Thom"
+                                text="Just add me to your network."
+                            ></PlatformCard>
+                        </div>
+                        <div className="pt-16 flex justify-around">
+                            <PlatformCard
+                                image_path="/mail_tranparent_svg.svg"
+                                platform_name="Mail"
+                                user_name="thom.florian@yahoo.de"
+                                text="Just write me an email."
+                            ></PlatformCard>
+                            <PlatformCard
+                                image_path="/discord_transparent_svg.svg"
+                                platform_name="Discord"
+                                user_name="FlorianTh"
+                                text="Just join my discord-server and write a private or public message"
+                            ></PlatformCard>
+                        </div>
+                    </div>
                 </div>
             </div>
             <Footer></Footer>
