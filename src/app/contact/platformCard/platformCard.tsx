@@ -8,6 +8,7 @@ interface Props {
     platform_name: string;
     user_name: string;
     text: string;
+    link_string: string;
 }
 
 export const PlatformCard: React.FC<Props> = (props: Props) => {
