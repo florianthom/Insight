@@ -25,6 +25,28 @@ Frontend-Project to create my personal website. The backend-code can be found [h
 
 `$ yarn lint`
 
+## docker
+
+`$ docker build -t personal-website-frontend .`
+
+`$ docker run --rm -p 3000:3000 --name personal-website-frontend personal-website-frontend`
+
+`$ docker ps -a`
+
+`$ docker stop personal-website-frontend`
+
+`$ docker rm personal-website-frontend`
+
+`$ docker login --username=flooth --email=thom.florian@yahoo.de`
+
+`$ docker images`
+
+`$ docker hub create repository via web-ui`
+
+`$ docker tag personal-website-frontend:latest flooth/personal-website-frontend:latest`
+
+`$ docker push flooth/personal-website-frontend:latest`
+
 ## Build with
 
 -   yarn v1
