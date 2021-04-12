@@ -45,8 +45,12 @@ export const Gear: React.FC<Props> = (props: Props) => {
                                     </li>
                                     <li>Laptop (Lenovo 520s)</li>
                                     <li>Server (Zotac ZBOX)</li>
-                                    <li>Headphone & Microphone</li>
-                                    <li>Beyerdynamic Custom One Pro Plus</li>
+                                    <li>
+                                        Headphone & Microphone
+                                        <ul className="list-disc list-inside pl-4">
+                                            <li>Beyerdynamic Custom One Pro Plus</li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -68,7 +72,6 @@ export const Gear: React.FC<Props> = (props: Props) => {
                                         </ul>
                                     </li>
                                     <li>Canon eos 2000d</li>
-                                    <li></li>
                                 </ul>
                             </div>
                         </div>
