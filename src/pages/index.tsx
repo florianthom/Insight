@@ -7,7 +7,7 @@ import { DEFAULT_QUERY, fetchTodos, FETCHTODOS_KEY } from "@/src/app/home/todosL
 import { FetchTodosQueryParams } from "@/src/app/home/todosList/models/fetchTodosQueryParams";
 import Head from "next/head";
 
-export async function getStaticProps() {
+export async function getStaticProps(): Promise<any> {
     const queryClient = new QueryClient();
     await queryClient.prefetchQuery({
         queryKey: [FETCHTODOS_KEY, { default_query: DEFAULT_QUERY, page: null } as FetchTodosQueryParams],

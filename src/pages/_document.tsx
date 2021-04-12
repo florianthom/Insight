@@ -1,8 +1,11 @@
 import Document, { Html, Head, Main, NextScript, DocumentContext } from "next/document";
 import React from "react";
 
+// call order: _document.tsx -> app.tsx -> app.tsx -> layout -> children
+//  _document.tsx gets only rendered server-side
+
 export default class CustomDocument extends Document {
-    static async getInitialProps(ctx: DocumentContext) {
+    static async getInitialProps(ctx: DocumentContext): Promise<any> {
         const originalRenderPage = ctx.renderPage;
         ctx.renderPage = () =>
             originalRenderPage({

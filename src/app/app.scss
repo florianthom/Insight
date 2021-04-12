@@ -10,3 +10,43 @@
         @apply text-xl;
     }
 }
+
+.main-color{
+    background-color: rgba(27, 38, 44, 1);
+}
+
+.footer-color{
+    background-color: rgba(49,59,65,1);
+}
+
+.custom-background-image{
+    background-image: url("../assets/images/IMG_0410-min.JPG");
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.custom-transform-mid{
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.tracking-more-than-wide{
+    letter-spacing: 0.5em;
+}
+
+ul > li {
+    margin-left: 1.0em;
+}
+
+.bottom-box-shadow{
+    box-shadow: 0px 2px 15px 0 rgb(0 0 0 / 15%)
+}
+
+.custom-platformCardGridSize{
+    grid-template-rows: auto 1fr;
+}
+
+.min-w-flex-100{
+    min-width: 100px;
+}

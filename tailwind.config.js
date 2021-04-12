@@ -1,13 +1,25 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
+const custom_colors = {
+    ...defaultTheme.colors,
+    ...{
+        "main-color": {
+            DEFAULT: "#1B262C",
+        },
+    },
+};
+
 module.exports = {
     purge: {
         enabled: process.env.ENVIRONMENT === "production",
         content: ["./src/**/*.{tsx,js}"],
     },
     darkMode: false, // or 'media' or 'class'
-    theme: {},
+    theme: {
+        colors: custom_colors,
+    },
     variants: {
+        backgroundColor: ["responsive", "hover", "focus", "active"],
         extend: {},
     },
     plugins: [],
