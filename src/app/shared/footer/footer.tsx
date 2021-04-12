@@ -28,33 +28,35 @@ export const Footer: React.FC<Props> = (props: Props) => {
             </div>
             <div className="py-8 main-color text-white">
                 <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-                    <div className="flex justify-evenly">
+                    <div className="flex justify-evenly flex-wrap">
                         <Link href="/">
-                            <a className="whitespace-nowrap hover:underline">Home</a>
+                            <a className="min-w-flex-100 text-center whitespace-nowrap hover:underline">Home</a>
                         </Link>
                         <div className="text-gray-600">|</div>
                         <Link href="/work">
-                            <a className="whitespace-nowrap hover:underline">Work & CV</a>
+                            <a className="min-w-flex-100 text-center whitespace-nowrap hover:underline">Work & CV</a>
                         </Link>
                         <div className="text-gray-600">|</div>
                         <Link href="/reports">
-                            <a className="whitespace-nowrap hover:underline">Reports & Talks</a>
+                            <a className="min-w-flex-100 text-center whitespace-nowrap hover:underline">
+                                Reports & Talks
+                            </a>
                         </Link>
                         <div className="text-gray-600">|</div>
                         <Link href="/projects">
-                            <a className="hover:underline">Projects</a>
+                            <a className="min-w-flex-100 text-center hover:underline">Projects</a>
                         </Link>
                         <div className="text-gray-600">|</div>
                         <Link href="/gear">
-                            <a className="hover:underline">Gear</a>
+                            <a className="min-w-flex-100 text-center hover:underline">Gear</a>
                         </Link>
                         <div className="text-gray-600">|</div>
                         <Link href="/contact">
-                            <a className="hover:underline">Contact</a>
+                            <a className="min-w-flex-100 text-center hover:underline">Contact</a>
                         </Link>
                         <div className="text-gray-600">|</div>
                         <Link href="/impressum">
-                            <a className="hover:underline">Impressum</a>
+                            <a className="min-w-flex-100 text-center hover:underline">Impressum</a>
                         </Link>
                     </div>
                 </div>

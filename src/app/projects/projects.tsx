@@ -31,8 +31,8 @@ export const Projects: React.FC<Props> = (props: Props) => {
                         This kind of project was meant to create a plattform for all kinds of projects. So its possible
                         to deploy a projects and show the effort online.
                     </div>
-                    <div className="pt-24 flex justify-between">
-                        <div>
+                    <div className="pt-24 flex justify-between flex-wrap">
+                        <div className="my-8">
                             <h3 className="text-2xl text-white">Frontend</h3>
                             <div>
                                 <ul className="list-disc text-base text-white list-inside">
@@ -45,7 +45,7 @@ export const Projects: React.FC<Props> = (props: Props) => {
                                 </ul>
                             </div>
                         </div>
-                        <div>
+                        <div className="my-8">
                             <h3 className="text-2xl text-white">Backend</h3>
                             <div>
                                 <ul className="list-disc text-base text-white list-inside">
@@ -57,7 +57,7 @@ export const Projects: React.FC<Props> = (props: Props) => {
                                 </ul>
                             </div>
                         </div>
-                        <div>
+                        <div className="my-8">
                             <h3 className="text-2xl text-white">Secruity</h3>
                             <div>
                                 <ul className="list-disc text-base text-white list-inside">
@@ -66,7 +66,7 @@ export const Projects: React.FC<Props> = (props: Props) => {
                                 </ul>
                             </div>
                         </div>
-                        <div>
+                        <div className="my-8">
                             <h3 className="text-2xl text-white">Database</h3>
                             <div>
                                 <ul className="list-disc text-base text-white list-inside">
@@ -74,7 +74,7 @@ export const Projects: React.FC<Props> = (props: Props) => {
                                 </ul>
                             </div>
                         </div>
-                        <div>
+                        <div className="my-8">
                             <h3 className="text-2xl text-white">DevOps</h3>
                             <div>
                                 <ul className="list-disc text-base text-white list-inside">
