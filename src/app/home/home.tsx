@@ -161,7 +161,16 @@ export const Home: React.FC<Props> = (props: Props) => {
                     <div className="text-base text-black pt-24">
                         I have worked on a couple of projects till today. Here I like to present a list with selected
                         projects from github I like most. This are projects I spend a lot of time on while having a lot
-                        of fun. Feel free to check them out on github.
+                        of fun. Feel free to check them out on{" "}
+                        <a
+                            className="hover:underline"
+                            href="https://github.com/FlorianTh2"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            github
+                        </a>
+                        .
                     </div>
                     <div className="pt-24">
                         <SignificantProjectsTable></SignificantProjectsTable>
@@ -181,8 +190,8 @@ export const Home: React.FC<Props> = (props: Props) => {
                         disadvantages compared to the already known alternatives.
                     </div>
                     <div className="text-base text-white pt-24">
-                        <div className="flex justify-between">
-                            <div>
+                        <div className="flex justify-between flex-col md:flex-row">
+                            <div className="my-8">
                                 <h3 className="text-2xl text-white">Frontend</h3>
                                 <ul className="list-disc text-base text-white list-inside">
                                     <li>Next.js</li>
@@ -198,7 +207,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                                     <li>Affinity</li>
                                 </ul>
                             </div>
-                            <div>
+                            <div className="my-8">
                                 <h3 className="text-2xl text-white">Backend</h3>
                                 <ul className="list-disc text-base text-white list-inside">
                                     <li>Node.js</li>
@@ -213,7 +222,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                                     <li>Hangfire</li>
                                 </ul>
                             </div>
-                            <div>
+                            <div className="my-8">
                                 <h3 className="text-2xl text-white">Mobile & Game</h3>
                                 <ul className="list-disc text-base text-white list-inside">
                                     <li>Flutter</li>
@@ -224,8 +233,8 @@ export const Home: React.FC<Props> = (props: Props) => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="flex justify-between pt-16">
-                            <div>
+                        <div className="flex justify-between pt-16 flex-col md:flex-row">
+                            <div className="my-8">
                                 <h3 className="text-2xl text-white">IOT</h3>
                                 <ul className="list-disc text-base text-white list-inside">
                                     <li>TI MSP430G2553</li>
@@ -236,7 +245,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                                     <li>Ultra-Low Power Advisor</li>
                                 </ul>
                             </div>
-                            <div>
+                            <div className="my-8">
                                 <h3 className="text-2xl text-white">Cloud & DevOps</h3>
                                 <ul className="list-disc text-base text-white list-inside">
                                     <li>Docker (Compose)</li>
@@ -255,7 +264,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                                     <li>Prometheus</li>
                                 </ul>
                             </div>
-                            <div>
+                            <div className="my-8">
                                 <h3 className="text-2xl text-white">Big Data & Data Science</h3>
                                 <ul className="list-disc text-base text-white list-inside">
                                     <li>Terminal</li>
@@ -270,7 +279,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                                     <li>Gnuplot</li>
                                 </ul>
                             </div>
-                            <div>
+                            <div className="my-8">
                                 <h3 className="text-2xl text-white">Artificial Intelligence</h3>
                                 <ul className="list-disc text-base text-white list-inside">
                                     <li>Algebra</li>
@@ -308,8 +317,8 @@ export const Home: React.FC<Props> = (props: Props) => {
                         on.
                     </div>
                     <div className="text-base text-black pt-24">
-                        <div className="flex justify-evenly">
-                            <div>
+                        <div className="flex justify-evenly flex-col md:flex-row">
+                            <div className="my-8">
                                 <h3 className="text-2xl text-black">Software Architecture</h3>
                                 <ul className="list-disc text-base text-black list-inside">
                                     <li>Clean Architecture</li>
@@ -319,7 +328,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                                     <li>SignalR / Socker.io</li>
                                 </ul>
                             </div>
-                            <div>
+                            <div className="my-8">
                                 <h3 className="text-2xl text-black">Distributed Systems Development</h3>
                                 <ul className="list-disc text-base text-black list-inside">
                                     <li>Microservices</li>
@@ -329,8 +338,8 @@ export const Home: React.FC<Props> = (props: Props) => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="flex justify-evenly pt-16">
-                            <div>
+                        <div className="flex justify-evenly pt-16 flex-col md:flex-row">
+                            <div className="my-8">
                                 <h3 className="text-2xl text-black">Cloud & DevOps</h3>
                                 <ul className="list-disc text-base text-black list-inside">
                                     <li>Istio</li>
@@ -339,7 +348,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                                     <li>Scalability investigations</li>
                                 </ul>
                             </div>
-                            <div>
+                            <div className="my-8">
                                 <h3 className="text-2xl text-black">Machine Learning</h3>
                                 <ul className="list-disc text-base text-black list-inside">
                                     <li>

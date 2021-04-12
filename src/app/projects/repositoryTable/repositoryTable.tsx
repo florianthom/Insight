@@ -57,6 +57,21 @@ export const RepositoryTable: React.FC<Props> = (props: Props) => {
                         <td className="px-2 pt-4 pb-2 whitespace-nowrap">C#</td>
                         <td className="px-2 pt-4 pb-2 whitespace-nowrap">2017-01-25</td>
                     </tr>
+                    <tr className="divide-x divide-gray-100">
+                        <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
+                            <a
+                                href="#"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="transition cursor-pointer hover:underline"
+                            >
+                                WIP
+                            </a>
+                        </td>
+                        <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">WIP</td>
+                        <td className="px-2 pt-4 pb-2 whitespace-nowrap">WIP</td>
+                        <td className="px-2 pt-4 pb-2 whitespace-nowrap">WIP</td>
+                    </tr>
                 </tbody>
             </table>
         </div>

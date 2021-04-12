@@ -18,12 +18,9 @@ export const SignificantProjectsTable: React.FC<Props> = (props: Props) => {
                 </thead>
                 <tbody className="divide-y divide-gray-200">
                     <tr>
-                        <td className="py-4 align-top">Testname</td>
-                        <td className="py-4">
-                            A small descrioption of the functionallity you can expect. This text is a bit longer asdfa
-                            asdfas df asdfasd.
-                        </td>
-                        <td className="py-4 align-top">Dotnet</td>
+                        <td className="py-4 align-top">WIP</td>
+                        <td className="py-4">WIP</td>
+                        <td className="py-4 align-top">WIP</td>
                     </tr>
                 </tbody>
             </table>

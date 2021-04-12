@@ -19,10 +19,10 @@ export const PersonalWebsiteServicesTable: React.FC<Props> = (props: Props) => {
                 </thead>
                 <tbody className="divide-y divide-gray-200">
                     <tr>
-                        <td>Testname</td>
-                        <td>florianthom.io/test123</td>
-                        <td>Dotnet</td>
-                        <td>A small descrioption of the functionallity you can expect. This text is a bit longer</td>
+                        <td>WIP</td>
+                        <td>WIP - florianthom.io/test123</td>
+                        <td>WIP</td>
+                        <td>WIP</td>
                     </tr>
                 </tbody>
             </table>
