@@ -25,7 +25,7 @@ Frontend-Project to create my personal website. The backend-code can be found [h
 
 `$ yarn lint`
 
-## docker
+### docker
 
 `$ docker build -t personal-website-frontend .`
 
@@ -46,6 +46,34 @@ Frontend-Project to create my personal website. The backend-code can be found [h
 `$ docker tag personal-website-frontend:latest flooth/personal-website-frontend:latest`
 
 `$ docker push flooth/personal-website-frontend:latest`
+
+### kubernetes
+
+`$ kubectl get nodes`
+
+`$ kubectl apply -f ...`
+
+`$ kubectl delete -f ...`
+
+`$ kubectl get deployments`
+
+`$ kubectl get services`
+
+
+### minikube
+
+`$ sudo chown -R $USER $HOME/.minikube; chmod -R u+wrx $HOME/.minikube`
+
+`$ minikube start --driver=docker`
+
+`$ minikube dashboard`
+
+`$ minikube delete`
+
+`$ minikube profile list`
+
+`$ minikube service list`
+
 
 ## Build with
 
