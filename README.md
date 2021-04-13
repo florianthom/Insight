@@ -74,6 +74,18 @@ Frontend-Project to create my personal website. The backend-code can be found [h
 
 `$ minikube service list`
 
+`$ minikube addons enable ingress`
+
+```
+$ # get external minikube ip
+$ minikube ip
+```
+
+```
+$ # for testing
+$ # here enter your random-domain name like # 192.168.49.2 florianthom.io
+$ sudo vim /etc/hosts
+```
 
 ## Build with
 

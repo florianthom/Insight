@@ -30,7 +30,7 @@ metadata:
   labels:
     run: personal-website-frontend
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   ports:
   - port: 3000
     protocol: TCP
