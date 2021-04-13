@@ -15,7 +15,7 @@ spec:
         app: personal-website-frontend
     spec:
       containers:
-        - name: httpd-simple-page
+        - name: personal-website-frontend
           imagePullPolicy: Always  
           image: flooth/personal-website-frontend:latest
           ports:
