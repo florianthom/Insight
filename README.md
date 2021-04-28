@@ -37,7 +37,7 @@ Frontend-Project to create my personal website. The backend-code can be found [h
 
 `$ docker rm personal-website-frontend`
 
-`$ docker login --username=flooth --email=thom.florian@yahoo.de`
+`$ docker login --username=flooth
 
 `$ docker images`
 
