@@ -69,10 +69,10 @@ export const Home: React.FC<Props> = (props: Props) => {
                 <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
                     <h2 className="text-white text-3xl tracking-more-than-wide">RECENT WORK</h2>
                     <div className="text-base text-white pt-24">
-                        Over the course of my career I have encountered many technologies and gained experience in
-                        numerous areas. I love to learn new technologies and to examine them for advantages and
-                        disadvantages compared to the already known alternatives. Since some projects could be private,
-                        arent even published on github or mentioned at my CV, here is a small snipped of my recent work.
+                        Over the years I have encountered many technologies and gained experience in numerous areas. I
+                        love to learn new technologies and to examine them for advantages and disadvantages compared to
+                        the already known alternatives. Since some projects could be private, arent even published on
+                        github or mentioned at my CV, here is a small snipped of my recent work.
                     </div>
                     <div className="pt-24">
                         <h3 className="text-2xl text-white">During freetime</h3>
@@ -90,13 +90,13 @@ export const Home: React.FC<Props> = (props: Props) => {
                                 <li>
                                     AWS infrastructure
                                     <ul className="list-inside pl-4">
-                                        <li>Created cloud-plattform for all kinds of projects</li>
+                                        <li>Created cloud-platform for all kinds of projects</li>
                                     </ul>
                                 </li>
                                 <li>
                                     Azure Infrastructure
                                     <ul className="list-inside pl-4">
-                                        <li>Create cloud-plattform in comparison to AWS</li>
+                                        <li>Create cloud-platform in comparison to AWS</li>
                                     </ul>
                                 </li>
                                 <li>
@@ -136,7 +136,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                                     </ul>
                                 </li>
                                 <li>
-                                    IT Secruity - Handling of Numbers {">"} 2^64
+                                    IT Security - Handling of Numbers {">"} 2^64
                                     <ul className="list-inside pl-4">
                                         <li>Implemented own BigInteger-Representation through bit-shift-operations</li>
                                     </ul>
@@ -146,7 +146,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                                     <ul className="list-inside pl-4">
                                         <li>
                                             The calculation of the gaussian convolution of an image and the conversation
-                                            of rgb to ycbcr
+                                            of rgb to YCbCr
                                         </li>
                                     </ul>
                                 </li>
@@ -185,9 +185,9 @@ export const Home: React.FC<Props> = (props: Props) => {
                 <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
                     <h2 className="text-white text-3xl tracking-more-than-wide">MY SKILLS</h2>
                     <div className="text-base text-white pt-24">
-                        Over the course of my career I have encountered many technologies and gained experience in
-                        numerous areas. I love to learn new technologies and to examine them for advantages and
-                        disadvantages compared to the already known alternatives.
+                        Over the years I encountered many technologies and gained experience in numerous areas. I love
+                        to learn new technologies and to examine them for advantages and disadvantages compared to the
+                        already known alternatives.
                     </div>
                     <div className="text-base text-white pt-24">
                         <div className="flex justify-between flex-col md:flex-row">
@@ -322,10 +322,10 @@ export const Home: React.FC<Props> = (props: Props) => {
                                 <h3 className="text-2xl text-black">Software Architecture</h3>
                                 <ul className="list-disc text-base text-black list-inside">
                                     <li>Clean Architecture</li>
-                                    <li>mediatr</li>
-                                    <li>cqrs</li>
-                                    <li>GraphQL in .net (hotchocolate)</li>
-                                    <li>SignalR / Socker.io</li>
+                                    <li>mediatR</li>
+                                    <li>CQRS</li>
+                                    <li>GraphQL in .Net (hotchocolate)</li>
+                                    <li>SignalR / Socket.io</li>
                                 </ul>
                             </div>
                             <div className="my-8">
@@ -353,7 +353,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                                 <ul className="list-disc text-base text-black list-inside">
                                     <li>
                                         Unity ml-agents: integrate <br />
-                                        other reinforcement approach
+                                        other reinforcement approaches
                                     </li>
                                 </ul>
                             </div>
