@@ -1,9 +1,8 @@
-import "@/src/app/app.css";
+import "@/src/app/global.css";
 import type { AppProps } from "next/app";
 import { NextPage } from "next";
 import React from "react";
-import { App } from "@/src/app/app";
-import "@/src/app/app.css";
+import "@/src/app/global.css";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
 import axios from "axios";
@@ -11,6 +10,8 @@ import { Hydrate } from "react-query/hydration";
 import { LayoutWrapper } from "@/src/app/shared/layoutWrapper/layoutWrapper";
 import { Head } from "next/document";
 import { Meta } from "@/src/app/shared/meta/meta";
+import { Provider } from "react-redux";
+import { store } from "@/src/app/store/store";
 
 // call order: _document.tsx -> app.tsx -> app.tsx -> layout -> children
 //  _document.tsx gets only rendered server-side
@@ -49,10 +50,10 @@ const MyApp: NextPage<AppProps> = (props: AppProps) => {
         <div>
             <QueryClientProvider client={queryClient}>
                 <Hydrate state={props.pageProps.dehydratedState}>
-                    <App>
+                    <Provider store={store}>
                         <Meta />
                         <props.Component {...props.pageProps} />
-                    </App>
+                    </Provider>
                 </Hydrate>
                 <ReactQueryDevtools initialIsOpen={false} />
             </QueryClientProvider>
