@@ -2,6 +2,7 @@ import { NavBar } from "@/src/app/shared/navbar/navbar";
 import { Footer } from "@/src/app/shared/footer/footer";
 import React from "react";
 import { PlatformCard } from "@/src/app/contact/platformCard/platformCard";
+import * as constants from "@/src/app/shared/constants/constants";
 
 interface Props {}
 
@@ -30,13 +31,13 @@ export const Impressum: React.FC<Props> = (props: Props) => {
                         )
                     </div>
                     <div className="pt-24">
-                        <div className="text-2xl">Meine Adresse</div>
+                        <div className="text-2xl">Adresse</div>
                         <div className="pt-2">
                             <div>Florian Thom </div>
                             <div>Walter-Friedrich-Str.53 </div>
                             <div>13125 Berlin</div>
                             <div>Tel: +49 (0) 15203749443</div>
-                            <div>thom.florian@yahoo.de</div>
+                            <div>{constants.email}</div>
                         </div>
                         <div className="pt-24 text-2xl">Disclaimer - rechtliche Hinweise</div>
                         <div className="pt-2">

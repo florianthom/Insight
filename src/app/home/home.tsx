@@ -8,6 +8,7 @@ import { Footer } from "@/src/app/shared/footer/footer";
 import { SignificantProjectsTable } from "@/src/app/home/significantProjectsTable/significantProjectsTable";
 import { IndividualWork } from "@/src/app/shared/workIndividualOrGroup/individualWork";
 import { GroupWork } from "@/src/app/shared/workIndividualOrGroup/groupWork";
+import * as constants from "../shared/constants/constants";
 
 {
     /*        <Counter></Counter>*/
@@ -47,7 +48,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                             <Image src="/github_transparent.png" alt="me" width="32" height="32" />
                         </a>
                         <a
-                            href="mailto:thom.florian@yahoo.de"
+                            href={"mailto:" + constants.email}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="pr-4"

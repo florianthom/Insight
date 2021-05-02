@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import * as constants from "@/src/app/shared/constants/constants";
 
 export interface Props {}
 
@@ -17,7 +18,7 @@ export const Footer: React.FC<Props> = (props: Props) => {
                         <a href="https://github.com/FlorianTh2" target="_blank" rel="noopener noreferrer">
                             <Image src="/github_transparent.png" alt="github-link" width="32" height="32" />
                         </a>
-                        <a href="mailto:thom.florian@yahoo.de" target="_blank" rel="noopener noreferrer">
+                        <a href={"mailto:" + constants.email} target="_blank" rel="noopener noreferrer">
                             <Image src="/mail_tranparent.png" alt="mail-adresse" width="32" height="32" />
                         </a>
                         <a href="https://discord.gg/quMb9N42Uj" target="_blank" rel="noopener noreferrer">
