@@ -2,6 +2,7 @@ import { NavBar } from "@/src/app/shared/navbar/navbar";
 import { Footer } from "@/src/app/shared/footer/footer";
 import React from "react";
 import { PlatformCard } from "@/src/app/contact/platformCard/platformCard";
+import { discord_link, email_string, linkedin_link, xing_link } from "@/src/app/shared/constants/constants";
 
 interface Props {}
 
@@ -24,14 +25,14 @@ export const Contact: React.FC<Props> = (props: Props) => {
                                 platform_name="LinkedIn"
                                 user_name="Florian Thom"
                                 text="Just “Connect” with me."
-                                link_string="https://www.linkedin.com/in/florianthom/"
+                                link_string={linkedin_link}
                             ></PlatformCard>
                             <PlatformCard
                                 image_path="/xing_transparent_svg.svg"
                                 platform_name="Xing"
                                 user_name="Florian Thom"
                                 text="Just add me to your network."
-                                link_string="https://www.xing.com/profile/Florian_Thom9"
+                                link_string={xing_link}
                             ></PlatformCard>
                         </div>
                         <div className="pt-16 flex justify-around">
@@ -40,14 +41,14 @@ export const Contact: React.FC<Props> = (props: Props) => {
                                 platform_name="Mail"
                                 user_name="thom.florian@yahoo.de"
                                 text="Just write me an email."
-                                link_string="mailto:thom.florian@yahoo.de"
+                                link_string={"mailto:" + email_string}
                             ></PlatformCard>
                             <PlatformCard
                                 image_path="/discord_transparent_svg.svg"
                                 platform_name="Discord"
                                 user_name="FlorianTh"
                                 text="Just join my discord-server and write a private or public message"
-                                link_string="https://discord.gg/quMb9N42Uj"
+                                link_string={discord_link}
                             ></PlatformCard>
                         </div>
                     </div>

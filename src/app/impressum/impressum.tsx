@@ -37,7 +37,7 @@ export const Impressum: React.FC<Props> = (props: Props) => {
                             <div>Walter-Friedrich-Str.53 </div>
                             <div>13125 Berlin</div>
                             <div>Tel: +49 (0) 15203749443</div>
-                            <div>{constants.email}</div>
+                            <div>{constants.email_string}</div>
                         </div>
                         <div className="pt-24 text-2xl">Disclaimer - rechtliche Hinweise</div>
                         <div className="pt-2">

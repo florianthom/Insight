@@ -9,6 +9,7 @@ import { SignificantProjectsTable } from "@/src/app/home/significantProjectsTabl
 import { IndividualWork } from "@/src/app/shared/workIndividualOrGroup/individualWork";
 import { GroupWork } from "@/src/app/shared/workIndividualOrGroup/groupWork";
 import * as constants from "../shared/constants/constants";
+import { discord_link, email_string, github_link, linkedin_link } from "../shared/constants/constants";
 
 {
     /*        <Counter></Counter>*/
@@ -31,36 +32,16 @@ export const Home: React.FC<Props> = (props: Props) => {
                     </h2>
                     {/*social home group*/}
                     <div className="pt-5">
-                        <a
-                            href="https://www.linkedin.com/in/florianthom/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="pr-4"
-                        >
+                        <a href={linkedin_link} target="_blank" rel="noopener noreferrer" className="pr-4">
                             <Image src="/linkedIn_transparent.png" alt="me" width="32" height="32" />
                         </a>
-                        <a
-                            href="https://github.com/FlorianTh2"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="pr-4"
-                        >
+                        <a href={github_link} target="_blank" rel="noopener noreferrer" className="pr-4">
                             <Image src="/github_transparent.png" alt="me" width="32" height="32" />
                         </a>
-                        <a
-                            href={"mailto:" + constants.email}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="pr-4"
-                        >
+                        <a href={"mailto:" + email_string} target="_blank" rel="noopener noreferrer" className="pr-4">
                             <Image src="/mail_tranparent.png" alt="me" width="32" height="32" />
                         </a>
-                        <a
-                            href="https://discord.gg/UYq6fz8TVw"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="pr-4"
-                        >
+                        <a href={discord_link} target="_blank" rel="noopener noreferrer" className="pr-4">
                             <Image src="/discord_transparent.png" alt="me" width="32" height="32" />
                         </a>
                     </div>
