@@ -47,7 +47,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                     </div>
                 </div>
             </div>
-            <div className="main-color">
+            <div className="bg-main-color">
                 <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
                     <h2 className="text-white text-3xl tracking-more-than-wide">RECENT WORK</h2>
                     <div className="text-base text-white pt-24">
@@ -163,7 +163,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                     </div>
                 </div>
             </div>
-            <div className="main-color">
+            <div className="bg-main-color">
                 <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
                     <h2 className="text-white text-3xl tracking-more-than-wide">MY SKILLS</h2>
                     <div className="text-base text-white pt-24">

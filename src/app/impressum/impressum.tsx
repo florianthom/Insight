@@ -14,7 +14,7 @@ export const Impressum: React.FC<Props> = (props: Props) => {
                 <div className="pt-56 pb-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
                     <h2 className="text-black text-3xl tracking-more-than-wide">Impressum</h2>
                     <div className="text-base text-black pt-24">
-                        In Germany I have to put a section on my website called “Impressum” (in german lenguage). “An
+                        In Germany I have to put a section on my website called “Impressum” (in german language). “An
                         Impressum is essentially a statement of ownership and authorship. It was put into place to in an
                         effort to protect user data, combat illegal content and spam by making website owners identify
                         themselves, and as a result assume responsibility for the content on their platform. Often when
