@@ -189,7 +189,7 @@ export const Work: React.FC<Props> = (props: Props) => {
                     <h2 className="text-black text-3xl tracking-more-than-wide">Curriculum Vitae</h2>
                     <div className="text-base text-black pt-24">
                         In the past a created my cv. As each company needs a unique set of skills, I usually create a
-                        seperate CV for each job application. Nethertheless I created a general CV too, to provide some
+                        separate CV for each job application. Nevertheless I created a general CV too, to provide some
                         insights if someone I am not familiar with, wants to get some impressions.
                     </div>
                     <div className="flex justify-evenly pt-24">
@@ -197,7 +197,7 @@ export const Work: React.FC<Props> = (props: Props) => {
                             href="https://drive.google.com/file/d/1azVdEOLC8S23nZK23LnalKfYSTzJXHQK/view?usp=sharing"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="main-color hover:bg-yellow-600  transition text-white font-bold py-2 px-4 rounded w-1/4 text-center cursor-pointer active:bg-yellow-800"
+                            className="bg-main-color hover:bg-white hover:text-main-color hover:border hover:border-black hover:border- transition text-white font-bold py-2 px-4 rounded w-1/4 text-center cursor-pointer active:bg-yellow-800"
                         >
                             CV - International
                             <br />
