@@ -2,10 +2,6 @@ schnittstelle einbinden
 	react query einführen
 	schnittstelle ansprechen
 
-zu button ändern
-
-discord ändern damit man sich nicht registrieren muss
-
 adjust readme for
     devon crawford
     using yarn run generate-openapi
