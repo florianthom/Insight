@@ -1,9 +1,9 @@
-import "@/src/app/app.scss";
+import "@/src/app/app.css";
 import type { AppProps } from "next/app";
 import { NextPage } from "next";
 import React from "react";
 import { App } from "@/src/app/app";
-import "@/src/app/app.scss";
+import "@/src/app/app.css";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
 import axios from "axios";
