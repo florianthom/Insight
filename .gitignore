@@ -1,3 +1,4 @@
+kubernetes-secrets.yaml
 .env.local
 
 /.idea
