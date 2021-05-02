@@ -7,9 +7,7 @@ adjust readme for
     using yarn run generate-openapi
     und einigen quellen für openapi
         https://openapi-generator.tech/docs/usage/
-
         http://api.openapi-generator.tech/index.html
         https://openapi-generator.tech/docs/customization/
-
         https://www.mokkapps.de/blog/how-to-generate-angular-and-spring-code-from-open-api-specification/
         https://www.reddit.com/r/typescript/comments/dhg9yv/do_you_use_any_swagger_generators_to_communicate/

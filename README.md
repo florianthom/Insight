@@ -37,7 +37,7 @@ Frontend-Project to create my personal website. The backend-code can be found [h
 
 `$ docker rm personal-website-frontend`
 
-`$ docker login --username=flooth
+`$ docker login --username=flooth`
 
 `$ docker images`
 
@@ -87,6 +87,19 @@ $ # here enter your random-domain name like # 192.168.49.2 florianthom.io
 $ sudo vim /etc/hosts
 ```
 
+## OpenAPI
+
+- Generate openapi-api
+
+`yarn run generate-openapi`
+
+- Some sources for intro, how-to-use and specification
+  - [How to use cli](https://openapi-generator.tech/docs/usage/)
+  - [How to customize output of cli](https://openapi-generator.tech/docs/customization/)
+  - [Online Generator](http://api.openapi-generator.tech/index.html)
+  - [Interesting real-life usage](https://www.mokkapps.de/blog/how-to-generate-angular-and-spring-code-from-open-api-specification/)
+  - [Interesting reddit-thread](https://www.reddit.com/r/typescript/comments/dhg9yv/do_you_use_any_swagger_generators_to_communicate/)
+
 ## Build with
 
 -   yarn v1
@@ -100,6 +113,7 @@ $ sudo vim /etc/hosts
 -   ESLint
 -   Prettier
 -   Tailwindcss v2
+-   openapi-generator-cli
 
 ## Acknowledgements
 Ideas and Designs of this project are based on a [project](https://www.youtube.com/watch?v=SC7lLm6QAb8&t=328s&ab_channel=DevonCrawford) of [Devon Crawford](https://github.com/DevonCrawford).
