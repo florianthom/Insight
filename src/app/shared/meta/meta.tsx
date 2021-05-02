@@ -9,7 +9,7 @@ export const Meta: React.FC<Props> = (props: Props) => (
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index,follow" />
 
-        <link rel="icon" href="/homeFill.svg" />
+        <link rel="icon" href="/favicon.png" />
         <meta key="og:title" property="og:title" content="Florian Thom" />
         <meta key="og:description" property="og:description" content="example content" />
         <meta key="og:type" property="og:type" content="example content" />

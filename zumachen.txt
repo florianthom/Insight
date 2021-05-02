@@ -1,7 +1,3 @@
-readme ändern
-
-- logo ändern im tab
-
 schnittstelle einbinden
 	react query einführen
 	schnittstelle ansprechen
