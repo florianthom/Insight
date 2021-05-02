@@ -8,7 +8,8 @@
         "start": "next start",
         "lint": "eslint --fix .",
         "format": "prettier --write . --config .prettierrc.js",
-        "test": "jest"
+        "test": "jest",
+        "generate-openapi": "SET JAVA_OPTS=-Dio.swagger.parser.util.RemoteUrl.trustAll=true -Dio.swagger.v3.parser.util.RemoteUrl.trustAll=true && openapi-generator-cli generate --global-property models -i https://localhost:5000/swagger/v1/swagger.json --generator-name typescript-fetch -o src/openapi_models"
     },
     "dependencies": {
         "@fontsource/inter": "^4.0.1",
@@ -26,6 +27,7 @@
     "devDependencies": {
         "@babel/core": "^7.12.10",
         "@babel/preset-typescript": "^7.12.7",
+        "@openapitools/openapi-generator-cli": "^2.2.6",
         "@testing-library/jest-dom": "^5.11.8",
         "@testing-library/react": "^11.2.3",
         "@testing-library/react-hooks": "^4.0.0",
