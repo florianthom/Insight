@@ -9,7 +9,7 @@ export interface Props {}
 export const Footer: React.FC<Props> = (props: Props) => {
     return (
         <footer>
-            <div className="footer-color">
+            <div className="bg-main-color-light">
                 <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
                     <div className="text-white text-base tracking-more-than-wide text-center">KEEP IN TOUCH</div>
                     <div className="pt-16 flex justify-evenly">

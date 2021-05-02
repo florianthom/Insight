@@ -3,6 +3,7 @@ import { Footer } from "@/src/app/shared/footer/footer";
 import React from "react";
 import { IndividualWork } from "@/src/app/shared/workIndividualOrGroup/individualWork";
 import { GroupWork } from "@/src/app/shared/workIndividualOrGroup/groupWork";
+import { cv_germany_link, cv_international_link } from "@/src/app/shared/constants/constants";
 
 interface Props {}
 
@@ -108,7 +109,7 @@ export const Work: React.FC<Props> = (props: Props) => {
                     </div>
                 </div>
             </div>
-            <div className="main-color">
+            <div className="bg-main-color">
                 <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
                     <h3 className="text-2xl text-white">Big Data - Research Group & internship</h3>
                     <div className="pl-1">
@@ -194,20 +195,20 @@ export const Work: React.FC<Props> = (props: Props) => {
                     </div>
                     <div className="flex justify-evenly pt-24">
                         <a
-                            href="https://drive.google.com/file/d/1azVdEOLC8S23nZK23LnalKfYSTzJXHQK/view?usp=sharing"
+                            href={cv_international_link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="bg-main-color hover:bg-white hover:text-main-color hover:border hover:border-black hover:border- transition text-white font-bold py-2 px-4 rounded w-1/4 text-center cursor-pointer active:bg-yellow-800"
+                            className="transition bg-white text-main-color border border-main-color font-bold py-2 px-4 rounded w-1/4 text-center shadow-md hover:bg-main-color hover:text-white active:bg-main-color-light"
                         >
                             CV - International
                             <br />
                             <div className="text-xs pt-2">(without personal data like image)</div>
                         </a>
                         <a
-                            href="https://drive.google.com/file/d/1e2wbtK9Pnus8pSzYK_fEMoz6aSXdrY_G/view?usp=sharing"
+                            href={cv_germany_link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="main-color hover:bg-yellow-600 transition text-white font-bold py-2 px-4 rounded w-1/4 text-center cursor-pointer active:bg-yellow-800"
+                            className="transition bg-white text-main-color border border-main-color font-bold py-2 px-4 rounded w-1/4 text-center shadow-md hover:bg-main-color hover:text-white active:bg-main-color-light"
                         >
                             CV - Germany
                             <br />
