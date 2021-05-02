@@ -21,7 +21,7 @@ export const Footer: React.FC<Props> = (props: Props) => {
                         <a href={"mailto:" + constants.email} target="_blank" rel="noopener noreferrer">
                             <Image src="/mail_tranparent.png" alt="mail-adresse" width="32" height="32" />
                         </a>
-                        <a href="https://discord.gg/quMb9N42Uj" target="_blank" rel="noopener noreferrer">
+                        <a href="https://discord.gg/UYq6fz8TVw" target="_blank" rel="noopener noreferrer">
                             <Image src="/discord_transparent.png" alt="discordServer-link" width="32" height="32" />
                         </a>
                     </div>

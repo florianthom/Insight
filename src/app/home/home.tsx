@@ -56,7 +56,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                             <Image src="/mail_tranparent.png" alt="me" width="32" height="32" />
                         </a>
                         <a
-                            href="https://discord.gg/quMb9N42Uj"
+                            href="https://discord.gg/UYq6fz8TVw"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="pr-4"

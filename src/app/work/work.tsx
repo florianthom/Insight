@@ -194,6 +194,7 @@ export const Work: React.FC<Props> = (props: Props) => {
                     </div>
                     <div className="flex justify-evenly pt-24">
                         <a
+                            href="https://drive.google.com/file/d/1azVdEOLC8S23nZK23LnalKfYSTzJXHQK/view?usp=sharing"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="main-color hover:bg-yellow-600  transition text-white font-bold py-2 px-4 rounded w-1/4 text-center cursor-pointer active:bg-yellow-800"
@@ -203,6 +204,7 @@ export const Work: React.FC<Props> = (props: Props) => {
                             <div className="text-xs pt-2">(without personal data like image)</div>
                         </a>
                         <a
+                            href="https://drive.google.com/file/d/1e2wbtK9Pnus8pSzYK_fEMoz6aSXdrY_G/view?usp=sharing"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="main-color hover:bg-yellow-600 transition text-white font-bold py-2 px-4 rounded w-1/4 text-center cursor-pointer active:bg-yellow-800"

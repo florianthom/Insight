@@ -8,11 +8,7 @@ schnittstelle einbinden
 
 zu button ändern
 
-mein cv hochladen und link adden
-
 discord ändern damit man sich nicht registrieren muss
-
-base url als constante?
 
 adjust readme for using yarn run generate-openapi und einigen quellen für openapi
 https://openapi-generator.tech/docs/usage/
