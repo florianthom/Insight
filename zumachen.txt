@@ -6,10 +6,6 @@ schnittstelle einbinden
 	react query einführen
 	schnittstelle ansprechen
 
-meine adresse -> Adresse
-email dresse bei impressum ändern
-mail adresse bei homepage ändern (vll in constants auslagern)
-
 zu button ändern
 
 mein cv hochladen und link adden

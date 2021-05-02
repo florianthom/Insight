@@ -119,7 +119,7 @@ export const Work: React.FC<Props> = (props: Props) => {
                             <li>
                                 AI - libraries
                                 <ul className="list-inside pl-4">
-                                    <li>Evaluation and Comparion of Tensorflow & MXNet</li>
+                                    <li>Evaluation and Comparison of Tensorflow & MXNet</li>
                                 </ul>
                             </li>
                             <li>
