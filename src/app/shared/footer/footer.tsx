@@ -28,7 +28,7 @@ export const Footer: React.FC<Props> = (props: Props) => {
                     </div>
                 </div>
             </div>
-            <div className="py-8 main-color text-white">
+            <div className="py-8 bg-main-color text-white">
                 <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
                     <div className="flex justify-evenly flex-wrap">
                         <Link href="/">

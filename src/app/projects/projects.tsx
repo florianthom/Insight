@@ -23,7 +23,7 @@ export const Projects: React.FC<Props> = (props: Props) => {
                     </div>
                 </div>
             </div>
-            <div className="main-color">
+            <div className="bg-main-color">
                 <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
                     <h2 className="text-white text-3xl tracking-more-than-wide">WEBSITE TECHNOLOGY STACK</h2>
                     <div className="text-base text-white pt-24">
