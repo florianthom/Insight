@@ -102,7 +102,7 @@ $ sudo vim /etc/hosts
 -   Tailwindcss v2
 
 ## Acknowledgements
-
---
+Ideas and Designs of this project is based on a [project](https://www.youtube.com/watch?v=SC7lLm6QAb8&t=328s&ab_channel=DevonCrawford) of [Devon Crawford](https://github.com/DevonCrawford).
+Thanks for the motivation and your projects in general. Hopefully you will continue your work.
 
 [here]: https://github.com/FlorianTh2/homepageBackend
