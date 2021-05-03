@@ -1,11 +1,27 @@
-import { NavBar } from "@/src/app/shared/navbar/navbar";
-import { Footer } from "@/src/app/shared/footer/footer";
-import React from "react";
-import { RecordButton } from "@/src/app/reports/recordButton/recordButton";
+import React, { useState } from "react";
+import { useQuery } from "react-query";
+import { PagedResponseProject } from "@/src/openapi_models/models/PagedResponseProject";
+import { Project } from "@/src/openapi_models/models/Project";
+import { firstPage, pageSize } from "@/src/app/shared/constants/constants";
 
 interface Props {}
 
 export const RepositoryTable: React.FC<Props> = (props: Props) => {
+    const userId = "17a09c99-011e-4520-8c6e-7d0bb8848e28";
+    const [page, setPage] = useState(firstPage);
+
+    const { isLoading, error, data: projectsData } = useQuery<PagedResponseProject, Error>("projectsData", () =>
+        fetch("https://localhost:5000/api/v1" + "/projects?pagesize=" + pageSize + "&pagenumber=" + page).then((res) =>
+            res.json(),
+        ),
+    );
+
+    // function queryFunction(a, b, c) {
+    //     return () =>
+    //         fetch("https://localhost:5000/api/v1" + "/projects?userid=" + a + "&pagesize=" + b + "&pagenumber=" + c);
+    // }
+    // const { isLoading, error, data } = useQuery("projectsData", queryFunction(userId, "3", "1"));
+
     return (
         <div className="shadow border border-gray-300 overflow-hidden">
             <table className="table-fixed min-w-full divide-y w-full">
@@ -39,39 +55,25 @@ export const RepositoryTable: React.FC<Props> = (props: Props) => {
                     </tr>
                 </tfoot>
                 <tbody className="divide-y divide-gray-200">
-                    <tr className="divide-x divide-gray-100">
-                        <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
-                            <a
-                                href="#"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="transition cursor-pointer hover:underline"
-                            >
-                                Car-AI-Unity
-                            </a>
-                        </td>
-                        <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
-                            Project to create a car ai by leveraging reinforcement learning. In the initial phase there
-                            is a cab generated whos task is to find a parking slot.
-                        </td>
-                        <td className="px-2 pt-4 pb-2 whitespace-nowrap">C#</td>
-                        <td className="px-2 pt-4 pb-2 whitespace-nowrap">2017-01-25</td>
-                    </tr>
-                    <tr className="divide-x divide-gray-100">
-                        <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
-                            <a
-                                href="#"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="transition cursor-pointer hover:underline"
-                            >
-                                WIP
-                            </a>
-                        </td>
-                        <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">WIP</td>
-                        <td className="px-2 pt-4 pb-2 whitespace-nowrap">WIP</td>
-                        <td className="px-2 pt-4 pb-2 whitespace-nowrap">WIP</td>
-                    </tr>
+                    {projectsData?.data?.map((a: Project) => (
+                        <tr key={a.id} className="divide-x divide-gray-100">
+                            <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
+                                <a
+                                    href={a.htmLUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="transition cursor-pointer hover:underline"
+                                >
+                                    {a.name}
+                                </a>
+                            </td>
+                            <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
+                                {a.description}
+                            </td>
+                            <td className="px-2 pt-4 pb-2 whitespace-nowrap">{a.language}</td>
+                            <td className="px-2 pt-4 pb-2 whitespace-nowrap">{a.projectCreatedOn}</td>
+                        </tr>
+                    ))}
                 </tbody>
             </table>
         </div>
