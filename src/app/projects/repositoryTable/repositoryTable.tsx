@@ -8,9 +8,7 @@ import { BasicSpinner } from "@/src/app/shared/basicSpinner/basicSpinner";
 interface Props {}
 
 export const RepositoryTable: React.FC<Props> = (props: Props) => {
-    const userId = "17a09c99-011e-4520-8c6e-7d0bb8848e28";
     const [page, setPage] = useState(firstPage);
-
     const { isLoading, error, data: projectsData } = useQuery<PagedResponseProject, Error>("projectsData", () =>
         fetch("https://localhost:5000/api/v1" + "/projects?pagesize=" + pageSize + "&pagenumber=" + page).then((res) =>
             res.json(),

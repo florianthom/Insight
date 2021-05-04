@@ -1,7 +1,6 @@
 import { NavBar } from "@/src/app/shared/navbar/navbar";
 import { Footer } from "@/src/app/shared/footer/footer";
 import React from "react";
-import { RecordButton } from "@/src/app/reports/recordButton/recordButton";
 import { RepositoryTable } from "@/src/app/projects/repositoryTable/repositoryTable";
 import { PersonalWebsiteServicesTable } from "@/src/app/projects/personalWebsiteServicesTable/personalWebsiteServicesTable";
 
