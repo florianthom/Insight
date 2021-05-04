@@ -1,4 +1,4 @@
-import { QueryClient, useQuery } from "react-query";
+import { useQuery } from "react-query";
 import { dehydrate } from "react-query/hydration";
 import { ITodo } from "@/src/app/home/shared/models/itodo";
 import { Todo } from "@/src/app/home/todo/todo";
