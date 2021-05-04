@@ -10,15 +10,15 @@ import { setTokens } from "@/src/app/store/slices/tokenStoreSlice";
 // header of the response
 // here: for now here are refresh token ignored (also because this backend does not automaticly generates a new key-pair combination on the fly)
 export const defaultQueryFn = async ({ queryKey }: { queryKey: string }) => {
-    const tokenStoreState = useSelector((state: RootState) => state.tokenStore);
-    const dispatch = useDispatch();
+    // const tokenStoreState = useSelector((state: RootState) => state.tokenStore);
+    // const dispatch = useDispatch();
 
-    const { accessToken, refreshToken } = tokenStoreState;
+    // const { accessToken, refreshToken } = tokenStoreState;
 
-    const response = await fetch(`${apiBaseUrl}${queryKey}`, {
+    const response = await fetch("https://localhost:5000/api/v1" + queryKey, {
         headers: {
-            Authorization: "Bearer " + accessToken,
-            "Content-Type": "application/json",
+            // Authorization: "Bearer " + accessToken,
+            // "Content-Type": "application/json",
         },
     });
 

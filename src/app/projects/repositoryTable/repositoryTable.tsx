@@ -15,6 +15,10 @@ export const RepositoryTable: React.FC<Props> = (props: Props) => {
         ),
     );
 
+    const { data } = useQuery<PagedResponseProject, Error>("/projects");
+    console.log("hi");
+    console.log(data);
+
     // function queryFunction(a, b, c) {
     //     return () =>
     //         fetch("https://localhost:5000/api/v1" + "/projects?userid=" + a + "&pagesize=" + b + "&pagenumber=" + c);
