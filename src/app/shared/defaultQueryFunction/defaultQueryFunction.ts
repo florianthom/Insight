@@ -4,7 +4,8 @@ import { apiBaseUrl } from "@/src/app/shared/constants/constants";
 import { decrementConterActionCreator } from "@/src/app/home/store/slices/counterSlice";
 import { setTokens } from "@/src/app/store/slices/tokenStoreSlice";
 
-// reference: https://github.com/benawad/dogehouse/blob/e2180fcec6eefaf783d986d903f813a776699d52/kibbeh/src/modules/auth/useTokenStore.ts
+// official reference: https://react-query.tanstack.com/guides/default-query-function
+// inofficial reference: https://github.com/benawad/dogehouse/blob/e2180fcec6eefaf783d986d903f813a776699d52/kibbeh/src/modules/auth/useTokenStore.ts
 // i guess his approach is to always send accesstoken + refreshtoken + the backend checks if accesstoken is valid and if not
 // the backend checks the refreshtoken + if valid -> generates a new accesstoken+refreshtoken combination and puts them into the
 // header of the response
