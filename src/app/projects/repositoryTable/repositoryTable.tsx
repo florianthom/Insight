@@ -24,7 +24,6 @@ export const RepositoryTable: React.FC<Props> = (props: Props) => {
     // const { isLoading, error, data } = useQuery("projectsData", queryFunction(userId, "3", "1"));
 
     // if (isLoading) {
-    return <BasicSpinner></BasicSpinner>;
     // }
     return (
         <div className="shadow border border-gray-300 overflow-hidden">
@@ -59,25 +58,35 @@ export const RepositoryTable: React.FC<Props> = (props: Props) => {
                     </tr>
                 </tfoot>
                 <tbody className="divide-y divide-gray-200">
-                    {projectsData?.data?.map((a: Project) => (
-                        <tr key={a.id} className="divide-x divide-gray-100">
-                            <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
-                                <a
-                                    href={a.htmLUrl}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="transition cursor-pointer hover:underline"
-                                >
-                                    {a.name}
-                                </a>
+                    {isLoading ? (
+                        <tr>
+                            <td colSpan={4}>
+                                <div className="flex justify-center px-4 py-4">
+                                    <BasicSpinner></BasicSpinner>
+                                </div>
                             </td>
-                            <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
-                                {a.description}
-                            </td>
-                            <td className="px-2 pt-4 pb-2 whitespace-nowrap">{a.language}</td>
-                            <td className="px-2 pt-4 pb-2 whitespace-nowrap">{a.projectCreatedOn}</td>
                         </tr>
-                    ))}
+                    ) : (
+                        projectsData?.data?.map((a: Project) => (
+                            <tr key={a.id} className="divide-x divide-gray-100">
+                                <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
+                                    <a
+                                        href={a.htmLUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="transition cursor-pointer hover:underline"
+                                    >
+                                        {a.name}
+                                    </a>
+                                </td>
+                                <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
+                                    {a.description}
+                                </td>
+                                <td className="px-2 pt-4 pb-2 whitespace-nowrap">{a.language}</td>
+                                <td className="px-2 pt-4 pb-2 whitespace-nowrap">{a.projectCreatedOn.split(" ")[0]}</td>
+                            </tr>
+                        ))
+                    )}
                 </tbody>
             </table>
         </div>
