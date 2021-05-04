@@ -13,7 +13,7 @@ const countersInitialState: TokenStoreState = {
     refreshToken: "",
 };
 
-export const counterSlice = createSlice({
+export const tokenStoreSlice = createSlice({
     name: "tokenStore",
     initialState: countersInitialState,
     reducers: {
@@ -31,4 +31,4 @@ export const counterSlice = createSlice({
     },
 });
 
-export const { setTokens } = counterSlice.actions;
+export const { setTokens } = tokenStoreSlice.actions;

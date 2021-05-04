@@ -1,4 +1,9 @@
+import { useSelector } from "react-redux";
+import { RootState } from "@/src/app/store/store";
+
 export const defaultQueryFn = async ({ queryKey }: { queryKey: string }) => {
+    const counterState = useSelector((state: RootState) => state.counter);
+
     const { accessToken, refreshToken } = useTokenStore.getState();
 
     const r = await fetch(`${apiBaseUrl}${queryKey}`, {
