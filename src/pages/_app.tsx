@@ -12,6 +12,7 @@ import { Head } from "next/document";
 import { Meta } from "@/src/app/shared/meta/meta";
 import { Provider } from "react-redux";
 import { store } from "@/src/app/store/store";
+import { queryClient } from "@/src/app/shared/queryClient/defaultQueryClient";
 
 // call order: _document.tsx -> app.tsx -> app.tsx -> layout -> children
 //  _document.tsx gets only rendered server-side
@@ -31,19 +32,6 @@ import { store } from "@/src/app/store/store";
 //                  is used in a custom _app.js, and the page being navigated to implements getServerSideProps,
 //                  then getInitialProps will run on the server.
 //                  - not recommended: used other two method for a more granular featch-method
-
-const defaultQueryFn = async ({ queryKey }) => {
-    const { data } = await axios.get(`https://jsonplaceholder.typicode.com${queryKey[0]}`);
-    return data;
-};
-
-const queryClient = new QueryClient({
-    defaultOptions: {
-        queries: {
-            queryFn: defaultQueryFn,
-        },
-    },
-});
 
 const MyApp: NextPage<AppProps> = (props: AppProps) => {
     return (
