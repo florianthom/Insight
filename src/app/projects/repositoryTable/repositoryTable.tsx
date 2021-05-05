@@ -4,7 +4,7 @@ import { PagedResponseProject } from "@/src/openapi_models/models/PagedResponseP
 import { Project } from "@/src/openapi_models/models/Project";
 import { firstPage, pageSize } from "@/src/app/shared/constants/constants";
 import { BasicSpinner } from "@/src/app/shared/basicSpinner/basicSpinner";
-import { defaultQueryFn } from "@/src/app/shared/defaultQueryFunction/defaultQueryFunction";
+import { defaultQueryFunction } from "@/src/app/shared/defaultQueryFunction/defaultQueryFunction";
 
 interface Props {}
 
@@ -16,7 +16,7 @@ export const RepositoryTable: React.FC<Props> = (props: Props) => {
         ),
     );
 
-    const { data } = useQuery<PagedResponseProject, Error>("/projects", defaultQueryFn);
+    const { data } = useQuery<PagedResponseProject, Error>("/projects", defaultQueryFunction);
     console.log("hi");
     console.log(data);
 

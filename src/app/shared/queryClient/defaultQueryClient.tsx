@@ -1,5 +1,5 @@
 import { QueryClient } from "react-query";
-import { defaultQueryFn } from "@/src/app/shared/defaultQueryFunction/defaultQueryFunction";
+import { defaultQueryFunction } from "@/src/app/shared/defaultQueryFunction/defaultQueryFunction";
 
 export const queryClient = new QueryClient({
     defaultOptions: {
