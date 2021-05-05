@@ -10,7 +10,7 @@ export const Meta: React.FC<Props> = (props: Props) => (
         <meta name="robots" content="index,follow" />
         <link rel="manifest" href="manifest.json" />
 
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/static/images/favicon.png" />
         <meta key="og:title" property="og:title" content="Florian Thom" />
         <meta key="og:description" property="og:description" content="example content" />
         <meta key="og:type" property="og:type" content="example content" />
