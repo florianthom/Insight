@@ -9,7 +9,6 @@ import { defaultQueryFunction } from "@/src/app/shared/defaultQueryFunction/defa
 interface Props {}
 
 export const RepositoryTable: React.FC<Props> = (props: Props) => {
-    console.log(apiBaseUrl);
     const [page, setPage] = useState(firstPage);
     const { isLoading, error, data: projectsData } = useQuery<PagedResponseProject, Error>(
         "/projects?pagesize=" + pageSize + "&pagenumber=" + page,
