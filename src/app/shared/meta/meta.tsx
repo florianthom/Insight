@@ -8,6 +8,7 @@ export const Meta: React.FC<Props> = (props: Props) => (
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index,follow" />
+        <link rel="manifest" href="manifest.json" />
 
         <link rel="icon" href="/favicon.png" />
         <meta key="og:title" property="og:title" content="Florian Thom" />
