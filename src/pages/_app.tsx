@@ -33,15 +33,15 @@ import { queryClient } from "@/src/app/shared/queryClient/defaultQueryClient";
 const MyApp: NextPage<AppProps> = (props: AppProps) => {
     return (
         <div>
-            <QueryClientProvider client={queryClient}>
-                <Hydrate state={props.pageProps.dehydratedState}>
-                    <Provider store={store}>
+            <Provider store={store}>
+                <QueryClientProvider client={queryClient}>
+                    <Hydrate state={props.pageProps.dehydratedState}>
                         <Meta />
                         <props.Component {...props.pageProps} />
-                    </Provider>
-                </Hydrate>
-                <ReactQueryDevtools initialIsOpen={false} />
-            </QueryClientProvider>
+                    </Hydrate>
+                    <ReactQueryDevtools initialIsOpen={true} />
+                </QueryClientProvider>
+            </Provider>
         </div>
     );
 };
