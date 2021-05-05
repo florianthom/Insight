@@ -4,9 +4,6 @@ const { parsed: myEnv } = require("dotenv").config({
     path: ".env.dotenv",
 });
 
-console.log("here");
-console.log(myEnv);
-
 module.exports = {
     future: {
         webpack5: true,
