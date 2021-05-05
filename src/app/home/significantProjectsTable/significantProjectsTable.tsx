@@ -34,7 +34,7 @@ export const SignificantProjectsTable: React.FC<Props> = (props: Props) => {
                     {projectsData.data
                         .filter((a: Project) => projectsToShowOnLandingPage.indexOf(a.name) > -1)
                         .map((b: Project) => (
-                            <tr>
+                            <tr key={b.id}>
                                 <td className="py-4 align-top">
                                     <div className="pr-4 whitespace-nowrap overflow-hidden overflow-ellipsis">
                                         <a

@@ -1,5 +1,5 @@
 kubernetes-secrets.yaml
-.env.local
+.env.dotenv
 
 /.idea
 
@@ -30,7 +30,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
-.env.local
+.env.dotenv
 .env.development.local
 .env.test.local
 .env.production.local

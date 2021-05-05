@@ -1,3 +1,12 @@
+const webpack = require("webpack");
+
+const { parsed: myEnv } = require("dotenv").config({
+    path: ".env.dotenv",
+});
+
+console.log("here");
+console.log(myEnv);
+
 module.exports = {
     future: {
         webpack5: true,
@@ -9,5 +18,9 @@ module.exports = {
         // your project has type errors.
         // !! WARN !!
         ignoreBuildErrors: true,
+    },
+    webpack(config) {
+        config.plugins.push(new webpack.EnvironmentPlugin(myEnv));
+        return config;
     },
 };

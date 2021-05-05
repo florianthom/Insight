@@ -1,3 +1,0 @@
-schnittstelle einbinden
-	react query einführen
-	schnittstelle ansprechen
