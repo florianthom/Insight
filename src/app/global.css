@@ -10,6 +10,9 @@
         @apply text-xl;
     }
 }
+.custom-background-image {
+    background-image: url("../assets/IMG_0410-min.JPG");
+}
 
 .custom-transform-mid{
     transform: translateX(-50%) translateY(-50%);

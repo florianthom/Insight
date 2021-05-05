@@ -13,10 +13,10 @@ export const Home: React.FC<Props> = (props: Props) => {
     return (
         <div>
             <div
-                style={{
-                    backgroundImage: "url('/IMG_0410-min.JPG')",
-                }}
-                className="h-screen bg-no-repeat bg-cover bg-center"
+                // style={{
+                //     backgroundImage: "url('../../assets/IMG_0410-min.JPG')",
+                // }}
+                className="custom-background-image h-screen bg-no-repeat bg-cover bg-center"
             >
                 <NavBar></NavBar>
                 <div className="absolute top-1/2 left-1/2 custom-transform-mid">
