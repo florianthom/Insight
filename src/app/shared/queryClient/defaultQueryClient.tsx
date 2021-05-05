@@ -18,7 +18,7 @@ export const queryClient = new QueryClient({
                     console.log((e as Error).message);
                 }
             },
-            queryFn: defaultQueryFn as any,
+            // queryFn: defaultQueryFn as any,
         },
     },
 });

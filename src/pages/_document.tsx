@@ -1,7 +1,7 @@
 import Document, { Html, Head, Main, NextScript, DocumentContext } from "next/document";
 import React from "react";
 
-// call order: _document.tsx -> app.tsx -> app.tsx -> layout -> children
+// call order: _document.tsx -> app.tsx -> children
 //  _document.tsx gets only rendered server-side
 
 export default class CustomDocument extends Document {
