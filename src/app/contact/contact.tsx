@@ -21,14 +21,14 @@ export const Contact: React.FC<Props> = (props: Props) => {
                     <div className="pt-24">
                         <div className="flex justify-around">
                             <PlatformCard
-                                image_path="/linkedIn_transparent_svg.svg"
+                                image_path="/static/images/linkedIn_transparent_svg.svg"
                                 platform_name="LinkedIn"
                                 user_name="Florian Thom"
                                 text="Just “Connect” with me."
                                 link_string={linkedin_link}
                             ></PlatformCard>
                             <PlatformCard
-                                image_path="/xing_transparent_svg.svg"
+                                image_path="/static/images/xing_transparent_svg.svg"
                                 platform_name="Xing"
                                 user_name="Florian Thom"
                                 text="Just add me to your network."
@@ -37,14 +37,14 @@ export const Contact: React.FC<Props> = (props: Props) => {
                         </div>
                         <div className="pt-16 flex justify-around">
                             <PlatformCard
-                                image_path="/mail_tranparent_svg.svg"
+                                image_path="/static/images/mail_tranparent_svg.svg"
                                 platform_name="Mail"
                                 user_name="thom.florian@yahoo.de"
                                 text="Just write me an email."
                                 link_string={"mailto:" + email_string}
                             ></PlatformCard>
                             <PlatformCard
-                                image_path="/discord_transparent_svg.svg"
+                                image_path="/static/images/discord_transparent_svg.svg"
                                 platform_name="Discord"
                                 user_name="FlorianTh"
                                 text="Just join my discord-server and write a private or public message"
