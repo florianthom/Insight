@@ -1,22 +1,12 @@
 import React from "react";
-import { Counter } from "@/src/app/home/counter/counter";
-import { TodoList } from "@/src/app/home/todosList/todoList";
 import { NavBar } from "@/src/app/shared/navbar/navbar";
 import Image from "next/image";
-import Link from "next/link";
 import { Footer } from "@/src/app/shared/footer/footer";
 import { SignificantProjectsTable } from "@/src/app/home/significantProjectsTable/significantProjectsTable";
 import { IndividualWork } from "@/src/app/shared/workIndividualOrGroup/individualWork";
 import { GroupWork } from "@/src/app/shared/workIndividualOrGroup/groupWork";
-import * as constants from "../shared/constants/constants";
 import { discord_link, email_string, github_link, linkedin_link } from "../shared/constants/constants";
 
-{
-    /*        <Counter></Counter>*/
-}
-{
-    /*        <TodoList></TodoList>*/
-}
 export interface Props {}
 
 export const Home: React.FC<Props> = (props: Props) => {
@@ -33,16 +23,16 @@ export const Home: React.FC<Props> = (props: Props) => {
                     {/*social home group*/}
                     <div className="pt-5">
                         <a href={linkedin_link} target="_blank" rel="noopener noreferrer" className="pr-4">
-                            <Image src="/linkedIn_transparent.png" alt="me" width="32" height="32" />
+                            <Image src="/static/images/linkedIn_transparent.png" alt="me" width="32" height="32" />
                         </a>
                         <a href={github_link} target="_blank" rel="noopener noreferrer" className="pr-4">
-                            <Image src="/github_transparent.png" alt="me" width="32" height="32" />
+                            <Image src="/static/images/github_transparent.png" alt="me" width="32" height="32" />
                         </a>
                         <a href={"mailto:" + email_string} target="_blank" rel="noopener noreferrer" className="pr-4">
-                            <Image src="/mail_tranparent.png" alt="me" width="32" height="32" />
+                            <Image src="/static/images/mail_tranparent.png" alt="me" width="32" height="32" />
                         </a>
                         <a href={discord_link} target="_blank" rel="noopener noreferrer" className="pr-4">
-                            <Image src="/discord_transparent.png" alt="me" width="32" height="32" />
+                            <Image src="/static/images/discord_transparent.png" alt="me" width="32" height="32" />
                         </a>
                     </div>
                 </div>
