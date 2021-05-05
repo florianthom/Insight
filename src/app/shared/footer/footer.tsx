@@ -14,31 +14,16 @@ export const Footer: React.FC<Props> = (props: Props) => {
                     <div className="text-white text-base tracking-more-than-wide text-center">KEEP IN TOUCH</div>
                     <div className="pt-16 flex justify-evenly">
                         <a href={linkedin_link} target="_blank" rel="noopener noreferrer">
-                            <Image
-                                src="/static/images/linkedIn_transparent.png"
-                                alt="linkedIn-link"
-                                width="32"
-                                height="32"
-                            />
+                            <Image src="/linkedIn_transparent.png" alt="linkedIn-link" width="32" height="32" />
                         </a>
                         <a href={github_link} target="_blank" rel="noopener noreferrer">
-                            <Image
-                                src="/static/images/github_transparent.png"
-                                alt="github-link"
-                                width="32"
-                                height="32"
-                            />
+                            <Image src="/github_transparent.png" alt="github-link" width="32" height="32" />
                         </a>
                         <a href={"mailto:" + email_string} target="_blank" rel="noopener noreferrer">
-                            <Image src="/static/images/mail_tranparent.png" alt="mail-adresse" width="32" height="32" />
+                            <Image src="/mail_tranparent.png" alt="mail-adresse" width="32" height="32" />
                         </a>
                         <a href={discord_link} target="_blank" rel="noopener noreferrer">
-                            <Image
-                                src="/static/images/discord_transparent.png"
-                                alt="discordServer-link"
-                                width="32"
-                                height="32"
-                            />
+                            <Image src="/discord_transparent.png" alt="discordServer-link" width="32" height="32" />
                         </a>
                     </div>
                 </div>
