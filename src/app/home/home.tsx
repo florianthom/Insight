@@ -28,16 +28,44 @@ export const Home: React.FC<Props> = (props: Props) => {
                     {/*social home group*/}
                     <div className="pt-5">
                         <a href={linkedin_link} target="_blank" rel="noopener noreferrer" className="pr-4">
-                            <Image src="/static/images/linkedIn_transparent.png" alt="me" width="32" height="32" />
+                            <Image
+                                src="/static/images/linkedIn_transparent.png"
+                                alt="me"
+                                width="32"
+                                height="32"
+                                priority={true}
+                                quality={25}
+                            />
                         </a>
                         <a href={github_link} target="_blank" rel="noopener noreferrer" className="pr-4">
-                            <Image src="/static/images/github_transparent.png" alt="me" width="32" height="32" />
+                            <Image
+                                src="/static/images/github_transparent.png"
+                                alt="me"
+                                width="32"
+                                height="32"
+                                priority={true}
+                                quality={25}
+                            />
                         </a>
                         <a href={"mailto:" + email_string} target="_blank" rel="noopener noreferrer" className="pr-4">
-                            <Image src="/static/images/mail_tranparent.png" alt="me" width="32" height="32" />
+                            <Image
+                                src="/static/images/mail_tranparent.png"
+                                alt="me"
+                                width="32"
+                                height="32"
+                                priority={true}
+                                quality={25}
+                            />
                         </a>
                         <a href={discord_link} target="_blank" rel="noopener noreferrer" className="pr-4">
-                            <Image src="/static/images/discord_transparent.png" alt="me" width="32" height="32" />
+                            <Image
+                                src="/static/images/discord_transparent.png"
+                                alt="me"
+                                width="32"
+                                height="32"
+                                priority={true}
+                                quality={25}
+                            />
                         </a>
                     </div>
                 </div>
