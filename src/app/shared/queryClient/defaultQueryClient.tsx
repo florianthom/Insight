@@ -1,7 +1,7 @@
 import { QueryClient } from "react-query";
 import { defaultQueryFunction } from "@/src/app/shared/defaultQueryFunction/defaultQueryFunction";
 
-export const queryClient = new QueryClient({
+export const defaultQueryClient = new QueryClient({
     defaultOptions: {
         mutations: {
             onError: (e) => {
@@ -18,7 +18,7 @@ export const queryClient = new QueryClient({
                     console.log((e as Error).message);
                 }
             },
-            // queryFn: defaultQueryFn as any,
+            queryFn: defaultQueryFunction as any,
         },
     },
 });

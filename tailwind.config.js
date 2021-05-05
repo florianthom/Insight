@@ -22,7 +22,10 @@ module.exports = {
     },
     variants: {
         backgroundColor: ["responsive", "hover", "focus", "active"],
-        extend: {},
+        extend: {
+            opacity: ["disabled"],
+            cursor: ["disabled"],
+        },
     },
     plugins: [],
 };

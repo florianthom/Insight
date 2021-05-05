@@ -2,32 +2,19 @@ import React, { useState } from "react";
 import { useQuery } from "react-query";
 import { PagedResponseProject } from "@/src/openapi_models/models/PagedResponseProject";
 import { Project } from "@/src/openapi_models/models/Project";
-import { firstPage, pageSize } from "@/src/app/shared/constants/constants";
+import { apiBaseUrl, firstPage, pageSize } from "@/src/app/shared/constants/constants";
 import { BasicSpinner } from "@/src/app/shared/basicSpinner/basicSpinner";
 import { defaultQueryFunction } from "@/src/app/shared/defaultQueryFunction/defaultQueryFunction";
 
 interface Props {}
 
 export const RepositoryTable: React.FC<Props> = (props: Props) => {
+    console.log(apiBaseUrl);
     const [page, setPage] = useState(firstPage);
-    const { isLoading, error, data: projectsData } = useQuery<PagedResponseProject, Error>("projectsData", () =>
-        fetch("https://localhost:5000/api/v1" + "/projects?pagesize=" + pageSize + "&pagenumber=" + page).then((res) =>
-            res.json(),
-        ),
+    const { isLoading, error, data: projectsData } = useQuery<PagedResponseProject, Error>(
+        "/projects?pagesize=" + pageSize + "&pagenumber=" + page,
     );
 
-    const { data } = useQuery<PagedResponseProject, Error>("/projects", defaultQueryFunction);
-    console.log("hi");
-    console.log(data);
-
-    // function queryFunction(a, b, c) {
-    //     return () =>
-    //         fetch("https://localhost:5000/api/v1" + "/projects?userid=" + a + "&pagesize=" + b + "&pagenumber=" + c);
-    // }
-    // const { isLoading, error, data } = useQuery("projectsData", queryFunction(userId, "3", "1"));
-
-    // if (isLoading) {
-    // }
     return (
         <div className="shadow border border-gray-300 overflow-hidden">
             <table className="table-fixed min-w-full divide-y w-full">
@@ -49,13 +36,30 @@ export const RepositoryTable: React.FC<Props> = (props: Props) => {
                     <tr className="bottom-box-shadow">
                         <td colSpan={4}>
                             <div className="flex justify-between items-center">
-                                <button className="bg-gray-100 hover:bg-gray-200 border py-4 m-1 w-3/12">
+                                <button
+                                    onClick={() => {
+                                        if (projectsData.previousPage) {
+                                            setPage((a) => a - 1);
+                                        }
+                                    }}
+                                    disabled={projectsData === undefined || !projectsData.previousPage}
+                                    className="bg-gray-100 hover:bg-gray-200 border py-4 m-1 w-3/12 disabled:opacity-50 disabled:cursor-default"
+                                >
                                     Previous
                                 </button>
                                 <div>
-                                    <span>Page X of Y</span>
+                                    <span>Page {page}</span>
                                 </div>
-                                <button className="bg-gray-100 hover:bg-gray-200 border py-4 m-1 w-3/12">Next</button>
+                                <button
+                                    onClick={() => {
+                                        if (projectsData.nextPage) {
+                                            setPage((a) => a + 1);
+                                        }
+                                    }}
+                                    className="bg-gray-100 hover:bg-gray-200 border py-4 m-1 w-3/12 disabled:opacity-50 disabled:cursor-default"
+                                >
+                                    Next
+                                </button>
                             </div>
                         </td>
                     </tr>
