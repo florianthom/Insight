@@ -2,7 +2,12 @@ import { NavBar } from "@/src/app/shared/navbar/navbar";
 import { Footer } from "@/src/app/shared/footer/footer";
 import React, { useState } from "react";
 import { RecordButton } from "@/src/app/reports/recordButton/recordButton";
-import { firstPage, pageSize, pageSizeLandingPage } from "@/src/app/shared/constants/constants";
+import {
+    firstPage,
+    pageSize,
+    pageSizeLandingPage,
+    projectsToShowOnLandingPage,
+} from "@/src/app/shared/constants/constants";
 import { useQuery } from "react-query";
 import { PagedResponseProject } from "@/src/openapi_models/models/PagedResponseProject";
 import { Project } from "@/src/openapi_models/models/Project";
@@ -26,18 +31,34 @@ export const SignificantProjectsTable: React.FC<Props> = (props: Props) => {
                     </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-200">
-                    {projectsData.data.map((a: Project) => (
-                        <tr>
-                            <td className="py-4 align-top">{a.name}</td>
-                            <td className="py-4">{a.description}</td>
-                            <td className="py-4 align-top">{a.language}</td>
-                        </tr>
-                    ))}
-                    {/*<tr>*/}
-                    <td className="py-4 align-top">WIP</td>
-                    <td className="py-4">WIP</td>
-                    <td className="py-4 align-top">WIP</td>
-                    {/*</tr>*/}
+                    {projectsData.data
+                        .filter((a: Project) => projectsToShowOnLandingPage.indexOf(a.name) > -1)
+                        .map((b: Project) => (
+                            <tr>
+                                <td className="py-4 align-top">
+                                    <div className="pr-4 whitespace-nowrap overflow-hidden overflow-ellipsis">
+                                        <a
+                                            href={b.htmLUrl}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="transition cursor-pointer hover:underline"
+                                        >
+                                            {b.name}
+                                        </a>
+                                    </div>
+                                </td>
+                                <td className="py-4">
+                                    <div className="pr-4 whitespace-nowrap overflow-hidden overflow-ellipsis">
+                                        {b.description}
+                                    </div>
+                                </td>
+                                <td className="py-4 align-top">
+                                    <div className="pr-4 whitespace-nowrap overflow-hidden overflow-ellipsis">
+                                        {b.language}
+                                    </div>
+                                </td>
+                            </tr>
+                        ))}
                 </tbody>
             </table>
         </div>
