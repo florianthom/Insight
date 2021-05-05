@@ -12,7 +12,12 @@ export interface Props {}
 export const Home: React.FC<Props> = (props: Props) => {
     return (
         <div>
-            <div className="custom-background-image">
+            <div
+                style={{
+                    backgroundImage: "url('/static/images/IMG_0410-min.JPG')",
+                }}
+                className="custom-background-image h-screen bg-no-repeat bg-cover bg-center"
+            >
                 <NavBar></NavBar>
                 <div className="absolute top-1/2 left-1/2 custom-transform-mid">
                     <h1 className="text-white text-5xl tracking-more-than-wide">FLORIAN THOM</h1>

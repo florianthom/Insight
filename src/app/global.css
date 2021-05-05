@@ -11,14 +11,6 @@
     }
 }
 
-.custom-background-image{
-    background-image: url("../../public/static/images/IMG_0410-min.JPG");
-    height: 100vh;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .custom-transform-mid{
     transform: translateX(-50%) translateY(-50%);
 }
