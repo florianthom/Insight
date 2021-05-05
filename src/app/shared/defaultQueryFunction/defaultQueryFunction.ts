@@ -11,7 +11,7 @@ export const defaultQueryFunction = async ({ queryKey }: { queryKey: string }) =
     const tokenStoreState = useSelector((state: RootState) => state.tokenStore);
     const dispatch = useDispatch();
 
-    // const [gucken, setGucken] = useState("2");
+    // const [tmp, setTmp] = useState("2");
 
     // const { accessToken, refreshToken } = tokenStoreState;
 
