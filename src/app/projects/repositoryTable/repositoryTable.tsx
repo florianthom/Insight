@@ -56,6 +56,7 @@ export const RepositoryTable: React.FC<Props> = (props: Props) => {
                                             setPage((a) => a + 1);
                                         }
                                     }}
+                                    disabled={projectsData === undefined || !projectsData.nextPage}
                                     className="bg-gray-100 hover:bg-gray-200 border py-4 m-1 w-3/12 disabled:opacity-50 disabled:cursor-default"
                                 >
                                     Next

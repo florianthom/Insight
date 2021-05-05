@@ -21,7 +21,6 @@ export const defaultQueryFunction = async ({ queryKey }: { queryKey: string }) =
         //     "Content-Type": "application/json",
         // },
     });
-
     if (response.status !== 200) {
         throw new Error(await response.text());
     }
