@@ -20,9 +20,6 @@ spec:
           image: flooth/personal-website-frontend:latest
           ports:
             - containerPort: 3000
-          envFrom:
-            - secretRef:
-                name: frontend-secrets
 
 ---
 
