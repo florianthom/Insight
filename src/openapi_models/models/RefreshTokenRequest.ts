@@ -12,54 +12,22 @@
  * Do not edit the class manually.
  */
 
-import { exists, mapValues } from '../runtime';
 /**
- * 
+ *
  * @export
  * @interface RefreshTokenRequest
  */
 export interface RefreshTokenRequest {
     /**
-     * 
+     *
      * @type {string}
      * @memberof RefreshTokenRequest
      */
     token?: string | null;
     /**
-     * 
+     *
      * @type {string}
      * @memberof RefreshTokenRequest
      */
     refreshToken?: string | null;
 }
-
-export function RefreshTokenRequestFromJSON(json: any): RefreshTokenRequest {
-    return RefreshTokenRequestFromJSONTyped(json, false);
-}
-
-export function RefreshTokenRequestFromJSONTyped(json: any, ignoreDiscriminator: boolean): RefreshTokenRequest {
-    if ((json === undefined) || (json === null)) {
-        return json;
-    }
-    return {
-        
-        'token': !exists(json, 'token') ? undefined : json['token'],
-        'refreshToken': !exists(json, 'refreshToken') ? undefined : json['refreshToken'],
-    };
-}
-
-export function RefreshTokenRequestToJSON(value?: RefreshTokenRequest | null): any {
-    if (value === undefined) {
-        return undefined;
-    }
-    if (value === null) {
-        return null;
-    }
-    return {
-        
-        'token': value.token,
-        'refreshToken': value.refreshToken,
-    };
-}
-
-

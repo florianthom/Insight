@@ -12,53 +12,18 @@
  * Do not edit the class manually.
  */
 
-import { exists, mapValues } from '../runtime';
-import {
-    Project,
-    ProjectFromJSON,
-    ProjectFromJSONTyped,
-    ProjectToJSON,
-} from './';
+import { Project } from "@/src/openapi_models/models/Project";
 
 /**
- * 
+ *
  * @export
  * @interface ResponseProject
  */
 export interface ResponseProject {
     /**
-     * 
+     *
      * @type {Project}
      * @memberof ResponseProject
      */
     data?: Project;
 }
-
-export function ResponseProjectFromJSON(json: any): ResponseProject {
-    return ResponseProjectFromJSONTyped(json, false);
-}
-
-export function ResponseProjectFromJSONTyped(json: any, ignoreDiscriminator: boolean): ResponseProject {
-    if ((json === undefined) || (json === null)) {
-        return json;
-    }
-    return {
-        
-        'data': !exists(json, 'data') ? undefined : ProjectFromJSON(json['data']),
-    };
-}
-
-export function ResponseProjectToJSON(value?: ResponseProject | null): any {
-    if (value === undefined) {
-        return undefined;
-    }
-    if (value === null) {
-        return null;
-    }
-    return {
-        
-        'data': ProjectToJSON(value.data),
-    };
-}
-
-

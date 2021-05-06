@@ -12,53 +12,16 @@
  * Do not edit the class manually.
  */
 
-import { exists, mapValues } from '../runtime';
-import {
-    Document,
-    DocumentFromJSON,
-    DocumentFromJSONTyped,
-    DocumentToJSON,
-} from './';
-
 /**
- * 
+ *
  * @export
  * @interface ResponseListDocument
  */
 export interface ResponseListDocument {
     /**
-     * 
+     *
      * @type {Array<Document>}
      * @memberof ResponseListDocument
      */
     data?: Array<Document> | null;
 }
-
-export function ResponseListDocumentFromJSON(json: any): ResponseListDocument {
-    return ResponseListDocumentFromJSONTyped(json, false);
-}
-
-export function ResponseListDocumentFromJSONTyped(json: any, ignoreDiscriminator: boolean): ResponseListDocument {
-    if ((json === undefined) || (json === null)) {
-        return json;
-    }
-    return {
-        
-        'data': !exists(json, 'data') ? undefined : (json['data'] === null ? null : (json['data'] as Array<any>).map(DocumentFromJSON)),
-    };
-}
-
-export function ResponseListDocumentToJSON(value?: ResponseListDocument | null): any {
-    if (value === undefined) {
-        return undefined;
-    }
-    if (value === null) {
-        return null;
-    }
-    return {
-        
-        'data': value.data === undefined ? undefined : (value.data === null ? null : (value.data as Array<any>).map(DocumentToJSON)),
-    };
-}
-
-

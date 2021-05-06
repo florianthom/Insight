@@ -12,54 +12,22 @@
  * Do not edit the class manually.
  */
 
-import { exists, mapValues } from '../runtime';
 /**
- * 
+ *
  * @export
  * @interface AuthSuccess
  */
 export interface AuthSuccess {
     /**
-     * 
+     *
      * @type {string}
      * @memberof AuthSuccess
      */
     token?: string | null;
     /**
-     * 
+     *
      * @type {string}
      * @memberof AuthSuccess
      */
     refreshToken?: string | null;
 }
-
-export function AuthSuccessFromJSON(json: any): AuthSuccess {
-    return AuthSuccessFromJSONTyped(json, false);
-}
-
-export function AuthSuccessFromJSONTyped(json: any, ignoreDiscriminator: boolean): AuthSuccess {
-    if ((json === undefined) || (json === null)) {
-        return json;
-    }
-    return {
-        
-        'token': !exists(json, 'token') ? undefined : json['token'],
-        'refreshToken': !exists(json, 'refreshToken') ? undefined : json['refreshToken'],
-    };
-}
-
-export function AuthSuccessToJSON(value?: AuthSuccess | null): any {
-    if (value === undefined) {
-        return undefined;
-    }
-    if (value === null) {
-        return null;
-    }
-    return {
-        
-        'token': value.token,
-        'refreshToken': value.refreshToken,
-    };
-}
-
-
