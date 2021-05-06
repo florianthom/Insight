@@ -39,7 +39,7 @@ export const Contact: React.FC<Props> = (props: Props) => {
                             <PlatformCard
                                 image_path="/static/images/mail_tranparent_svg.svg"
                                 platform_name="Mail"
-                                user_name="thom.florian@yahoo.de"
+                                user_name={email_string}
                                 text="Just write me an email."
                                 link_string={"mailto:" + email_string}
                             ></PlatformCard>
