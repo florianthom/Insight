@@ -2,10 +2,15 @@ import { NavBar } from "@/src/app/shared/navbar/navbar";
 import { Footer } from "@/src/app/shared/footer/footer";
 import React from "react";
 import { RecordButton } from "@/src/app/reports/recordButton/recordButton";
+import { useQuery } from "react-query";
+import { Document } from "@/src/openapi_models/models/Document";
+import { BasicSpinner } from "@/src/app/shared/basicSpinner/basicSpinner";
+import { ResponseListDocument } from "@/src/openapi_models/models/ResponseListDocument";
 
 interface Props {}
 
 export const Reports: React.FC<Props> = (props: Props) => {
+    const { isLoading, error, data: documentsData } = useQuery<ResponseListDocument, Error>("/documents");
     return (
         <div>
             <NavBar></NavBar>
@@ -18,7 +23,17 @@ export const Reports: React.FC<Props> = (props: Props) => {
                         topics may differ.
                     </div>
                     <div className="pt-24">
-                        <RecordButton></RecordButton>
+                        {isLoading ? (
+                            <div className="text-center">
+                                <BasicSpinner></BasicSpinner>
+                            </div>
+                        ) : (
+                            documentsData?.data?.map((a) => (
+                                <div className="py-8">
+                                    <RecordButton document={a as Document}></RecordButton>
+                                </div>
+                            ))
+                        )}
                     </div>
                 </div>
             </div>

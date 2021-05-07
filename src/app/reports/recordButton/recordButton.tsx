@@ -1,17 +1,20 @@
 import React from "react";
 import Link from "next/link";
 import { RecordTag } from "@/src/app/shared/recordTag/recordTag";
+import { Document } from "@/src/openapi_models/models/Document";
 
-interface Props {}
+interface Props {
+    document: Document;
+}
 
 export const RecordButton: React.FC<Props> = (props: Props) => {
     return (
-        <div className="border border-main-color hover:bg-main-color transition hover:text-white text-black py-2 px-4 cursor-pointer shadow-md">
+        <div className="transition bg-white text-main-color border border-main-color py-2 px-4 cursor-pointer rounded shadow hover:bg-main-color hover:text-white active:bg-main-color-light">
             <Link href="/">
                 <a className="">
                     <div className="flex justify-between">
                         <div className="p-4">
-                            <div className="text-2xl uppercase">WIP</div>
+                            <div className="text-2xl uppercase">hi</div>
                             <br />
                             <RecordTag tagName="tagNameTest"></RecordTag>
                         </div>
