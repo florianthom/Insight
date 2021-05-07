@@ -30,7 +30,9 @@ export const RecordButton: React.FC<Props> = (props: Props) => {
                                 {props.document.name.replace("." + props.document.fileExtension, "")}
                             </div>
                             <br />
-                            <RecordTag tagName="tagNameTest"></RecordTag>
+                            <RecordTag tagName={"." + props.document.fileExtension}></RecordTag>
+                            <RecordTag tagName="german"></RecordTag>
+                            <RecordTag tagName={props.document.size.toString() + " bytes"}></RecordTag>
                         </div>
                     </a>
                 </div>
