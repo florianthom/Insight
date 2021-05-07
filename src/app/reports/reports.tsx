@@ -5,12 +5,15 @@ import { RecordButton } from "@/src/app/reports/recordButton/recordButton";
 import { useQuery } from "react-query";
 import { Document } from "@/src/openapi_models/models/Document";
 import { BasicSpinner } from "@/src/app/shared/basicSpinner/basicSpinner";
-import { ResponseListDocument } from "@/src/openapi_models/models/ResponseListDocument";
+import { PagedResponseDocument } from "@/src/openapi_models/models/PagedResponseDocument";
+import { firstPage, pageSize } from "@/src/app/shared/constants/constants";
 
 interface Props {}
 
 export const Reports: React.FC<Props> = (props: Props) => {
-    const { isLoading, error, data: documentsData } = useQuery<ResponseListDocument, Error>("/documents");
+    const { isLoading, error, data: documentsData } = useQuery<PagedResponseDocument, Error>(
+        "/documents?pagesize=" + pageSize + "&pagenumber=" + firstPage,
+    );
     return (
         <div>
             <NavBar></NavBar>

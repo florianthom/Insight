@@ -12,136 +12,206 @@
  * Do not edit the class manually.
  */
 
+import { exists, mapValues } from '../runtime';
 /**
- *
+ * 
  * @export
  * @interface Document
  */
 export interface Document {
     /**
-     *
+     * 
      * @type {string}
      * @memberof Document
      */
     id?: string;
     /**
-     *
+     * 
      * @type {string}
      * @memberof Document
      */
     documentId?: string | null;
     /**
-     *
+     * 
      * @type {string}
      * @memberof Document
      */
     name?: string | null;
     /**
-     *
+     * 
      * @type {string}
      * @memberof Document
      */
     description?: string | null;
     /**
-     *
+     * 
      * @type {string}
      * @memberof Document
      */
     ownersEmail?: string | null;
     /**
-     *
+     * 
      * @type {string}
      * @memberof Document
      */
     thumbnailLink?: string | null;
     /**
-     *
+     * 
      * @type {string}
      * @memberof Document
      */
     webcontentLink?: string | null;
     /**
-     *
+     * 
      * @type {string}
      * @memberof Document
      */
     webviewLink?: string | null;
     /**
-     *
+     * 
      * @type {string}
      * @memberof Document
      */
     fileExtension?: string | null;
     /**
-     *
+     * 
      * @type {string}
      * @memberof Document
      */
     fullFileExtension?: string | null;
     /**
-     *
+     * 
      * @type {string}
      * @memberof Document
      */
     kind?: string | null;
     /**
-     *
+     * 
      * @type {string}
      * @memberof Document
      */
     md5Checksum?: string | null;
     /**
-     *
+     * 
      * @type {boolean}
      * @memberof Document
      */
     shared?: boolean;
     /**
-     *
+     * 
      * @type {number}
      * @memberof Document
      */
     size?: number;
     /**
-     *
+     * 
      * @type {number}
      * @memberof Document
      */
     version?: number;
     /**
-     *
+     * 
      * @type {string}
      * @memberof Document
      */
     documentCreatedTime?: string | null;
     /**
-     *
+     * 
      * @type {string}
      * @memberof Document
      */
     userId?: string | null;
     /**
-     *
+     * 
      * @type {Date}
      * @memberof Document
      */
     createdOn?: Date;
     /**
-     *
+     * 
      * @type {string}
      * @memberof Document
      */
     creatorId?: string | null;
     /**
-     *
+     * 
      * @type {Date}
      * @memberof Document
      */
     updatedOn?: Date;
     /**
-     *
+     * 
      * @type {string}
      * @memberof Document
      */
     updaterId?: string | null;
 }
+
+export function DocumentFromJSON(json: any): Document {
+    return DocumentFromJSONTyped(json, false);
+}
+
+export function DocumentFromJSONTyped(json: any, ignoreDiscriminator: boolean): Document {
+    if ((json === undefined) || (json === null)) {
+        return json;
+    }
+    return {
+        
+        'id': !exists(json, 'id') ? undefined : json['id'],
+        'documentId': !exists(json, 'documentId') ? undefined : json['documentId'],
+        'name': !exists(json, 'name') ? undefined : json['name'],
+        'description': !exists(json, 'description') ? undefined : json['description'],
+        'ownersEmail': !exists(json, 'ownersEmail') ? undefined : json['ownersEmail'],
+        'thumbnailLink': !exists(json, 'thumbnailLink') ? undefined : json['thumbnailLink'],
+        'webcontentLink': !exists(json, 'webcontentLink') ? undefined : json['webcontentLink'],
+        'webviewLink': !exists(json, 'webviewLink') ? undefined : json['webviewLink'],
+        'fileExtension': !exists(json, 'fileExtension') ? undefined : json['fileExtension'],
+        'fullFileExtension': !exists(json, 'fullFileExtension') ? undefined : json['fullFileExtension'],
+        'kind': !exists(json, 'kind') ? undefined : json['kind'],
+        'md5Checksum': !exists(json, 'md5Checksum') ? undefined : json['md5Checksum'],
+        'shared': !exists(json, 'shared') ? undefined : json['shared'],
+        'size': !exists(json, 'size') ? undefined : json['size'],
+        'version': !exists(json, 'version') ? undefined : json['version'],
+        'documentCreatedTime': !exists(json, 'documentCreatedTime') ? undefined : json['documentCreatedTime'],
+        'userId': !exists(json, 'userId') ? undefined : json['userId'],
+        'createdOn': !exists(json, 'createdOn') ? undefined : (new Date(json['createdOn'])),
+        'creatorId': !exists(json, 'creatorId') ? undefined : json['creatorId'],
+        'updatedOn': !exists(json, 'updatedOn') ? undefined : (new Date(json['updatedOn'])),
+        'updaterId': !exists(json, 'updaterId') ? undefined : json['updaterId'],
+    };
+}
+
+export function DocumentToJSON(value?: Document | null): any {
+    if (value === undefined) {
+        return undefined;
+    }
+    if (value === null) {
+        return null;
+    }
+    return {
+        
+        'id': value.id,
+        'documentId': value.documentId,
+        'name': value.name,
+        'description': value.description,
+        'ownersEmail': value.ownersEmail,
+        'thumbnailLink': value.thumbnailLink,
+        'webcontentLink': value.webcontentLink,
+        'webviewLink': value.webviewLink,
+        'fileExtension': value.fileExtension,
+        'fullFileExtension': value.fullFileExtension,
+        'kind': value.kind,
+        'md5Checksum': value.md5Checksum,
+        'shared': value.shared,
+        'size': value.size,
+        'version': value.version,
+        'documentCreatedTime': value.documentCreatedTime,
+        'userId': value.userId,
+        'createdOn': value.createdOn === undefined ? undefined : (value.createdOn.toISOString()),
+        'creatorId': value.creatorId,
+        'updatedOn': value.updatedOn === undefined ? undefined : (value.updatedOn.toISOString()),
+        'updaterId': value.updaterId,
+    };
+}
+
+

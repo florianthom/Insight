@@ -14,73 +14,73 @@
 
 import { exists, mapValues } from '../runtime';
 import {
-    Project,
-    ProjectFromJSON,
-    ProjectFromJSONTyped,
-    ProjectToJSON,
+    Document,
+    DocumentFromJSON,
+    DocumentFromJSONTyped,
+    DocumentToJSON,
 } from './';
 
 /**
  * 
  * @export
- * @interface PagedResponseProject
+ * @interface PagedResponseDocument
  */
-export interface PagedResponseProject {
+export interface PagedResponseDocument {
     /**
      * 
-     * @type {Array<Project>}
-     * @memberof PagedResponseProject
+     * @type {Array<Document>}
+     * @memberof PagedResponseDocument
      */
-    data?: Array<Project> | null;
+    data?: Array<Document> | null;
     /**
      * 
      * @type {number}
-     * @memberof PagedResponseProject
+     * @memberof PagedResponseDocument
      */
     pageNumber?: number | null;
     /**
      * 
      * @type {number}
-     * @memberof PagedResponseProject
+     * @memberof PagedResponseDocument
      */
     pageSize?: number | null;
     /**
      * 
      * @type {string}
-     * @memberof PagedResponseProject
+     * @memberof PagedResponseDocument
      */
     nextPage?: string | null;
     /**
      * 
      * @type {string}
-     * @memberof PagedResponseProject
+     * @memberof PagedResponseDocument
      */
     previousPage?: string | null;
     /**
      * 
      * @type {number}
-     * @memberof PagedResponseProject
+     * @memberof PagedResponseDocument
      */
     pagesTotal?: number;
     /**
      * 
      * @type {number}
-     * @memberof PagedResponseProject
+     * @memberof PagedResponseDocument
      */
     itemsTotal?: number;
 }
 
-export function PagedResponseProjectFromJSON(json: any): PagedResponseProject {
-    return PagedResponseProjectFromJSONTyped(json, false);
+export function PagedResponseDocumentFromJSON(json: any): PagedResponseDocument {
+    return PagedResponseDocumentFromJSONTyped(json, false);
 }
 
-export function PagedResponseProjectFromJSONTyped(json: any, ignoreDiscriminator: boolean): PagedResponseProject {
+export function PagedResponseDocumentFromJSONTyped(json: any, ignoreDiscriminator: boolean): PagedResponseDocument {
     if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
         
-        'data': !exists(json, 'data') ? undefined : (json['data'] === null ? null : (json['data'] as Array<any>).map(ProjectFromJSON)),
+        'data': !exists(json, 'data') ? undefined : (json['data'] === null ? null : (json['data'] as Array<any>).map(DocumentFromJSON)),
         'pageNumber': !exists(json, 'pageNumber') ? undefined : json['pageNumber'],
         'pageSize': !exists(json, 'pageSize') ? undefined : json['pageSize'],
         'nextPage': !exists(json, 'nextPage') ? undefined : json['nextPage'],
@@ -90,7 +90,7 @@ export function PagedResponseProjectFromJSONTyped(json: any, ignoreDiscriminator
     };
 }
 
-export function PagedResponseProjectToJSON(value?: PagedResponseProject | null): any {
+export function PagedResponseDocumentToJSON(value?: PagedResponseDocument | null): any {
     if (value === undefined) {
         return undefined;
     }
@@ -99,7 +99,7 @@ export function PagedResponseProjectToJSON(value?: PagedResponseProject | null):
     }
     return {
         
-        'data': value.data === undefined ? undefined : (value.data === null ? null : (value.data as Array<any>).map(ProjectToJSON)),
+        'data': value.data === undefined ? undefined : (value.data === null ? null : (value.data as Array<any>).map(DocumentToJSON)),
         'pageNumber': value.pageNumber,
         'pageSize': value.pageSize,
         'nextPage': value.nextPage,
