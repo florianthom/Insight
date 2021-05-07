@@ -14,6 +14,7 @@ export const Reports: React.FC<Props> = (props: Props) => {
     const [page, setPage] = useState(firstPage);
     const { isLoading, error, data: documentsData } = useQuery<PagedResponseDocument, Error>(
         "/documents?pagesize=" + pageSizeLess + "&pagenumber=" + page,
+        { keepPreviousData: true },
     );
     return (
         <div>
@@ -39,14 +40,43 @@ export const Reports: React.FC<Props> = (props: Props) => {
                             ))
                         )}
                     </div>
-                    <div className="text-center">
-                        <div>NAVIGATION</div>
-                        <div>
+                    {isLoading ? (
+                        <div></div>
+                    ) : (
+                        <div className="px-4 pt-8 text-center">
                             <div>
-                                <button>{"Page " + page + " of " + documentsData.pagesTotal}</button>
+                                <div className="flex justify-around items-center">
+                                    <button
+                                        onClick={() => {
+                                            if (documentsData.previousPage) {
+                                                setPage((a) => a - 1);
+                                            }
+                                        }}
+                                        disabled={documentsData === undefined || !documentsData.previousPage}
+                                        className="bg-gray-100 hover:bg-gray-200 border py-4 m-1 w-3/12 disabled:opacity-50 disabled:cursor-default"
+                                    >
+                                        Previous
+                                    </button>
+                                    <div>
+                                        <span>
+                                            Page {page} of {documentsData.pagesTotal}
+                                        </span>
+                                    </div>
+                                    <button
+                                        onClick={() => {
+                                            if (documentsData.nextPage) {
+                                                setPage((a) => a + 1);
+                                            }
+                                        }}
+                                        disabled={documentsData === undefined || !documentsData.nextPage}
+                                        className="bg-gray-100 hover:bg-gray-200 border py-4 m-1 w-3/12 disabled:opacity-50 disabled:cursor-default"
+                                    >
+                                        Next
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    )}
                 </div>
             </div>
             <Footer></Footer>
