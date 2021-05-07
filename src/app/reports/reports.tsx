@@ -1,6 +1,6 @@
 import { NavBar } from "@/src/app/shared/navbar/navbar";
 import { Footer } from "@/src/app/shared/footer/footer";
-import React from "react";
+import React, { useState } from "react";
 import { RecordButton } from "@/src/app/reports/recordButton/recordButton";
 import { useQuery } from "react-query";
 import { Document } from "@/src/openapi_models/models/Document";
@@ -11,8 +11,9 @@ import { firstPage, pageSizeLess } from "@/src/app/shared/constants/constants";
 interface Props {}
 
 export const Reports: React.FC<Props> = (props: Props) => {
+    const [page, setPage] = useState(firstPage);
     const { isLoading, error, data: documentsData } = useQuery<PagedResponseDocument, Error>(
-        "/documents?pagesize=" + pageSizeLess + "&pagenumber=" + firstPage,
+        "/documents?pagesize=" + pageSizeLess + "&pagenumber=" + page,
     );
     return (
         <div>
@@ -37,6 +38,14 @@ export const Reports: React.FC<Props> = (props: Props) => {
                                 </div>
                             ))
                         )}
+                    </div>
+                    <div className="text-center">
+                        <div>NAVIGATION</div>
+                        <div>
+                            <div>
+                                <button>{"Page " + page + " of " + documentsData.pagesTotal}</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
