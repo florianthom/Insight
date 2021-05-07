@@ -14,7 +14,7 @@ export const RecordButton: React.FC<Props> = (props: Props) => {
                 <a className="">
                     <div className="flex justify-between">
                         <div className="p-4">
-                            <div className="text-2xl uppercase">hi</div>
+                            <div className="text-2xl uppercase">{props.document.name}</div>
                             <br />
                             <RecordTag tagName="tagNameTest"></RecordTag>
                         </div>
