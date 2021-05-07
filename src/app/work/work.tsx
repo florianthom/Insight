@@ -198,7 +198,7 @@ export const Work: React.FC<Props> = (props: Props) => {
                             href={cv_international_link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="transition bg-white text-main-color border border-main-color font-bold py-2 px-4 rounded w-1/4 text-center shadow hover:bg-main-color hover:text-white active:bg-main-color-light"
+                            className="transition bg-white text-main-color border border-main-color font-bold py-2 px-4 rounded w-1/4 text-center shadow hover:bg-main-color hover:text-white"
                         >
                             CV - International
                             <br />
@@ -208,7 +208,7 @@ export const Work: React.FC<Props> = (props: Props) => {
                             href={cv_germany_link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="transition bg-white text-main-color border border-main-color font-bold py-2 px-4 rounded w-1/4 text-center shadow hover:bg-main-color hover:text-white active:bg-main-color-light"
+                            className="transition bg-white text-main-color border border-main-color font-bold py-2 px-4 rounded w-1/4 text-center shadow hover:bg-main-color hover:text-white"
                         >
                             CV - Germany
                             <br />
