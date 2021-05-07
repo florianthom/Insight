@@ -3,6 +3,7 @@ module.exports = {
         webpack5: true,
     },
     reactStrictMode: true,
+    images: { domains: ["lh3.googleusercontent.com"] },
     typescript: {
         // !! WARN !!
         // Dangerously allow production builds to successfully complete even if
