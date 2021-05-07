@@ -2,6 +2,8 @@ export const __prod__ = process.env.NODE_ENV === "production";
 export const apiBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
 export const firstPage = 1;
 export const pageSize = 10;
+export const pageSizeLess = 5;
+
 // here we actually want to get all projects to select them then by name and put into significant projects table
 // so this value should be set to get all projects with one query
 export const pageSizeLandingPage = 100;
