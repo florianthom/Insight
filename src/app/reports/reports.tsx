@@ -29,7 +29,7 @@ export const Reports: React.FC<Props> = (props: Props) => {
                             </div>
                         ) : (
                             documentsData?.data?.map((a) => (
-                                <div className="py-8">
+                                <div className="py-8" key={(a as Document).id}>
                                     <RecordButton document={a as Document}></RecordButton>
                                 </div>
                             ))
