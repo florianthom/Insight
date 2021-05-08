@@ -15,7 +15,7 @@ export const Projects: React.FC<Props> = (props: Props) => {
                     <h2 className="text-black text-3xl tracking-more-than-wide">MY SOFTWARE REPOSITORY</h2>
                     <div className="text-base text-black pt-24">
                         My software repository is based on github. There are some private and public repositories. Here
-                        is a list of some (private) projects with additional information.
+                        is a list of some (public and private) projects with additional information.
                     </div>
                     <div className="pt-24">
                         <RepositoryTable></RepositoryTable>

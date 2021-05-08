@@ -16,6 +16,11 @@ export const Reports: React.FC<Props> = (props: Props) => {
         "/documents?pagesize=" + pageSizeLess + "&pagenumber=" + page,
         { keepPreviousData: true },
     );
+    function handleScroll(): void {
+        setTimeout(() => {
+            this.scrollIntoView({ behavior: "smooth" });
+        }, 500);
+    }
     return (
         <div>
             <NavBar></NavBar>
@@ -25,7 +30,7 @@ export const Reports: React.FC<Props> = (props: Props) => {
                     <div className="text-base text-black pt-24">
                         Here is an excerpt of my previous work in form of reports and talks. This includes minor
                         personal work and some interesting stuff i did at university. Because of that the individual
-                        topics may differ.
+                        topics may differ. That said, some of the work I didnt do alone but in a team.
                     </div>
                     <div className="pt-24">
                         {isLoading ? (
@@ -51,6 +56,11 @@ export const Reports: React.FC<Props> = (props: Props) => {
                                             if (documentsData.previousPage) {
                                                 setPage((a) => a - 1);
                                             }
+                                            window.scrollTo({
+                                                top: 0,
+                                                left: 0,
+                                                behavior: "smooth",
+                                            });
                                         }}
                                         disabled={documentsData === undefined || !documentsData.previousPage}
                                         className="bg-gray-100 hover:bg-gray-200 border py-4 m-1 w-3/12 disabled:opacity-50 disabled:cursor-default"
@@ -59,7 +69,11 @@ export const Reports: React.FC<Props> = (props: Props) => {
                                     </button>
                                     <div>
                                         <span>
-                                            Page {page} of {documentsData.pagesTotal}
+                                            Page{" "}
+                                            <span className="bg-white rounded border border-gray-300 px-4 py-2">
+                                                {page}
+                                            </span>{" "}
+                                            of {documentsData.pagesTotal}
                                         </span>
                                     </div>
                                     <button
@@ -67,6 +81,11 @@ export const Reports: React.FC<Props> = (props: Props) => {
                                             if (documentsData.nextPage) {
                                                 setPage((a) => a + 1);
                                             }
+                                            window.scrollTo({
+                                                top: 0,
+                                                left: 0,
+                                                behavior: "smooth",
+                                            });
                                         }}
                                         disabled={documentsData === undefined || !documentsData.nextPage}
                                         className="bg-gray-100 hover:bg-gray-200 border py-4 m-1 w-3/12 disabled:opacity-50 disabled:cursor-default"

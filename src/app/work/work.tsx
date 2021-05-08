@@ -15,10 +15,10 @@ export const Work: React.FC<Props> = (props: Props) => {
                 <div className="pt-56 pb-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
                     <h2 className="text-black text-3xl tracking-more-than-wide">MY WORK</h2>
                     <div className="text-base text-black pt-24">
-                        Over the course of my career I have encountered many technologies and gained experience in
-                        numerous areas. I love to learn new technologies and to examine them for advantages and
-                        disadvantages compared to the already known alternatives. Since some projects could be private,
-                        arent even published on github or mentioned at my CV, here is a small snipped of my work.
+                        Over the years I have encountered many technologies and gained experience in numerous areas. I
+                        love to learn new technologies and to examine them for advantages and disadvantages compared to
+                        the already known alternatives. Since some projects could be private, arent even published on
+                        github or mentioned at my CV, here is a small snipped of my work.
                     </div>
                     <div className="pt-24">
                         <h3 className="text-2xl text-black">During freetime</h3>
