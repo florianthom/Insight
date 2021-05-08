@@ -20,16 +20,15 @@ export const RepositoryTable: React.FC<Props> = (props: Props) => {
             <table className="table-fixed min-w-full divide-y w-full">
                 <thead className="text-center">
                     <tr className="divide-x divide-x-gray-200 bottom-box-shadow">
-                        <th className="bg-white w-2/12 px-6 py-3 text-base font-normal uppercase tracking-wider">
-                            Title
-                        </th>
-                        <th className="bg-white w-4/12 px-6 py-3 text-base font-normal uppercase tracking-wider">
+                        <th className="bg-white w-2/12 py-3 text-base font-normal uppercase tracking-wider">Title</th>
+                        <th className="bg-white w-6/12 py-3 text-base font-normal uppercase tracking-wider">
                             Description
                         </th>
-                        <th className="w-1/12 px-6 py-3 text-base font-normal uppercase tracking-wider">Language</th>
-                        <th className="w-1/12 px-6 py-3 text-base font-normal uppercase tracking-wider">Size</th>
-                        <th className="w-1/12 px-6 py-3 text-base font-normal uppercase tracking-wider whitespace-nowrap">
-                            Created at
+                        <th className="w-1/12 py-3 text-base font-normal uppercase tracking-wider">Language</th>
+                        <th className="w-1/12 py-3 text-base font-normal uppercase tracking-wider">Visibility</th>
+                        <th className="w-1/12 py-3 text-base font-normal uppercase tracking-wider">Size</th>
+                        <th className="w-1/12 py-3 text-base font-normal uppercase tracking-wider whitespace-nowrap">
+                            Createdat
                         </th>
                     </tr>
                 </thead>
@@ -93,6 +92,9 @@ export const RepositoryTable: React.FC<Props> = (props: Props) => {
                                 </td>
                                 <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
                                     {a.language}
+                                </td>
+                                <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
+                                    {a.visibility}
                                 </td>
                                 <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
                                     {a.size}
