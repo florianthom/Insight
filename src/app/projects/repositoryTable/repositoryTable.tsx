@@ -23,11 +23,12 @@ export const RepositoryTable: React.FC<Props> = (props: Props) => {
                         <th className="bg-white w-2/12 px-6 py-3 text-base font-normal uppercase tracking-wider">
                             Title
                         </th>
-                        <th className="bg-white w-6/12 px-6 py-3 text-base font-normal uppercase tracking-wider">
+                        <th className="bg-white w-4/12 px-6 py-3 text-base font-normal uppercase tracking-wider">
                             Description
                         </th>
-                        <th className="w-2/12 px-6 py-3 text-base font-normal uppercase tracking-wider">Language</th>
-                        <th className="w-2/12 px-6 py-3 text-base font-normal uppercase tracking-wider whitespace-nowrap">
+                        <th className="w-1/12 px-6 py-3 text-base font-normal uppercase tracking-wider">Language</th>
+                        <th className="w-1/12 px-6 py-3 text-base font-normal uppercase tracking-wider">Size</th>
+                        <th className="w-1/12 px-6 py-3 text-base font-normal uppercase tracking-wider whitespace-nowrap">
                             Created at
                         </th>
                     </tr>
@@ -90,8 +91,15 @@ export const RepositoryTable: React.FC<Props> = (props: Props) => {
                                 <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
                                     {a.description}
                                 </td>
-                                <td className="px-2 pt-4 pb-2 whitespace-nowrap">{a.language}</td>
-                                <td className="px-2 pt-4 pb-2 whitespace-nowrap">{a.projectCreatedOn.split(" ")[0]}</td>
+                                <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
+                                    {a.language}
+                                </td>
+                                <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
+                                    {a.size}
+                                </td>
+                                <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
+                                    {new Date(a.projectCreatedOn).toLocaleDateString("en-US")}
+                                </td>
                             </tr>
                         ))
                     )}
