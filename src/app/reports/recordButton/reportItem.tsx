@@ -12,7 +12,7 @@ export const ReportItem: React.FC<Props> = (props: Props) => {
     return (
         <div className="transition bg-white text-main-color shadow-inner border border-main-color py-2 px-4 cursor-pointer rounded shadow hover:bg-main-color hover:text-white active:bg-main-color-light">
             <div className="grid grid-cols-12">
-                <div className="col-span-11">
+                <div className="col-span-12 sm:col-span-11">
                     <a href={props.document.webviewLink} target="_blank" rel="noopener noreferrer">
                         <div className="text-center">
                             <Image
@@ -26,7 +26,7 @@ export const ReportItem: React.FC<Props> = (props: Props) => {
                             />
                         </div>
                         <div className="p-4">
-                            <div className="text-2xl uppercase">
+                            <div className="underline sm:no-underline text-lg sm:text-2xl uppercase">
                                 {props.document.name.replace("." + props.document.fileExtension, "")}
                             </div>
                             <br />
@@ -36,7 +36,7 @@ export const ReportItem: React.FC<Props> = (props: Props) => {
                         </div>
                     </a>
                 </div>
-                <div className="flex justify-center items-center border-l-2">
+                <div className="hidden sm:flex justify-center items-center border-l-2">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-16 w-16"
