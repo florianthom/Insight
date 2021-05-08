@@ -8,7 +8,7 @@ interface Props {
     document: Document;
 }
 
-export const RecordButton: React.FC<Props> = (props: Props) => {
+export const ReportItem: React.FC<Props> = (props: Props) => {
     return (
         <div className="transition bg-white text-main-color shadow-inner border border-main-color py-2 px-4 cursor-pointer rounded shadow hover:bg-main-color hover:text-white active:bg-main-color-light">
             <div className="grid grid-cols-12">

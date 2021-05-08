@@ -12,57 +12,59 @@ export interface Props {}
 export const Home: React.FC<Props> = (props: Props) => {
     return (
         <div>
-            <div
-                // style={{
-                //     backgroundImage: "url('../../assets/IMG_0410-min.JPG')",
-                // }}
-                className="custom-background-image h-screen bg-no-repeat bg-cover bg-center"
-            >
+            <div className="custom-background-image h-screen bg-no-repeat bg-cover bg-center">
                 <NavBar></NavBar>
-                <div className="absolute top-1/2 left-1/2 custom-transform-mid">
-                    <h1 className="text-white text-5xl tracking-more-than-wide">FLORIAN THOM</h1>
-                    <h2 className="text-white text-3xl pt-5">
+                <div className="absolute top-1/2 left-1/2 sm:top-1/2 sm:left-1/2 lg:top-1/2 lg:left-1/2 transform -translate-x-2/4 -translate-y-2/4">
+                    <h1 className="text-white tracking-more-than-wide text-3xl sm:text-5xl lg:text-5xl pt-16">
+                        FLORIAN THOM
+                    </h1>
+                    <h2 className="text-white text-xl sm:text-3xl lg:text-3xl pt-5">
                         Computer science enthusiast - Interested in research & development. Open to new technologies in
                         software and hardware
                     </h2>
                     {/*social home group*/}
-                    <div className="pt-5">
-                        <a href={linkedin_link} target="_blank" rel="noopener noreferrer" className="pr-4">
+                    <div className="pt-10">
+                        <a href={linkedin_link} target="_blank" rel="noopener noreferrer" className="pr-4 sm:pr-6">
                             <Image
                                 src="/static/images/linkedIn_transparent.png"
                                 alt="me"
-                                width="32"
-                                height="32"
+                                width="28"
+                                height="28"
                                 priority={true}
                                 quality={25}
                             />
                         </a>
-                        <a href={github_link} target="_blank" rel="noopener noreferrer" className="pr-4">
+                        <a href={github_link} target="_blank" rel="noopener noreferrer" className="pr-4 sm:pr-6">
                             <Image
                                 src="/static/images/github_transparent.png"
                                 alt="me"
-                                width="32"
-                                height="32"
+                                width="28"
+                                height="28"
                                 priority={true}
                                 quality={25}
                             />
                         </a>
-                        <a href={"mailto:" + email_string} target="_blank" rel="noopener noreferrer" className="pr-4">
+                        <a
+                            href={"mailto:" + email_string}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="pr-4 sm:pr-6"
+                        >
                             <Image
                                 src="/static/images/mail_tranparent.png"
                                 alt="me"
-                                width="32"
-                                height="32"
+                                width="28"
+                                height="28"
                                 priority={true}
                                 quality={25}
                             />
                         </a>
-                        <a href={discord_link} target="_blank" rel="noopener noreferrer" className="pr-4">
+                        <a href={discord_link} target="_blank" rel="noopener noreferrer" className="pr-4 sm:pr-6">
                             <Image
                                 src="/static/images/discord_transparent.png"
                                 alt="me"
-                                width="32"
-                                height="32"
+                                width="28"
+                                height="28"
                                 priority={true}
                                 quality={25}
                             />

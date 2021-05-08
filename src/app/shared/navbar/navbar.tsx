@@ -33,19 +33,19 @@ export const NavBar: React.FC<Props> = (props: Props) => {
         <nav
             className={
                 "top-0 left-0 right-0 fixed transition-all duration-500 overflow-hidden z-50 " +
-                (scrollState === "top" ? "p-4 " : "p-0 ") +
+                (scrollState === "top" ? "p-2 sm:p-4" : "p-0") +
                 (scrollState === "top"
-                    ? router.pathname === "/" || router.pathname === "/home"
-                        ? // tailwind = mobile first (sm != mobile) = ohne prefix = mobile and wenn man dann sagt: "height-1 sm:height-5..."
-                          // dann heißt dass, dass mobile=height-1 und alles darüber hinaus = height-5
-                          "bg-main-color md:bg-opacity-0"
-                        : "bg-main-color "
-                    : "bg-main-color ") +
+                    ? // tailwind = mobile first (sm != mobile) = ohne prefix = mobile and wenn man dann sagt: "height-1 sm:height-5..."
+                      // dann heißt dass, dass mobile=height-1 und alles darüber hinaus = height-5
+                      router.pathname === "/" || router.pathname === "/home"
+                        ? " bg-main-color md:bg-opacity-0"
+                        : " bg-main-color "
+                    : " bg-main-color ") +
                 ""
             }
         >
             <div className="max-w-7xl mx-auto px-3 md:px-6 lg:px-8">
-                <div className="relative flex items-center justify-between h-16 transition-all">
+                <div className="relative flex items-center justify-between h-14 sm:h-16 transition-all">
                     <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
                         <button
                             onClick={burgerMenuClick}
@@ -54,7 +54,7 @@ export const NavBar: React.FC<Props> = (props: Props) => {
                         >
                             <div className={burgerMenuOpenState ? "hidden" : "" + ""}>
                                 <svg
-                                    className="block h-6 w-6"
+                                    className="block h-4 w-4 sm:h-6 sm:w-6"
                                     xmlns="http://www.w3.org/2000/svg"
                                     fill="none"
                                     viewBox="0 0 24 24"
@@ -66,7 +66,7 @@ export const NavBar: React.FC<Props> = (props: Props) => {
                             </div>
                             <div className={burgerMenuOpenState ? "" : "hidden"}>
                                 <svg
-                                    className="h-6 w-6"
+                                    className="h-4 w-4 sm:h-6 sm:w-6"
                                     xmlns="http://www.w3.org/2000/svg"
                                     fill="none"
                                     viewBox="0 0 24 24"

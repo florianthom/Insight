@@ -29,7 +29,7 @@ const MyApp: NextPage<AppProps> = (props: AppProps) => {
                         <Meta />
                         <props.Component {...props.pageProps} />
                     </Hydrate>
-                    <ReactQueryDevtools initialIsOpen={true} />
+                    {/*<ReactQueryDevtools initialIsOpen={true} />*/}
                 </QueryClientProvider>
             </Provider>
         </div>

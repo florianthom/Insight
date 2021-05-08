@@ -14,10 +14,6 @@
     background-image: url("../assets/IMG_0410-min.JPG");
 }
 
-.custom-transform-mid{
-    transform: translateX(-50%) translateY(-50%);
-}
-
 .tracking-more-than-wide{
     letter-spacing: 0.5em;
 }

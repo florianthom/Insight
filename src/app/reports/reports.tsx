@@ -1,7 +1,7 @@
 import { NavBar } from "@/src/app/shared/navbar/navbar";
 import { Footer } from "@/src/app/shared/footer/footer";
 import React, { useState } from "react";
-import { RecordButton } from "@/src/app/reports/recordButton/recordButton";
+import { ReportItem } from "@/src/app/reports/recordButton/reportItem";
 import { useQuery } from "react-query";
 import { Document } from "@/src/openapi_models/models/Document";
 import { BasicSpinner } from "@/src/app/shared/basicSpinner/basicSpinner";
@@ -40,7 +40,7 @@ export const Reports: React.FC<Props> = (props: Props) => {
                         ) : (
                             documentsData?.data?.map((a) => (
                                 <div className="py-8" key={(a as Document).id}>
-                                    <RecordButton document={a as Document}></RecordButton>
+                                    <ReportItem document={a as Document}></ReportItem>
                                 </div>
                             ))
                         )}
