@@ -19,7 +19,7 @@ export const RepositoryTable: React.FC<Props> = (props: Props) => {
         <div className="overflow-hidden">
             <div className="overflow-x-auto shadow border border-gray-300">
                 {/*<div className="border-gray-200 w-full rounded bg-white overflow-x-auto">*/}
-                <table className="block sm:table table-fixed sm:min-w-full divide-y w-full">
+                <table className="block lg:table table-fixed sm:min-w-full divide-y w-full">
                     <thead className="text-center">
                         <tr className="divide-x divide-x-gray-200 bottom-box-shadow">
                             <th className="bg-white w-2/12 py-3 text-base font-normal uppercase tracking-wider">
