@@ -164,7 +164,11 @@ export const Home: React.FC<Props> = (props: Props) => {
             </div>
             <div>
                 <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-                    <h2 className="text-black text-3xl tracking-more-than-wide">SIGNIFICANT PROJECTS</h2>
+                    {/*unfortunatly the word significant is to wide so i had to reduce the size only for this headline here
+                    (all others remain the same size)*/}
+                    <h2 className="text-black text-3xl tracking-headline-mobile sm:tracking-headline">
+                        SIGNIFICANT PROJECTS
+                    </h2>
                     <div className="text-base text-black pt-24">
                         I have worked on a couple of projects till today. Here I like to present a list with selected
                         projects from github I like most. This are projects I spend a lot of time on while having a lot

@@ -12,6 +12,14 @@ const custom_colors = {
     },
 };
 
+const customTracking = {
+    ...defaultTheme.letterSpacing,
+    ...{
+        headline: "0.5em",
+        "headline-mobile": "0.4em",
+    },
+};
+
 module.exports = {
     purge: {
         content: ["./src/**/*.{tsx,js}"],
@@ -19,6 +27,7 @@ module.exports = {
     darkMode: false, // or 'media' or 'class'
     theme: {
         colors: custom_colors,
+        letterSpacing: customTracking,
     },
     variants: {
         backgroundColor: ["responsive", "hover", "focus", "active"],
