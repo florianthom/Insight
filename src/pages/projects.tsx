@@ -10,7 +10,7 @@ import { defaultQueryClient } from "@/src/app/shared/queryClient/defaultQueryCli
 
 interface Props {}
 
-export async function getStaticProps(): Promise<any> {
+export async function getServerSideProps(): Promise<any> {
     const queryClient = defaultQueryClient;
     await queryClient.prefetchQuery("/projects?pagesize=" + pageSize + "&pagenumber=" + firstPage);
     return {
