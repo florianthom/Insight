@@ -12,7 +12,7 @@ export const Impressum: React.FC<Props> = (props: Props) => {
             <NavBar></NavBar>
             <div>
                 <div className="pt-56 pb-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-                    <h2 className="text-black text-3xl tracking-more-than-wide">Impressum</h2>
+                    <h2 className="text-black text-3xl tracking-headline">Impressum</h2>
                     <div className="text-base text-black pt-24">
                         In Germany I have to put a section on my website called “Impressum” (in german language). “An
                         Impressum is essentially a statement of ownership and authorship. It was put into place to in an

@@ -15,7 +15,7 @@ export const Home: React.FC<Props> = (props: Props) => {
             <div className="custom-background-image h-screen bg-no-repeat bg-cover bg-center">
                 <NavBar></NavBar>
                 <div className="absolute top-1/2 left-1/2 sm:top-1/2 sm:left-1/2 lg:top-1/2 lg:left-1/2 transform -translate-x-2/4 -translate-y-2/4">
-                    <h1 className="text-white tracking-more-than-wide text-3xl sm:text-5xl lg:text-5xl pt-16">
+                    <h1 className="text-white tracking-headline text-3xl sm:text-5xl lg:text-5xl pt-16">
                         FLORIAN THOM
                     </h1>
                     <h2 className="text-white text-xl sm:text-3xl lg:text-3xl pt-5">
@@ -74,7 +74,7 @@ export const Home: React.FC<Props> = (props: Props) => {
             </div>
             <div className="bg-main-color">
                 <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-                    <h2 className="text-white text-3xl tracking-more-than-wide">RECENT WORK</h2>
+                    <h2 className="text-white text-3xl tracking-headline">RECENT WORK</h2>
                     <div className="text-base text-white pt-24">
                         Over the years I have encountered many technologies and gained experience in numerous areas. I
                         love to learn new technologies and to examine them for advantages and disadvantages compared to
@@ -194,7 +194,7 @@ export const Home: React.FC<Props> = (props: Props) => {
             </div>
             <div className="bg-main-color">
                 <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-                    <h2 className="text-white text-3xl tracking-more-than-wide">MY SKILLS</h2>
+                    <h2 className="text-white text-3xl tracking-headline">MY SKILLS</h2>
                     <div className="text-base text-white pt-24">
                         Over the years I encountered many technologies and gained experience in numerous areas. I love
                         to learn new technologies and to examine them for advantages and disadvantages compared to the
@@ -320,7 +320,7 @@ export const Home: React.FC<Props> = (props: Props) => {
             </div>
             <div>
                 <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-                    <h2 className="text-black text-3xl tracking-more-than-wide">FUTURE VENTURES</h2>
+                    <h2 className="text-black text-3xl tracking-headline">FUTURE VENTURES</h2>
                     <div className="text-base text-black pt-24">
                         I always like to test new stuff. Here I present a small list of technologies that i will
                         probably try to learn in upcoming projects. I divided the list into Software Architecture,

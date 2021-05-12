@@ -12,7 +12,7 @@ export const Projects: React.FC<Props> = (props: Props) => {
             <NavBar></NavBar>
             <div className="bg-white">
                 <div className="pt-56 pb-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-                    <h2 className="text-black text-3xl tracking-more-than-wide">MY SOFTWARE REPOSITORY</h2>
+                    <h2 className="text-black text-3xl tracking-headline">MY SOFTWARE REPOSITORY</h2>
                     <div className="text-base text-black pt-24">
                         My software repository is based on github. There are some private and public repositories. Here
                         is a list of some (public and private) projects with additional information.
@@ -24,7 +24,7 @@ export const Projects: React.FC<Props> = (props: Props) => {
             </div>
             <div className="bg-main-color">
                 <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-                    <h2 className="text-white text-3xl tracking-more-than-wide">WEBSITE TECHNOLOGY STACK</h2>
+                    <h2 className="text-white text-3xl tracking-headline">WEBSITE TECHNOLOGY STACK</h2>
                     <div className="text-base text-white pt-24">
                         This website and its infrastracture was not just build because i want to had an online presence.
                         This kind of project was meant to create a plattform for all kinds of projects. So its possible

@@ -11,7 +11,7 @@ export const Footer: React.FC<Props> = (props: Props) => {
         <footer>
             <div className="bg-main-color-light">
                 <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-                    <div className="text-white text-base tracking-more-than-wide text-center">KEEP IN TOUCH</div>
+                    <div className="text-white text-base tracking-headline text-center">KEEP IN TOUCH</div>
                     <div className="pt-16 flex justify-evenly">
                         <a href={linkedin_link} target="_blank" rel="noopener noreferrer">
                             <Image

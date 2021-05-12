@@ -13,7 +13,7 @@ export const Work: React.FC<Props> = (props: Props) => {
             <NavBar></NavBar>
             <div>
                 <div className="pt-56 pb-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-                    <h2 className="text-black text-3xl tracking-more-than-wide">MY WORK</h2>
+                    <h2 className="text-black text-3xl tracking-headline">MY WORK</h2>
                     <div className="text-base text-black pt-24">
                         Over the years I have encountered many technologies and gained experience in numerous areas. I
                         love to learn new technologies and to examine them for advantages and disadvantages compared to
@@ -187,7 +187,7 @@ export const Work: React.FC<Props> = (props: Props) => {
             </div>
             <div>
                 <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-                    <h2 className="text-black text-3xl tracking-more-than-wide">Curriculum Vitae</h2>
+                    <h2 className="text-black text-3xl tracking-headline">Curriculum Vitae</h2>
                     <div className="text-base text-black pt-24">
                         In the past a created my cv. As each company needs a unique set of skills, I usually create a
                         separate CV for each job application. Nevertheless I created a general CV too, to provide some
