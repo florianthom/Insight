@@ -25,7 +25,7 @@ const IndexPage: NextPage<Props> = (props: Props) => {
                 <title>Florian Thom</title>
                 <meta name="description" content="Test Application: Index-Page" />
             </Head>
-            <Home></Home>
+            <Home />
         </main>
     );
 };

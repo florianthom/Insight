@@ -27,45 +27,41 @@ export function mockNextUseRouter(props: { route: string; pathname: string; quer
     }));
 }
 
+let DEFAULT_PROPS: HomeProps;
+// Mocks Next.js route
+mockNextUseRouter({
+    route: "/home",
+    pathname: "/home",
+    query: "",
+    asPath: `/home`,
+});
+const queryClient = defaultQueryClient;
+
+const AllTheProviders = ({ children }) => {
+    return (
+        <Provider store={store}>
+            <QueryClientProvider client={queryClient}>
+                <Meta />
+                {children}
+            </QueryClientProvider>
+        </Provider>
+    );
+};
+
+function renderWithWrapper(ui, options): RenderResult {
+    return render(ui, { wrapper: AllTheProviders, ...options });
+}
+
+jest.mock("./significantProjectsTable/significantProjectsTable.tsx", () => () => "SignificantProjectsTable");
+
 describe("HomeComponent", () => {
-    let DEFAULT_PROPS: HomeProps;
-    // Mocks Next.js route
-    mockNextUseRouter({
-        route: "/home",
-        pathname: "/home",
-        query: "",
-        asPath: `/home`,
-    });
-    const queryClient = defaultQueryClient;
-
-    const AllTheProviders = ({ children }) => {
-        return (
-            <Provider store={store}>
-                <QueryClientProvider client={queryClient}>
-                    <Meta />
-                    {children}
-                </QueryClientProvider>
-            </Provider>
-        );
-    };
-
-    function renderWithWrapper(ui, options): RenderResult {
-        return render(ui, { wrapper: AllTheProviders, ...options });
-    }
-
     beforeEach(() => {
         DEFAULT_PROPS = {} as HomeProps;
     });
-    // jest.mock("./significantProjectsTable", () => () => <div>Hello World</div>);
-
-    // jest.createMockFromModule("./significantProjectsTable/significantProjectsTable");
-
-    test("shows the correct name", () => {
-        jest.mock("./significantProjectsTable/significantProjectsTable", () => {
-            const ComponentToMock = () => <div>Hello World</div>;
-            return ComponentToMock;
-        });
-        const renderResult: RenderResult = renderWithWrapper(Home, {});
-        expect(renderResult.container.textContent).toMatch("Hello World");
+    // it == alias of test -> test == it
+    test("if it renders without crashing", () => {
+        const renderResult: RenderResult = renderWithWrapper(<Home />, {});
+        // console.log(renderResult.container.textContent);
+        expect(renderResult.container.textContent).toMatch("SignificantProjectsTable");
     });
 });
