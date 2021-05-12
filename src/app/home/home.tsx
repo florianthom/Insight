@@ -15,7 +15,7 @@ export const Home: React.FC<Props> = (props: Props) => {
             <div className="custom-background-image h-screen bg-no-repeat bg-cover bg-center">
                 <NavBar></NavBar>
                 <div className="absolute top-1/2 left-1/2 sm:top-1/2 sm:left-1/2 lg:top-1/2 lg:left-1/2 transform -translate-x-2/4 -translate-y-2/4">
-                    <h1 className="text-white tracking-headline text-3xl sm:text-5xl lg:text-5xl pt-16">
+                    <h1 className="text-white tracking-headline text-3xl sm:text-5xl lg:text-5xl pt-24">
                         FLORIAN THOM
                     </h1>
                     <h2 className="text-white text-xl sm:text-3xl lg:text-3xl pt-5">
