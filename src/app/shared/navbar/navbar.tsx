@@ -33,7 +33,7 @@ export const NavBar: React.FC<Props> = (props: Props) => {
         <nav
             className={
                 "top-0 left-0 right-0 fixed transition-all duration-500 overflow-hidden z-50 " +
-                (scrollState === "top" ? "p-2 sm:p-4" : "p-0") +
+                (scrollState === "top" ? "p-1 sm:p-4" : "p-0") +
                 (scrollState === "top"
                     ? // tailwind = mobile first (sm != mobile) = ohne prefix = mobile and wenn man dann sagt: "height-1 sm:height-5..."
                       // dann heißt dass, dass mobile=height-1 und alles darüber hinaus = height-5

@@ -1,7 +1,4 @@
-import { NavBar } from "@/src/app/shared/navbar/navbar";
-import { Footer } from "@/src/app/shared/footer/footer";
 import React, { useState } from "react";
-import { ReportItem } from "@/src/app/reports/recordButton/reportItem";
 import {
     firstPage,
     pageSize,
