@@ -14,11 +14,9 @@ export const RepositoryTable: React.FC<Props> = (props: Props) => {
         { keepPreviousData: true },
     );
 
-    // block overflow-x-auto whitespace-nowrap
     return (
         <div className="overflow-hidden">
             <div className="overflow-x-auto shadow border border-gray-300">
-                {/*<div className="border-gray-200 w-full rounded bg-white overflow-x-auto">*/}
                 <table className="block lg:table table-fixed sm:min-w-full divide-y w-full">
                     <thead className="text-center">
                         <tr className="divide-x divide-x-gray-200 bottom-box-shadow">

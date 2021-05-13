@@ -16,7 +16,7 @@ const customTracking = {
     ...defaultTheme.letterSpacing,
     ...{
         headline: "0.5em",
-        "headline-mobile": "0.4em",
+        "headline-mobile": "0.35em",
     },
 };
 
