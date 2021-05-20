@@ -44,35 +44,39 @@ export const RepositoryTable: React.FC<Props> = (props: Props) => {
                                 </td>
                             </tr>
                         ) : (
-                            projectsData?.data?.map((a: Project) => (
-                                <tr key={a.id} className="divide-x divide-gray-100">
-                                    <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
-                                        <a
-                                            href={a.htmLUrl}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="transition cursor-pointer hover:underline"
-                                        >
-                                            {a.name}
-                                        </a>
-                                    </td>
-                                    <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
-                                        {a.description}
-                                    </td>
-                                    <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
-                                        {a.language}
-                                    </td>
-                                    <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
-                                        {a.visibility}
-                                    </td>
-                                    <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
-                                        {a.size}
-                                    </td>
-                                    <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
-                                        {new Date(a.projectCreatedOn).toLocaleDateString("en-US")}
-                                    </td>
-                                </tr>
-                            ))
+                            projectsData?.data
+                                ?.sort((a, b) =>
+                                    new Date(a.projectCreatedOn) >= new Date(b.projectCreatedOn) ? -1 : 1,
+                                )
+                                .map((a: Project) => (
+                                    <tr key={a.id} className="divide-x divide-gray-100">
+                                        <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
+                                            <a
+                                                href={a.htmLUrl}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="transition cursor-pointer hover:underline"
+                                            >
+                                                {a.name}
+                                            </a>
+                                        </td>
+                                        <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
+                                            {a.description}
+                                        </td>
+                                        <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
+                                            {a.language}
+                                        </td>
+                                        <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
+                                            {a.visibility}
+                                        </td>
+                                        <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
+                                            {a.size}
+                                        </td>
+                                        <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
+                                            {new Date(a.projectCreatedOn).toLocaleDateString("en-US")}
+                                        </td>
+                                    </tr>
+                                ))
                         )}
                     </tbody>
                 </table>

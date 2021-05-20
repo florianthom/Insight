@@ -38,11 +38,15 @@ export const Reports: React.FC<Props> = (props: Props) => {
                                 <BasicSpinner></BasicSpinner>
                             </div>
                         ) : (
-                            documentsData?.data?.map((a) => (
-                                <div className="py-8" key={(a as Document).id}>
-                                    <ReportItem document={a as Document}></ReportItem>
-                                </div>
-                            ))
+                            documentsData?.data
+                                .sort((a: Document, b: Document) =>
+                                    new Date(a.documentCreatedTime) >= new Date(b.documentCreatedTime) ? -1 : 1,
+                                )
+                                .map((a) => (
+                                    <div className="py-8" key={(a as Document).id}>
+                                        <ReportItem document={a as Document}></ReportItem>
+                                    </div>
+                                ))
                         )}
                     </div>
                     {isLoading ? (
