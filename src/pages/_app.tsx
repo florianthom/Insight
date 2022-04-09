@@ -10,6 +10,7 @@ import { Meta } from "@/src/app/shared/meta/meta";
 import { Provider } from "react-redux";
 import { store } from "@/src/app/store/store";
 import { defaultQueryClient } from "@/src/app/shared/queryClient/defaultQueryClient";
+import * as constants from "@/src/app/shared/constants/constants";
 
 // call order: _document.tsx -> app.tsx -> app.tsx -> layout -> children
 //  _document.tsx gets only rendered server-side
@@ -29,7 +30,7 @@ const MyApp: NextPage<AppProps> = (props: AppProps) => {
                         <Meta />
                         <props.Component {...props.pageProps} />
                     </Hydrate>
-                    {/*<ReactQueryDevtools initialIsOpen={true} />*/}
+                    <ReactQueryDevtools initialIsOpen={constants.__prod__} />
                 </QueryClientProvider>
             </Provider>
         </div>
