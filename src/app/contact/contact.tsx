@@ -27,6 +27,7 @@ export const Contact: React.FC<Props> = (props: Props) => {
                                 text="Just “Connect” with me."
                                 link_string={linkedin_link}
                             ></PlatformCard>
+
                             <PlatformCard
                                 image_path="/static/images/xing_transparent_svg.svg"
                                 platform_name="Xing"
