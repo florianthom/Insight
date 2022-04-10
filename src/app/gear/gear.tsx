@@ -33,8 +33,13 @@ export const Gear: React.FC<Props> = (props: Props) => {
                             <h3 className="text-2xl text-black">Computer</h3>
                             <div className="py-2">
                                 <ul className="list-disc text-base text-black list-inside">
-                                    <li>DELL U2719D</li>
-                                    <li>DELL U2721DE</li>
+                                    <li>
+                                        Monitor
+                                        <ul className="list-disc list-inside pl-4">
+                                            <li>DELL U2719D</li>
+                                            <li>DELL U2721DE</li>
+                                        </ul>
+                                    </li>
                                     <li>
                                         Desktop
                                         <ul className="list-disc list-inside pl-4">
