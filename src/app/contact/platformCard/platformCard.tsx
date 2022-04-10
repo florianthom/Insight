@@ -1,5 +1,3 @@
-import { NavBar } from "@/src/app/shared/navbar/navbar";
-import { Footer } from "@/src/app/shared/footer/footer";
 import React from "react";
 import Image from "next/image";
 
