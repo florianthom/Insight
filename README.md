@@ -59,6 +59,8 @@ Frontend-Project to create my personal website. The backend-code can be found [h
 
 `$ kubectl get services`
 
+`$ kubectl rollout restart deployment/personal-website-frontend-deployment`
+
 
 ### minikube
 
