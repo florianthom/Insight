@@ -11,9 +11,9 @@ interface Props {
 export const ReportItem: React.FC<Props> = (props: Props) => {
     return (
         <div className="transition bg-white text-main-color shadow-inner border border-main-color py-2 px-4 cursor-pointer rounded shadow hover:bg-main-color hover:text-white active:bg-main-color-light">
-            <div className="grid grid-cols-12">
-                <div className="col-span-12 sm:col-span-11">
-                    <a href={props.document.webviewLink} target="_blank" rel="noopener noreferrer">
+            <a href={props.document.webviewLink} target="_blank" rel="noopener noreferrer">
+                <div className="grid grid-cols-12">
+                    <div className="col-span-12 sm:col-span-11">
                         <div className="text-center">
                             <Image
                                 src={props.document.thumbnailLink}
@@ -34,25 +34,25 @@ export const ReportItem: React.FC<Props> = (props: Props) => {
                             <RecordTag tagName="german"></RecordTag>
                             <RecordTag tagName={props.document.size.toString() + " bytes"}></RecordTag>
                         </div>
-                    </a>
+                    </div>
+                    <div className="hidden sm:flex justify-center items-center border-l-2">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="h-16 w-16"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="gray"
+                        >
+                            <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M14 5l7 7m0 0l-7 7m7-7H3"
+                            />
+                        </svg>
+                    </div>
                 </div>
-                <div className="hidden sm:flex justify-center items-center border-l-2">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-16 w-16"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="gray"
-                    >
-                        <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M14 5l7 7m0 0l-7 7m7-7H3"
-                        />
-                    </svg>
-                </div>
-            </div>
+            </a>
         </div>
     );
 };
