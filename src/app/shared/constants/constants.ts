@@ -16,7 +16,7 @@ export const pageSizeLess = 5;
 // so this value should be set to get all projects with one query
 export const pageSizeLandingPage = 100;
 export const projectsToShowOnLandingPage = [
-    "Personal-Website",
+    "Voyager",
     "AWS-Cluster-PW",
     "Car-AI-Unity",
     "MobileAppPublicHealthFrontend",

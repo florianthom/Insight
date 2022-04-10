@@ -89,9 +89,15 @@ export const Home: React.FC<Props> = (props: Props) => {
                         <div className="pt-4">
                             <ul className="list-disc text-base text-white list-inside">
                                 <li>
-                                    Personal Website
+                                    Voyager
                                     <ul className="list-inside pl-4">
-                                        <li>Created online presence</li>
+                                        <li>Spring Boot Microservice regarding career opportunities</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Darwin
+                                    <ul className="list-inside pl-4">
+                                        <li>Basic (Micro-) Service to handle identity management</li>
                                     </ul>
                                 </li>
                                 <li>
@@ -221,13 +227,13 @@ export const Home: React.FC<Props> = (props: Props) => {
                             <div className="my-8">
                                 <h3 className="text-2xl text-white">Backend</h3>
                                 <ul className="list-disc text-base text-white list-inside">
-                                    <li>Node.js</li>
-                                    <li>GraphQL</li>
-                                    <li>DataLoader</li>
+                                    <li>.NET 6</li>
                                     <li>ASP.NET Core</li>
-                                    <li>.NET 5</li>
+                                    <li>Java 17</li>
+                                    <li>Spring Boot (+Security)</li>
+                                    <li>Node.js</li>
                                     <li>REST</li>
-                                    <li>Jersey</li>
+                                    <li>GraphQL (+DataLoader)</li>
                                     <li>Ruby (On Rails)</li>
                                     <li>PSQL</li>
                                     <li>Hangfire</li>
@@ -260,7 +266,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                                 <h3 className="text-2xl text-white">Cloud & DevOps</h3>
                                 <ul className="list-disc text-base text-white list-inside">
                                     <li>Docker (Compose)</li>
-                                    <li>Singularity</li>
+                                    <li>WSL 2</li>
                                     <li>Kubernetes</li>
                                     <li>Ansible</li>
                                     <li>Terraform</li>

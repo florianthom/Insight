@@ -28,9 +28,15 @@ export const Work: React.FC<Props> = (props: Props) => {
                         <div className="pt-4">
                             <ul className="list-disc text-base text-black list-inside">
                                 <li>
-                                    Personal Website
+                                    Voyager
                                     <ul className="list-inside pl-4">
-                                        <li>Created online presence</li>
+                                        <li>Spring Boot Microservice regarding career opportunities</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Darwin
+                                    <ul className="list-inside pl-4">
+                                        <li>Basic (Micro-) Service to handle identity management</li>
                                     </ul>
                                 </li>
                                 <li>
