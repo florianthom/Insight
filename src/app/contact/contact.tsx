@@ -15,8 +15,8 @@ export const Contact: React.FC<Props> = (props: Props) => {
                     <h2 className="text-black text-3xl tracking-headline">CONTACT ME</h2>
                     <div className="text-base text-black pt-24">
                         I would appreciate it if I can get in touch with you. Networking is one of the greatest things
-                        you can do today and since platform like Xing or LinkedIn exist it is not even hard. So just
-                        send me a message on one of the following platform.
+                        you can do today and since platforms like Xing or LinkedIn exist it is not even hard. So just
+                        send me a message on one of the following platforms.
                     </div>
                     <div className="pt-24">
                         <div className="flex justify-around">

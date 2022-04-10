@@ -21,10 +21,10 @@ export const Gear: React.FC<Props> = (props: Props) => {
                             <h3 className="text-2xl text-black">Software</h3>
                             <div className="py-2">
                                 <ul className="list-disc text-base text-black list-inside">
-                                    <li>tmux</li>
+                                    <li>WSL 2</li>
+                                    <li>tmux || windows terminal</li>
                                     <li>Jetbrains suite</li>
                                     <li>Visual Studio Code</li>
-                                    <li>Eclipse Suite</li>
                                     <li>Affinity Designer</li>
                                 </ul>
                             </div>
@@ -33,13 +33,14 @@ export const Gear: React.FC<Props> = (props: Props) => {
                             <h3 className="text-2xl text-black">Computer</h3>
                             <div className="py-2">
                                 <ul className="list-disc text-base text-black list-inside">
+                                    <li>DELL U2719D</li>
+                                    <li>DELL U2721DE</li>
                                     <li>
                                         Desktop
                                         <ul className="list-disc list-inside pl-4">
-                                            <li>Created online presence</li>
                                             <li>intel core i5-4590</li>
                                             <li>nvidia gtx 750ti</li>
-                                            <li>8 GB RAM</li>
+                                            <li>16 GB RAM</li>
                                             <li>Samsung SSD 860 EVO</li>
                                         </ul>
                                     </li>
@@ -82,6 +83,12 @@ export const Gear: React.FC<Props> = (props: Props) => {
                             <div className="py-2">
                                 <ul className="list-disc text-base text-black list-inside">
                                     <li>
+                                        “System Design Interview 2”
+                                        <ul className="list-disc list-inside pl-4">
+                                            <li>by Alex Xu</li>
+                                        </ul>
+                                    </li>
+                                    <li>
                                         “System Design Interview”
                                         <ul className="list-disc list-inside pl-4">
                                             <li>by Alex Xu</li>
@@ -107,7 +114,7 @@ export const Gear: React.FC<Props> = (props: Props) => {
                             <h3 className="text-2xl text-black">Papers & Talks</h3>
                             <div className="py-2">
                                 <ul className="list-disc text-base text-black list-inside">
-                                    <li>to many...</li>
+                                    <li>too many...</li>
                                 </ul>
                             </div>
                         </div>
