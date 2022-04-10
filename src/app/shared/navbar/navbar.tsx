@@ -120,9 +120,9 @@ export const NavBar: React.FC<Props> = (props: Props) => {
                                 CONTACT
                             </a>
                         </Link>
-                        <Link href="/impressum">
+                        <Link href="/imprint">
                             <a className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium">
-                                IMPRESSUM
+                                IMPRINT
                             </a>
                         </Link>
                     </div>
@@ -171,9 +171,9 @@ export const NavBar: React.FC<Props> = (props: Props) => {
                             </Link>
                         </li>
                         <li className="my-4">
-                            <Link href="/impressum">
+                            <Link href="/imprint">
                                 <a className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium">
-                                    IMPRESSUM
+                                    IMPRINT
                                 </a>
                             </Link>
                         </li>

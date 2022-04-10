@@ -12,14 +12,13 @@ export const Imprint: React.FC<Props> = (props: Props) => {
             <NavBar></NavBar>
             <div>
                 <div className="pt-56 pb-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-                    <h2 className="text-black text-3xl tracking-headline">Impressum</h2>
+                    <h2 className="text-black text-3xl tracking-headline">Imprint</h2>
                     <div className="text-base text-black pt-24">
-                        In Germany I have to put a section on my website called “Impressum” (in german language). “An
-                        Impressum is essentially a statement of ownership and authorship. It was put into place to in an
-                        effort to protect user data, combat illegal content and spam by making website owners identify
-                        themselves, and as a result assume responsibility for the content on their platform. Often when
-                        talking about an Impressum, people mean the German (DACH) version of compulsory information
-                        placed on a website.” (source:{" "}
+                        An Imprint "is essentially a statement of ownership and authorship. It was put into place to in
+                        an effort to protect user data, combat illegal content and spam by making website owners
+                        identify themselves, and as a result assume responsibility for the content on their platform.
+                        Often when talking about an Imprint, people mean the German (DACH) version of compulsory
+                        information placed on a website.” (source:{" "}
                         <a
                             className="hover:underline"
                             href="https://www.iubenda.com/en/help/7816-impressum-what-is-it-and-when-is-it-needed#required"

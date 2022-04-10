@@ -74,8 +74,8 @@ export const Footer: React.FC<Props> = (props: Props) => {
                             <a className="my-4 min-w-flex-100 text-center hover:underline">Contact</a>
                         </Link>
                         <div className="my-4 text-gray-600">|</div>
-                        <Link href="/impressum">
-                            <a className="my-4 min-w-flex-100 text-center hover:underline">Impressum</a>
+                        <Link href="/imprint">
+                            <a className="my-4 min-w-flex-100 text-center hover:underline">Imprint</a>
                         </Link>
                     </div>
                 </div>

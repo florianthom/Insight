@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import { Imprint } from "@/src/app/impressum/imprint";
+import { Imprint } from "@/src/app/imprint/imprint";
 import React from "react";
 import Head from "next/head";
 
