@@ -21,4 +21,18 @@ module.exports = {
         // !! WARN !!
         ignoreBuildErrors: true,
     },
+    async redirects() {
+        return [
+            {
+                source: "/home",
+                destination: "/",
+                permanent: false,
+            },
+            {
+                source: "/mail",
+                destination: "/email",
+                permanent: false,
+            },
+        ];
+    },
 };

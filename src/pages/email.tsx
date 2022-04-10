@@ -5,13 +5,13 @@ import * as constants from "../app/shared/constants/constants";
 
 interface Props {}
 
-const DiscordPage: NextPage<Props> = (props: Props) => {
+const EmailPage: NextPage<Props> = (props: Props) => {
     const router = useRouter();
     useEffect(() => {
-        window.location.replace(constants.discord_link);
+        window.location.replace("mailto:" + constants.email_string);
     });
 
-    return <div>You should be redirected to: {constants.discord_link}</div>;
+    return <div>Your email-provider should be opened up with inserted email ({constants.email_string}).</div>;
 };
 
-export default DiscordPage;
+export default EmailPage;

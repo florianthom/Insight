@@ -6,7 +6,7 @@ import * as constants from "@/src/app/shared/constants/constants";
 
 interface Props {}
 
-export const Impressum: React.FC<Props> = (props: Props) => {
+export const Imprint: React.FC<Props> = (props: Props) => {
     return (
         <div>
             <NavBar></NavBar>

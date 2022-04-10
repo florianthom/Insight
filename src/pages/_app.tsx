@@ -15,7 +15,10 @@ import * as constants from "@/src/app/shared/constants/constants";
 // call order: _document.tsx -> app.tsx -> app.tsx -> layout -> children
 //  _document.tsx gets only rendered server-side
 
-// next. js 3 function: getInitialProps (legacy), getStaticProps (get data on server at buildtime), getServerSideProps (getData on server on run time)
+// next. js 3 function:
+// - getInitialProps (legacy),
+// - getStaticProps (get data on server at buildtime),
+// - getServerSideProps (getData on server on run time)
 
 const MyApp: NextPage<AppProps> = (props: AppProps) => {
     const queryClientRef = React.useRef<QueryClient>();
