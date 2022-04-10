@@ -67,3 +67,9 @@ describe("HomeComponent", () => {
         expect(renderResult.container.textContent).toMatch("FLORIAN THOM");
     });
 });
+
+// describe("HomeComponent", () => {
+//     test("if it renders without crashing", () => {
+//         expect(true).toBe(true);
+//     });
+// });

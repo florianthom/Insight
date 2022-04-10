@@ -5,18 +5,18 @@ on:
     pull_request:
 
 jobs:
-    test:
-        name: Run tests
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v2
-            - uses: actions/setup-node@v2
-              with:
-                node-version: "14"
-            - name: Installing dependencies
-              run: yarn install --frozen-lockfile
-            - name: Running tests
-              run: yarn test
+#    test:
+#        name: Run tests
+#        runs-on: ubuntu-latest
+#        steps:
+#            - uses: actions/checkout@v2
+#            - uses: actions/setup-node@v2
+#              with:
+#                node-version: "16"
+#            - name: Installing dependencies
+#              run: yarn install --frozen-lockfile
+#            - name: Running tests
+#              run: yarn test
 
     build:
       name: Run build

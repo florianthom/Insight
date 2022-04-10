@@ -25,12 +25,18 @@ const MyApp: NextPage<AppProps> = (props: AppProps) => {
     if (!queryClientRef.current) {
         queryClientRef.current = defaultQueryClient;
     }
+
+    const queryClient = new QueryClient();
+
     return (
         <div>
             <Provider store={store}>
-                <QueryClientProvider client={queryClientRef.current}>
+                {/*https://github.com/tannerlinsley/react-query/issues/3476*/}
+                {/*does not work with react 18 currently*/}
+                <QueryClientProvider client={queryClient}>
                     <Hydrate state={props.pageProps.dehydratedState}>
                         <Meta />
+                        {/*https://stackoverflow.com/questions/71809903/next-js-component-cannot-be-used-as-a-jsx-component*/}
                         <props.Component {...props.pageProps} />
                     </Hydrate>
                     <ReactQueryDevtools initialIsOpen={constants.__prod__} />
