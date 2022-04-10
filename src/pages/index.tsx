@@ -25,7 +25,7 @@ const IndexPage: NextPage<Props> = (props: Props) => {
                 <title>Home - Florian Thom</title>
                 <meta
                     name="description"
-                    content="FLORIAN THOM - Computer science enthusiast - Interested in research & development. Open to new technologies in software and hardware."
+                    content="FLORIAN THOM - Computer science enthusiast, interested in research & development. Open to new technologies in software and hardware."
                 />
             </Head>
             <Home />
