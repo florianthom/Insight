@@ -10,7 +10,7 @@ const ImprintPage: NextPage<Props> = (props: Props) => {
         <main>
             <Head>
                 <title>Imprint - Florian Thom</title>
-                <meta name="description" content="Test Application: Index-Page" />
+                <meta name="description" content="Read through the imprint of the Homepage of Florian Thom." />
             </Head>
             <Imprint></Imprint>
         </main>

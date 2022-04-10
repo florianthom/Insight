@@ -322,9 +322,9 @@ export const Home: React.FC<Props> = (props: Props) => {
                 <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
                     <h2 className="text-black text-3xl tracking-headline">FUTURE VENTURES</h2>
                     <div className="text-base text-black pt-24">
-                        I always like to test new stuff. Here I present a small list of technologies that i will
+                        I always like to test new stuff. Here I present a small list of technologies that I will
                         probably try to learn in upcoming projects. I divided the list into Software Architecture,
-                        Distributed Systems and Machine Learning. These are probably the areas, i will spend most time
+                        Distributed Systems and Machine Learning. These are probably the areas, I will spend most time
                         on.
                     </div>
                     <div className="text-base text-black pt-24">

@@ -17,7 +17,10 @@ const XingPage: NextPage<Props> = (props: Props) => {
         <main>
             <Head>
                 <title>Xing - Florian Thom</title>
-                <meta name="description" content="Test Application: Index-Page" />
+                <meta
+                    name="description"
+                    content="Get a direct link to the xing-profile of Florian Thom. There you can add him to your network and much more."
+                />
             </Head>
             <NavBar></NavBar>
             <div className="pt-56">You should be redirected to: {constants.xing_link}.</div>

@@ -17,7 +17,10 @@ const EmailPage: NextPage<Props> = (props: Props) => {
         <main>
             <Head>
                 <title>Email - Florian Thom</title>
-                <meta name="description" content="Test Application: Index-Page" />
+                <meta
+                    name="description"
+                    content="Get a direct link to the email-address of Florian Thom. You can message him right away."
+                />
             </Head>
             <NavBar></NavBar>
             <div className="pt-56">

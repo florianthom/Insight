@@ -17,7 +17,10 @@ const LinkedinPage: NextPage<Props> = (props: Props) => {
         <main>
             <Head>
                 <title>Linkedin - Florian Thom</title>
-                <meta name="description" content="Test Application: Index-Page" />
+                <meta
+                    name="description"
+                    content="Get a direct link to the linkedin-profile of Florian Thom. You can connect and follow him and write some messages."
+                />
             </Head>
             <NavBar></NavBar>
             <div className="pt-56">You should be redirected to: {constants.linkedin_link}.</div>

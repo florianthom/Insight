@@ -10,7 +10,10 @@ const ContactPage: NextPage<Props> = (props: Props) => {
         <main>
             <Head>
                 <title>Contact - Florian Thom</title>
-                <meta name="description" content="Test Application: Index-Page" />
+                <meta
+                    name="description"
+                    content="Get an overview on how to contact Florian Thom. In addition to send an email you connect on platforms like linkedin oder xing."
+                />
             </Head>
             <Contact></Contact>
         </main>

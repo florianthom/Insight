@@ -25,7 +25,10 @@ const ProjectsPage: NextPage<Props> = (props: Props) => {
         <main>
             <Head>
                 <title>Projects - Florian Thom</title>
-                <meta name="description" content="Test Application: Index-Page" />
+                <meta
+                    name="description"
+                    content="FLORIAN THOM - PROJECTS: Discover interesting projects implemented by state of the art software through a custom graphical overview."
+                />
             </Head>
             <Projects></Projects>
         </main>

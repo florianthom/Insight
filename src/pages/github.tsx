@@ -17,7 +17,10 @@ const GithubPage: NextPage<Props> = (props: Props) => {
         <main>
             <Head>
                 <title>Github - Florian Thom</title>
-                <meta name="description" content="Test Application: Index-Page" />
+                <meta
+                    name="description"
+                    content="Get a direct link to the github-profile of Florian Thom. In addition to get insights on his activity you can inspect most of his projects."
+                />
             </Head>
             <NavBar></NavBar>
             <div className="pt-56">You should be redirected to {constants.github_link}.</div>

@@ -23,7 +23,10 @@ const ReportsPage: NextPage<Props> = (props: Props) => {
         <main>
             <Head>
                 <title>Reports & Talks- Florian Thom</title>
-                <meta name="description" content="Test Application: Index-Page" />
+                <meta
+                    name="description"
+                    content="FLORIAN THOM - REPORTS AND TALKS: Discover interesting reports and talks about several of the most interesting topics out there."
+                />
             </Head>
             <Reports></Reports>
         </main>

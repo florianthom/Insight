@@ -10,7 +10,10 @@ const WorkPage: NextPage<Props> = (props: Props) => {
         <main>
             <Head>
                 <title>Work & CV - Florian Thom</title>
-                <meta name="description" content="Test Application: Index-Page" />
+                <meta
+                    name="description"
+                    content="FLORIAN THOM - WORK: Discover ventures of the past and currently in process in addition to the CV of Florian Thom."
+                />
             </Head>
             <Work></Work>
         </main>

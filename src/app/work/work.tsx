@@ -189,7 +189,7 @@ export const Work: React.FC<Props> = (props: Props) => {
                 <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
                     <h2 className="text-black text-3xl tracking-headline">Curriculum Vitae</h2>
                     <div className="text-base text-black pt-24">
-                        In the past a created my cv. As each company needs a unique set of skills, I usually create a
+                        In the past a created my CV. As each company needs a unique set of skills, I usually create a
                         separate CV for each job application. Nevertheless I created a general CV too, to provide some
                         insights if someone I am not familiar with, wants to get some impressions.
                     </div>

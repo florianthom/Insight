@@ -17,7 +17,10 @@ const DiscordPage: NextPage<Props> = (props: Props) => {
         <main>
             <Head>
                 <title>Discord - Florian Thom</title>
-                <meta name="description" content="Test Application: Index-Page" />
+                <meta
+                    name="description"
+                    content="Get a direct link to the custom discord server of Florian Thom. There you can message and call him."
+                />
             </Head>
             <NavBar></NavBar>
             <div className="pt-56">You should be redirected to: {constants.discord_link}.</div>

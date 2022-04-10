@@ -13,7 +13,7 @@ export const Gear: React.FC<Props> = (props: Props) => {
                     <h2 className="text-black text-3xl tracking-headline">MY GEAR</h2>
                     <div className="text-base text-black pt-24">
                         Here I like to provide a list of my gear. Here the term gear covers software, general computer
-                        and electronic stuff aswell as books, talks and papers I can recommend. Feel the to check some
+                        and electronic stuff aswell as books, talks and papers I can recommend. Feel free to check some
                         of them out, especially some of the books.
                     </div>
                     <div className="pt-24 flex justify-between">
