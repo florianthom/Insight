@@ -1,5 +1,8 @@
+# https://www.robotstxt.org/robotstxt.html
+
 User-agent: *
-Allow: /*
+Allow: /
 Disallow: /api/*
 Disallow: /swagger
 Disallow: /imprint
+Disallow: /impressum

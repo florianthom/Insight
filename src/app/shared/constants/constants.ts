@@ -1,5 +1,13 @@
 export const __prod__ = process.env.NODE_ENV === "production";
 export const apiBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
+
+export const personal_name = "Florian Thom";
+export const personal_address_street = "Walter-Friedrich-Str. 53";
+export const personal_address_zipcode = "13125";
+export const personal_address_state = "Berlin";
+export const personal_address_country = "Germany";
+export const personal_phone_number = "+49 (0) 15203749443";
+
 export const firstPage = 1;
 export const pageSize = 10;
 export const pageSizeLess = 5;

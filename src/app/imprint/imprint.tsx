@@ -32,11 +32,14 @@ export const Imprint: React.FC<Props> = (props: Props) => {
                     <div className="pt-24">
                         <div className="text-2xl">Adresse</div>
                         <div className="pt-2">
-                            <div>Florian Thom </div>
-                            <div>Walter-Friedrich-Str.53 </div>
-                            <div>13125 Berlin</div>
-                            <div>Tel: +49 (0) 15203749443</div>
-                            <div>{constants.email_string}</div>
+                            <div>{constants.personal_name}</div>
+                            <div>{constants.personal_address_street}</div>
+                            <div>
+                                {constants.personal_address_zipcode} {constants.personal_address_state} (
+                                {constants.personal_address_country})
+                            </div>
+                            <div>Phone: {constants.personal_phone_number}</div>
+                            <div>Email: {constants.email_string}</div>
                         </div>
                         <div className="pt-24 text-2xl">Disclaimer - rechtliche Hinweise</div>
                         <div className="pt-2">
