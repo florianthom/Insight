@@ -95,6 +95,12 @@ export const Gear: React.FC<Props> = (props: Props) => {
                                         </ul>
                                     </li>
                                     <li>
+                                        “Designing Data-Intensive Applications”
+                                        <ul className="list-disc list-inside pl-4">
+                                            <li>by Martin Kleppmann</li>
+                                        </ul>
+                                    </li>
+                                    <li>
                                         “grokking algorithms”
                                         <ul className="list-disc list-inside pl-4">
                                             <li>by Aditya Y. Bhargava</li>
