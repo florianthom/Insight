@@ -21,7 +21,7 @@ export const ReportItem: React.FC<Props> = (props: Props) => {
                                 alt={"thumbnail: " + props.document.name}
                                 width={600}
                                 height={400}
-                                priority={true}
+                                priority={false}
                                 quality={100}
                             />
                         </div>
