@@ -9,7 +9,7 @@ const ContactPage: NextPage<Props> = (props: Props) => {
     return (
         <main>
             <Head>
-                <title>Work & CV - Florian Thom</title>
+                <title>Contact - Florian Thom</title>
                 <meta name="description" content="Test Application: Index-Page" />
             </Head>
             <Contact></Contact>
@@ -17,4 +17,4 @@ const ContactPage: NextPage<Props> = (props: Props) => {
     );
 };
 
-export default Contact;
+export default ContactPage;
