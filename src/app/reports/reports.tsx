@@ -12,10 +12,13 @@ interface Props {}
 
 export const Reports: React.FC<Props> = (props: Props) => {
     const [page, setPage] = useState(firstPage);
-    const { isLoading, error, data: documentsData } = useQuery<PagedResponseDocument, Error>(
-        "/documents?pagesize=" + pageSizeLess + "&pagenumber=" + page,
-        { keepPreviousData: true },
-    );
+    const {
+        isLoading,
+        error,
+        data: documentsData,
+    } = useQuery<PagedResponseDocument, Error>("/documents?pagesize=" + pageSizeLess + "&pagenumber=" + page, {
+        keepPreviousData: true,
+    });
     function handleScroll(): void {
         setTimeout(() => {
             this.scrollIntoView({ behavior: "smooth" });
@@ -77,7 +80,7 @@ export const Reports: React.FC<Props> = (props: Props) => {
                                             <span className="bg-white rounded border border-gray-300 px-4 py-2">
                                                 {page}
                                             </span>{" "}
-                                            of {documentsData.pagesTotal}
+                                            of {documentsData?.pagesTotal || -1}
                                         </span>
                                     </div>
                                     <button
