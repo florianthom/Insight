@@ -1,6 +1,6 @@
 import { NavBar } from "@/src/app/shared/navbar/navbar";
 import { Footer } from "@/src/app/shared/footer/footer";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { qrRedirect } from "@/src/app/shared/constants/constants";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,13 +8,21 @@ import Link from "next/link";
 interface Props {}
 
 export const QR: React.FC<Props> = (props: Props) => {
+    const [redirect, setRedirect] = useState(true);
+
     const clickAnchor = () => {
-        const anchor = document.getElementById("redirectLinkID");
-        if (anchor) {
-            anchor.click();
-            anchor.style.display = "none";
-            anchor.removeAttribute("href");
-        }
+        const timer = setTimeout(() => {
+            const anchor = document.getElementById("redirectLinkID");
+            if (anchor) {
+                let result = anchor.click();
+                console.log(result);
+                anchor.style.display = "none";
+                anchor.removeAttribute("href");
+                if (redirect) {
+                    window.location.assign(qrRedirect);
+                }
+            }
+        }, 2000);
     };
 
     useEffect(() => clickAnchor(), []);
@@ -50,12 +58,14 @@ export const QR: React.FC<Props> = (props: Props) => {
                         </div>
                     </div>
                     <div className="pt-24 p-8 flex justify-center">
-                        <Image
-                            src={"/static/images/florianthom_qr.svg"}
-                            alt="qr-code svg-image"
-                            width="400%"
-                            height="400%"
-                        />
+                        <a href={qrRedirect}>
+                            <Image
+                                src={"/static/images/florianthom_qr.svg"}
+                                alt="qr-code svg-image"
+                                width="400%"
+                                height="400%"
+                            />
+                        </a>
                     </div>
                     <div className="text-base text-black pt-24">
                         In case you want to create you own QR-Country I can recommend{" "}
