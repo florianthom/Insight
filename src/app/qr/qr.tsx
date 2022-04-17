@@ -12,15 +12,15 @@ export const QR: React.FC<Props> = (props: Props) => {
 
     const clickAnchor = () => {
         const timer = setTimeout(() => {
-            const anchor = document.getElementById("redirectLinkID");
-            if (anchor) {
-                let result = anchor.click();
-                console.log(result);
-                anchor.style.display = "none";
-                anchor.removeAttribute("href");
-                if (redirect) {
-                    window.location.assign(qrRedirect);
-                }
+            // const anchor = document.getElementById("redirectLinkID");
+            // if (anchor) {
+            //     let result = anchor.click();
+            //     console.log(result);
+            //     anchor.style.display = "none";
+            //     anchor.removeAttribute("href");
+            // }
+            if (redirect) {
+                window.location.assign(qrRedirect);
             }
         }, 2000);
     };
@@ -76,7 +76,7 @@ export const QR: React.FC<Props> = (props: Props) => {
                     </div>
                 </div>
             </div>
-            <a id="redirectLinkID" href={qrRedirect} target="_blank" rel="noopener noreferrer"></a>
+            {/*<a id="redirectLinkID" href={qrRedirect} target="_blank" rel="noopener noreferrer"></a>*/}
             <Footer></Footer>
         </div>
     );
