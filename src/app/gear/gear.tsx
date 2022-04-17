@@ -105,6 +105,21 @@ export const Gear: React.FC<Props> = (props: Props) => {
                                             <li>by Martin Kleppmann</li>
                                         </ul>
                                     </li>
+
+                                    <li>
+                                        “Clean Code: A Handbook of Agile Software Craftsmanship”
+                                        <ul className="list-disc list-inside pl-4">
+                                            <li>by Robert Martin</li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        “Clean Architecture: A Craftsman's Guide to Software Structure and Design
+                                        <ul className="list-disc list-inside pl-4">
+                                            <li>by Robert Martin</li>
+                                        </ul>
+                                    </li>
+
                                     <li>
                                         “grokking algorithms”
                                         <ul className="list-disc list-inside pl-4">

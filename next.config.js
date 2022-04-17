@@ -34,6 +34,41 @@ module.exports = {
                 destination: "/email",
                 permanent: false,
             },
+            {
+                source: "/qrcode",
+                destination: "/qr",
+                permanent: false,
+            },
+            {
+                source: "/qr-code",
+                destination: "/qr",
+                permanent: false,
+            },
+            {
+                source: "/qr-codes",
+                destination: "/qr",
+                permanent: false,
+            },
+            {
+                source: "/quickresponse",
+                destination: "/qr",
+                permanent: false,
+            },
+            {
+                source: "/quickresponsecode",
+                destination: "/qr",
+                permanent: false,
+            },
+            {
+                source: "/quickresponse-code",
+                destination: "/qr",
+                permanent: false,
+            },
+            {
+                source: "/skills",
+                destination: "/#skills",
+                permanent: false,
+            },
         ];
     },
 };

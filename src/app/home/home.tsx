@@ -10,6 +10,12 @@ import { discord_link, email_string, github_link, linkedin_link } from "../share
 export interface Props {}
 
 export const Home: React.FC<Props> = (props: Props) => {
+    function handleScroll(): void {
+        setTimeout(() => {
+            this.scrollIntoView({ behavior: "smooth" });
+        }, 500);
+    }
+
     return (
         <div>
             <div className="custom-background-image h-screen bg-no-repeat bg-cover bg-center">
@@ -198,7 +204,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                     </div>
                 </div>
             </div>
-            <div className="bg-main-color">
+            <div id="skills" className="bg-main-color">
                 <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
                     <h2 className="text-white text-3xl tracking-headline">MY SKILLS</h2>
                     <div className="text-base text-white pt-24">

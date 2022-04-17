@@ -31,3 +31,4 @@ export const linkedin_link = "https://www.linkedin.com/in/florianthom";
 export const cv_international_link =
     "https://drive.google.com/file/d/1azVdEOLC8S23nZK23LnalKfYSTzJXHQK/view?usp=sharing";
 export const cv_germany_link = "https://drive.google.com/file/d/1e2wbtK9Pnus8pSzYK_fEMoz6aSXdrY_G/view?usp=sharing";
+export const qrRedirect = linkedin_link;

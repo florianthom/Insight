@@ -9,7 +9,7 @@ const GearPage: NextPage<Props> = (props: Props) => {
     return (
         <main>
             <Head>
-                <title>Work & CV - Florian Thom</title>
+                <title>Gear - Florian Thom</title>
                 <meta
                     name="description"
                     content="FLORIAN THOM - GEAR: Get an overview of the gear of Florian Thom. Inspect Software and Hardware and discover recommended books."

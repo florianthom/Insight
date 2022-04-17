@@ -19,11 +19,24 @@ export const Reports: React.FC<Props> = (props: Props) => {
     } = useQuery<PagedResponseDocument, Error>("/documents?pagesize=" + pageSizeLess + "&pagenumber=" + page, {
         keepPreviousData: true,
     });
-    function handleScroll(): void {
-        setTimeout(() => {
-            this.scrollIntoView({ behavior: "smooth" });
-        }, 500);
+
+    // function handleScroll(): void {
+    //     setTimeout(() => {
+    //         this.scrollIntoView({ behavior: "smooth" });
+    //     }, 500);
+    // }
+
+    function handleScroll2(): void {
+        if (documentsData.nextPage) {
+            setPage((a) => a + 1);
+        }
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth",
+        });
     }
+
     return (
         <div>
             <NavBar></NavBar>
@@ -84,16 +97,7 @@ export const Reports: React.FC<Props> = (props: Props) => {
                                         </span>
                                     </div>
                                     <button
-                                        onClick={() => {
-                                            if (documentsData.nextPage) {
-                                                setPage((a) => a + 1);
-                                            }
-                                            window.scrollTo({
-                                                top: 0,
-                                                left: 0,
-                                                behavior: "smooth",
-                                            });
-                                        }}
+                                        onClick={() => handleScroll2()}
                                         disabled={documentsData === undefined || !documentsData.nextPage}
                                         className="bg-gray-100 hover:bg-gray-200 border py-4 m-1 w-3/12 disabled:opacity-50 disabled:cursor-default"
                                     >

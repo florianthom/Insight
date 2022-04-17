@@ -22,7 +22,7 @@ export default class CustomDocument extends Document {
     render(): JSX.Element {
         super.render();
         return (
-            <Html lang="en">
+            <Html className="scroll-smooth" lang="en">
                 <Head>{/*The <Head /> component used here is not the same one from next/head*/}</Head>
                 <body>
                     <Main />
