@@ -2,7 +2,13 @@ import { NavBar } from "@/src/app/shared/navbar/navbar";
 import { Footer } from "@/src/app/shared/footer/footer";
 import React from "react";
 import { PlatformCard } from "@/src/app/contact/platformCard/platformCard";
-import { discord_link, email_string, linkedin_link, xing_link } from "@/src/app/shared/constants/constants";
+import {
+    discord_link,
+    email_string,
+    github_link,
+    linkedin_link,
+    xing_link,
+} from "@/src/app/shared/constants/constants";
 
 interface Props {}
 
@@ -29,11 +35,11 @@ export const Contact: React.FC<Props> = (props: Props) => {
                             ></PlatformCard>
 
                             <PlatformCard
-                                image_path="/static/images/xing_transparent_svg.svg"
-                                platform_name="Xing"
-                                user_name="Florian Thom"
-                                text="Just add me to your network."
-                                link_string={xing_link}
+                                image_path="/static/images/GitHub-Mark.svg"
+                                platform_name="GitHub"
+                                user_name="florianthom"
+                                text="Checkout my repositories, follow me."
+                                link_string={github_link}
                             ></PlatformCard>
                         </div>
                         <div className="pt-16 flex justify-around">

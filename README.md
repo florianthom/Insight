@@ -121,4 +121,4 @@ $ sudo vim /etc/hosts
 Ideas and Designs of this project are based on a [project](https://www.youtube.com/watch?v=SC7lLm6QAb8&t=328s&ab_channel=DevonCrawford) of [Devon Crawford](https://github.com/DevonCrawford).
 Thanks for the motivation and your projects in general. Hopefully you will continue your work.
 
-[here]: https://github.com/FlorianTh2/Personal-Website-Backend
+[here]: https://github.com/florianthom/Personal-Website-Backend

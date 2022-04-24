@@ -185,12 +185,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                         I have worked on a couple of projects till today. Here I like to present a list with selected
                         projects from github I like most. This are projects I spend a lot of time on while having a lot
                         of fun. Feel free to check them out on{" "}
-                        <a
-                            className="hover:underline"
-                            href="https://github.com/FlorianTh2"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
+                        <a className="hover:underline" href={github_link} target="_blank" rel="noopener noreferrer">
                             github
                         </a>
                         .
