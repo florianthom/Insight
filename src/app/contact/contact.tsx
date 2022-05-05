@@ -7,7 +7,7 @@ import {
     email_string,
     github_link,
     linkedin_link,
-    xing_link,
+    twitter_link,
 } from "@/src/app/shared/constants/constants";
 import Image from "next/image";
 import { BC } from "@/src/app/shared/bc/bc";
@@ -47,13 +47,12 @@ export const Contact: React.FC<Props> = (props: Props) => {
                                 text="Just “Connect” with me."
                                 link_string={linkedin_link}
                             ></PlatformCard>
-
                             <PlatformCard
-                                image_path="/static/images/GitHub-Mark.svg"
-                                platform_name="GitHub"
-                                user_name="florianthom"
-                                text="Checkout my repositories, follow me."
-                                link_string={github_link}
+                                image_path="/static/images/twitter_logo.png"
+                                platform_name="Twitter"
+                                user_name="florianthomdev"
+                                text="Just message me or leave a follow."
+                                link_string={twitter_link}
                             ></PlatformCard>
                         </div>
                         <div className="pt-16 flex justify-around">
@@ -65,10 +64,17 @@ export const Contact: React.FC<Props> = (props: Props) => {
                                 link_string={"mailto:" + email_string}
                             ></PlatformCard>
                             <PlatformCard
+                                image_path="/static/images/GitHub-Mark.svg"
+                                platform_name="GitHub"
+                                user_name="florianthom"
+                                text="Checkout my repositories, follow me."
+                                link_string={github_link}
+                            ></PlatformCard>
+                            <PlatformCard
                                 image_path="/static/images/discord_transparent_svg.svg"
                                 platform_name="Discord"
                                 user_name="FlorianTh"
-                                text="Just join my discord-server and write a private or public message"
+                                text="Just join my discord-server and write a private or public message."
                                 link_string={discord_link}
                             ></PlatformCard>
                         </div>
