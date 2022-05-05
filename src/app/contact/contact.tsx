@@ -9,6 +9,7 @@ import {
     linkedin_link,
     xing_link,
 } from "@/src/app/shared/constants/constants";
+import Image from "next/image";
 
 interface Props {}
 
@@ -19,11 +20,40 @@ export const Contact: React.FC<Props> = (props: Props) => {
             <div>
                 <div className="pt-56 pb-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
                     <h2 className="text-black text-3xl tracking-headline">CONTACT ME</h2>
+
                     <div className="text-base text-black pt-24">
-                        I would appreciate it if I can get in touch with you. Networking is one of the greatest things
-                        you can do today and since platforms like Xing or LinkedIn exist it is not even hard. So just
-                        send me a message on one of the following platforms.
+                        I can help you with software developing, topics around entrepreneurship, business architecture
+                        and freelancing. While am decent at communicating via smoke signals, there are simpler ways for
+                        us to get in touch and team up to solve problems. I am there for you!
                     </div>
+
+                    <div className="pt-24">
+                        <div className="m-auto flex max-w-2xl justify-center align-middle font-serif shadow-md bg-noise-texture bg-white outline outline-1">
+                            <div className="p-20">
+                                <div className="text-2xl tracking-widest uppercase">Florian Thom</div>
+                                <div className="py-4">
+                                    <div className="flex justify-center py-1 uppercase">Computer Scientist</div>
+                                    <div className="flex justify-center py-1">florianthom.io</div>
+                                </div>
+                                <div className="flex justify-center">
+                                    <Image
+                                        className="bg-transparent"
+                                        src={"/static/images/raw_qr.svg"}
+                                        alt="business-card"
+                                        width="100%"
+                                        height="100%"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="text-base text-black pt-24">
+                        I would appreciate it if I could get to know you. Networking is one of the greatest things you
+                        can do today and since platforms like LinkedIn exist it is not even hard. So send me a message
+                        on one of the following platforms.
+                    </div>
+
                     <div className="pt-24">
                         <div className="flex justify-around">
                             <PlatformCard
