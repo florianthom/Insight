@@ -69,6 +69,31 @@ module.exports = {
                 destination: "/#skills",
                 permanent: false,
             },
+            {
+                source: "/league",
+                destination: "/lol",
+                permanent: false,
+            },
+            {
+                source: "/leagueoflegends",
+                destination: "/lol",
+                permanent: false,
+            },
+            {
+                source: "/music",
+                destination: "/spotify",
+                permanent: false,
+            },
+            {
+                source: "/amazon",
+                destination: "/wishlist",
+                permanent: false,
+            },
+            {
+                source: "/wunschliste",
+                destination: "/wishlist",
+                permanent: false,
+            },
         ];
     },
 };
