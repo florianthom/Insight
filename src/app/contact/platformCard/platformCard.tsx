@@ -14,7 +14,13 @@ export const PlatformCard: React.FC<Props> = (props: Props) => {
         <div className="shadow-md transition hover:shadow-lg w-1/4">
             <a href={props.link_string} target="_blank" rel="noopener noreferrer">
                 <div className="bg-main-color p-8 flex justify-center">
-                    <Image className="" src={props.image_path} alt="discordServer-link" width="200%" height="200%" />
+                    <Image
+                        className=""
+                        src={props.image_path}
+                        alt={props.platform_name + "-link"}
+                        width="200%"
+                        height="200%"
+                    />
                 </div>
                 <div className="px-4 py-8">
                     <div className="text-2xl text-center">{props.platform_name}</div>

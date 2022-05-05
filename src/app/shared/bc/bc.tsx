@@ -16,11 +16,11 @@ export const BC: React.FC<Props> = (props: Props) => {
                         </div>
                         <div className="flex justify-center">
                             <Image
-                                className=""
                                 src={"/static/images/raw_qr.svg"}
                                 alt="business-card"
                                 width="100%"
                                 height="100%"
+                                priority={true}
                             />
                         </div>
                     </div>
