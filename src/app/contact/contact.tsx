@@ -10,6 +10,7 @@ import {
     xing_link,
 } from "@/src/app/shared/constants/constants";
 import Image from "next/image";
+import { BC } from "@/src/app/shared/bc/bc";
 
 interface Props {}
 
@@ -28,24 +29,7 @@ export const Contact: React.FC<Props> = (props: Props) => {
                     </div>
 
                     <div className="pt-24">
-                        <div className="m-auto flex max-w-2xl justify-center align-middle font-serif shadow-md bg-noise-texture bg-white outline outline-1">
-                            <div className="p-20">
-                                <div className="text-2xl tracking-widest uppercase">Florian Thom</div>
-                                <div className="py-4">
-                                    <div className="flex justify-center py-1 uppercase">Computer Scientist</div>
-                                    <div className="flex justify-center py-1">florianthom.io</div>
-                                </div>
-                                <div className="flex justify-center">
-                                    <Image
-                                        className="bg-transparent"
-                                        src={"/static/images/raw_qr.svg"}
-                                        alt="business-card"
-                                        width="100%"
-                                        height="100%"
-                                    />
-                                </div>
-                            </div>
-                        </div>
+                        <BC />
                     </div>
 
                     <div className="text-base text-black pt-24">
