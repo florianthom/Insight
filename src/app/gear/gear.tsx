@@ -16,8 +16,8 @@ export const Gear: React.FC<Props> = (props: Props) => {
                         and electronic stuff aswell as books, talks and papers I can recommend. Feel free to check some
                         of them out, especially some of the books.
                     </div>
-                    <div className="pt-24 flex justify-between">
-                        <div>
+                    <div className="pt-24 flex justify-between items-center md:items-stretch flex-col md:flex-row">
+                        <div className="w-2/3 md:w-1/4 py-2 md:pt-0">
                             <h3 className="text-2xl text-black">Software</h3>
                             <div className="py-2">
                                 <ul className="list-disc text-base text-black list-inside">
@@ -29,7 +29,7 @@ export const Gear: React.FC<Props> = (props: Props) => {
                                 </ul>
                             </div>
                         </div>
-                        <div>
+                        <div className="w-2/3 md:w-1/4 py-2 md:pt-0">
                             <h3 className="text-2xl text-black">Computer</h3>
                             <div className="py-2">
                                 <ul className="list-disc text-base text-black list-inside">
@@ -60,7 +60,7 @@ export const Gear: React.FC<Props> = (props: Props) => {
                                 </ul>
                             </div>
                         </div>
-                        <div>
+                        <div className="w-2/3 md:w-1/4 py-2 md:pt-0">
                             <h3 className="text-2xl text-black">Electronics</h3>
                             <div className="py-2">
                                 <ul className="list-disc text-base text-black list-inside">
@@ -82,8 +82,8 @@ export const Gear: React.FC<Props> = (props: Props) => {
                             </div>
                         </div>
                     </div>
-                    <div className="pt-24 flex justify-around">
-                        <div>
+                    <div className="pt-24 flex justify-around items-center md:items-stretch flex-col md:flex-row">
+                        <div className="w-2/3 md:w-1/4 py-2 md:pt-0">
                             <h3 className="text-2xl text-black">Books</h3>
                             <div className="py-2">
                                 <ul className="list-disc text-base text-black list-inside">
@@ -136,7 +136,7 @@ export const Gear: React.FC<Props> = (props: Props) => {
                                 </ul>
                             </div>
                         </div>
-                        <div>
+                        <div className="w-2/3 md:w-1/4 py-2 md:pt-0">
                             <h3 className="text-2xl text-black">Papers & Talks</h3>
                             <div className="py-2">
                                 <ul className="list-disc text-base text-black list-inside">
