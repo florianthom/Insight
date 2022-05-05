@@ -72,7 +72,8 @@ export const QR: React.FC<Props> = (props: Props) => {
                         <a className="underline" href={"https://qr.io"} target="_blank" rel="noopener noreferrer">
                             this tool
                         </a>
-                        . Its free and it provides you many different options to customize your code.
+                        (...at least as long as it is free to use). It provides you many different options to customize
+                        your code.
                     </div>
                 </div>
             </div>
