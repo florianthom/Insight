@@ -208,8 +208,8 @@ export const Home: React.FC<Props> = (props: Props) => {
                         already known alternatives.
                     </div>
                     <div className="text-base text-white pt-24">
-                        <div className="flex justify-between flex-col md:flex-row">
-                            <div className="my-8">
+                        <div className="flex justify-between items-center md:items-stretch flex-col md:flex-row">
+                            <div className="my-8 w-2/3">
                                 <h3 className="text-2xl text-white">Frontend</h3>
                                 <ul className="list-disc text-base text-white list-inside">
                                     <li>Next.js</li>
@@ -225,7 +225,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                                     <li>Affinity</li>
                                 </ul>
                             </div>
-                            <div className="my-8">
+                            <div className="my-8 w-2/3">
                                 <h3 className="text-2xl text-white">Backend</h3>
                                 <ul className="list-disc text-base text-white list-inside">
                                     <li>.NET 6</li>
@@ -240,7 +240,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                                     <li>Hangfire</li>
                                 </ul>
                             </div>
-                            <div className="my-8">
+                            <div className="my-8 w-2/3">
                                 <h3 className="text-2xl text-white">Mobile & Game</h3>
                                 <ul className="list-disc text-base text-white list-inside">
                                     <li>Flutter</li>
@@ -251,8 +251,8 @@ export const Home: React.FC<Props> = (props: Props) => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="flex justify-between pt-16 flex-col md:flex-row">
-                            <div className="my-8">
+                        <div className="flex justify-between pt-16  items-center md:items-stretch flex-col md:flex-row">
+                            <div className="my-8 w-2/3">
                                 <h3 className="text-2xl text-white">IOT</h3>
                                 <ul className="list-disc text-base text-white list-inside">
                                     <li>TI MSP430G2553</li>
@@ -263,7 +263,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                                     <li>Ultra-Low Power Advisor</li>
                                 </ul>
                             </div>
-                            <div className="my-8">
+                            <div className="my-8 w-2/3">
                                 <h3 className="text-2xl text-white">Cloud & DevOps</h3>
                                 <ul className="list-disc text-base text-white list-inside">
                                     <li>Docker (Compose)</li>
@@ -282,7 +282,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                                     <li>Prometheus</li>
                                 </ul>
                             </div>
-                            <div className="my-8">
+                            <div className="my-8 w-2/3">
                                 <h3 className="text-2xl text-white">Big Data & Data Science</h3>
                                 <ul className="list-disc text-base text-white list-inside">
                                     <li>Terminal</li>
@@ -297,7 +297,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                                     <li>Gnuplot</li>
                                 </ul>
                             </div>
-                            <div className="my-8">
+                            <div className="my-8 w-2/3">
                                 <h3 className="text-2xl text-white">Artificial Intelligence</h3>
                                 <ul className="list-disc text-base text-white list-inside">
                                     <li>Algebra</li>
