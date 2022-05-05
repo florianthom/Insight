@@ -39,7 +39,7 @@ export const Contact: React.FC<Props> = (props: Props) => {
                     </div>
 
                     <div className="pt-24">
-                        <div className="flex justify-around">
+                        <div className="flex justify-around items-center flex-col md:flex-row">
                             <PlatformCard
                                 image_path="/static/images/linkedIn_transparent_svg.svg"
                                 platform_name="LinkedIn"
@@ -55,14 +55,7 @@ export const Contact: React.FC<Props> = (props: Props) => {
                                 link_string={twitter_link}
                             ></PlatformCard>
                         </div>
-                        <div className="pt-16 flex justify-around">
-                            <PlatformCard
-                                image_path="/static/images/mail_tranparent_svg.svg"
-                                platform_name="Mail"
-                                user_name={email_string}
-                                text="Just write me an email."
-                                link_string={"mailto:" + email_string}
-                            ></PlatformCard>
+                        <div className="pt-16 flex justify-around items-center flex-col md:flex-row">
                             <PlatformCard
                                 image_path="/static/images/GitHub-Mark.svg"
                                 platform_name="GitHub"
@@ -70,6 +63,15 @@ export const Contact: React.FC<Props> = (props: Props) => {
                                 text="Checkout my repositories, follow me."
                                 link_string={github_link}
                             ></PlatformCard>
+                            <PlatformCard
+                                image_path="/static/images/mail_tranparent_svg.svg"
+                                platform_name="Mail"
+                                user_name={email_string}
+                                text="Just write me an email."
+                                link_string={"mailto:" + email_string}
+                            ></PlatformCard>
+                        </div>
+                        <div className="pt-16 flex justify-around">
                             <PlatformCard
                                 image_path="/static/images/discord_transparent_svg.svg"
                                 platform_name="Discord"

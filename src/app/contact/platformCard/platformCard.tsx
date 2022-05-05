@@ -11,7 +11,7 @@ interface Props {
 
 export const PlatformCard: React.FC<Props> = (props: Props) => {
     return (
-        <div className="shadow-md transition hover:shadow-lg w-1/4">
+        <div className="shadow-md transition hover:shadow-lg w-1/2 md:w-1/4 pb-12 md:pb-0">
             <a href={props.link_string} target="_blank" rel="noopener noreferrer">
                 <div className="bg-main-color p-8 flex justify-center">
                     <Image
