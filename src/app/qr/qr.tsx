@@ -22,7 +22,7 @@ export const QR: React.FC<Props> = (props: Props) => {
             if (redirect) {
                 window.location.assign(qrRedirect);
             }
-        }, 2000);
+        }, 1000);
     };
 
     useEffect(() => clickAnchor(), []);
