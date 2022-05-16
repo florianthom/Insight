@@ -84,6 +84,12 @@ module.exports = {
                 destination: "/spotify",
                 permanent: false,
             },
+
+            {
+                source: "/musik",
+                destination: "/spotify",
+                permanent: false,
+            },
             {
                 source: "/amazon",
                 destination: "/wishlist",

@@ -16,7 +16,7 @@ const TwitterPage: NextPage<Props> = (props: Props) => {
     return (
         <main>
             <Head>
-                <title>Linkedin - Florian Thom</title>
+                <title>Twitter - Florian Thom</title>
                 <meta
                     name="description"
                     content="Get a direct link to the twitter-profile of Florian Thom. Leave a follow!"

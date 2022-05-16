@@ -16,7 +16,7 @@ const WishlistPage: NextPage<Props> = (props: Props) => {
     return (
         <main>
             <Head>
-                <title>Linkedin - Florian Thom</title>
+                <title>Wishlist - Florian Thom</title>
                 <meta name="description" content="Get a direct link to the amazon-wishlist of Florian Thom." />
             </Head>
             <NavBar></NavBar>

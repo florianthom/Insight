@@ -32,6 +32,7 @@ export const twitter_link = "https://twitter.com/florianthomdev";
 export const amzn_wishlist = "https://www.amazon.de/hz/wishlist/dl/invite/1Nlwzgf?ref_=wl_share";
 export const spotify_profile = "https://open.spotify.com/user/zt7x9rjbw6bg3j0qyk2o6mu8x?si=7a1c91bf39764009";
 export const lol = "https://euw.op.gg/summoners/euw/Alat%C3%A1n";
+export const paypal = "https://www.paypal.com/paypalme/ThomFlorian";
 export const cv_international_link =
     "https://drive.google.com/file/d/1azVdEOLC8S23nZK23LnalKfYSTzJXHQK/view?usp=sharing";
 export const cv_germany_link = "https://drive.google.com/file/d/1e2wbtK9Pnus8pSzYK_fEMoz6aSXdrY_G/view?usp=sharing";

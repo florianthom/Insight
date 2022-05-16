@@ -7,25 +7,22 @@ import { NavBar } from "@/src/app/shared/navbar/navbar";
 
 interface Props {}
 
-const LolPage: NextPage<Props> = (props: Props) => {
+const PayPalPage: NextPage<Props> = (props: Props) => {
     const router = useRouter();
     useEffect(() => {
-        window.location.replace(constants.lol);
+        window.location.replace(constants.paypal);
     });
 
     return (
         <main>
             <Head>
-                <title>League of Legends - Florian Thom</title>
-                <meta
-                    name="description"
-                    content="Get a direct link to the League of Legends op.gg-profile of Florian Thom."
-                />
+                <title>PayPal - Florian Thom</title>
+                <meta name="description" content="Get a direct link to the PayPal of Florian Thom." />
             </Head>
             <NavBar></NavBar>
-            <div className="pt-56">You should be redirected to: {constants.lol}.</div>
+            <div className="pt-56">You should be redirected to: {constants.paypal}.</div>
         </main>
     );
 };
 
-export default LolPage;
+export default PayPalPage;
