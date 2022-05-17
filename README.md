@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-Frontend-Project to create my personal website. The backend-code can be found [here].
+Frontend-Project to create my personal website for some insights. The backend-code can be found [here](https://github.com/florianthom/Insight-Backend).
 
 ## Prerequisites
 
@@ -11,9 +11,9 @@ Frontend-Project to create my personal website. The backend-code can be found [h
 
 ## Getting Started
 
-`$ git clone git@github.com:FlorianTh2/Personal-Website.git`
+`$ git clone git@github.com:FlorianTh2/Insight.git`
 
-`$ cd ./Personal-Website`
+`$ cd ./Insight`
 
 `$ yarn install`
 
@@ -27,15 +27,15 @@ Frontend-Project to create my personal website. The backend-code can be found [h
 
 ### docker
 
-`$ docker build -t personal-website-frontend .`
+`$ docker build -t insight .`
 
-`$ docker run --rm -p 3000:3000 --name personal-website-frontend personal-website-frontend`
+`$ docker run --rm -p 3000:3000 --name insight insight`
 
 `$ docker ps -a`
 
-`$ docker stop personal-website-frontend`
+`$ docker stop insight`
 
-`$ docker rm personal-website-frontend`
+`$ docker rm insight`
 
 `$ docker login --username=flooth`
 
@@ -43,9 +43,9 @@ Frontend-Project to create my personal website. The backend-code can be found [h
 
 `$ docker hub create repository via web-ui`
 
-`$ docker tag personal-website-frontend:latest flooth/personal-website-frontend:latest`
+`$ docker tag insight:latest flooth/insight:latest`
 
-`$ docker push flooth/personal-website-frontend:latest`
+`$ docker push flooth/insight:latest`
 
 ### kubernetes
 
@@ -59,7 +59,7 @@ Frontend-Project to create my personal website. The backend-code can be found [h
 
 `$ kubectl get services`
 
-`$ kubectl rollout restart deployment/personal-website-frontend-deployment`
+`$ kubectl rollout restart deployment/insight-deployment`
 
 
 ### minikube
@@ -120,5 +120,3 @@ $ sudo vim /etc/hosts
 ## Acknowledgements
 Ideas and Designs of this project are based on a [project](https://www.youtube.com/watch?v=SC7lLm6QAb8&t=328s&ab_channel=DevonCrawford) of [Devon Crawford](https://github.com/DevonCrawford).
 Thanks for the motivation and your projects in general. Hopefully you will continue your work.
-
-[here]: https://github.com/florianthom/Personal-Website-Backend
