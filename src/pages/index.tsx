@@ -13,7 +13,7 @@ export async function getStaticProps(): Promise<any> {
     await queryClient.prefetchQuery("/projects?pagesize=" + pageSizeLandingPage + "&pagenumber=" + firstPage);
     return {
         props: {
-            dehydratedState: dehydrate(queryClient),
+            dehydratedState: dehydrate(queryClient)
         },
     };
 }
