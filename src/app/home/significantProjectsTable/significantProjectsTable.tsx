@@ -7,7 +7,7 @@ import {
 } from "@/src/app/shared/constants/constants";
 import { useQuery } from "react-query";
 import { PagedResponseProject } from "@/src/openapi_models/models/PagedResponseProject";
-import { Project } from "@/src/openapi_models/models/Project";
+import { Project } from "@/src/app/shared/models/Project";
 
 interface Props {}
 

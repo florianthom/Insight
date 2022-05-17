@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { RecordTag } from "@/src/app/shared/recordTag/recordTag";
-import { Document } from "@/src/openapi_models/models/Document";
+import { Document } from "@/src/app/shared/models/Document";
 import Image from "next/image";
 
 interface Props {

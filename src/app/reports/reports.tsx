@@ -3,7 +3,7 @@ import { Footer } from "@/src/app/shared/footer/footer";
 import React, { useState } from "react";
 import { ReportItem } from "@/src/app/reports/recordButton/reportItem";
 import { useQuery } from "react-query";
-import { Document } from "@/src/openapi_models/models/Document";
+import { Document } from "@/src/app/shared/models/Document";
 import { BasicSpinner } from "@/src/app/shared/basicSpinner/basicSpinner";
 import { PagedResponseDocument } from "@/src/openapi_models/models/PagedResponseDocument";
 import { firstPage, pageSizeLess } from "@/src/app/shared/constants/constants";
