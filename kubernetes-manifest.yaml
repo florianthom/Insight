@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: personal-website-frontend-deployment
+  name: insight-frontend-deployment
   labels:
-    app: personal-website-frontend
+    app: insight-frontend
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: personal-website-frontend
+      app: insight-frontend
   template:
     metadata:
       labels:
-        app: personal-website-frontend
+        app: insight-frontend
     spec:
       containers:
-        - name: personal-website-frontend
+        - name: insight-frontend
           imagePullPolicy: Always  
-          image: flooth/personal-website-frontend:latest
+          image: flooth/insight-frontend:latest
           ports:
             - containerPort: 3000
 
@@ -26,13 +26,13 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: personal-website-frontend-service
+  name: insight-frontend-service
   labels:
-    run: personal-website-frontend
+    run: insight-frontend
 spec:
   type: ClusterIP
   ports:
   - port: 3000
     protocol: TCP
   selector:
-    app: personal-website-frontend
+    app: insight-frontend
