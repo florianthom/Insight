@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: insight-frontend-deployment
+  name: insight-deployment
   labels:
-    app: insight-frontend
+    app: insight
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: insight-frontend
+      app: insight
   template:
     metadata:
       labels:
-        app: insight-frontend
+        app: insight
     spec:
       containers:
-        - name: insight-frontend
+        - name: insight
           imagePullPolicy: Always  
-          image: flooth/insight-frontend:latest
+          image: flooth/insight:latest
           ports:
             - containerPort: 3000
 
@@ -26,13 +26,13 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: insight-frontend-service
+  name: insight-service
   labels:
-    run: insight-frontend
+    run: insight
 spec:
   type: ClusterIP
   ports:
   - port: 3000
     protocol: TCP
   selector:
-    app: insight-frontend
+    app: insight
