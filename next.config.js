@@ -30,6 +30,16 @@ module.exports = {
                 permanent: false,
             },
             {
+                source: "/repos",
+                destination: "/github",
+                permanent: false,
+            },
+            {
+                source: "/repositories",
+                destination: "/github",
+                permanent: false,
+            },
+            {
                 source: "/mail",
                 destination: "/email",
                 permanent: false,
@@ -84,7 +94,6 @@ module.exports = {
                 destination: "/spotify",
                 permanent: false,
             },
-
             {
                 source: "/musik",
                 destination: "/spotify",
@@ -98,6 +107,26 @@ module.exports = {
             {
                 source: "/wunschliste",
                 destination: "/wishlist",
+                permanent: false,
+            },
+            {
+                source: "/drive",
+                destination: "/googledrive",
+                permanent: false,
+            },
+            {
+                source: "/storage",
+                destination: "/googledrive",
+                permanent: false,
+            },
+            {
+                source: "/speicher",
+                destination: "/googledrive",
+                permanent: false,
+            },
+            {
+                source: "/tmp",
+                destination: "/googledrive",
                 permanent: false,
             },
         ];

@@ -7,22 +7,22 @@ import { NavBar } from "@/src/app/shared/navbar/navbar";
 
 interface Props {}
 
-const DrivePage: NextPage<Props> = (props: Props) => {
+const GoogleDrivePage: NextPage<Props> = (props: Props) => {
     const router = useRouter();
     useEffect(() => {
-        window.location.replace(constants.paypal);
+        window.location.replace(constants.google_drive);
     });
 
     return (
         <main>
             <Head>
-                <title>Drive - Florian Thom</title>
-                <meta name="description" content="Get a direct link to the Drive of Florian Thom." />
+                <title>Google Drive - Florian Thom</title>
+                <meta name="description" content="Get a direct link to the Google Drive of Florian Thom." />
             </Head>
             <NavBar></NavBar>
-            <div className="pt-56">You should be redirected to: {constants.paypal}.</div>
+            <div className="pt-56">You should be redirected to: {constants.google_drive}.</div>
         </main>
     );
 };
 
-export default DrivePage;
+export default GoogleDrivePage;
