@@ -191,7 +191,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                         .
                     </div>
                     <div className="pt-24">
-                        <SignificantProjectsTable></SignificantProjectsTable>
+                        <SignificantProjectsTable />
                     </div>
                     <div className="text-base text-black pt-24">
                         This represents only a small snipped of projects. If you want to check out my other projects, I

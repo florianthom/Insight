@@ -1,9 +1,4 @@
-import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "@/src/app/store/store";
-import { apiBaseUrl, firstPage } from "@/src/app/shared/constants/constants";
-import { decrementConterActionCreator } from "@/src/app/home/store/slices/counterSlice";
-import { setTokens } from "@/src/app/store/slices/tokenStoreSlice";
-import { useState } from "react";
+// import { apiBaseUrl, firstPage } from "@/src/app/shared/constants/constants";
 
 // official reference: https://react-query.tanstack.com/guides/default-query-function
 // inofficial reference: https://github.com/benawad/dogehouse/blob/e2180fcec6eefaf783d986d903f813a776699d52/kibbeh/src/modules/auth/useTokenStore.ts
@@ -15,7 +10,7 @@ export const defaultQueryFunction = async ({ queryKey }: { queryKey: string }) =
 
     // const { accessToken, refreshToken } = tokenStoreState;
 
-    const response = await fetch(apiBaseUrl + queryKey, {
+    const response = await fetch("https://florianthom.io/api/v1" + queryKey, {
         // headers: {
         //     Authorization: "Bearer " + accessToken,
         //     "Content-Type": "application/json",

@@ -1,47 +1,45 @@
 export interface Project {
-    id?: string;
+    Id?: string;
 
-    name?: string | null;
+    Name?: string | null;
 
-    archived?: boolean;
+    Archived?: boolean;
 
-    projectCreatedOn?: string | null;
+    ProjectCreatedOn?: string | null;
 
-    description?: string | null;
+    Description?: string | null;
 
-    forksCount?: number;
+    ForksCount?: number;
 
-    htmLUrl?: string | null;
+    HtmLUrl?: string | null;
 
-    projectId?: number;
+    ProjectId?: number;
 
-    language?: string | null;
+    Language?: string | null;
 
-    licence?: string | null;
+    Licence?: string | null;
 
-    ownerName?: string | null;
+    OwnerName?: string | null;
 
-    ownerHtmlUrl?: string | null;
+    OwnerHtmlUrl?: string | null;
 
-    _private?: boolean;
+    Size?: number;
 
-    size?: number;
+    Stars?: number;
 
-    stars?: number;
+    WatchersCount?: number;
 
-    watchersCount?: number;
+    ProjectUpdatedOn?: string | null;
 
-    projectUpdatedOn?: string | null;
+    Visibility?: string | null;
 
-    visibility?: string | null;
+    UserId?: string | null;
 
-    userId?: string | null;
+    CreatedOn?: string | null;
 
-    createdOn?: string | null;
+    CreatorId?: string | null;
 
-    creatorId?: string | null;
+    UpdatedOn?: string | null;
 
-    updatedOn?: string | null;
-
-    updaterId?: string | null;
+    UpdaterId?: string | null;
 }

@@ -1,43 +1,43 @@
 export interface Document {
-    id?: string;
+    Id?: string;
 
-    documentId?: string | null;
+    DocumentId?: string | null;
 
-    name?: string | null;
+    Name?: string | null;
 
-    description?: string | null;
+    Description?: string | null;
 
-    ownersEmail?: string | null;
+    OwnersEmail?: string | null;
 
-    thumbnailLink?: string | null;
+    ThumbnailLink?: string | null;
 
-    webcontentLink?: string | null;
+    WebcontentLink?: string | null;
 
-    webviewLink?: string | null;
+    WebviewLink?: string | null;
 
-    fileExtension?: string | null;
+    FileExtension?: string | null;
 
-    fullFileExtension?: string | null;
+    FullFileExtension?: string | null;
 
-    kind?: string | null;
+    Kind?: string | null;
 
-    md5Checksum?: string | null;
+    Md5Checksum?: string | null;
 
-    shared?: boolean;
+    Shared?: boolean;
 
-    size?: number;
+    Size?: number;
 
-    version?: number;
+    Version?: number;
 
-    documentCreatedTime?: string | null;
+    DocumentCreatedTime?: string | null;
 
-    userId?: string | null;
+    UserId?: string | null;
 
-    createdOn?: Date;
+    CreatedOn?: string;
 
-    creatorId?: string | null;
+    CreatorId?: string | null;
 
-    updatedOn?: Date;
+    UpdatedOn?: string;
 
-    updaterId?: string | null;
+    UpdaterId?: string | null;
 }

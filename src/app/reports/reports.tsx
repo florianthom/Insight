@@ -5,26 +5,23 @@ import { ReportItem } from "@/src/app/reports/recordButton/reportItem";
 import { useQuery } from "react-query";
 import { Document } from "@/src/app/shared/models/Document";
 import { BasicSpinner } from "@/src/app/shared/basicSpinner/basicSpinner";
-import { PagedResponseDocument } from "@/src/openapi_models/models/PagedResponseDocument";
+// import { PagedResponseDocument } from "@/src/openapi_models/models/PagedResponseDocument";
 import { firstPage, pageSizeLess } from "@/src/app/shared/constants/constants";
+import data from "@/public/static/data/Documents.json"
 
 interface Props {}
 
 export const Reports: React.FC<Props> = (props: Props) => {
-    const [page, setPage] = useState(firstPage);
-    const {
-        isLoading,
-        error,
-        data: documentsData,
-    } = useQuery<PagedResponseDocument, Error>("/documents?pagesize=" + pageSizeLess + "&pagenumber=" + page, {
-        keepPreviousData: true,
-    });
+    // const [page, setPage] = useState(firstPage);
+    // const {
+    //     isLoading,
+    //     error,
+    //     data: documentsData,
+    // } = useQuery<PagedResponseDocument, Error>("/documents?pagesize=" + pageSizeLess + "&pagenumber=" + page, {
+    //     keepPreviousData: true,
+    // });
 
-    // function handleScroll(): void {
-    //     setTimeout(() => {
-    //         this.scrollIntoView({ behavior: "smooth" });
-    //     }, 500);
-    // }
+    const documentsData: Document[] = data;
 
     function handleScroll2(): void {
         if (documentsData.nextPage) {
@@ -56,7 +53,7 @@ export const Reports: React.FC<Props> = (props: Props) => {
                         ) : (
                             documentsData?.data
                                 .sort((a: Document, b: Document) =>
-                                    new Date(a.documentCreatedTime) >= new Date(b.documentCreatedTime) ? -1 : 1,
+                                    new Date(a.DocumentCreatedTime) >= new Date(b.DocumentCreatedTime) ? -1 : 1,
                                 )
                                 .map((a) => (
                                     <div className="py-8" key={(a as Document).id}>
