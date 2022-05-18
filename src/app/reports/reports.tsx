@@ -1,36 +1,36 @@
-import { NavBar } from "@/src/app/shared/navbar/navbar";
-import { Footer } from "@/src/app/shared/footer/footer";
-import React, { useState } from "react";
-import { ReportItem } from "@/src/app/reports/recordButton/reportItem";
-import { useQuery } from "react-query";
-import { Document } from "@/src/app/shared/models/Document";
-import { BasicSpinner } from "@/src/app/shared/basicSpinner/basicSpinner";
-// import { PagedResponseDocument } from "@/src/openapi_models/models/PagedResponseDocument";
-import { firstPage, pageSizeLess } from "@/src/app/shared/constants/constants";
+import {NavBar} from "@/src/app/shared/navbar/navbar";
+import {Footer} from "@/src/app/shared/footer/footer";
+import React, {useState} from "react";
+import {ReportItem} from "@/src/app/reports/recordButton/reportItem";
+import {Document} from "@/src/app/shared/models/Document";
+import * as constants from "@/src/app/shared/constants/constants";
 import data from "@/public/static/data/Documents.json"
+import {
+    getNumberPages,
+    nextPageAvailable,
+    paginate,
+    previousPageAvailable
+} from "@/src/app/shared/utils/paginationUtils";
 
-interface Props {}
+interface Props {
+}
+
+
 
 export const Reports: React.FC<Props> = (props: Props) => {
-    // const [page, setPage] = useState(firstPage);
-    // const {
-    //     isLoading,
-    //     error,
-    //     data: documentsData,
-    // } = useQuery<PagedResponseDocument, Error>("/documents?pagesize=" + pageSizeLess + "&pagenumber=" + page, {
-    //     keepPreviousData: true,
-    // });
 
     const documentsData: Document[] = data;
+    const [page, setPage] = useState(constants.firstPage);
+    const pagedData = paginate(documentsData, constants.pageSizeReports, page)
 
     function handleScroll2(): void {
-        if (documentsData.nextPage) {
+        if (nextPageAvailable(documentsData, constants.pageSizeReports, page)) {
             setPage((a) => a + 1);
         }
         window.scrollTo({
             top: 0,
             left: 0,
-            behavior: "smooth",
+            behavior: "smooth"
         });
     }
 
@@ -46,31 +46,24 @@ export const Reports: React.FC<Props> = (props: Props) => {
                         topics may differ. That said, some of the work I didnt do alone but in a team.
                     </div>
                     <div className="pt-24">
-                        {isLoading ? (
-                            <div className="text-center">
-                                <BasicSpinner></BasicSpinner>
-                            </div>
-                        ) : (
-                            documentsData?.data
-                                .sort((a: Document, b: Document) =>
-                                    new Date(a.DocumentCreatedTime) >= new Date(b.DocumentCreatedTime) ? -1 : 1,
-                                )
-                                .map((a) => (
-                                    <div className="py-8" key={(a as Document).id}>
-                                        <ReportItem document={a as Document}></ReportItem>
-                                    </div>
-                                ))
-                        )}
+                        {pagedData
+                            .sort((a: Document, b: Document) =>
+                                new Date(a.DocumentCreatedTime) >= new Date(b.DocumentCreatedTime) ? -1 : 1,
+                            )
+                            .map((a) => (
+                                <div className="py-8" key={(a as Document).Id}>
+                                    <ReportItem document={a as Document}></ReportItem>
+                                </div>
+                            ))
+                        }
                     </div>
-                    {isLoading ? (
-                        <div></div>
-                    ) : (
+                    {
                         <div className="px-4 pt-8 text-center">
                             <div>
                                 <div className="flex justify-around items-center">
                                     <button
                                         onClick={() => {
-                                            if (documentsData.previousPage) {
+                                            if (previousPageAvailable(page)) {
                                                 setPage((a) => a - 1);
                                             }
                                             window.scrollTo({
@@ -79,7 +72,7 @@ export const Reports: React.FC<Props> = (props: Props) => {
                                                 behavior: "smooth",
                                             });
                                         }}
-                                        disabled={documentsData === undefined || !documentsData.previousPage}
+                                        disabled={!previousPageAvailable(page)}
                                         className="bg-gray-100 hover:bg-gray-200 border py-4 m-1 w-3/12 disabled:opacity-50 disabled:cursor-default"
                                     >
                                         Previous
@@ -90,12 +83,12 @@ export const Reports: React.FC<Props> = (props: Props) => {
                                             <span className="bg-white rounded border border-gray-300 px-4 py-2">
                                                 {page}
                                             </span>{" "}
-                                            of {documentsData?.pagesTotal || -1}
+                                            of {getNumberPages(documentsData, constants.pageSizeReports)}
                                         </span>
                                     </div>
                                     <button
                                         onClick={() => handleScroll2()}
-                                        disabled={documentsData === undefined || !documentsData.nextPage}
+                                        disabled={!nextPageAvailable(documentsData, constants.pageSizeReports, page)}
                                         className="bg-gray-100 hover:bg-gray-200 border py-4 m-1 w-3/12 disabled:opacity-50 disabled:cursor-default"
                                     >
                                         Next
@@ -103,7 +96,7 @@ export const Reports: React.FC<Props> = (props: Props) => {
                                 </div>
                             </div>
                         </div>
-                    )}
+                    }
                 </div>
             </div>
             <Footer></Footer>

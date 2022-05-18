@@ -9,7 +9,7 @@ export const personal_phone_number = "+49 (0) 15203749443";
 
 export const firstPage = 1;
 export const pageSize = 10;
-export const pageSizeLess = 5;
+export const pageSizeReports = 5;
 
 // here we actually want to get all projects to select them then by name and put into significant projects table
 // so this value should be set to get all projects with one query
