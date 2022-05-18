@@ -4,7 +4,6 @@ module.exports = {
     siteUrl: process.env.SITE_URL || "https://www.florianthom.com",
     generateRobotsTxt: true,
     exclude: [
-        "/contact",
         "/cv",
         "/discord",
         "/email",
