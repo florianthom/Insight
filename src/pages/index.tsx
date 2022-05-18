@@ -8,15 +8,15 @@ import { dehydrate } from "react-query/hydration";
 
 interface Props {}
 
-export async function getStaticProps(): Promise<any> {
-    const queryClient = defaultQueryClient;
-    await queryClient.prefetchQuery("/projects?pagesize=" + pageSizeLandingPage + "&pagenumber=" + firstPage);
-    return {
-        props: {
-            dehydratedState: dehydrate(queryClient)
-        },
-    };
-}
+// export async function getStaticProps(): Promise<any> {
+//     const queryClient = defaultQueryClient;
+//     await queryClient.prefetchQuery("/projects?pagesize=" + pageSizeLandingPage + "&pagenumber=" + firstPage);
+//     return {
+//         props: {
+//             dehydratedState: dehydrate(queryClient)
+//         },
+//     };
+// }
 
 const IndexPage: NextPage<Props> = (props: Props) => {
     return (
