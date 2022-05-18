@@ -1,21 +1,20 @@
 import React, { useState } from "react";
-import { useQuery } from "react-query";
 import { Project } from "@/src/app/shared/models/Project";
 import * as constants from "@/src/app/shared/constants/constants";
-import { BasicSpinner } from "@/src/app/shared/basicSpinner/basicSpinner";
 import {
     getNumberPages,
     nextPageAvailable,
     paginate,
     previousPageAvailable
 } from "@/src/app/shared/utils/paginationUtils";
-import {Document} from "@/src/app/shared/models/Document";
 import data from "@/public/static/data/Projects.json";
 
 interface Props {}
 
 export const RepositoryTable: React.FC<Props> = (props: Props) => {
+
     const projectsData: Project[] = data;
+    console.log(new Date(projectsData[0].ProjectCreatedOn))
     const [page, setPage] = useState(constants.firstPage);
     const pagedData = paginate(projectsData, constants.pageSize, page)
 
@@ -43,8 +42,8 @@ export const RepositoryTable: React.FC<Props> = (props: Props) => {
                     <tbody className="divide-y divide-gray-200">
                         {
                             pagedData
-                                ?.sort((a, b) =>
-                                    new Date(a.projectCreatedOn) >= new Date(b.projectCreatedOn) ? -1 : 1,
+                                ?.sort((a: Project, b: Project) =>
+                                    new Date(a.ProjectCreatedOn) >= new Date(b.ProjectCreatedOn) ? -1 : 1,
                                 )
                                 .map((a: Project) => (
                                     <tr key={a.Id} className="divide-x divide-gray-100">
