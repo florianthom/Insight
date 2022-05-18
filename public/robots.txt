@@ -1,9 +1,9 @@
-# https://www.robotstxt.org/robotstxt.html
-
+# *
 User-agent: *
 Allow: /
-Disallow: /api/*
-Disallow: /swagger
-Disallow: /imprint
-Disallow: /impressum
-Disallow: /qr
+
+# Host
+Host: https://www.florianthom.com
+
+# Sitemaps
+Sitemap: https://www.florianthom.com/sitemap.xml
