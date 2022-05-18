@@ -14,7 +14,7 @@ export const BC: React.FC<Props> = (props: Props) => {
                             <div className="flex justify-center py-1 uppercase whitespace-nowrap">
                                 Computer Scientist
                             </div>
-                            <div className="flex justify-center py-1 whitespace-nowrap">florianthom.io</div>
+                            <div className="flex justify-center py-1 whitespace-nowrap">florianthom.com</div>
                         </div>
                         <div className="flex justify-center">
                             <Image

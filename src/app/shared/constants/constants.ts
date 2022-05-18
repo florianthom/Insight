@@ -1,5 +1,6 @@
 export const __prod__ = process.env.NODE_ENV === "production";
 
+export const api_base_url = "https://florianthom.com/api/v1";
 export const personal_name = "Florian Thom";
 export const personal_address_street = "Walter-Friedrich-Str. 53";
 export const personal_address_zipcode = "13125";
@@ -36,5 +37,5 @@ export const google_drive = "https://drive.google.com/drive/folders/1LKAdtoOB1Uh
 export const cv_international_link =
     "https://drive.google.com/file/d/1azVdEOLC8S23nZK23LnalKfYSTzJXHQK/view?usp=sharing";
 export const cv_germany_link = "https://drive.google.com/file/d/1e2wbtK9Pnus8pSzYK_fEMoz6aSXdrY_G/view?usp=sharing";
-export const contact_page = "https://florianthom.io/contact";
+export const contact_page = "https://florianthom.com/contact";
 export const qrRedirect = contact_page;

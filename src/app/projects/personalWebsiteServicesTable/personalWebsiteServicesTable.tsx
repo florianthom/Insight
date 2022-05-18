@@ -17,13 +17,13 @@ export const PersonalWebsiteServicesTable: React.FC<Props> = (props: Props) => {
                 <tbody className="divide-y divide-gray-200">
                     <tr>
                         <td className="px-2 py-2">frontend</td>
-                        <td>florianthom.io/</td>
+                        <td>florianthom.com/</td>
                         <td>Next.js + React</td>
                         <td>What you are looking at and you are using right now</td>
                     </tr>
                     <tr>
                         <td className="px-2 py-2">backend</td>
-                        <td>florianthom.io/api</td>
+                        <td>florianthom.com/api</td>
                         <td>Dotnet</td>
                         <td>Service which provides some information like data regarding my documents or projects</td>
                     </tr>

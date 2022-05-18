@@ -10,15 +10,15 @@ import { defaultQueryClient } from "@/src/app/shared/queryClient/defaultQueryCli
 
 interface Props {}
 
-export async function getServerSideProps(): Promise<any> {
-    const queryClient = defaultQueryClient;
-    await queryClient.prefetchQuery("/projects?pagesize=" + pageSize + "&pagenumber=" + firstPage);
-    return {
-        props: {
-            dehydratedState: dehydrate(queryClient),
-        },
-    };
-}
+// export async function getServerSideProps(): Promise<any> {
+//     const queryClient = defaultQueryClient;
+//     await queryClient.prefetchQuery("/projects?pagesize=" + pageSize + "&pagenumber=" + firstPage);
+//     return {
+//         props: {
+//             dehydratedState: dehydrate(queryClient),
+//         },
+//     };
+// }
 
 const ProjectsPage: NextPage<Props> = (props: Props) => {
     return (
