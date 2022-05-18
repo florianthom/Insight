@@ -1,6 +1,11 @@
 # *
 User-agent: *
 Allow: /
+Disallow: /api/*
+Disallow: /swagger
+Disallow: /imprint
+Disallow: /impressum
+Disallow: /qr
 
 # Host
 Host: https://www.florianthom.com
