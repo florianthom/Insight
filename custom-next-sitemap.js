@@ -6,6 +6,18 @@ module.exports = {
     exclude: [
         "/contact",
         "/cv",
-        "/discord"
+        "/discord",
+        "/email",
+        "/github",
+        "/googledrive",
+        "/imprint",
+        "/linkedin",
+        "/lol",
+        "/paypal",
+        "/qr",
+        "/spotify",
+        "/twitter",
+        "/wishlist",
+        "/xing",
     ]
 };

@@ -1,23 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://www.florianthom.com</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-05-18T21:17:47.730Z</lastmod></url>
-<url><loc>https://www.florianthom.com/contact</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-05-18T21:17:47.730Z</lastmod></url>
-<url><loc>https://www.florianthom.com/cv</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-05-18T21:17:47.730Z</lastmod></url>
-<url><loc>https://www.florianthom.com/discord</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-05-18T21:17:47.730Z</lastmod></url>
-<url><loc>https://www.florianthom.com/email</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-05-18T21:17:47.730Z</lastmod></url>
-<url><loc>https://www.florianthom.com/gear</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-05-18T21:17:47.730Z</lastmod></url>
-<url><loc>https://www.florianthom.com/github</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-05-18T21:17:47.730Z</lastmod></url>
-<url><loc>https://www.florianthom.com/googledrive</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-05-18T21:17:47.731Z</lastmod></url>
-<url><loc>https://www.florianthom.com/imprint</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-05-18T21:17:47.731Z</lastmod></url>
-<url><loc>https://www.florianthom.com/linkedin</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-05-18T21:17:47.731Z</lastmod></url>
-<url><loc>https://www.florianthom.com/lol</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-05-18T21:17:47.731Z</lastmod></url>
-<url><loc>https://www.florianthom.com/paypal</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-05-18T21:17:47.731Z</lastmod></url>
-<url><loc>https://www.florianthom.com/projects</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-05-18T21:17:47.731Z</lastmod></url>
-<url><loc>https://www.florianthom.com/qr</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-05-18T21:17:47.731Z</lastmod></url>
-<url><loc>https://www.florianthom.com/reports</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-05-18T21:17:47.731Z</lastmod></url>
-<url><loc>https://www.florianthom.com/spotify</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-05-18T21:17:47.731Z</lastmod></url>
-<url><loc>https://www.florianthom.com/twitter</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-05-18T21:17:47.731Z</lastmod></url>
-<url><loc>https://www.florianthom.com/wishlist</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-05-18T21:17:47.731Z</lastmod></url>
-<url><loc>https://www.florianthom.com/work</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-05-18T21:17:47.731Z</lastmod></url>
-<url><loc>https://www.florianthom.com/xing</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-05-18T21:17:47.731Z</lastmod></url>
+<url><loc>https://www.florianthom.com</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-05-18T21:26:36.695Z</lastmod></url>
+<url><loc>https://www.florianthom.com/gear</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-05-18T21:26:36.695Z</lastmod></url>
+<url><loc>https://www.florianthom.com/projects</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-05-18T21:26:36.696Z</lastmod></url>
+<url><loc>https://www.florianthom.com/reports</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-05-18T21:26:36.696Z</lastmod></url>
+<url><loc>https://www.florianthom.com/work</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-05-18T21:26:36.696Z</lastmod></url>
 </urlset>
