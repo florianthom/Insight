@@ -3,6 +3,7 @@ import Link from "next/link";
 import { RecordTag } from "@/src/app/shared/recordTag/recordTag";
 import { Document } from "@/src/app/shared/models/Document";
 import Image from "next/image";
+import * as constants from "@/src/app/shared/constants/constants"
 
 interface Props {
     document: Document;
@@ -23,6 +24,7 @@ export const ReportItem: React.FC<Props> = (props: Props) => {
                                 height={400}
                                 priority={true}
                                 quality={100}
+                                unoptimized={constants.static_site}
                             />
                         </div>
                         <div className="p-4">
