@@ -9,7 +9,6 @@ import {
     linkedin_link,
     twitter_link,
 } from "@/src/app/shared/constants/constants";
-import Image from "next/image";
 import { BC } from "@/src/app/shared/bc/bc";
 
 interface Props {}

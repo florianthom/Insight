@@ -4,6 +4,7 @@ module.exports = {
         webpack5: true,
     },
     reactStrictMode: true,
+    trailingSlash: true,
     images: {
         // just for static site generation since otherwise next/image does not work
         loader: 'akamai',

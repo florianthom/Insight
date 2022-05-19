@@ -85,7 +85,7 @@ $ minikube ip
 
 ```
 $ # for testing
-$ # here enter your random-domain name like # 192.168.49.2 florianthom.io
+$ # here enter your random-domain name like # 192.168.49.2 www.florianthom.com
 $ sudo vim /etc/hosts
 ```
 
