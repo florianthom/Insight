@@ -5,6 +5,10 @@ module.exports = {
     },
     reactStrictMode: true,
     images: {
+        // just for static site generation since otherwise next/image does not work
+        loader: 'akamai',
+        path: '',
+
         domains: [
             "drive.google.com",
             "lh1.googleusercontent.com",
