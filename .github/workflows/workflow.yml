@@ -20,22 +20,51 @@ jobs:
 #            - name: Running tests
 #              run: yarn test
 
+
+
     build:
       name: Run build
       runs-on: ubuntu-latest
+      timeout-minutes: 5
       steps:
         - uses: actions/checkout@v2
         - uses: actions/setup-node@v2
           with:
-            node-version: "14"
+            node-version: "16"
         - name: Installing dependencies
           run: yarn install --frozen-lockfile
         - name: Run build
           run: yarn build
 
+    awspush:
+      name: Build image + deploy to aws S3
+      runs-on: ubuntu-latest
+      timeout-minutes: 5
+      steps:
+        - uses: actions/checkout@v2
+        - uses: actions/setup-node@v2
+          with:
+            node-version: "16"
+        - name: Installing dependencies
+          run: yarn install --frozen-lockfile
+        - name: Run build
+          run: yarn build
+        - name: aws login
+          uses: aws-actions/configure-aws-credentials@v1
+          with:
+            aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+            aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+            aws-region: eu-central-1
+        - name: Clean S3 folder
+          run: yarn run s3-clean
+        - name: Deploy to S3
+          run: yarn run s3-deploy
+
+
     dockerpush:
       name: Build image + push to docker hub
       runs-on: ubuntu-latest
+      timeout-minutes: 5
       steps:
         - uses: actions/checkout@v2
         - name: docker login

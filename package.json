@@ -10,7 +10,9 @@
         "lint": "eslint --fix .",
         "format": "prettier --write . --config .prettierrc.js",
         "test": "jest",
-        "generate-openapi": "SET JAVA_OPTS=-Dio.swagger.parser.util.RemoteUrl.trustAll=true -Dio.swagger.v3.parser.util.RemoteUrl.trustAll=true && openapi-generator-cli generate --global-property models -i https://localhost:5000/swagger/v1/swagger.json --generator-name typescript-fetch -o src/openapi_models"
+        "generate-openapi": "SET JAVA_OPTS=-Dio.swagger.parser.util.RemoteUrl.trustAll=true -Dio.swagger.v3.parser.util.RemoteUrl.trustAll=true && openapi-generator-cli generate --global-property models -i https://localhost:5000/swagger/v1/swagger.json --generator-name typescript-fetch -o src/openapi_models",
+        "s3-clean": "aws s3 rm s3://www.florianthom.com --recursive",
+        "s3-deploy": "aws s3 sync ./out s3://www.florianthom.com"
     },
     "dependencies": {
         "@fontsource/inter": "^4.0.1",
