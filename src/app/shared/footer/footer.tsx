@@ -19,6 +19,7 @@ export const Footer: React.FC<Props> = (props: Props) => {
                                 alt="linkedIn-link"
                                 width="32"
                                 height="32"
+                                unoptimized={constants.static_site}
                             />
                         </a>
                         <a href={github_link} target="_blank" rel="noopener noreferrer">
@@ -27,6 +28,7 @@ export const Footer: React.FC<Props> = (props: Props) => {
                                 alt="github-link"
                                 width="32"
                                 height="32"
+                                unoptimized={constants.static_site}
                             />
                         </a>
                         <a href={"mailto:" + email_string} target="_blank" rel="noopener noreferrer">
@@ -38,6 +40,7 @@ export const Footer: React.FC<Props> = (props: Props) => {
                                 alt="discordServer-link"
                                 width="32"
                                 height="32"
+                                unoptimized={constants.static_site}
                             />
                         </a>
                     </div>

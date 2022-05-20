@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import * as constants from "@/src/app/shared/constants/constants";
 
 interface Props {
     image_path: string;
@@ -20,6 +21,7 @@ export const PlatformCard: React.FC<Props> = (props: Props) => {
                         alt={props.platform_name + "-link"}
                         width="200%"
                         height="200%"
+                        unoptimized={constants.static_site}
                     />
                 </div>
                 <div className="px-4 py-8">

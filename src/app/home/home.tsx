@@ -6,6 +6,7 @@ import { Footer } from "@/src/app/shared/footer/footer";
 import { IndividualWork } from "@/src/app/shared/workIndividualOrGroup/individualWork";
 import { GroupWork } from "@/src/app/shared/workIndividualOrGroup/groupWork";
 import { discord_link, email_string, github_link, linkedin_link } from "../shared/constants/constants";
+import * as constants from "@/src/app/shared/constants/constants";
 
 export interface Props {}
 
@@ -38,6 +39,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                                 height="28"
                                 priority={true}
                                 quality={25}
+                                unoptimized={constants.static_site}
                             />
                         </a>
                         <a href={github_link} target="_blank" rel="noopener noreferrer" className="pr-4 sm:pr-6">
@@ -48,6 +50,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                                 height="28"
                                 priority={true}
                                 quality={25}
+                                unoptimized={constants.static_site}
                             />
                         </a>
                         <a
@@ -63,6 +66,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                                 height="28"
                                 priority={true}
                                 quality={25}
+                                unoptimized={constants.static_site}
                             />
                         </a>
                         <a href={discord_link} target="_blank" rel="noopener noreferrer" className="pr-4 sm:pr-6">
@@ -73,6 +77,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                                 height="28"
                                 priority={true}
                                 quality={25}
+                                unoptimized={constants.static_site}
                             />
                         </a>
                     </div>

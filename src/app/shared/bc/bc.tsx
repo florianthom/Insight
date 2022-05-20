@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import * as constants from "@/src/app/shared/constants/constants";
 
 export interface Props {}
 
@@ -23,6 +24,7 @@ export const BC: React.FC<Props> = (props: Props) => {
                                 width="100%"
                                 height="100%"
                                 priority={true}
+                                unoptimized={constants.static_site}
                             />
                         </div>
                     </div>

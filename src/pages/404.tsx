@@ -11,7 +11,7 @@ interface Props {
 
 const App404: NextPage<Props> = (props: Props) => {
     const router = useRouter();
-    const [redirecting, setRedirecting] = useState(true);
+    const [redirecting, setRedirecting] = useState(false);
 
 
     useEffect(() => {

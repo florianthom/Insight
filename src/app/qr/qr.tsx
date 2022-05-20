@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { qrRedirect } from "@/src/app/shared/constants/constants";
 import Image from "next/image";
 import Link from "next/link";
+import * as constants from "@/src/app/shared/constants/constants";
 
 interface Props {}
 
@@ -64,6 +65,7 @@ export const QR: React.FC<Props> = (props: Props) => {
                                 alt="qr-code svg-image"
                                 width="400%"
                                 height="400%"
+                                unoptimized={constants.static_site}
                             />
                         </a>
                     </div>
