@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+        @apply text-2xl;
+    }
+    h2 {
+        @apply text-xl;
+    }
+}
+.custom-background-image {
+    background-image: url("../assets/IMG_0410-min.JPG");
+}
+
+ul > li {
+    margin-left: 1.0em;
+}
+
+.bottom-box-shadow{
+    box-shadow: 0px 2px 15px 0 rgb(0 0 0 / 15%)
+}
+
+.custom-platformCardGridSize{
+    grid-template-rows: auto 1fr;
+}
+
+.min-w-flex-100{
+    min-width: 100px;
+}
