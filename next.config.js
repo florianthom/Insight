@@ -5,6 +5,9 @@ module.exports = {
     },
     reactStrictMode: true,
     trailingSlash: true,
+    experimental: {
+        // nextScriptWorkers: true,
+    },
     images: {
         // just for static site generation since otherwise next/image does not work
         loader: 'akamai',
