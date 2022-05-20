@@ -23,7 +23,7 @@ export const projectsToShowOnLandingPage = [
     "Conino-BMA-Backend",
 ];
 
-export const email_string = "mail@florianthom.io";
+export const email_string = "mail@florianthom.com";
 export const github_link = "https://github.com/florianthom";
 export const discord_link = "https://discord.gg/UYq6fz8TVw";
 export const xing_link = "https://www.xing.com/profile/Florian_Thom9";
