@@ -1,24 +1,12 @@
 import React, {useEffect, useState} from "react";
 import {NextPage} from "next";
 import {useRouter} from "next/router";
-import * as constants from "@/src/app/shared/constants/constants";
 import Head from "next/head";
+import {redirectList} from "@/src/app/shared/utils/redirectList";
 
 interface Props {
 }
 
-const reposUrl = "/github"
-const emailUrl = "/email"
-
-const redirectRoutes = {
-    "/home/": "/",
-    "/xing/": constants.xing_link,
-    "/repos/": reposUrl,
-    "/repositories/": reposUrl,
-    "/mail/": emailUrl
-
-
-}
 
 const App404: NextPage<Props> = (props: Props) => {
 
@@ -28,10 +16,11 @@ const App404: NextPage<Props> = (props: Props) => {
 
     useEffect(() => {
         console.log(router.asPath)
-        const redirectUrl = redirectRoutes[router.asPath]
-        if (redirectUrl) {
+        // const redirectUrl = redirectRoutes[router.asPath]
+        const redirectUrl = redirectList.filter(a => a.source + "/" == router.asPath)
+        if (redirectUrl.length != 0) {
             setRedirecting(true)
-            window.location.replace(redirectUrl);
+            window.location.replace(redirectUrl[0].destination);
         }
     });
 
