@@ -20,8 +20,6 @@ jobs:
 #            - name: Running tests
 #              run: yarn test
 
-
-
     build:
       name: Run build + deploy to S3
       runs-on: ubuntu-latest
