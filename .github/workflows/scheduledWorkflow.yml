@@ -40,13 +40,14 @@ jobs:
       - name: "Deploy files"
         run: |
           git config --global user.email "thom.florian@yahoo.de"
-          git config --global user.name "FlorianTh2"
+          git config --global user.name "florianthom"
           git add -A
           git commit -a -m "chore: update stats from $(date +%s)"
           git push origin HEAD:main
 
   build:
     name: Run build + deploy to S3
+    needs: scheduledDataUpdateAndRedeploy
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
@@ -71,6 +72,7 @@ jobs:
 
   dockerpush:
     name: Build image + push to docker hub
+    needs: scheduledDataUpdateAndRedeploy
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
