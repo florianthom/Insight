@@ -1,4 +1,4 @@
-name: Insight Deploy-Workflow
+name: Insight Scheduled-Workflow
 
 on:
   workflow_dispatch:
