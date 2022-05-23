@@ -14,7 +14,6 @@ interface Props {}
 export const RepositoryTable: React.FC<Props> = (props: Props) => {
 
     const projectsData: Project[] = data;
-    console.log(new Date(projectsData[0].ProjectCreatedOn))
     const [page, setPage] = useState(constants.firstPage);
     const pagedData = paginate(projectsData, constants.pageSize, page)
 
