@@ -3,7 +3,7 @@ import {
     projectsToShowOnLandingPage,
 } from "@/src/app/shared/constants/constants";
 import { Project } from "@/src/app/shared/models/Project";
-import data from '@/public/static/data/Projects.json';
+import data from '@/data/projectsData.json';
 
 interface Props {}
 

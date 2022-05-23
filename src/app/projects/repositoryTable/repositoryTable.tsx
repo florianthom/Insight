@@ -7,7 +7,7 @@ import {
     paginate,
     previousPageAvailable
 } from "@/src/app/shared/utils/paginationUtils";
-import data from "@/public/static/data/Projects.json";
+import data from "@/data/projectsData.json";
 
 interface Props {}
 

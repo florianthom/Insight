@@ -1,4 +1,4 @@
-name: Insight Workflow
+name: Insight Deploy-Workflow
 
 on:
     push:

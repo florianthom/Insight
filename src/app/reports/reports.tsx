@@ -4,7 +4,7 @@ import React, {useState} from "react";
 import {ReportItem} from "@/src/app/reports/recordButton/reportItem";
 import {Document} from "@/src/app/shared/models/Document";
 import * as constants from "@/src/app/shared/constants/constants";
-import data from "@/public/static/data/Documents.json"
+import data from "@/data/documentsData.json"
 import {
     getNumberPages,
     nextPageAvailable,
