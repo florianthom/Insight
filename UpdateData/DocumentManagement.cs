@@ -21,7 +21,7 @@ public class DocumentManagement : IJob
 
     public DocumentManagement()
     {
-        _documentsJsonDataPath = FileHelper.GetProjectDirPath() + @"./../data/documentsData.json";
+        _documentsJsonDataPath = FileHelper.GetProjectDirPath() + @"/../data/documentsData.json";
         _localDataContext = new List<Document>();
         _localDataContext = FileHelper.ReadJsonFileToObject<Document>(_documentsJsonDataPath);
 

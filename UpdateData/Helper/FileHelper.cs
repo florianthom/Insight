@@ -6,7 +6,7 @@ public class FileHelper
 {
     public static string GetProjectDirPath()
     {
-        return Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\.."));
+        return Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"../../.."));
     }
 
     public static void WriteObjectToJsonFile<T>(string filePath, List<T> list)

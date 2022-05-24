@@ -20,7 +20,7 @@ public class ProjectManagement : IJob
 
     public ProjectManagement()
     {
-        _projectsJsonDataPath = FileHelper.GetProjectDirPath() + @"./../data/projectsData.json";
+        _projectsJsonDataPath = FileHelper.GetProjectDirPath() + @"/../data/projectsData.json";
         _localDataContext = new List<Project>();
         _localDataContext = FileHelper.ReadJsonFileToObject<Project>(_projectsJsonDataPath);
 
