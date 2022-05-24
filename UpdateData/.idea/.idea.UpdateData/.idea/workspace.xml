@@ -38,19 +38,32 @@
 }</component>
   <component name="RunManager">
     <configuration name="UpdateData" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/bin/Debug/net6.0/UpdateData.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bin/Debug/net6.0" />
       <option name="PASS_PARENT_ENVS" value="1" />
+      <envs>
+        <env name="GITHUBAPI_PERSONAL_ACCESS_TOKEN" value="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" />
+        <env name="GOOGLE_DRIVE_AUTH_PROVIDER_X509_CERT_URL" value="https://www.googleapis.com/oauth2/v1/certs" />
+        <env name="GOOGLE_DRIVE_AUTH_URI" value="https://accounts.google.com/o/oauth2/auth" />
+        <env name="GOOGLE_DRIVE_CLIENT_EMAIL" value="personal-website-backend-servi@personal-website-311709.iam.gserviceaccount.com" />
+        <env name="GOOGLE_DRIVE_CLIENT_ID" value="104560131826934434066" />
+        <env name="GOOGLE_DRIVE_CLIENT_X509_CERT_URL" value="https://www.googleapis.com/robot/v1/metadata/x509/personal-website-backend-servi%40personal-website-311709.iam.gserviceaccount.com" />
+        <env name="GOOGLE_DRIVE_PRIVATE_KEY" value="-----BEGIN PRIVATE KEY----- MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCUhtb2rrOo7lSCteK6MrBAlTWI3jnEMtbGY8neY903ctHIk6HEKfLl2xpKgbMXM3KMvCT5+octwPnAIIFxJcur2C9VwHk4+qtTmx1X9b0eCfpMXiVhCBPnFTCxfCrwFg5Zxojp0TEEKPmmJfsYqkJ2UWcE6XhsM08LOjr7RLsRlrYMlV0qdwzslvO0RyaUSg0fk9jtlxworFCQEviViVfqK/Yyn6aG/tWCKEDNQO/tcIGob7EpY1RakvPVAvUTFDwBdPMIvqzNA+g7MQIcpyMezIshPFcT8jtF1IyeVjPg3FRDGZx96cK239Tqc+21KiE6S0kK2b7H2rVCtsMbZH3pAgMBAAECggEANxFZYSO7293leoMKWYPSoldP/nt6SnqY8/xqi6hWDClni2jlONBezQcz070L1AXQqkpVoVNYTEf4sVm79GIRhhjE0BPpPg1+eSSROBwV7q2/XhIn5LZ0fqB2KdACMXrT/kgkWiCj/klc6lO5qdbyhmC/A+y2J9PMMjr4RFIi062O6D33GVXMj+jAhbxt6p3D485gygayHUQXGYD6AuXYUJ6B66GEq7CBRPlg5pEgM06R58X2qMFcI41tdWkKbMssdkDxIGBhTEEv+eBwbqcfeMGTLzS9zTGL8F4a+6pIhz/2/Tv0j/IjOx2pnc4Mtnesh64Uq1QfK5MBcJE+nLa2SwKBgQDODvJLAvxPZaK3v9VJIEIjEPbaNvPsfbm9DhNKcN2Bm3xQ3YZkyUXm/BHg40vrCPJstrjR67ZO1Q5sXoUxcBDJ20yo3/7lMcSq+U0ERvciTnuwrRtC/AHz1WMZFu2j4JJ1WLkeZE/vaG9ipdr0YJPdAshNAT59OJP663HWtKACMwKBgQC4hkvGPI/0dS6xHdA92pEoFxIPhM3X7sYXRqPkyEfR9jhl2+siR47lHvaNmNJq01Jkwi3QkrFjw4Dc1bOmgeuFpWBJroUcN3bYCnlcyT6N4GXiEWPbxqcMvanhtoVewdq/u7W+Z78u0kyN5eLBOQWN6kS92hfNlNZVaf/obLd7cwKBgG8i6pWAl7ru81MtuQiGyIUHOky5hNgRe2M3OzpUI3Qq+2LWCA1F7VjGrZHgpeqvWak+5/H4ssxT50KVvDrM2ZE1oWQX4++T5yHb8ikTaWlscRP6WZDIQPlVJuy6TBOuJO/7mWSF8AMNDb5j+/MAP9/dB1FZEW4SXOXhpPWLWB23AoGAR5Jvmbir7Zn2PmTd/N/mJbKtIq/UV8kZtLWFpJu6n8ntHjUrAuTWnDBiWZHJK/5DmylmM9xyScvvE7kgMZl7DR+UNYAnyUYKJsoJQOAeD1HWstUj8n8fFGYMmqv9F0AB5RSd7fi3wyV25CMizOedK+qON0V8rhTo/cBbrn9cu9kCgYBupZ5neuRwyAyGevSSZdNH0tc+MZ+oSOIZkTGf39vuaXHyyuOZb7wjYO9+lZON4wLLRRsL5PaBybPAkNaeNdg9RH4dtdaoTEbIzPYXBH2XCYvwd2JJAj7s/pjEA/kG20rv0SKw2ZqANArPg3i917pawCJiXKVJTYL0u9vqSh4ljw== -----END PRIVATE KEY-----" />
+        <env name="GOOGLE_DRIVE_PRIVATE_KEY_ID" value="23dc9f4752a5b4d16e7e75d78c477109fd6ad26a" />
+        <env name="GOOGLE_DRIVE_PROJECT_ID" value="personal-website-311709" />
+        <env name="GOOGLE_DRIVE_TYPE" value="service_account" />
+        <env name="GOOGLE_DRIVE_TOKEN_URI" value="https://oauth2.googleapis.com/token" />
+      </envs>
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/UpdateData/UpdateData.csproj" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/UpdateData.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="DotNetCore" />
-      <option name="PROJECT_TFM" value="" />
+      <option name="PROJECT_TFM" value="net6.0" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -71,6 +84,7 @@
       <workItem from="1653329196081" duration="6072000" />
       <workItem from="1653336381167" duration="1293000" />
       <workItem from="1653338310542" duration="1452000" />
+      <workItem from="1653413289219" duration="1014000" />
     </task>
     <servers />
   </component>
