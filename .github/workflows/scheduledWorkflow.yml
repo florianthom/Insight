@@ -55,6 +55,11 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: "16"
+      - name: "Get newest files"
+        run: |
+          git config --global user.email "thom.florian@yahoo.de"
+          git config --global user.name "florianthom"
+          git pull
       - name: Installing dependencies
         run: yarn install --frozen-lockfile
       - name: Run build
@@ -70,20 +75,20 @@ jobs:
       - name: Deploy to S3
         run: yarn run s3-deploy
 
-  dockerpush:
-    name: Build image + push to docker hub
-    needs: scheduledDataUpdateAndRedeploy
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-    steps:
-      - uses: actions/checkout@v2
-      - name: docker login
-        env:
-          DOCKER_USER: ${{secrets.DOCKER_USER}}
-          DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
-        run: |
-          docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
-      - name: build the docker image
-        run: docker build . --file Dockerfile --tag ${{secrets.DOCKER_USER}}/insight:latest
-      - name: docker push
-        run: docker push ${{secrets.DOCKER_USER}}/insight:latest
+#  dockerpush:
+#    name: Build image + push to docker hub
+#    needs: scheduledDataUpdateAndRedeploy
+#    runs-on: ubuntu-latest
+#    timeout-minutes: 5
+#    steps:
+#      - uses: actions/checkout@v2
+#      - name: docker login
+#        env:
+#          DOCKER_USER: ${{secrets.DOCKER_USER}}
+#          DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
+#        run: |
+#          docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+#      - name: build the docker image
+#        run: docker build . --file Dockerfile --tag ${{secrets.DOCKER_USER}}/insight:latest
+#      - name: docker push
+#        run: docker push ${{secrets.DOCKER_USER}}/insight:latest
