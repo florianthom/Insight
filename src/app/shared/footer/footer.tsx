@@ -2,7 +2,13 @@ import React, {useEffect, useState} from "react";
 import Link from "next/link";
 import Image from "next/image";
 import * as constants from "@/src/app/shared/constants/constants";
-import {discord_link, email_string, github_link, linkedin_link} from "@/src/app/shared/constants/constants";
+import {
+    discord_link,
+    email_string,
+    github_link,
+    linkedin_link,
+    twitter_link
+} from "@/src/app/shared/constants/constants";
 
 export interface Props {
 }
@@ -39,6 +45,15 @@ export const Footer: React.FC<Props> = (props: Props) => {
                                 width="32"
                                 height="32"
                                 unoptimized={constants.static_site}/>
+                        </a>
+                        <a href={twitter_link} target="_blank" rel="noopener noreferrer">
+                            <Image
+                                src="/static/images/twitter_logo.png"
+                                alt="discordServer-link"
+                                width="32"
+                                height="32"
+                                unoptimized={constants.static_site}
+                            />
                         </a>
                         <a href={discord_link} target="_blank" rel="noopener noreferrer">
                             <Image
