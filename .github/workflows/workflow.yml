@@ -44,19 +44,19 @@ jobs:
         - name: Deploy to S3
           run: yarn run s3-deploy
 
-    dockerpush:
-      name: Build image + push to docker hub
-      runs-on: ubuntu-latest
-      timeout-minutes: 5
-      steps:
-        - uses: actions/checkout@v2
-        - name: docker login
-          env:
-            DOCKER_USER: ${{secrets.DOCKER_USER}}
-            DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
-          run: |
-            docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
-        - name: build the docker image
-          run: docker build . --file Dockerfile --tag ${{secrets.DOCKER_USER}}/insight:latest
-        - name: docker push
-          run: docker push ${{secrets.DOCKER_USER}}/insight:latest
+#    dockerpush:
+#      name: Build image + push to docker hub
+#      runs-on: ubuntu-latest
+#      timeout-minutes: 5
+#      steps:
+#        - uses: actions/checkout@v2
+#        - name: docker login
+#          env:
+#            DOCKER_USER: ${{secrets.DOCKER_USER}}
+#            DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
+#          run: |
+#            docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+#        - name: build the docker image
+#          run: docker build . --file Dockerfile --tag ${{secrets.DOCKER_USER}}/insight:latest
+#        - name: docker push
+#          run: docker push ${{secrets.DOCKER_USER}}/insight:latest
