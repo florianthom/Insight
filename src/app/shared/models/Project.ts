@@ -1,3 +1,5 @@
+import { Visibility } from "./Visibility";
+
 export interface Project {
     Id?: string;
 
@@ -31,7 +33,7 @@ export interface Project {
 
     ProjectUpdatedOn?: string | null;
 
-    Visibility?: string | null;
+    Visibility?: Visibility | null;
 
     UserId?: string | null;
 
