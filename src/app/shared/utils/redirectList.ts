@@ -104,4 +104,19 @@ export const redirectList = [
         destination: "/googledrive",
         permanent: false,
     },
+    {
+        source: "/telefon",
+        destination: "/phone",
+        permanent: false,
+    },
+    {
+        source: "/tel",
+        destination: "/phone",
+        permanent: false,
+    },
+    {
+        source: "/mobile",
+        destination: "/phone",
+        permanent: false,
+    },
 ];

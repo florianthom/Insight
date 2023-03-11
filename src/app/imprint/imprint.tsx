@@ -4,7 +4,7 @@ import React from "react";
 import { PlatformCard } from "@/src/app/contact/platformCard/platformCard";
 import * as constants from "@/src/app/shared/constants/constants";
 
-interface Props {}
+interface Props { }
 
 export const Imprint: React.FC<Props> = (props: Props) => {
     return (
@@ -38,7 +38,6 @@ export const Imprint: React.FC<Props> = (props: Props) => {
                                 {constants.personal_address_zipcode} {constants.personal_address_state} (
                                 {constants.personal_address_country})
                             </div>
-                            <div>Phone: {constants.personal_phone_number}</div>
                             <div>Email: {constants.email_string}</div>
                         </div>
                         <div className="pt-24 text-2xl">Disclaimer - rechtliche Hinweise</div>
