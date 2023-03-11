@@ -17,7 +17,7 @@ const PhonePage: NextPage<Props> = (props: Props) => {
             </Head>
             <NavBar></NavBar>
             <div className="pt-56">
-                If you want to contact me you can also call me under phone number ({constants.personal_phone_number}).
+                If you want to contact me you can also call me under phone number {constants.personal_phone_number}.
             </div>
         </main>
     );
