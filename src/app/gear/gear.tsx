@@ -2,7 +2,7 @@ import { NavBar } from "@/src/app/shared/navbar/navbar";
 import { Footer } from "@/src/app/shared/footer/footer";
 import React from "react";
 
-interface Props {}
+interface Props { }
 
 export const Gear: React.FC<Props> = (props: Props) => {
     return (
@@ -129,7 +129,7 @@ export const Gear: React.FC<Props> = (props: Props) => {
                                     <li>
                                         “The Hard Thing About Hard Things [...]”
                                         <ul className="list-disc list-inside pl-4">
-                                            <li>by Ben Horowith</li>
+                                            <li>by Ben Horowitz</li>
                                         </ul>
                                     </li>
                                     <li>more (but mostly in german)</li>
