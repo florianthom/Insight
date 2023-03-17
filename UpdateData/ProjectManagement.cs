@@ -70,7 +70,8 @@ public class ProjectManagement : IJob
         {
             // login == login-name
             if (repository.Owner.Login != repositoryUser.Login ||
-                (repository.Fork && !_forkedProjectsToKeep.Contains(repository.Name)))
+                (repository.Fork && !_forkedProjectsToKeep.Contains(repository.Name)) ||
+                repository.Visibility == RepositoryVisibility.Private)
             {
                 continue;
             }
