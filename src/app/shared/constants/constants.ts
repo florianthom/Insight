@@ -38,7 +38,7 @@ export const lol = "https://euw.op.gg/summoners/euw/Alat%C3%A1n";
 export const paypal = "https://www.paypal.com/paypalme/ThomFlorian";
 export const google_drive = "https://drive.google.com/drive/folders/1LKAdtoOB1Uh_ikwrY4t-UgVQkuyYbUx9?usp=sharing";
 export const cv_international_link =
-    "https://drive.google.com/file/d/1azVdEOLC8S23nZK23LnalKfYSTzJXHQK/view?usp=sharing";
-export const cv_germany_link = "https://drive.google.com/file/d/1e2wbtK9Pnus8pSzYK_fEMoz6aSXdrY_G/view?usp=sharing";
+    "https://drive.google.com/file/d/1y6UOUsVy2qF6Vi00J4qjxQMxl4WvuEHm/view?usp=sharing";
+export const cv_germany_link = "https://drive.google.com/file/d/1cPO5hJAlXORhiIwZnjXRiB82GJDIPYv8/view?usp=sharing";
 export const contact_page = "https://florianthom.com/contact";
 export const qrRedirect = contact_page;
