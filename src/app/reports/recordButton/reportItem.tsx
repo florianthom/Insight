@@ -12,16 +12,17 @@ interface Props {
 export const ReportItem: React.FC<Props> = (props: Props) => {
     return (
         <div className="transition bg-white text-main-color shadow-inner border border-main-color py-2 px-4 cursor-pointer rounded shadow hover:bg-main-color hover:text-white active:bg-main-color-light">
-            <a href={props.document.WebviewLink} target="_blank" rel="noopener noreferrer">
+            <a href={props.document.WebviewLink!} target="_blank" rel="noopener noreferrer">
                 <div className="grid grid-cols-12">
                     <div className="col-span-12 sm:col-span-11">
                         <div className="text-center">
                             <Image
-                                src={props.document.ThumbnailLink}
-                                className="object-cover object-top"
+                                src={props.document.ThumbnailLink!}
+                                className="" // object-cover object-top
                                 alt={"thumbnail: " + props.document.Name}
                                 width={600}
                                 height={400}
+                                objectFit="cover"
                                 priority={true}
                                 quality={100}
                                 unoptimized={constants.static_site}
@@ -29,12 +30,12 @@ export const ReportItem: React.FC<Props> = (props: Props) => {
                         </div>
                         <div className="p-4">
                             <div className="underline sm:no-underline text-lg sm:text-2xl uppercase">
-                                {props.document.Name.replace("." + props.document.FileExtension, "")}
+                                {props.document.Name!.replace("." + props.document.FileExtension, "")}
                             </div>
                             <br />
                             <RecordTag tagName={"." + props.document.FileExtension}></RecordTag>
                             <RecordTag tagName="german"></RecordTag>
-                            <RecordTag tagName={props.document.Size.toString() + " bytes"}></RecordTag>
+                            <RecordTag tagName={props.document.Size!.toString() + " bytes"}></RecordTag>
                         </div>
                     </div>
                     <div className="hidden sm:flex justify-center items-center border-l-2">

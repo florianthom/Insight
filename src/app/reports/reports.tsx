@@ -1,8 +1,8 @@
-import {NavBar} from "@/src/app/shared/navbar/navbar";
-import {Footer} from "@/src/app/shared/footer/footer";
-import React, {useState} from "react";
-import {ReportItem} from "@/src/app/reports/recordButton/reportItem";
-import {Document} from "@/src/app/shared/models/Document";
+import { NavBar } from "@/src/app/shared/navbar/navbar";
+import { Footer } from "@/src/app/shared/footer/footer";
+import React, { useState } from "react";
+import { ReportItem } from "@/src/app/reports/recordButton/reportItem";
+import { Document } from "@/src/app/shared/models/Document";
 import * as constants from "@/src/app/shared/constants/constants";
 import data from "@/data/documentsData.json"
 import {
@@ -12,9 +12,7 @@ import {
     previousPageAvailable
 } from "@/src/app/shared/utils/paginationUtils";
 
-interface Props {
-}
-
+interface Props { }
 
 
 export const Reports: React.FC<Props> = (props: Props) => {
@@ -22,6 +20,7 @@ export const Reports: React.FC<Props> = (props: Props) => {
     const documentsData: Document[] = data;
     const [page, setPage] = useState(constants.firstPage);
     const pagedData = paginate(documentsData, constants.pageSizeReports, page)
+    console.log(pagedData)
 
     function handleScroll2(): void {
         if (nextPageAvailable(documentsData, constants.pageSizeReports, page)) {
@@ -48,7 +47,7 @@ export const Reports: React.FC<Props> = (props: Props) => {
                     <div className="pt-24">
                         {pagedData
                             .sort((a: Document, b: Document) =>
-                                new Date(a.DocumentCreatedTime) >= new Date(b.DocumentCreatedTime) ? -1 : 1,
+                                new Date(a.DocumentCreatedTime!) >= new Date(b.DocumentCreatedTime!) ? -1 : 1,
                             )
                             .map((a) => (
                                 <div className="py-8" key={(a as Document).Id}>
