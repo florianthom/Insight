@@ -7,11 +7,10 @@ import {
     email_string,
     github_link,
     linkedin_link,
-    twitter_link
+    twitter_link,
 } from "@/src/app/shared/constants/constants";
 
-export interface Props {
-}
+export interface Props {}
 
 export const Footer: React.FC<Props> = (props: Props) => {
     return (
@@ -45,7 +44,8 @@ export const Footer: React.FC<Props> = (props: Props) => {
                                     alt="mail-adresse"
                                     width="32"
                                     height="32"
-                                    unoptimized={constants.static_site} />
+                                    unoptimized={constants.static_site}
+                                />
                             </a>
                             <a href={twitter_link} target="_blank" rel="noopener noreferrer">
                                 <Image

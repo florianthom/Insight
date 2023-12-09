@@ -12,22 +12,17 @@
  * Do not edit the class manually.
  */
 
-import { exists, mapValues } from '../runtime';
-import {
-    Project,
-    ProjectFromJSON,
-    ProjectFromJSONTyped,
-    ProjectToJSON,
-} from './';
+import { exists, mapValues } from "../runtime";
+import { Project, ProjectFromJSON, ProjectFromJSONTyped, ProjectToJSON } from "./";
 
 /**
- * 
+ *
  * @export
  * @interface ResponseProject
  */
 export interface ResponseProject {
     /**
-     * 
+     *
      * @type {Project}
      * @memberof ResponseProject
      */
@@ -39,12 +34,11 @@ export function ResponseProjectFromJSON(json: any): ResponseProject {
 }
 
 export function ResponseProjectFromJSONTyped(json: any, ignoreDiscriminator: boolean): ResponseProject {
-    if ((json === undefined) || (json === null)) {
+    if (json === undefined || json === null) {
         return json;
     }
     return {
-        
-        'data': !exists(json, 'data') ? undefined : ProjectFromJSON(json['data']),
+        data: !exists(json, "data") ? undefined : ProjectFromJSON(json["data"]),
     };
 }
 
@@ -56,9 +50,6 @@ export function ResponseProjectToJSON(value?: ResponseProject | null): any {
         return null;
     }
     return {
-        
-        'data': ProjectToJSON(value.data),
+        data: ProjectToJSON(value.data),
     };
 }
-
-

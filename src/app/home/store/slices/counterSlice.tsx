@@ -31,7 +31,5 @@ export const counterSlice = createSlice({
     },
 });
 
-export const {
-    increment: incrementConterActionCreator,
-    decrement: decrementConterActionCreator,
-} = counterSlice.actions;
+export const { increment: incrementConterActionCreator, decrement: decrementConterActionCreator } =
+    counterSlice.actions;

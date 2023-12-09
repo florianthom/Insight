@@ -2,49 +2,49 @@ name: Personal Website Workflow
 
 on:
     push:
-      branches:
-        - main
+        branches:
+            - main
 #    pull_request:
 
 jobs:
-#    test:
-#        name: Run tests
-#        runs-on: ubuntu-latest
-#        steps:
-#            - uses: actions/checkout@v2
-#            - uses: actions/setup-node@v2
-#              with:
-#                node-version: "16"
-#            - name: Installing dependencies
-#              run: yarn install --frozen-lockfile
-#            - name: Running tests
-#              run: yarn test
+    #    test:
+    #        name: Run tests
+    #        runs-on: ubuntu-latest
+    #        steps:
+    #            - uses: actions/checkout@v2
+    #            - uses: actions/setup-node@v2
+    #              with:
+    #                node-version: "16"
+    #            - name: Installing dependencies
+    #              run: yarn install --frozen-lockfile
+    #            - name: Running tests
+    #              run: yarn test
 
     build:
-      name: Run build
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v2
-        - uses: actions/setup-node@v2
-          with:
-            node-version: "14"
-        - name: Installing dependencies
-          run: yarn install --frozen-lockfile
-        - name: Run build
-          run: yarn build
+        name: Run build
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - uses: actions/setup-node@v2
+              with:
+                  node-version: "14"
+            - name: Installing dependencies
+              run: yarn install --frozen-lockfile
+            - name: Run build
+              run: yarn build
 
     dockerpush:
-      name: Build image + push to docker hub
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v2
-        - name: docker login
-          env:
-            DOCKER_USER: ${{secrets.DOCKER_USER}}
-            DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
-          run: |
-            docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
-        - name: build the docker image
-          run: docker build . --file Dockerfile --tag ${{secrets.DOCKER_USER}}/personal-website-frontend:latest
-        - name: docker push
-          run: docker push ${{secrets.DOCKER_USER}}/personal-website-frontend:latest
+        name: Build image + push to docker hub
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: docker login
+              env:
+                  DOCKER_USER: ${{secrets.DOCKER_USER}}
+                  DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
+              run: |
+                  docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+            - name: build the docker image
+              run: docker build . --file Dockerfile --tag ${{secrets.DOCKER_USER}}/personal-website-frontend:latest
+            - name: docker push
+              run: docker push ${{secrets.DOCKER_USER}}/personal-website-frontend:latest

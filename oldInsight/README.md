@@ -61,7 +61,6 @@ Frontend-Project to create my personal website. The backend-code can be found [h
 
 `$ kubectl rollout restart deployment/personal-website-frontend-deployment`
 
-
 ### minikube
 
 `$ sudo chown -R $USER $HOME/.minikube; chmod -R u+wrx $HOME/.minikube`
@@ -91,16 +90,16 @@ $ sudo vim /etc/hosts
 
 ## OpenAPI
 
-- Generate openapi-api
+-   Generate openapi-api
 
 `yarn run generate-openapi`
 
-- Some sources for intro, how-to-use and specification
-  - [How to use cli](https://openapi-generator.tech/docs/usage/)
-  - [How to customize output of cli](https://openapi-generator.tech/docs/customization/)
-  - [Online Generator](http://api.openapi-generator.tech/index.html)
-  - [Interesting real-life usage](https://www.mokkapps.de/blog/how-to-generate-angular-and-spring-code-from-open-api-specification/)
-  - [Interesting reddit-thread](https://www.reddit.com/r/typescript/comments/dhg9yv/do_you_use_any_swagger_generators_to_communicate/)
+-   Some sources for intro, how-to-use and specification
+    -   [How to use cli](https://openapi-generator.tech/docs/usage/)
+    -   [How to customize output of cli](https://openapi-generator.tech/docs/customization/)
+    -   [Online Generator](http://api.openapi-generator.tech/index.html)
+    -   [Interesting real-life usage](https://www.mokkapps.de/blog/how-to-generate-angular-and-spring-code-from-open-api-specification/)
+    -   [Interesting reddit-thread](https://www.reddit.com/r/typescript/comments/dhg9yv/do_you_use_any_swagger_generators_to_communicate/)
 
 ## Build with
 
@@ -118,6 +117,7 @@ $ sudo vim /etc/hosts
 -   openapi-generator-cli
 
 ## Acknowledgements
+
 Ideas and Designs of this project are based on a [project](https://www.youtube.com/watch?v=SC7lLm6QAb8&t=328s&ab_channel=DevonCrawford) of [Devon Crawford](https://github.com/DevonCrawford).
 Thanks for the motivation and your projects in general. Hopefully you will continue your work.
 

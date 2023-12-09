@@ -13,9 +13,11 @@ interface Props {}
 
 export const SignificantProjectsTable: React.FC<Props> = (props: Props) => {
     const [page, setPage] = useState(firstPage);
-    const { isLoading, error, data: projectsData } = useQuery<PagedResponseProject, Error>(
-        "/projects?pagesize=" + pageSizeLandingPage + "&pagenumber=" + page,
-    );
+    const {
+        isLoading,
+        error,
+        data: projectsData,
+    } = useQuery<PagedResponseProject, Error>("/projects?pagesize=" + pageSizeLandingPage + "&pagenumber=" + page);
 
     return (
         <div className="overflow-hidden leading-8 text-black">

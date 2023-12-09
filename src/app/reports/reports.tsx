@@ -4,23 +4,20 @@ import React, { useState } from "react";
 import { ReportItem } from "@/src/app/reports/recordButton/reportItem";
 import { Document } from "@/src/app/shared/models/Document";
 import * as constants from "@/src/app/shared/constants/constants";
-import data from "@/data/documentsData.json"
+import data from "@/data/documentsData.json";
 import {
     getNumberPages,
     nextPageAvailable,
     paginate,
-    previousPageAvailable
+    previousPageAvailable,
 } from "@/src/app/shared/utils/paginationUtils";
 
-interface Props { }
-
+interface Props {}
 
 export const Reports: React.FC<Props> = (props: Props) => {
-
     const documentsData: Document[] = data;
     const [page, setPage] = useState(constants.firstPage);
-    const pagedData = paginate(documentsData, constants.pageSizeReports, page)
-    console.log(pagedData)
+    const pagedData = paginate(documentsData, constants.pageSizeReports, page);
 
     function handleScroll2(): void {
         if (nextPageAvailable(documentsData, constants.pageSizeReports, page)) {
@@ -29,7 +26,7 @@ export const Reports: React.FC<Props> = (props: Props) => {
         window.scrollTo({
             top: 0,
             left: 0,
-            behavior: "smooth"
+            behavior: "smooth",
         });
     }
 
@@ -53,8 +50,7 @@ export const Reports: React.FC<Props> = (props: Props) => {
                                 <div className="py-8" key={(a as Document).Id}>
                                     <ReportItem document={a as Document}></ReportItem>
                                 </div>
-                            ))
-                        }
+                            ))}
                     </div>
                     {
                         <div className="px-4 pt-8 text-center">

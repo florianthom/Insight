@@ -12,147 +12,147 @@
  * Do not edit the class manually.
  */
 
-import { exists, mapValues } from '../runtime';
+import { exists, mapValues } from "../runtime";
 /**
- * 
+ *
  * @export
  * @interface Project
  */
 export interface Project {
     /**
-     * 
+     *
      * @type {string}
      * @memberof Project
      */
     id?: string;
     /**
-     * 
+     *
      * @type {string}
      * @memberof Project
      */
     name?: string | null;
     /**
-     * 
+     *
      * @type {boolean}
      * @memberof Project
      */
     archived?: boolean;
     /**
-     * 
+     *
      * @type {string}
      * @memberof Project
      */
     projectCreatedOn?: string | null;
     /**
-     * 
+     *
      * @type {string}
      * @memberof Project
      */
     description?: string | null;
     /**
-     * 
+     *
      * @type {number}
      * @memberof Project
      */
     forksCount?: number;
     /**
-     * 
+     *
      * @type {string}
      * @memberof Project
      */
     htmLUrl?: string | null;
     /**
-     * 
+     *
      * @type {number}
      * @memberof Project
      */
     projectId?: number;
     /**
-     * 
+     *
      * @type {string}
      * @memberof Project
      */
     language?: string | null;
     /**
-     * 
+     *
      * @type {string}
      * @memberof Project
      */
     licence?: string | null;
     /**
-     * 
+     *
      * @type {string}
      * @memberof Project
      */
     ownerName?: string | null;
     /**
-     * 
+     *
      * @type {string}
      * @memberof Project
      */
     ownerHtmlUrl?: string | null;
     /**
-     * 
+     *
      * @type {boolean}
      * @memberof Project
      */
     _private?: boolean;
     /**
-     * 
+     *
      * @type {number}
      * @memberof Project
      */
     size?: number;
     /**
-     * 
+     *
      * @type {number}
      * @memberof Project
      */
     stars?: number;
     /**
-     * 
+     *
      * @type {number}
      * @memberof Project
      */
     watchersCount?: number;
     /**
-     * 
+     *
      * @type {string}
      * @memberof Project
      */
     projectUpdatedOn?: string | null;
     /**
-     * 
+     *
      * @type {string}
      * @memberof Project
      */
     visibility?: string | null;
     /**
-     * 
+     *
      * @type {string}
      * @memberof Project
      */
     userId?: string | null;
     /**
-     * 
+     *
      * @type {string}
      * @memberof Project
      */
     createdOn?: string | null;
     /**
-     * 
+     *
      * @type {string}
      * @memberof Project
      */
     creatorId?: string | null;
     /**
-     * 
+     *
      * @type {string}
      * @memberof Project
      */
     updatedOn?: string | null;
     /**
-     * 
+     *
      * @type {string}
      * @memberof Project
      */
@@ -164,34 +164,33 @@ export function ProjectFromJSON(json: any): Project {
 }
 
 export function ProjectFromJSONTyped(json: any, ignoreDiscriminator: boolean): Project {
-    if ((json === undefined) || (json === null)) {
+    if (json === undefined || json === null) {
         return json;
     }
     return {
-        
-        'id': !exists(json, 'id') ? undefined : json['id'],
-        'name': !exists(json, 'name') ? undefined : json['name'],
-        'archived': !exists(json, 'archived') ? undefined : json['archived'],
-        'projectCreatedOn': !exists(json, 'projectCreatedOn') ? undefined : json['projectCreatedOn'],
-        'description': !exists(json, 'description') ? undefined : json['description'],
-        'forksCount': !exists(json, 'forksCount') ? undefined : json['forksCount'],
-        'htmLUrl': !exists(json, 'htmLUrl') ? undefined : json['htmLUrl'],
-        'projectId': !exists(json, 'projectId') ? undefined : json['projectId'],
-        'language': !exists(json, 'language') ? undefined : json['language'],
-        'licence': !exists(json, 'licence') ? undefined : json['licence'],
-        'ownerName': !exists(json, 'ownerName') ? undefined : json['ownerName'],
-        'ownerHtmlUrl': !exists(json, 'ownerHtmlUrl') ? undefined : json['ownerHtmlUrl'],
-        '_private': !exists(json, 'private') ? undefined : json['private'],
-        'size': !exists(json, 'size') ? undefined : json['size'],
-        'stars': !exists(json, 'stars') ? undefined : json['stars'],
-        'watchersCount': !exists(json, 'watchersCount') ? undefined : json['watchersCount'],
-        'projectUpdatedOn': !exists(json, 'projectUpdatedOn') ? undefined : json['projectUpdatedOn'],
-        'visibility': !exists(json, 'visibility') ? undefined : json['visibility'],
-        'userId': !exists(json, 'userId') ? undefined : json['userId'],
-        'createdOn': !exists(json, 'createdOn') ? undefined : json['createdOn'],
-        'creatorId': !exists(json, 'creatorId') ? undefined : json['creatorId'],
-        'updatedOn': !exists(json, 'updatedOn') ? undefined : json['updatedOn'],
-        'updaterId': !exists(json, 'updaterId') ? undefined : json['updaterId'],
+        id: !exists(json, "id") ? undefined : json["id"],
+        name: !exists(json, "name") ? undefined : json["name"],
+        archived: !exists(json, "archived") ? undefined : json["archived"],
+        projectCreatedOn: !exists(json, "projectCreatedOn") ? undefined : json["projectCreatedOn"],
+        description: !exists(json, "description") ? undefined : json["description"],
+        forksCount: !exists(json, "forksCount") ? undefined : json["forksCount"],
+        htmLUrl: !exists(json, "htmLUrl") ? undefined : json["htmLUrl"],
+        projectId: !exists(json, "projectId") ? undefined : json["projectId"],
+        language: !exists(json, "language") ? undefined : json["language"],
+        licence: !exists(json, "licence") ? undefined : json["licence"],
+        ownerName: !exists(json, "ownerName") ? undefined : json["ownerName"],
+        ownerHtmlUrl: !exists(json, "ownerHtmlUrl") ? undefined : json["ownerHtmlUrl"],
+        _private: !exists(json, "private") ? undefined : json["private"],
+        size: !exists(json, "size") ? undefined : json["size"],
+        stars: !exists(json, "stars") ? undefined : json["stars"],
+        watchersCount: !exists(json, "watchersCount") ? undefined : json["watchersCount"],
+        projectUpdatedOn: !exists(json, "projectUpdatedOn") ? undefined : json["projectUpdatedOn"],
+        visibility: !exists(json, "visibility") ? undefined : json["visibility"],
+        userId: !exists(json, "userId") ? undefined : json["userId"],
+        createdOn: !exists(json, "createdOn") ? undefined : json["createdOn"],
+        creatorId: !exists(json, "creatorId") ? undefined : json["creatorId"],
+        updatedOn: !exists(json, "updatedOn") ? undefined : json["updatedOn"],
+        updaterId: !exists(json, "updaterId") ? undefined : json["updaterId"],
     };
 }
 
@@ -203,31 +202,28 @@ export function ProjectToJSON(value?: Project | null): any {
         return null;
     }
     return {
-        
-        'id': value.id,
-        'name': value.name,
-        'archived': value.archived,
-        'projectCreatedOn': value.projectCreatedOn,
-        'description': value.description,
-        'forksCount': value.forksCount,
-        'htmLUrl': value.htmLUrl,
-        'projectId': value.projectId,
-        'language': value.language,
-        'licence': value.licence,
-        'ownerName': value.ownerName,
-        'ownerHtmlUrl': value.ownerHtmlUrl,
-        'private': value._private,
-        'size': value.size,
-        'stars': value.stars,
-        'watchersCount': value.watchersCount,
-        'projectUpdatedOn': value.projectUpdatedOn,
-        'visibility': value.visibility,
-        'userId': value.userId,
-        'createdOn': value.createdOn,
-        'creatorId': value.creatorId,
-        'updatedOn': value.updatedOn,
-        'updaterId': value.updaterId,
+        id: value.id,
+        name: value.name,
+        archived: value.archived,
+        projectCreatedOn: value.projectCreatedOn,
+        description: value.description,
+        forksCount: value.forksCount,
+        htmLUrl: value.htmLUrl,
+        projectId: value.projectId,
+        language: value.language,
+        licence: value.licence,
+        ownerName: value.ownerName,
+        ownerHtmlUrl: value.ownerHtmlUrl,
+        private: value._private,
+        size: value.size,
+        stars: value.stars,
+        watchersCount: value.watchersCount,
+        projectUpdatedOn: value.projectUpdatedOn,
+        visibility: value.visibility,
+        userId: value.userId,
+        createdOn: value.createdOn,
+        creatorId: value.creatorId,
+        updatedOn: value.updatedOn,
+        updaterId: value.updaterId,
     };
 }
-
-

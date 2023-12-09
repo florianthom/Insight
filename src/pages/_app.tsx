@@ -21,7 +21,6 @@ import * as constants from "@/src/app/shared/constants/constants";
 // - getServerSideProps (getData on server on run time)
 
 const MyApp: NextPage<AppProps> = (props: AppProps) => {
-
     const queryClientRef = React.useRef<QueryClient>();
     if (!queryClientRef.current) {
         queryClientRef.current = defaultQueryClient;
@@ -35,11 +34,11 @@ const MyApp: NextPage<AppProps> = (props: AppProps) => {
             <Provider store={store}>
                 {/*<QueryClientProvider client={queryClientRef.current}>*/}
                 {/*    <Hydrate state={props.pageProps.dehydratedState}>*/}
-                        <Meta />
-                        {/*https://stackoverflow.com/questions/71809903/next-js-component-cannot-be-used-as-a-jsx-component*/}
-                        <props.Component {...props.pageProps} />
-                    {/*</Hydrate>*/}
-                    {/*<ReactQueryDevtools initialIsOpen={!constants.__prod__} />*/}
+                <Meta />
+                {/*https://stackoverflow.com/questions/71809903/next-js-component-cannot-be-used-as-a-jsx-component*/}
+                <props.Component {...props.pageProps} />
+                {/*</Hydrate>*/}
+                {/*<ReactQueryDevtools initialIsOpen={!constants.__prod__} />*/}
                 {/*</QueryClientProvider>*/}
             </Provider>
         </div>

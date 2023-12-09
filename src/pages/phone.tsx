@@ -3,7 +3,7 @@ import * as constants from "../app/shared/constants/constants";
 import Head from "next/head";
 import { NavBar } from "@/src/app/shared/navbar/navbar";
 
-interface Props { }
+interface Props {}
 
 const PhonePage: NextPage<Props> = (props: Props) => {
     return (

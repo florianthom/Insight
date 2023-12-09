@@ -10,8 +10,8 @@ module.exports = {
     },
     images: {
         // just for static site generation since otherwise next/image does not work
-        loader: 'akamai',
-        path: '',
+        loader: "akamai",
+        path: "",
 
         domains: [
             "drive.google.com",
@@ -31,6 +31,6 @@ module.exports = {
         ignoreBuildErrors: true,
     },
     async redirects() {
-        return []
-    }
+        return [];
+    },
 };

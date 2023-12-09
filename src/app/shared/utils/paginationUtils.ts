@@ -7,7 +7,7 @@ export function getNumberPages(array, page_size) {
 }
 
 export function nextPageAvailable(array, page_size, page_number) {
-    return paginate(array, page_size, page_number+1).length > 0;
+    return paginate(array, page_size, page_number + 1).length > 0;
 }
 
 export function previousPageAvailable(page_number) {

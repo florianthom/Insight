@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-export interface Props { }
+export interface Props {}
 
 export const NavBar: React.FC<Props> = (props: Props) => {
     let listener = null;
@@ -36,8 +36,8 @@ export const NavBar: React.FC<Props> = (props: Props) => {
                 (scrollState === "top" ? "p-1 sm:p-4" : "p-0") +
                 (scrollState === "top"
                     ? // tailwind = mobile first (sm != mobile) = ohne prefix = mobile and wenn man dann sagt: "height-1 sm:height-5..."
-                    // dann heißt dass, dass mobile=height-1 und alles darüber hinaus = height-5
-                    router.pathname === "/" || router.pathname === "/home"
+                      // dann heißt dass, dass mobile=height-1 und alles darüber hinaus = height-5
+                      router.pathname === "/" || router.pathname === "/home"
                         ? " bg-main-color md:bg-opacity-0"
                         : " bg-main-color "
                     : " bg-main-color ") +
@@ -84,37 +84,58 @@ export const NavBar: React.FC<Props> = (props: Props) => {
                         </button>
                     </div>
                     <div className="flex-1 flex items-center justify-center md:items-stretch md:justify-start">
-                        <Link href="/" className="transition text-white text-base font-medium flex-shrink-0 flex items-center">
+                        <Link
+                            href="/"
+                            className="transition text-white text-base font-medium flex-shrink-0 flex items-center"
+                        >
                             FLORIAN THOM
                         </Link>
                         <div className="hidden md:block md:ml-6">
                             <div className="flex space-x-4">
-                                <Link href="/work" className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium whitespace-nowrap">
+                                <Link
+                                    href="/work"
+                                    className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium whitespace-nowrap"
+                                >
                                     WORK & CV
                                 </Link>
-                                <Link href="/reports" className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium whitespace-nowrap">
+                                <Link
+                                    href="/reports"
+                                    className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium whitespace-nowrap"
+                                >
                                     {/* <a className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium whitespace-nowrap">
                                         REPORTS & TALKS
                                     </a> */}
                                     REPORTS & TALKS
                                 </Link>
-                                <Link href="/projects" className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium">
+                                <Link
+                                    href="/projects"
+                                    className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium"
+                                >
                                     PROJECTS
                                 </Link>
-                                <Link href="/gear" className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium">
+                                <Link
+                                    href="/gear"
+                                    className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium"
+                                >
                                     GEAR
                                 </Link>
                             </div>
                         </div>
                     </div>
                     <div className="absolute inset-y-0 right-0 flex items-center pr-2 md:static md:inset-auto md:ml-6 md:pr-0 hidden md:block md:ml-16">
-                        <Link href="/contact" className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium">
+                        <Link
+                            href="/contact"
+                            className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium"
+                        >
                             {/* <a className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium">
                                 CONTACT
                             </a> */}
                             CONTACT
                         </Link>
-                        <Link href="/imprint" className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium">
+                        <Link
+                            href="/imprint"
+                            className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium"
+                        >
                             IMPRINT
                         </Link>
                     </div>
@@ -122,34 +143,52 @@ export const NavBar: React.FC<Props> = (props: Props) => {
                 <div className={"transition-all " + (burgerMenuOpenState ? "max-h-72" : "max-h-0 opacity-0")}>
                     <ul className="text-white text-base font-medium pt-5">
                         <li className="my-4">
-                            <Link href="/work" className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium whitespace-nowrap">
+                            <Link
+                                href="/work"
+                                className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium whitespace-nowrap"
+                            >
                                 WORK & CV
                             </Link>
                         </li>
                         <li className="my-4">
-                            <Link href="/reports" className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium whitespace-nowrap">
+                            <Link
+                                href="/reports"
+                                className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium whitespace-nowrap"
+                            >
                                 REPORTS & TALKS
                             </Link>
                         </li>
 
                         <li className="my-4">
-                            <Link href="/projects" className="transition text-white hover:bg-gray-300 hover:bg-opacity-30  hover:text-white px-3 py-2 rounded-md text-base font-medium">
+                            <Link
+                                href="/projects"
+                                className="transition text-white hover:bg-gray-300 hover:bg-opacity-30  hover:text-white px-3 py-2 rounded-md text-base font-medium"
+                            >
                                 PROJECTS
                             </Link>
                         </li>
 
                         <li className="my-4">
-                            <Link href="/gear" className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium">
+                            <Link
+                                href="/gear"
+                                className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium"
+                            >
                                 GEAR
                             </Link>
                         </li>
                         <li className="my-4">
-                            <Link href="/contact" className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium">
+                            <Link
+                                href="/contact"
+                                className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium"
+                            >
                                 CONTACT
                             </Link>
                         </li>
                         <li className="my-4">
-                            <Link href="/imprint" className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium">
+                            <Link
+                                href="/imprint"
+                                className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium"
+                            >
                                 IMPRINT
                             </Link>
                         </li>

@@ -1,7 +1,7 @@
 {
     "name": "insight",
-    "version": "0.1.0",
-    "private": true,
+    "version": "0.2.0",
+    "private": false,
     "scripts": {
         "dev": "next dev",
         "build": "next build && next export",
@@ -22,7 +22,7 @@
         "axios": "^1.6.2",
         "caniuse-lite": "^1.0.30001327",
         "jest-config": "^29.7.0",
-        "next": "^14.0.3",
+        "next": "^14.0.4",
         "postcss": "^8.4.32",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
@@ -42,7 +42,7 @@
         "@types/react": "^18.0.5",
         "@types/webpack-env": "^1.16.0",
         "eslint": "^8.15.0",
-        "eslint-config-next": "^14.0.3",
+        "eslint-config-next": "^14.0.4",
         "jest": "^26.6.3",
         "next-sitemap": "^4.2.3",
         "postcss-flexbugs-fixes": "^5.0.2",

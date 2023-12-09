@@ -1,82 +1,78 @@
-import React, {useState} from "react";
-import {Project} from "@/src/app/shared/models/Project";
+import React, { useState } from "react";
+import { Project } from "@/src/app/shared/models/Project";
 import * as constants from "@/src/app/shared/constants/constants";
 import {
     getNumberPages,
     nextPageAvailable,
     paginate,
-    previousPageAvailable
+    previousPageAvailable,
 } from "@/src/app/shared/utils/paginationUtils";
 import data from "@/data/projectsData.json";
-import {Visibility} from "@/src/app/shared/models/Visibility";
+import { Visibility } from "@/src/app/shared/models/Visibility";
 
-interface Props {
-}
+interface Props {}
 
 export const RepositoryTable: React.FC<Props> = (props: Props) => {
-
     const projectsData: Project[] = data.sort((a: Project, b: Project) =>
         new Date(a.ProjectCreatedOn) >= new Date(b.ProjectCreatedOn) ? -1 : 1,
     );
     const [page, setPage] = useState(constants.firstPage);
-    const pagedData = paginate(projectsData, constants.pageSize, page)
+    const pagedData = paginate(projectsData, constants.pageSize, page);
 
     return (
         <div className="overflow-hidden">
             <div className="overflow-x-auto shadow border border-gray-300">
                 <table className="block lg:table table-fixed sm:min-w-full divide-y w-full">
                     <thead className="text-center">
-                    <tr className="divide-x divide-x-gray-200 bottom-box-shadow">
-                        <th className="bg-white w-2/12 py-3 text-base font-normal uppercase tracking-wider">
-                            Title
-                        </th>
-                        <th className="bg-white w-6/12 py-3 text-base font-normal uppercase tracking-wider">
-                            Description
-                        </th>
-                        <th className="w-1/12 py-3 text-base font-normal uppercase tracking-wider">Language</th>
-                        <th className="w-1/12 py-3 text-base font-normal uppercase tracking-wider">Visibility</th>
-                        <th className="w-1/12 py-3 text-base font-normal uppercase tracking-wider">Size</th>
-                        <th className="w-1/12 py-3 text-base font-normal uppercase tracking-wider whitespace-nowrap">
-                            Createdat
-                        </th>
-                    </tr>
+                        <tr className="divide-x divide-x-gray-200 bottom-box-shadow">
+                            <th className="bg-white w-2/12 py-3 text-base font-normal uppercase tracking-wider">
+                                Title
+                            </th>
+                            <th className="bg-white w-6/12 py-3 text-base font-normal uppercase tracking-wider">
+                                Description
+                            </th>
+                            <th className="w-1/12 py-3 text-base font-normal uppercase tracking-wider">Language</th>
+                            <th className="w-1/12 py-3 text-base font-normal uppercase tracking-wider">Visibility</th>
+                            <th className="w-1/12 py-3 text-base font-normal uppercase tracking-wider">Size</th>
+                            <th className="w-1/12 py-3 text-base font-normal uppercase tracking-wider whitespace-nowrap">
+                                Createdat
+                            </th>
+                        </tr>
                     </thead>
                     <tbody className="divide-y divide-gray-200">
-                    {
-                        pagedData
+                        {pagedData
                             ?.sort((a: Project, b: Project) =>
                                 new Date(a.ProjectCreatedOn) >= new Date(b.ProjectCreatedOn) ? -1 : 1,
                             )
                             .map((a: Project) => (
-                                    <tr key={a.Id} className="divide-x divide-gray-100">
-                                        <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
-                                            <a
-                                                href={a.HtmLUrl}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="transition cursor-pointer hover:underline"
-                                            >
-                                                {a.Name}
-                                            </a>
-                                        </td>
-                                        <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
-                                            {a.Description}
-                                        </td>
-                                        <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
-                                            {a.Language}
-                                        </td>
-                                        <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
-                                            {Visibility[a.Visibility]}
-                                        </td>
-                                        <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
-                                            {a.Size}
-                                        </td>
-                                        <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
-                                            {new Date(a.ProjectCreatedOn).toLocaleDateString("en-US")}
-                                        </td>
-                                    </tr>
-                                )
-                            )}
+                                <tr key={a.Id} className="divide-x divide-gray-100">
+                                    <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
+                                        <a
+                                            href={a.HtmLUrl}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="transition cursor-pointer hover:underline"
+                                        >
+                                            {a.Name}
+                                        </a>
+                                    </td>
+                                    <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
+                                        {a.Description}
+                                    </td>
+                                    <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
+                                        {a.Language}
+                                    </td>
+                                    <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
+                                        {Visibility[a.Visibility]}
+                                    </td>
+                                    <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
+                                        {a.Size}
+                                    </td>
+                                    <td className="px-2 pt-4 pb-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
+                                        {new Date(a.ProjectCreatedOn).toLocaleDateString("en-US")}
+                                    </td>
+                                </tr>
+                            ))}
                     </tbody>
                 </table>
             </div>

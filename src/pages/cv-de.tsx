@@ -5,7 +5,7 @@ import * as constants from "@/src/app/shared/constants/constants";
 import Head from "next/head";
 import { NavBar } from "@/src/app/shared/navbar/navbar";
 
-interface Props { }
+interface Props {}
 
 const CVDEPage: NextPage<Props> = (props: Props) => {
     const router = useRouter();

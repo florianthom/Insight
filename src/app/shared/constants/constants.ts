@@ -3,7 +3,6 @@ export const __prod__ = process.env.NODE_ENV === "production";
 export const api_base_url = "https://florianthom.com/api/v1";
 export const static_site = true;
 
-
 export const personal_name = "Florian Thom";
 export const personal_address_street = "Walter-Friedrich-Str. 53";
 export const personal_address_zipcode = "13125";

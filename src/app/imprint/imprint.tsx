@@ -4,7 +4,7 @@ import React from "react";
 import { PlatformCard } from "@/src/app/contact/platformCard/platformCard";
 import * as constants from "@/src/app/shared/constants/constants";
 
-interface Props { }
+interface Props {}
 
 export const Imprint: React.FC<Props> = (props: Props) => {
     return (

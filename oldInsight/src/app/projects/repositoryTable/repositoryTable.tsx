@@ -9,10 +9,13 @@ interface Props {}
 
 export const RepositoryTable: React.FC<Props> = (props: Props) => {
     const [page, setPage] = useState(firstPage);
-    const { isLoading, error, data: projectsData } = useQuery<PagedResponseProject, Error>(
-        "/projects?pagesize=" + pageSize + "&pagenumber=" + page,
-        { keepPreviousData: true },
-    );
+    const {
+        isLoading,
+        error,
+        data: projectsData,
+    } = useQuery<PagedResponseProject, Error>("/projects?pagesize=" + pageSize + "&pagenumber=" + page, {
+        keepPreviousData: true,
+    });
 
     return (
         <div className="overflow-hidden">

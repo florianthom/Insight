@@ -4,7 +4,6 @@ import React from "react";
 import { RepositoryTable } from "@/src/app/projects/repositoryTable/repositoryTable";
 import { PersonalWebsiteServicesTable } from "@/src/app/projects/personalWebsiteServicesTable/personalWebsiteServicesTable";
 
-
 interface Props {}
 
 export const Projects: React.FC<Props> = (props: Props) => {

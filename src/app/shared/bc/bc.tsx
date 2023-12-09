@@ -9,21 +9,26 @@ export const BC: React.FC<Props> = (props: Props) => {
         <>
             <div>
                 <div className="m-auto flex max-w-2xl justify-center align-middle font-serif shadow-md bg-noise-texture bg-white outline outline-1 opacity-75">
-                    <div className="p-20">
-                        <div className="text-2xl tracking-widest uppercase whitespace-nowrap">Florian Thom</div>
+                    <div className="p-10 sm:p-15 lg:p-20">
+                        <div className="flex justify-center text-2xl sm:text-3xl lg:text-4xl tracking-widest uppercase whitespace-nowrap">
+                            Florian Thom
+                        </div>
                         <div className="py-4">
-                            <div className="flex justify-center py-1 uppercase whitespace-nowrap">
+                            <div className="flex justify-center py-1 uppercase whitespace-nowrap text-xs  sm:text-base">
                                 Computer Scientist
                             </div>
-                            <div className="flex justify-center py-1 whitespace-nowrap">florianthom.com</div>
+                            <div className="flex justify-center py-1 whitespace-nowrap text-xs sm:text-base">
+                                florianthom.com
+                            </div>
                         </div>
                         <div className="flex justify-center">
                             <Image
                                 src={"/static/images/raw_qr.svg"}
                                 alt="business-card"
-                                width="100%"
-                                height="100%"
+                                width={0}
+                                height={0}
                                 priority={true}
+                                style={{ width: "25%", height: "auto" }}
                                 unoptimized={constants.static_site}
                             />
                         </div>

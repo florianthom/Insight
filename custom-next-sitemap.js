@@ -18,16 +18,16 @@ module.exports = {
         "/twitter",
         "/wishlist",
         "/xing",
-        "/phone"
+        "/phone",
     ],
     sitemapSize: 5000,
     robotsTxtOptions: {
         policies: [
             {
-                userAgent: '*',
-                allow: '/',
-                disallow: ["/api/*", "/swagger", "/imprint", "/impressum", "/qr", "/phone"]
-            }
-        ]
-    }
+                userAgent: "*",
+                allow: "/",
+                disallow: ["/api/*", "/swagger", "/imprint", "/impressum", "/qr", "/phone"],
+            },
+        ],
+    },
 };

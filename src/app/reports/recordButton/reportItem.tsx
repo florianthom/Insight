@@ -3,7 +3,7 @@ import Link from "next/link";
 import { RecordTag } from "@/src/app/shared/recordTag/recordTag";
 import { Document } from "@/src/app/shared/models/Document";
 import Image from "next/image";
-import * as constants from "@/src/app/shared/constants/constants"
+import * as constants from "@/src/app/shared/constants/constants";
 
 interface Props {
     document: Document;
@@ -15,19 +15,19 @@ export const ReportItem: React.FC<Props> = (props: Props) => {
             <a href={props.document.WebviewLink!} target="_blank" rel="noopener noreferrer">
                 <div className="grid grid-cols-12">
                     <div className="col-span-12 sm:col-span-11">
-                        <div className="text-center">
-                            <Image
-                                src={props.document.ThumbnailLink!}
-                                className="" // object-cover object-top
-                                alt={"thumbnail: " + props.document.Name}
-                                width={600}
-                                height={400}
-                                objectFit="cover"
-                                priority={true}
-                                quality={100}
-                                unoptimized={constants.static_site}
-                            />
-                        </div>
+                        {/* <div className="relative h-64 sm:h-[26rem] lg:h-[32rem]  w-5/6 mx-auto"> */}
+                        <Image
+                            src={props.document.ThumbnailLink!}
+                            alt={"thumbnail: " + props.document.Name}
+                            width={0}
+                            height={0}
+                            className="object-cover object-top h-64 sm:h-[26rem] lg:h-[32rem] w-5/6 mx-auto"
+                            priority={true}
+                            quality={100}
+                            unoptimized={constants.static_site}
+                        />
+                        {/* </div> */}
+
                         <div className="p-4">
                             <div className="underline sm:no-underline text-lg sm:text-2xl uppercase">
                                 {props.document.Name!.replace("." + props.document.FileExtension, "")}

@@ -12,58 +12,53 @@
  * Do not edit the class manually.
  */
 
-import { exists, mapValues } from '../runtime';
-import {
-    Document,
-    DocumentFromJSON,
-    DocumentFromJSONTyped,
-    DocumentToJSON,
-} from './';
+import { exists, mapValues } from "../runtime";
+import { Document, DocumentFromJSON, DocumentFromJSONTyped, DocumentToJSON } from "./";
 
 /**
- * 
+ *
  * @export
  * @interface PagedResponseDocument
  */
 export interface PagedResponseDocument {
     /**
-     * 
+     *
      * @type {Array<Document>}
      * @memberof PagedResponseDocument
      */
     data?: Array<Document> | null;
     /**
-     * 
+     *
      * @type {number}
      * @memberof PagedResponseDocument
      */
     pageNumber?: number | null;
     /**
-     * 
+     *
      * @type {number}
      * @memberof PagedResponseDocument
      */
     pageSize?: number | null;
     /**
-     * 
+     *
      * @type {string}
      * @memberof PagedResponseDocument
      */
     nextPage?: string | null;
     /**
-     * 
+     *
      * @type {string}
      * @memberof PagedResponseDocument
      */
     previousPage?: string | null;
     /**
-     * 
+     *
      * @type {number}
      * @memberof PagedResponseDocument
      */
     pagesTotal?: number;
     /**
-     * 
+     *
      * @type {number}
      * @memberof PagedResponseDocument
      */
@@ -75,18 +70,21 @@ export function PagedResponseDocumentFromJSON(json: any): PagedResponseDocument 
 }
 
 export function PagedResponseDocumentFromJSONTyped(json: any, ignoreDiscriminator: boolean): PagedResponseDocument {
-    if ((json === undefined) || (json === null)) {
+    if (json === undefined || json === null) {
         return json;
     }
     return {
-        
-        'data': !exists(json, 'data') ? undefined : (json['data'] === null ? null : (json['data'] as Array<any>).map(DocumentFromJSON)),
-        'pageNumber': !exists(json, 'pageNumber') ? undefined : json['pageNumber'],
-        'pageSize': !exists(json, 'pageSize') ? undefined : json['pageSize'],
-        'nextPage': !exists(json, 'nextPage') ? undefined : json['nextPage'],
-        'previousPage': !exists(json, 'previousPage') ? undefined : json['previousPage'],
-        'pagesTotal': !exists(json, 'pagesTotal') ? undefined : json['pagesTotal'],
-        'itemsTotal': !exists(json, 'itemsTotal') ? undefined : json['itemsTotal'],
+        data: !exists(json, "data")
+            ? undefined
+            : json["data"] === null
+            ? null
+            : (json["data"] as Array<any>).map(DocumentFromJSON),
+        pageNumber: !exists(json, "pageNumber") ? undefined : json["pageNumber"],
+        pageSize: !exists(json, "pageSize") ? undefined : json["pageSize"],
+        nextPage: !exists(json, "nextPage") ? undefined : json["nextPage"],
+        previousPage: !exists(json, "previousPage") ? undefined : json["previousPage"],
+        pagesTotal: !exists(json, "pagesTotal") ? undefined : json["pagesTotal"],
+        itemsTotal: !exists(json, "itemsTotal") ? undefined : json["itemsTotal"],
     };
 }
 
@@ -98,15 +96,17 @@ export function PagedResponseDocumentToJSON(value?: PagedResponseDocument | null
         return null;
     }
     return {
-        
-        'data': value.data === undefined ? undefined : (value.data === null ? null : (value.data as Array<any>).map(DocumentToJSON)),
-        'pageNumber': value.pageNumber,
-        'pageSize': value.pageSize,
-        'nextPage': value.nextPage,
-        'previousPage': value.previousPage,
-        'pagesTotal': value.pagesTotal,
-        'itemsTotal': value.itemsTotal,
+        data:
+            value.data === undefined
+                ? undefined
+                : value.data === null
+                ? null
+                : (value.data as Array<any>).map(DocumentToJSON),
+        pageNumber: value.pageNumber,
+        pageSize: value.pageSize,
+        nextPage: value.nextPage,
+        previousPage: value.previousPage,
+        pagesTotal: value.pagesTotal,
+        itemsTotal: value.itemsTotal,
     };
 }
-
-

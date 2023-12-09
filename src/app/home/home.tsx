@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Footer } from "@/src/app/shared/footer/footer";
 import { IndividualWork } from "@/src/app/shared/workIndividualOrGroup/individualWork";
 import { GroupWork } from "@/src/app/shared/workIndividualOrGroup/groupWork";
-import {discord_link, email_string, github_link, linkedin_link, twitter_link} from "../shared/constants/constants";
+import { discord_link, email_string, github_link, linkedin_link, twitter_link } from "../shared/constants/constants";
 import * as constants from "@/src/app/shared/constants/constants";
 
 export interface Props {}
@@ -30,7 +30,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                         software and hardware
                     </h2>
                     {/*social home group*/}
-                    <div className="pt-10">
+                    <div className="pt-10 flex justify-start">
                         <a href={linkedin_link} target="_blank" rel="noopener noreferrer" className="pr-4 sm:pr-6">
                             <Image
                                 src="/static/images/linkedIn_transparent.png"

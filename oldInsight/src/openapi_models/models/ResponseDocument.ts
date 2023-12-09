@@ -12,22 +12,17 @@
  * Do not edit the class manually.
  */
 
-import { exists, mapValues } from '../runtime';
-import {
-    Document,
-    DocumentFromJSON,
-    DocumentFromJSONTyped,
-    DocumentToJSON,
-} from './';
+import { exists, mapValues } from "../runtime";
+import { Document, DocumentFromJSON, DocumentFromJSONTyped, DocumentToJSON } from "./";
 
 /**
- * 
+ *
  * @export
  * @interface ResponseDocument
  */
 export interface ResponseDocument {
     /**
-     * 
+     *
      * @type {Document}
      * @memberof ResponseDocument
      */
@@ -39,12 +34,11 @@ export function ResponseDocumentFromJSON(json: any): ResponseDocument {
 }
 
 export function ResponseDocumentFromJSONTyped(json: any, ignoreDiscriminator: boolean): ResponseDocument {
-    if ((json === undefined) || (json === null)) {
+    if (json === undefined || json === null) {
         return json;
     }
     return {
-        
-        'data': !exists(json, 'data') ? undefined : DocumentFromJSON(json['data']),
+        data: !exists(json, "data") ? undefined : DocumentFromJSON(json["data"]),
     };
 }
 
@@ -56,9 +50,6 @@ export function ResponseDocumentToJSON(value?: ResponseDocument | null): any {
         return null;
     }
     return {
-        
-        'data': DocumentToJSON(value.data),
+        data: DocumentToJSON(value.data),
     };
 }
-
-

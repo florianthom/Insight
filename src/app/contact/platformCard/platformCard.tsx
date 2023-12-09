@@ -19,8 +19,11 @@ export const PlatformCard: React.FC<Props> = (props: Props) => {
                         className=""
                         src={props.image_path}
                         alt={props.platform_name + "-link"}
-                        width="200%"
-                        height="200%"
+                        // width="200%"
+                        // height="200%"
+                        width={0}
+                        height={0}
+                        style={{ width: "200%", height: "200%" }}
                         unoptimized={constants.static_site}
                     />
                 </div>

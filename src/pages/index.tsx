@@ -1,12 +1,12 @@
 import { NextPage } from "next";
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import { Home } from "@/src/app/home/home";
 import Head from "next/head";
 import { defaultQueryClient } from "@/src/app/shared/queryClient/defaultQueryClient";
 import { firstPage, pageSize, pageSizeLandingPage } from "@/src/app/shared/constants/constants";
 import { dehydrate } from "react-query/hydration";
-import Router, {useRouter} from "next/router";
-import {redirectList} from "@/src/app/shared/utils/redirectList";
+import Router, { useRouter } from "next/router";
+import { redirectList } from "@/src/app/shared/utils/redirectList";
 
 interface Props {}
 

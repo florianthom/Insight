@@ -2,7 +2,7 @@ import { NavBar } from "@/src/app/shared/navbar/navbar";
 import { Footer } from "@/src/app/shared/footer/footer";
 import React from "react";
 
-interface Props { }
+interface Props {}
 
 export const Gear: React.FC<Props> = (props: Props) => {
     return (
