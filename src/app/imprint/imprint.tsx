@@ -4,7 +4,7 @@ import React from "react";
 import { PlatformCard } from "@/src/app/contact/platformCard/platformCard";
 import * as constants from "@/src/app/shared/constants/constants";
 
-interface Props {}
+interface Props { }
 
 export const Imprint: React.FC<Props> = (props: Props) => {
     return (
@@ -14,7 +14,7 @@ export const Imprint: React.FC<Props> = (props: Props) => {
                 <div className="pt-56 pb-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
                     <h2 className="text-black text-3xl tracking-headline">Imprint</h2>
                     <div className="text-base text-black pt-24">
-                        An Imprint "is essentially a statement of ownership and authorship. It was put into place to in
+                        An Imprint “is essentially a statement of ownership and authorship. It was put into place to in
                         an effort to protect user data, combat illegal content and spam by making website owners
                         identify themselves, and as a result assume responsibility for the content on their platform.
                         Often when talking about an Imprint, people mean the German (DACH) version of compulsory
@@ -25,7 +25,7 @@ export const Imprint: React.FC<Props> = (props: Props) => {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            "Iubenda"
+                            “Iubenda”
                         </a>
                         )
                     </div>
@@ -148,8 +148,8 @@ export const Imprint: React.FC<Props> = (props: Props) => {
                             </p>
                             <p>
                                 Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc.
-                                ("Google"), 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA. Google Analytics
-                                verwendet sog. "Cookies" (Textdateien), die auf Ihrem Computer gespeichert werden und
+                                (“Google”), 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA. Google Analytics
+                                verwendet sog. “Cookies” (Textdateien), die auf Ihrem Computer gespeichert werden und
                                 die eine Analyse der Benutzung der Website durch Sie erm&#246;glichen. Die durch das
                                 Cookie erzeugten Informationen &#252;ber Ihre Benutzung dieser Website werden in der
                                 Regel an einen Server von Google in den USA &#252;bertragen und dort gespeichert. Im
@@ -196,10 +196,10 @@ export const Imprint: React.FC<Props> = (props: Props) => {
                             </p>
                             <p>
                                 Diese Website benutzt Google Adsense, einen Werbeanzeigendienst der Google Inc.
-                                ("Google"), 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA. Google Adsense
-                                verwendet sog. "Cookies" (Textdateien), die auf Ihrem Computer gespeichert werden und
+                                (“Google”), 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA. Google Adsense
+                                verwendet sog. “Cookies” (Textdateien), die auf Ihrem Computer gespeichert werden und
                                 die eine Analyse der Benutzung der Website durch Sie erm&#246;glichen. F&#252;r die
-                                Auswertung verwendet Google Adsense zus&#228;tzlich sog. "Web Beacons" (kleine
+                                Auswertung verwendet Google Adsense zus&#228;tzlich sog. “Web Beacons“ (kleine
                                 unsichtbare Grafiken), welche z. B. Informationen wie den Besucherverkehr auf der Seite
                                 erzeugen. Diese gesammelten Informationen (einschlie&#223;lich Ihrer IP-Adresse) werden
                                 in der Regel an einen Server von Google in den USA &#252;bertragen und dort gespeichert.

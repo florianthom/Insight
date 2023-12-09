@@ -2,7 +2,7 @@ import { NavBar } from "@/src/app/shared/navbar/navbar";
 import { Footer } from "@/src/app/shared/footer/footer";
 import React from "react";
 
-interface Props {}
+interface Props { }
 
 export const Gear: React.FC<Props> = (props: Props) => {
     return (
@@ -114,7 +114,7 @@ export const Gear: React.FC<Props> = (props: Props) => {
                                     </li>
 
                                     <li>
-                                        “Clean Architecture: A Craftsman's Guide to Software Structure and Design
+                                        “Clean Architecture: A Craftsman&apos;s Guide to Software Structure and Design“
                                         <ul className="list-disc list-inside pl-4">
                                             <li>by Robert Martin</li>
                                         </ul>

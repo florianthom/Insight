@@ -1,4 +1,3 @@
-import { Head } from "next/document";
 import { NavBar } from "@/src/app/shared/navbar/navbar";
 import React from "react";
 

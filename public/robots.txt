@@ -6,6 +6,7 @@ Disallow: /swagger
 Disallow: /imprint
 Disallow: /impressum
 Disallow: /qr
+Disallow: /phone
 
 # Host
 Host: https://www.florianthom.com
