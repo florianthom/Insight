@@ -119,4 +119,29 @@ export const redirectList = [
         destination: "/phone",
         permanent: false,
     },
+    {
+        source: "/cv_de",
+        destination: "/cv-de",
+        permanent: false,
+    },
+    {
+        source: "/cvde",
+        destination: "/cv-de",
+        permanent: false,
+    },
+    {
+        source: "/cv-ger",
+        destination: "/cv-de",
+        permanent: false,
+    },
+    {
+        source: "/cv_ger",
+        destination: "/cv-de",
+        permanent: false,
+    },
+    {
+        source: "/cv-german",
+        destination: "/cv-de",
+        permanent: false,
+    },
 ];
