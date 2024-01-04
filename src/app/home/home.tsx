@@ -92,7 +92,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                             </a>
                         </div>
                         <div className="flex justify-center pt-12 sm:pt-16 lg:pt-24">
-                            <Link href="/#services" className="border-2 border-gray-400 backdrop-blur bg-main-color drop-shadow-xl bg-opacity-50 text-white px-8 sm:px-12 lg:px-24 py-4 rounded-md text-md lg:text-xl lg:text-2xl whitespace-nowrap">
+                            <Link href="/#services" className="border-2 border-gray-400 backdrop-blur-sm bg-main-color drop-shadow-xl bg-opacity-50 text-white px-8 sm:px-12 lg:px-24 py-4 rounded-md text-md lg:text-xl lg:text-2xl whitespace-nowrap">
                                 Service Portfolio
                             </Link>
                         </div>
@@ -376,7 +376,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                     <div className="text-base text-black pt-24">
                         Exploring additional Insights: a closer look at my supplementary knowledge.
                         In addition to my primary skills, I invite you to explore a complementary range of knowledge and insights.
-                        This section sheds light on various supplementary areas I've cultivated, offering a glimpse
+                        This section sheds light on various supplementary areas I&apos;ve cultivated, offering a glimpse
                         into additional competencies that enrich my professional repertoire.
                     </div>
                     <div className="text-base text-black pt-24">
