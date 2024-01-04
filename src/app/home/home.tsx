@@ -101,7 +101,7 @@ export const Home: React.FC<Props> = (props: Props) => {
             </div>
             <div id="services" className="bg-main-color">
                 <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-                    <h2 className="text-white text-3xl tracking-headline">SERVICES</h2>
+                    <h2 className="text-white text-3xl tracking-headline">SERVICES & OFFERING</h2>
                     <div className="text-base text-white pt-24">
                         Tailored end-to-end thinking covering the holistic product life cycle.
                         Consulting Services designed to cater to your unique needs.
@@ -219,7 +219,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                                     />
                                 </div>
                                 <div className="px-4 py-4">
-                                    <div className="text-2xl">
+                                    <div className="text-2xl break-words">
                                         Verein zur Förderung lebensgeschichtlichen Erinnerns
                                         und biografischen Erzählens e.V.
                                     </div>
@@ -287,7 +287,7 @@ export const Home: React.FC<Props> = (props: Props) => {
             </div>
             <div id="skills" className="bg-main-color">
                 <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-                    <h2 className="text-white text-3xl tracking-headline">MY SKILLS</h2>
+                    <h2 className="text-white text-3xl tracking-headline">SKILLS</h2>
                     <div className="text-base text-white pt-24">
                         Over the years I encountered many technologies and gained experience in numerous areas. I love
                         to learn new technologies and to examine them for advantages and disadvantages compared to the

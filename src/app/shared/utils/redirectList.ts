@@ -50,7 +50,67 @@ export const redirectList = [
         permanent: false,
     },
     {
+        source: "/services",
+        destination: "/#services",
+        permanent: false,
+    },
+    {
+        source: "/service",
+        destination: "/#services",
+        permanent: false,
+    },
+    {
+        source: "/portfolio",
+        destination: "/#services",
+        permanent: false,
+    },
+    {
+        source: "/offer",
+        destination: "/#services",
+        permanent: false,
+    },
+    {
+        source: "/offering",
+        destination: "/#services",
+        permanent: false,
+    },
+    {
+        source: "/angebot",
+        destination: "/#services",
+        permanent: false,
+    },
+    {
+        source: "/leistung",
+        destination: "/#services",
+        permanent: false,
+    },
+    {
+        source: "/leistungskatalog",
+        destination: "/#services",
+        permanent: false,
+    },
+    {
         source: "/skills",
+        destination: "/#skills",
+        permanent: false,
+    },
+    {
+        source: "/skill",
+        destination: "/#skills",
+        permanent: false,
+    },
+    {
+        source: "/skillset",
+        destination: "/#skills",
+        permanent: false,
+    },
+    {
+        source: "/profil",
+        destination: "/#skills",
+        permanent: false,
+    },
+    {
+        source: "/expertise",
         destination: "/#skills",
         permanent: false,
     },
@@ -141,6 +201,11 @@ export const redirectList = [
     },
     {
         source: "/cv-german",
+        destination: "/cv-de",
+        permanent: false,
+    },
+    {
+        source: "/lebenslauf",
         destination: "/cv-de",
         permanent: false,
     },

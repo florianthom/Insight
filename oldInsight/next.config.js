@@ -75,11 +75,6 @@ module.exports = {
                 permanent: false,
             },
             {
-                source: "/skills",
-                destination: "/#skills",
-                permanent: false,
-            },
-            {
                 source: "/league",
                 destination: "/lol",
                 permanent: false,
