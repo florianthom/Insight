@@ -16,7 +16,6 @@
         "start-local-server": "docker run --name some-nginx -p 8080:80 --rm -v /mnt/c/Users/Florian/Desktop/github/Insight/out/:/usr/share/nginx/html:ro -d nginx"
     },
     "dependencies": {
-        "@fontsource/inter": "^4.0.1",
         "@reduxjs/toolkit": "^1.8.1",
         "autoprefixer": "^10.4.4",
         "axios": "^1.6.2",

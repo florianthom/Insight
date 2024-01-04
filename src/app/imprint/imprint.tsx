@@ -1,7 +1,6 @@
 import { NavBar } from "@/src/app/shared/navbar/navbar";
 import { Footer } from "@/src/app/shared/footer/footer";
 import React from "react";
-import { PlatformCard } from "@/src/app/contact/platformCard/platformCard";
 import * as constants from "@/src/app/shared/constants/constants";
 
 interface Props { }

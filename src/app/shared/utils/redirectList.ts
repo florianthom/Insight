@@ -209,4 +209,9 @@ export const redirectList = [
         destination: "/cv-de",
         permanent: false,
     },
+    {
+        source: "/x",
+        destination: "/twitter",
+        permanent: false,
+    },
 ];

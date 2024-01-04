@@ -4,7 +4,7 @@ import React from "react";
 import { RepositoryTable } from "@/src/app/projects/repositoryTable/repositoryTable";
 import { PersonalWebsiteServicesTable } from "@/src/app/projects/personalWebsiteServicesTable/personalWebsiteServicesTable";
 
-interface Props {}
+interface Props { }
 
 export const Projects: React.FC<Props> = (props: Props) => {
     return (
@@ -14,8 +14,11 @@ export const Projects: React.FC<Props> = (props: Props) => {
                 <div className="pt-56 pb-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
                     <h2 className="text-black text-3xl tracking-headline">MY SOFTWARE REPOSITORY</h2>
                     <div className="text-base text-black pt-24">
-                        My software repository is based on github. There are some private and public repositories. Here
-                        is a list of some (public and private) projects with additional information.
+                        My software repository is primarily hosted on GitHub, encompassing a range of both public and private repositories.
+                        I&aposm proud to present a curated selection of projects below, each accompanied by detailed information to provide you with a comprehensive understanding of my work.
+                        These projects reflect a blend of my expertise and dedication to crafting innovative solutions.
+                        For access to specific repositories or further information about any project, please don&apost hesitate to reach out.
+                        I&aposm committed to sharing insights and collaborating effectively.
                     </div>
                     <div className="pt-24">
                         <RepositoryTable></RepositoryTable>
@@ -26,9 +29,12 @@ export const Projects: React.FC<Props> = (props: Props) => {
                 <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
                     <h2 className="text-white text-3xl tracking-headline">WEBSITE TECHNOLOGY STACK</h2>
                     <div className="text-base text-white pt-24">
-                        This website and its infrastracture was not just build because i want to had an online presence.
-                        This kind of project was meant to create a plattform for all kinds of projects. So its possible
-                        to deploy a projects and show the effort online.
+                        This website is crafted with state-of-the-art technology, employing a robust stack that ensures a seamless user experience and top-notch performance.
+                        Each facet of this technology ensemble has been thoughtfully chosen to deliver a secure, responsive, and impeccable user experience.
+                        The integration of these technologies aims to ensure a seamless journey for every visitor.
+                        Here&aposs an overview of the sophisticated tools and frameworks utilized in its development.
+                        Interested in a deeper dive into how these components collaborate to shape a top-tier website?
+                        Feel free to inquire for further insights or detailed information!
                     </div>
                     <div className="pt-24 flex justify-between flex-wrap">
                         <div className="my-8">
@@ -39,7 +45,6 @@ export const Projects: React.FC<Props> = (props: Props) => {
                                     <li>React.js</li>
                                     <li>TypeScript</li>
                                     <li>React Query</li>
-                                    <li>Redux.js</li>
                                     <li>Tailwind CSS</li>
                                 </ul>
                             </div>
@@ -50,7 +55,6 @@ export const Projects: React.FC<Props> = (props: Props) => {
                                 <ul className="list-disc text-base text-white list-inside">
                                     <li>C#</li>
                                     <li>.NET 5</li>
-                                    <li>N-Tier-Architecture</li>
                                     <li>Entity Framework</li>
                                     <li>REST</li>
                                 </ul>

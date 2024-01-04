@@ -37,10 +37,11 @@ export const Reports: React.FC<Props> = (props: Props) => {
                 <div className="pt-56 pb-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
                     <h2 className="text-black text-3xl tracking-headline">MY REPORTS AND TALKS</h2>
                     <div className="text-base text-black pt-24">
-                        Computer science enthusiast - Interested in research & development. Open to new technologies in
-                        software and hardware. Here is an excerpt of my previous work in form of reports and talks. This includes minor
-                        personal work and some interesting stuff I did at university. Because of that the individual
-                        topics may differ. That said, some of the work I didnt do alone but in a team.
+                        Computer science enthusiast - Interested in research & development.
+                        Open to new technologies in software and hardware.
+                        Here is an excerpt of my previous work in form of reports and talks.
+                        This encompasses various personal projects and notable undertakings during my time at the university.
+                        Because of that the individual topics may differ.
                     </div>
                     <div className="pt-24">
                         {pagedData
