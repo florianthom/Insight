@@ -15,7 +15,6 @@ export const ReportItem: React.FC<Props> = (props: Props) => {
             <a href={props.document.WebviewLink!} target="_blank" rel="noopener noreferrer">
                 <div className="grid grid-cols-12">
                     <div className="col-span-12 sm:col-span-11">
-                        {/* <div className="relative h-64 sm:h-[26rem] lg:h-[32rem]  w-5/6 mx-auto"> */}
                         <Image
                             src={props.document.ThumbnailLink!}
                             alt={"thumbnail: " + props.document.Name}
@@ -26,7 +25,6 @@ export const ReportItem: React.FC<Props> = (props: Props) => {
                             quality={100}
                             unoptimized={constants.static_site}
                         />
-                        {/* </div> */}
 
                         <div className="p-4">
                             <div className="underline sm:no-underline text-lg sm:text-2xl uppercase">

@@ -4,6 +4,7 @@ export const api_base_url = "https://florianthom.com/api/v1";
 export const static_site = true;
 
 export const personal_name = "Florian Thom";
+export const business_name = "Florian Thom - IT & Media";
 export const personal_address_street = "Walter-Friedrich-Str. 53";
 export const personal_address_zipcode = "13125";
 export const personal_address_state = "Berlin";
@@ -41,3 +42,5 @@ export const cv_international_link =
 export const cv_germany_link = "https://drive.google.com/file/d/1cPO5hJAlXORhiIwZnjXRiB82GJDIPYv8/view?usp=sharing";
 export const contact_page = "https://florianthom.com/contact";
 export const qrRedirect = contact_page;
+export const steuernummer = "35/559/02433";
+export const ustIdNr = "DE364343694";

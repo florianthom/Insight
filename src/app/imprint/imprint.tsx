@@ -13,34 +13,80 @@ export const Imprint: React.FC<Props> = (props: Props) => {
             <div>
                 <div className="pt-56 pb-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
                     <h2 className="text-black text-3xl tracking-headline">Imprint</h2>
-                    <div className="text-base text-black pt-24">
-                        An Imprint “is essentially a statement of ownership and authorship. It was put into place to in
-                        an effort to protect user data, combat illegal content and spam by making website owners
-                        identify themselves, and as a result assume responsibility for the content on their platform.
-                        Often when talking about an Imprint, people mean the German (DACH) version of compulsory
-                        information placed on a website.” (source:{" "}
-                        <a
-                            className="hover:underline"
-                            href="https://www.iubenda.com/en/help/7816-impressum-what-is-it-and-when-is-it-needed#required"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            “Iubenda”
-                        </a>
-                        )
-                    </div>
+
                     <div className="pt-24">
-                        <div className="text-2xl">Adresse</div>
+                        <h3 className="text-2xl text-black">Information pursuant to Sect. 5 German Telemedia Act (TMG)
+                        </h3>
+                    </div>
+                    <div className="pt-6">
                         <div className="pt-2">
-                            <div>{constants.personal_name}</div>
+                            <div>{constants.business_name}</div>
                             <div>{constants.personal_address_street}</div>
                             <div>
                                 {constants.personal_address_zipcode} {constants.personal_address_state} (
                                 {constants.personal_address_country})
                             </div>
                             <div>Email: {constants.email_string}</div>
+                            <div>Steuernummer: {constants.steuernummer}</div>
+                            <div>Ust-Id Nr.: {constants.ustIdNr}</div>
                         </div>
-                        <div className="pt-24 text-2xl">Disclaimer - rechtliche Hinweise</div>
+                    </div>
+
+
+                    <div className="pt-12">
+                        <h3 className="text-2xl text-black">Liability for Contents
+                        </h3>
+                    </div>
+                    <div className="pt-6">
+                        <div className="pt-2">
+                            As service provider, I am liable for all contents of this website according to Paragraph 7, Sect. 1 German Telemedia Act (TMG).
+                            However, according to Paragraphs 8 to 10 German Telemedia Act (TMG),
+                            service providers are not obligated to permanently monitor submitted or stored information
+                            or to search for evidences that indicate illegal activities.
+                            Legal obligations to removing information or to blocking the use of information remain unchallenged.
+                            In this case, liability is only possible at the time of knowledge about a specific violation of law.
+                            Illegal contents will be removed immediately at the time that I receive knowledge of them.
+                        </div>
+                    </div>
+
+                    <div className="pt-12">
+                        <h3 className="text-2xl text-black">Liability for Links
+                        </h3>
+                    </div>
+                    <div className="pt-6">
+                        <div className="pt-2">
+                            My offer includes links to external third party websites.
+                            I have no influence on the contents of those websites, therefore I cannot guarantee for those contents.
+                            Providers or administrators of linked websites are always responsible for their own contents.
+                            The linked websites have been checked for possible violations of law at the time of the establishment of the link.
+                            Illegal contents were not detected at the time of the linking.
+                            A permanent monitoring of the contents of linked websites cannot be imposed without reasonable indications that there has been a violation of law.
+                            Illegal links will be removed immediately at the time that I receive knowledge of them.
+                        </div>
+                    </div>
+
+                    <div className="pt-12">
+                        <h3 className="text-2xl text-black">Copyright
+                        </h3>
+                    </div>
+                    <div className="pt-6">
+                        <div className="pt-2">
+                            Contents and compilations published on these websites by the providers are subject to German copyright laws.
+                            Reproduction, editing, distribution as well as the use of any kind outside the scope of
+                            the copyright law require a written permission of the author or originator.
+                            Downloads and copies of these websites are permitted for private use only.
+                            The commercial use of our contents without permission of the originator is prohibited.
+                            Copyright laws of third parties are respected as long as the contents on these websites do not originate from the provider.
+                            Contributions of third parties on this site are indicated as such. However, if you notice any violations of copyright law, please inform us.
+                            Such contents will be removed immediately.
+                        </div>
+                    </div>
+
+                    <div className="pt-12">
+                        <h3 className="text-2xl text-black">Privacy Policy (german)
+                        </h3>
+                    </div>
+                    <div className="pt-6">
                         <div className="pt-2">
                             <p>
                                 <strong>Auskunfts- und Widerrufsrecht</strong>

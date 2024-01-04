@@ -11,7 +11,7 @@ import {
 } from "@/src/app/shared/constants/constants";
 import { BC } from "@/src/app/shared/bc/bc";
 
-interface Props {}
+interface Props { }
 
 export const Contact: React.FC<Props> = (props: Props) => {
     return (

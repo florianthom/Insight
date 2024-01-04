@@ -10,7 +10,7 @@ import {
     twitter_link,
 } from "@/src/app/shared/constants/constants";
 
-export interface Props {}
+export interface Props { }
 
 export const Footer: React.FC<Props> = (props: Props) => {
     return (
@@ -85,10 +85,6 @@ export const Footer: React.FC<Props> = (props: Props) => {
                             <div className="my-4 text-gray-600">|</div>
                             <Link href="/projects" className="my-4 min-w-flex-100 text-center hover:underline">
                                 Projects
-                            </Link>
-                            <div className="my-4 text-gray-600">|</div>
-                            <Link href="/gear" className="my-4 min-w-flex-100 text-center hover:underline">
-                                Gear
                             </Link>
                             <div className="my-4 text-gray-600">|</div>
                             <Link href="/contact" className="my-4 min-w-flex-100 text-center hover:underline">

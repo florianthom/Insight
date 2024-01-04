@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-export interface Props {}
+export interface Props { }
 
 export const NavBar: React.FC<Props> = (props: Props) => {
     let listener = null;
@@ -36,8 +36,8 @@ export const NavBar: React.FC<Props> = (props: Props) => {
                 (scrollState === "top" ? "p-1 sm:p-4" : "p-0") +
                 (scrollState === "top"
                     ? // tailwind = mobile first (sm != mobile) = ohne prefix = mobile and wenn man dann sagt: "height-1 sm:height-5..."
-                      // dann heißt dass, dass mobile=height-1 und alles darüber hinaus = height-5
-                      router.pathname === "/" || router.pathname === "/home"
+                    // dann heißt dass, dass mobile=height-1 und alles darüber hinaus = height-5
+                    router.pathname === "/" || router.pathname === "/home"
                         ? " bg-main-color md:bg-opacity-0"
                         : " bg-main-color "
                     : " bg-main-color ") +
@@ -112,12 +112,6 @@ export const NavBar: React.FC<Props> = (props: Props) => {
                                     className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium"
                                 >
                                     PROJECTS
-                                </Link>
-                                <Link
-                                    href="/gear"
-                                    className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium"
-                                >
-                                    GEAR
                                 </Link>
                             </div>
                         </div>
