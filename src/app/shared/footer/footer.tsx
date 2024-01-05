@@ -21,7 +21,7 @@ export const Footer: React.FC<Props> = (props: Props) => {
                     <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
                         <div className="text-white text-base tracking-headline text-center">KEEP IN TOUCH</div>
                         <div className="pt-16 flex justify-evenly">
-                            <LandingpageSocialmediaButton link={linkedin_link} size={32} iconPath={"/static/images/linkedin_transparent.png"} />
+                            <LandingpageSocialmediaButton link={linkedin_link} size={32} iconPath={"/static/images/linkedIn_transparent.png"} />
                             <LandingpageSocialmediaButton link={github_link} size={32} iconPath={"/static/images/github_transparent.png"} />
                             <LandingpageSocialmediaButton link={"mailto:" + email_string} size={32} iconPath={"/static/images/mail_tranparent.png"} />
                             <LandingpageSocialmediaButton link={twitter_link} size={32} iconPath={"/static/images/x_logo_transparent.png"} />
