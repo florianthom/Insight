@@ -6,15 +6,13 @@
     h1 {
         @apply text-2xl;
     }
+
     h2 {
         @apply text-xl;
     }
 }
-.custom-background-image {
-    background-image: url("../assets/IMG_0410-min.JPG");
-}
 
-ul > li {
+ul>li {
     margin-left: 1em;
 }
 

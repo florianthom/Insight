@@ -7,6 +7,7 @@ import { ShowcaseCard } from "../shared/showcasecard/showcasecard";
 import { showcaseData } from "../shared/utils/showcaseData";
 import { LandingpageButton } from "../shared/landingpagebutton/landingpagebutton";
 import { LandingpageSocialmediaButton } from "../shared/landingpageSocialmediaButton/landingpageSocialmediaButton";
+import * as constants from "@/src/app/shared/constants/constants";
 
 export interface Props { }
 
@@ -19,9 +20,19 @@ export const Home: React.FC<Props> = (props: Props) => {
 
     return (
         <div>
-            <div className="custom-background-image h-screen bg-no-repeat bg-cover bg-center">
-                <NavBar></NavBar>
-                <div className="h-screen flex justify-center items-center transform">
+            <div>
+                <Image
+                    src={"/static/images/IMG_0410-min.JPG"}
+                    alt="florian thom"
+                    width={0}
+                    height={0}
+                    className="object-cover h-screen w-full"
+                    priority={true}
+                    quality={100}
+                    unoptimized={constants.static_site}
+                />
+                <NavBar />
+                <div className="absolute inset-0 flex justify-center items-center transform">
                     <div className="max-w-[50%]">
                         <h1 className="text-white tracking-headline text-3xl sm:text-5xl lg:text-5xl pt-24">
                             FLORIAN THOM
