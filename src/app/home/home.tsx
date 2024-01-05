@@ -26,7 +26,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                     alt="florian thom"
                     width={0}
                     height={0}
-                    className="object-cover h-screen w-full"
+                    className="object-cover object-[top_0%_left_80%] lg:object-center h-screen w-full"
                     priority={true}
                     quality={100}
                     unoptimized={constants.static_site}
