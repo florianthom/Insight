@@ -3,14 +3,7 @@ import type { AppProps } from "next/app";
 import { NextPage } from "next";
 import React from "react";
 import "@/src/app/global.css";
-import { QueryClient, QueryClientProvider } from "react-query";
-import { ReactQueryDevtools } from "react-query/devtools";
-import { Hydrate } from "react-query/hydration";
 import { Meta } from "@/src/app/shared/meta/meta";
-import { Provider } from "react-redux";
-import { store } from "@/src/app/store/store";
-import { defaultQueryClient } from "@/src/app/shared/queryClient/defaultQueryClient";
-import * as constants from "@/src/app/shared/constants/constants";
 
 // call order: _document.tsx -> app.tsx -> app.tsx -> layout -> children
 //  _document.tsx gets only rendered server-side
@@ -21,26 +14,10 @@ import * as constants from "@/src/app/shared/constants/constants";
 // - getServerSideProps (getData on server on run time)
 
 const MyApp: NextPage<AppProps> = (props: AppProps) => {
-    const queryClientRef = React.useRef<QueryClient>();
-    if (!queryClientRef.current) {
-        queryClientRef.current = defaultQueryClient;
-    }
-
-    // does not work alone
-    // const queryClient = new QueryClient();
-
     return (
         <div>
-            <Provider store={store}>
-                {/*<QueryClientProvider client={queryClientRef.current}>*/}
-                {/*    <Hydrate state={props.pageProps.dehydratedState}>*/}
-                <Meta />
-                {/*https://stackoverflow.com/questions/71809903/next-js-component-cannot-be-used-as-a-jsx-component*/}
-                <props.Component {...props.pageProps} />
-                {/*</Hydrate>*/}
-                {/*<ReactQueryDevtools initialIsOpen={!constants.__prod__} />*/}
-                {/*</QueryClientProvider>*/}
-            </Provider>
+            <Meta />
+            <props.Component {...props.pageProps} />
         </div>
     );
 };
