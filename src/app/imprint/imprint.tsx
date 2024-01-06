@@ -10,7 +10,7 @@ export const Imprint: React.FC<Props> = (props: Props) => {
         <div>
             <NavBar></NavBar>
             <div>
-                <div className="pt-56 pb-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+                <div className="pt-36 sm:pt-56 pb-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
                     <h2 className="text-black text-3xl tracking-headline">Imprint</h2>
 
                     <div className="pt-24">

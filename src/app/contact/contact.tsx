@@ -20,7 +20,7 @@ export const Contact: React.FC<Props> = (props: Props) => {
         <div>
             <NavBar></NavBar>
             <div>
-                <div className="pt-56 pb-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+                <div className="pt-36 sm:pt-56 pb-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
                     <h2 className="text-black text-3xl tracking-headline">CONTACT ME</h2>
                     <div className="text-base text-black pt-24">
                         Whether it&apos;s about consultations, inquiries, or exploring opportunities, I&apos;m committed to provide you with exceptional service.

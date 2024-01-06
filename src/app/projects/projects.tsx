@@ -11,7 +11,7 @@ export const Projects: React.FC<Props> = (props: Props) => {
         <div>
             <NavBar></NavBar>
             <div className="bg-white">
-                <div className="pt-56 pb-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+                <div className="pt-36 sm:pt-56 pb-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
                     <h2 className="text-black text-3xl tracking-headline">SOFTWARE REPOSITORY</h2>
                     <div className="text-base text-black pt-24">
                         My software repository is primarily hosted on GitHub, encompassing a range of both public and private repositories.
