@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 499 111" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-1348.18,-758.857)">
+        <g transform="matrix(1.12632,0,0,1.12632,542.867,-55.5867)">
+            <g>
+                <g transform="matrix(0.456633,0,0,0.456633,546.92,465.412)">
+                    <path d="M393.312,667.514L421.268,667.514L421.268,601.864L536.154,601.864L536.154,589.555L408.958,589.555L408.958,655.204L393.312,655.204L393.312,667.514Z" style="fill:white;"/>
+                    <path d="M393.312,692.132L482.814,692.132C482.814,692.132 482.814,716.751 482.814,716.751L536.154,716.751L536.154,704.441L495.123,704.441C495.123,704.441 495.123,679.823 495.123,679.823L393.312,679.823L393.312,692.132Z" style="fill:white;"/>
+                    <path d="M536.154,679.823L519.742,679.823C519.742,679.823 519.742,626.483 519.742,626.483L536.154,626.483L536.154,614.173L507.432,614.173L507.432,692.132L536.154,692.132L536.154,679.823Z" style="fill:white;"/>
+                    <g transform="matrix(0.309667,0,0,0.976924,303.169,4.86566)">
+                        <path d="M421.125,623.7L421.125,678.3L619.875,678.3L619.875,623.7L421.125,623.7ZM460.875,665.7L460.875,636.3C460.875,636.3 580.125,636.3 580.125,636.3C580.125,636.3 580.125,665.7 580.125,665.7L460.875,665.7Z" style="fill:white;"/>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,480.286,169.824)">
+                    <text x="328.178px" y="610.738px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:48px;fill:white;">F<tspan x="356.058px 383.938px 419.834px 453.058px 464.954px 498.178px 531.402px 543.298px 571.179px 604.403px 640.299px " y="610.738px 610.738px 610.738px 610.738px 610.738px 610.738px 610.738px 610.738px 610.738px 610.738px 610.738px ">LORIAN THOM</tspan></text>
+                </g>
+            </g>
+            <g transform="matrix(1,0,0,1,564.623,209.687)">
+                <text x="328.178px" y="610.738px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:21.308px;fill:white;">I<tspan x="335.163px 349.245px 356.23px 372.684px 379.669px 398.485px 411.401px 425.482px 432.468px " y="610.738px 610.738px 610.738px 610.738px 610.738px 610.738px 610.738px 610.738px 610.738px ">T &amp; Media</tspan></text>
+            </g>
+        </g>
+    </g>
+</svg>

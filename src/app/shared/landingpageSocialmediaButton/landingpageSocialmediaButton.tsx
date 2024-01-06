@@ -11,7 +11,7 @@ export interface Props {
 
 export const LandingpageSocialmediaButton: React.FC<Props> = (props: Props) => {
     return (
-        <Link href={props.link} target="_blank" rel="noopener noreferrer" className="pr-4 sm:pr-6">
+        <Link href={props.link} target="_blank" rel="noopener noreferrer" className="">
             <Image
                 src={props.iconPath}
                 alt="social media button"

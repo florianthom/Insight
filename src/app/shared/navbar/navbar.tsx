@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Image from "next/image";
+import * as constants from "@/src/app/shared/constants/constants";
+
 
 export interface Props { }
 
@@ -88,7 +91,20 @@ export const NavBar: React.FC<Props> = (props: Props) => {
                             href="/"
                             className="transition text-white text-base font-medium flex-shrink-0 flex items-center"
                         >
-                            FLORIAN THOM
+                            <div className="flex justify-start items-center gap-2">
+                                <Image
+                                    src={"/static/images/florianthom_koenigsberg_logo_white.svg"}
+                                    alt="florian thom logo"
+                                    width={0}
+                                    height={0}
+                                    className="w-10"
+                                    priority={true}
+                                    quality={100}
+                                    unoptimized={constants.static_site}
+                                />
+                                FLORIAN THOM
+                            </div>
+
                         </Link>
                         <div className="hidden md:block md:ml-6">
                             <div className="flex space-x-4">

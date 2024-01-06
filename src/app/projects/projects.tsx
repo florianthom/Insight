@@ -12,13 +12,13 @@ export const Projects: React.FC<Props> = (props: Props) => {
             <NavBar></NavBar>
             <div className="bg-white">
                 <div className="pt-56 pb-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-                    <h2 className="text-black text-3xl tracking-headline">MY SOFTWARE REPOSITORY</h2>
+                    <h2 className="text-black text-3xl tracking-headline">SOFTWARE REPOSITORY</h2>
                     <div className="text-base text-black pt-24">
                         My software repository is primarily hosted on GitHub, encompassing a range of both public and private repositories.
                         I&aposm proud to present a curated selection of projects below, each accompanied by detailed information to provide you with a comprehensive understanding of my work.
                         These projects reflect a blend of my expertise and dedication to crafting innovative solutions.
-                        For access to specific repositories or further information about any project, please don&apost hesitate to reach out.
-                        I&aposm committed to sharing insights and collaborating effectively.
+                        For access to specific repositories or further information about any project, please don&apos;t hesitate to reach out.
+                        I&apos;m committed to sharing insights and collaborating effectively.
                     </div>
                     <div className="pt-24">
                         <RepositoryTable></RepositoryTable>
@@ -32,7 +32,7 @@ export const Projects: React.FC<Props> = (props: Props) => {
                         This website is crafted with state-of-the-art technology, employing a robust stack that ensures a seamless user experience and top-notch performance.
                         Each facet of this technology ensemble has been thoughtfully chosen to deliver a secure, responsive, and impeccable user experience.
                         The integration of these technologies aims to ensure a seamless journey for every visitor.
-                        Here&aposs an overview of the sophisticated tools and frameworks utilized in its development.
+                        Here is an overview of the sophisticated tools and frameworks utilized in its development.
                         Interested in a deeper dive into how these components collaborate to shape a top-tier website?
                         Feel free to inquire for further insights or detailed information!
                     </div>

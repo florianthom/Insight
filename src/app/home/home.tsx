@@ -34,14 +34,26 @@ export const Home: React.FC<Props> = (props: Props) => {
                 <NavBar />
                 <div className="absolute inset-0 flex justify-center items-center transform">
                     <div className="max-w-[50%]">
-                        <h1 className="text-white tracking-headline text-3xl sm:text-5xl lg:text-5xl pt-24">
-                            FLORIAN THOM
-                        </h1>
+                        <div className="flex justify-start items-center pt-24 gap-8">
+                            <Image
+                                src={"/static/images/florianthom_koenigsberg_logo_white.svg"}
+                                alt="florian thom logo"
+                                width={0}
+                                height={0}
+                                className="w-20 hidden invisible sm:block sm:visible"
+                                priority={true}
+                                quality={100}
+                                unoptimized={constants.static_site}
+                            />
+                            <h1 className="text-white font-medium sm:tracking-headline text-3xl sm:text-5xl lg:text-5xl">
+                                FLORIAN THOM
+                            </h1>
+                        </div>
                         <h2 className="text-white text-xl sm:text-3xl lg:text-3xl pt-5">
                             Freelancer covering professional services in IT and media.
                             From webapps to cloud expertise I offer tailored solutions to elevate your business.
                         </h2>
-                        <div className="pt-10 flex justify-start">
+                        <div className="pt-10 flex justify-start gap-4">
                             <LandingpageSocialmediaButton link={linkedin_link} size={28} iconPath={"/static/images/linkedIn_transparent.png"} />
                             <LandingpageSocialmediaButton link={github_link} size={28} iconPath={"/static/images/github_transparent.png"} />
                             <LandingpageSocialmediaButton link={"mailto:" + email_string} size={28} iconPath={"/static/images/mail_tranparent.png"} />

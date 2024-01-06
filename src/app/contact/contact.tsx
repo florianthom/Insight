@@ -10,6 +10,8 @@ import {
     twitter_link,
 } from "@/src/app/shared/constants/constants";
 import { BC } from "@/src/app/shared/bc/bc";
+import * as constants from "@/src/app/shared/constants/constants";
+import Image from "next/image";
 
 interface Props { }
 
@@ -23,12 +25,60 @@ export const Contact: React.FC<Props> = (props: Props) => {
 
                     <div className="text-base text-black pt-24">
                         Your journey deserves attention to detail and a personalized approach.
-                        Whether it&aposs about consultations, inquiries, or exploring opportunities, I&aposm committed to providing you with exceptional service.
-                        Contact me today and let&aposs turn your aspirations into achievements!
-                        Looking forward to collaborating with you on your next endeavor!
+                        Whether it&apos;s about consultations, inquiries, or exploring opportunities, I&apos;m committed to providing you with exceptional service.
+                        Understanding your unique business landscape and goals, I create solutions to not just address your immediate requirements,
+                        but also to lay a resilient foundation for future scalability and sustained growth.
+
+                    </div>
+                    <div className="flex justify-center py-16 sm:py-24">
+                        <Image
+                            src={"/static/images/florianthom_koenigsberg_withslogan.svg"}
+                            alt="florian thom logo"
+                            width={0}
+                            height={0}
+                            className="w-full lg:w-[48rem] pr-4"
+                            priority={true}
+                            quality={100}
+                            unoptimized={constants.static_site}
+                        />
                     </div>
 
-                    <div className="pt-24 flex justify-around items-center flex-col lg:flex-row space-y-12 lg:space-y-0">
+                    <div>
+                        <div className="text-2xl py-4">
+                            Opting for my services allows you to benefit from...
+                        </div>
+                        <ul className="list-disc text-base list-inside space-y-4">
+                            <li>
+                                Fresh Perspectives: Leverage the energy and creativity for innovative solutions tailored to your business.
+                            </li>
+                            <li>
+                                Dynamic Adaptability: Agile approaches to swiftly adapt to changes, ensuring your business remains agile and competitive in the fast-paced tech world.
+                            </li>
+                            <li>
+                                Seamless Integration: Streamline your systems and workflows effortlessly, ensuring a smooth transition to cloud-based solutions.
+                            </li>
+                            <li>
+                                Up-to-Date Expertise: Stay at the forefront of technology trends with the latest knowledge and cutting-edge solutions in cloud and web environments.
+                            </li>
+                            <li>
+                                Expert Guidance: Embrace industry best practices to stay ahead in the competitive digital landscape.
+                            </li>
+                            <li>
+                                Real Results: Proven track record of driving success through all kinds of business sizes.
+                            </li>
+                            <li>
+                                Proven Impact: Experience real results through the implementation of innovative IT strategies, propelling your business to new heights.
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="py-16">
+                        Contact me today and let&apos;s turn your aspirations into achievements! Looking forward to collaborating with you on your next endeavor!
+                        Ready to infuse your business with innovation? Contact me today for a consultation and experience firsthand how my dynamic IT expertise can drive your success!
+                    </div>
+                    <div className="flex justify-center py-16">
+                        <hr className="border-gray-300 w-2/4" />
+                    </div>
+                    <div className="py-12 flex justify-around items-center flex-col lg:flex-row space-y-12 lg:space-y-0">
                         <BC />
                         <PlatformCard
                             image_path="/static/images/mail_tranparent_svg.svg"
@@ -37,8 +87,10 @@ export const Contact: React.FC<Props> = (props: Props) => {
                             link_string={"mailto:" + email_string}
                         />
                     </div>
-
-                    <div className="text-base text-black pt-24">
+                    <div className="flex justify-center py-16">
+                        <hr className="border-gray-300 w-2/4" />
+                    </div>
+                    <div className="text-base text-black pt-12">
                         I value the opportunity to connect and build professional relationships.
                         Networking has become incredibly accessible through platforms like LinkedIn.
                         Please feel free to reach out to me by sending a message through any of the following platforms.
