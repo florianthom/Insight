@@ -22,13 +22,10 @@ export const Contact: React.FC<Props> = (props: Props) => {
             <div>
                 <div className="pt-56 pb-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
                     <h2 className="text-black text-3xl tracking-headline">CONTACT ME</h2>
-
                     <div className="text-base text-black pt-24">
-                        Your journey deserves attention to detail and a personalized approach.
-                        Whether it&apos;s about consultations, inquiries, or exploring opportunities, I&apos;m committed to providing you with exceptional service.
-                        Understanding your unique business landscape and goals, I create solutions to not just address your immediate requirements,
+                        Whether it&apos;s about consultations, inquiries, or exploring opportunities, I&apos;m committed to provide you with exceptional service.
+                        Understanding your unique business landscape and goals, I create solutions to address your current requirements,
                         but also to lay a resilient foundation for future scalability and sustained growth.
-
                     </div>
                     <div className="flex justify-center py-16 sm:py-24">
                         <Image

@@ -5,7 +5,7 @@ import { IndividualWork } from "@/src/app/shared/workIndividualOrGroup/individua
 import { GroupWork } from "@/src/app/shared/workIndividualOrGroup/groupWork";
 import { cv_germany_link, cv_international_link } from "@/src/app/shared/constants/constants";
 
-interface Props {}
+interface Props { }
 
 export const Work: React.FC<Props> = (props: Props) => {
     return (
@@ -13,7 +13,7 @@ export const Work: React.FC<Props> = (props: Props) => {
             <NavBar></NavBar>
             <div>
                 <div className="pt-56 pb-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-                    <h2 className="text-black text-3xl tracking-headline">MY WORK</h2>
+                    <h2 className="text-black text-3xl tracking-headline">WORK</h2>
                     <div className="text-base text-black pt-24">
                         Over the years I have encountered many technologies and gained experience in numerous areas. I
                         love to learn new technologies and to examine them for advantages and disadvantages compared to

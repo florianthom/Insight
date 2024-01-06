@@ -45,7 +45,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                                 quality={100}
                                 unoptimized={constants.static_site}
                             />
-                            <h1 className="text-white font-medium sm:tracking-headline text-3xl sm:text-5xl lg:text-5xl">
+                            <h1 className="text-white font-medium tracking-headline text-3xl sm:text-5xl lg:text-5xl">
                                 FLORIAN THOM
                             </h1>
                         </div>
