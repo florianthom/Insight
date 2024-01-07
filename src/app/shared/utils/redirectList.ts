@@ -5,6 +5,21 @@ export const redirectList = [
         permanent: false,
     },
     {
+        source: "/overview",
+        destination: "/",
+        permanent: false,
+    },
+    {
+        source: "/background",
+        destination: "/work",
+        permanent: false,
+    },
+    {
+        source: "/about",
+        destination: "/work",
+        permanent: false,
+    },
+    {
         source: "/repos",
         destination: "/github",
         permanent: false,
