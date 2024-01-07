@@ -3,6 +3,7 @@ import { Footer } from "@/src/app/shared/footer/footer";
 import React from "react";
 import { RepositoryTable } from "@/src/app/projects/repositoryTable/repositoryTable";
 import { PersonalWebsiteServicesTable } from "@/src/app/projects/personalWebsiteServicesTable/personalWebsiteServicesTable";
+import * as constants from "@/src/app/shared/constants/constants";
 
 interface Props { }
 
@@ -14,8 +15,12 @@ export const Projects: React.FC<Props> = (props: Props) => {
                 <div className="pt-36 sm:pt-56 pb-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
                     <h2 className="text-black text-3xl tracking-headline">SOFTWARE REPOSITORY</h2>
                     <div className="text-base text-black pt-24">
-                        My software repository is primarily hosted on GitHub, encompassing a range of both public and private repositories.
-                        I&aposm proud to present a curated selection of projects below, each accompanied by detailed information to provide you with a comprehensive understanding of my work.
+                        My software repository is primarily hosted on{" "}
+                        <a className="hover:underline" href={constants.github_link} target="_blank" rel="noopener noreferrer">
+                            GitHub
+                        </a>
+                        , encompassing a range of both public and private repositories.
+                        I&apos;m proud to present a curated selection of projects below, each accompanied by detailed information to provide you with a comprehensive understanding of my work.
                         These projects reflect a blend of my expertise and dedication to crafting innovative solutions.
                         For access to specific repositories or further information about any project, please don&apos;t hesitate to reach out.
                         I&apos;m committed to sharing insights and collaborating effectively.

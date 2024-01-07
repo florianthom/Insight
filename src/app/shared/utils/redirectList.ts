@@ -20,6 +20,21 @@ export const redirectList = [
         permanent: false,
     },
     {
+        source: "/kontakt",
+        destination: "/contact",
+        permanent: false,
+    },
+    {
+        source: "/projekte",
+        destination: "/projects",
+        permanent: false,
+    },
+    {
+        source: "/impressum",
+        destination: "/imprint",
+        permanent: false,
+    },
+    {
         source: "/repos",
         destination: "/github",
         permanent: false,
