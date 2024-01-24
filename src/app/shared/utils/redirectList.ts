@@ -190,6 +190,16 @@ export const redirectList = [
         permanent: false,
     },
     {
+        source: "/onedrive",
+        destination: "/googledrive",
+        permanent: false,
+    },
+    {
+        source: "/icloud",
+        destination: "/googledrive",
+        permanent: false,
+    },
+    {
         source: "/tmp",
         destination: "/googledrive",
         permanent: false,
