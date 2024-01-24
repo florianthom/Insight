@@ -50,7 +50,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                             </h1>
                         </div>
                         <h2 className="text-white text-xl sm:text-3xl lg:text-3xl pt-5">
-                            Freelancer covering professional services in IT and media.
+                            Freelancer covering professional services in IT & Media.
                             From webapps to cloud expertise I offer tailored solutions to elevate your business.
                         </h2>
                         <div className="pt-10 flex justify-start gap-4">
@@ -262,7 +262,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                     <div className="text-base text-black pt-24">
                         <div className="flex justify-evenly flex-col md:flex-row">
                             <div className="my-8 w-full">
-                                <h3 className="text-2xl">Big Data & Data Science</h3>
+                                <h3 className="text-2xl py-4">Big Data & Data Science</h3>
                                 <ul className="list-disc text-base list-inside">
                                     <li>Terminal</li>
                                     <li>Shell/Bash-Scripting</li>
@@ -277,7 +277,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                                 </ul>
                             </div>
                             <div className="my-8 w-full">
-                                <h3 className="text-2xl">IOT</h3>
+                                <h3 className="text-2xl py-4">IOT</h3>
                                 <ul className="list-disc text-base list-inside">
                                     <li>TI MSP430G2553</li>
                                     <li>Arduino</li>
@@ -288,7 +288,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                                 </ul>
                             </div>
                             <div className="my-8 w-full">
-                                <h3 className="text-2xl">Artificial Intelligence</h3>
+                                <h3 className="text-2xl py-4">Artificial Intelligence</h3>
                                 <ul className="list-disc text-base list-inside">
                                     <li>Algebra</li>
                                     <li>Analysis</li>

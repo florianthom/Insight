@@ -36,7 +36,7 @@ export const amzn_wishlist = "https://www.amazon.de/hz/wishlist/dl/invite/1Nlwzg
 export const spotify_profile = "https://open.spotify.com/user/zt7x9rjbw6bg3j0qyk2o6mu8x?si=7a1c91bf39764009";
 export const lol = "https://euw.op.gg/summoners/euw/Alat%C3%A1n";
 export const paypal = "https://www.paypal.com/paypalme/ThomFlorian";
-export const google_drive = "https://drive.google.com/drive/folders/1LKAdtoOB1Uh_ikwrY4t-UgVQkuyYbUx9?usp=sharing";
+export const google_drive = "https://florianthom-my.sharepoint.com/:f:/p/mail/EpoMipCLSuZIo9OY6xL3Z8QBxH-0cf1XEJH9fe3rc6vLAQ";
 export const cv_international_link =
     "https://drive.google.com/file/d/1y6UOUsVy2qF6Vi00J4qjxQMxl4WvuEHm/view?usp=sharing";
 export const cv_germany_link = "https://drive.google.com/file/d/1cPO5hJAlXORhiIwZnjXRiB82GJDIPYv8/view?usp=sharing";

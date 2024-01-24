@@ -41,7 +41,7 @@ export const Contact: React.FC<Props> = (props: Props) => {
                     </div>
 
                     <div>
-                        <div className="text-2xl py-4">
+                        <div className="text-base py-4">
                             Opting for my services allows you to benefit from...
                         </div>
                         <ul className="list-disc text-base list-inside space-y-4">
@@ -75,7 +75,7 @@ export const Contact: React.FC<Props> = (props: Props) => {
                     <div className="flex justify-center py-16">
                         <hr className="border-gray-300 w-2/4" />
                     </div>
-                    <div className="py-12 flex justify-around items-center flex-col lg:flex-row space-y-12 lg:space-y-0">
+                    <div className="py-24 flex justify-around items-center flex-col lg:flex-row space-y-12 lg:space-y-0">
                         <BC />
                         <PlatformCard
                             image_path="/static/images/mail_tranparent_svg.svg"
