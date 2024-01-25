@@ -14,7 +14,7 @@ export const Meta: React.FC<Props> = (props: Props) => (
         <meta key="og:title" property="og:title" content="Florian Thom" />
         <meta key="og:description" property="og:description" content="Freelancer covering professional services in IT and Media." />
         <meta key="og:image" property="og:image" content="www.florianthom.com/static/images/florianthom.jpg" />
-        <meta key="og:url" property="og:url" content="https://www.florianthom.com" />
+        <meta key="og:url" property="og:url" content="www.florianthom.com" />
         <meta key="og:type" property="og:type" content="website" />
     </Head>
 );
