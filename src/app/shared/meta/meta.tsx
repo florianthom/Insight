@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React from "react";
 
-interface Props {}
+interface Props { }
 
 export const Meta: React.FC<Props> = (props: Props) => (
     <Head>
@@ -12,9 +12,9 @@ export const Meta: React.FC<Props> = (props: Props) => (
 
         <link rel="icon" href="/static/images/favicon.ico" />
         <meta key="og:title" property="og:title" content="Florian Thom" />
-        <meta key="og:description" property="og:description" content="example content" />
-        <meta key="og:type" property="og:type" content="example content" />
-        <meta key="og:url" property="og:url" content="example content" />
-        <meta key="og:image" property="og:image" content="example content" />
+        <meta key="og:description" property="og:description" content="Freelancer covering professional services in IT and media. From webapps to cloud expertise I offer tailored solutions to elevate your business." />
+        <meta key="og:image" property="og:image" content="/static/images/florianthom.jpg" />
+        <meta key="og:url" property="og:url" content="https://www.florianthom.com" />
+        <meta key="og:type" property="og:type" content="website" />
     </Head>
 );
