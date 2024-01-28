@@ -4,6 +4,8 @@ import React from "react";
 import { RepositoryTable } from "@/src/app/projects/repositoryTable/repositoryTable";
 import { PersonalWebsiteServicesTable } from "@/src/app/projects/personalWebsiteServicesTable/personalWebsiteServicesTable";
 import * as constants from "@/src/app/shared/constants/constants";
+import { LandingpageButton } from "../shared/landingpagebutton/landingpagebutton";
+import Link from "next/link";
 
 interface Props { }
 
@@ -31,8 +33,30 @@ export const Projects: React.FC<Props> = (props: Props) => {
                 </div>
             </div>
             <div className="bg-main-color">
-                <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-                    <h2 className="text-white text-3xl tracking-headline">WEBSITE TECHNOLOGY STACK</h2>
+                <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 text-white">
+                    <div className="">
+                        <h2 className="text-3xl tracking-headline">Curriculum Vitae</h2>
+                        <div className="text-base pt-24">
+                            In the past a created my CV. As each company needs a unique set of skills, I usually create a
+                            separate CV for each job application. Nevertheless I created a general CV too, to provide some
+                            insights if someone I am not familiar with, wants to get some impressions.
+                        </div>
+                        <div className="flex justify-evenly pt-24">
+                            <Link href={constants.cv_international_link} target="_blank" rel="noopener noreferrer" className="font-medium tracking-wide transition-colors border-2 border-gray-200 hover:border-gray-400 backdrop-blur-sm bg-main-color bg-main-color drop-shadow-xl bg-opacity-50 text-white px-8 sm:px-12 lg:px-24 py-4 rounded-md text-md lg:text-xl lg:text-2xl whitespace-nowrap">
+                                CV - International
+                                <br />
+                                <div className="text-xs pt-2">(without personal data)</div>
+                            </Link>
+                            <Link href={constants.cv_germany_link} target="_blank" rel="noopener noreferrer" className="font-medium tracking-wide transition-colors border-2 border-gray-200 hover:border-gray-400 backdrop-blur-sm bg-main-color bg-main-color drop-shadow-xl bg-opacity-50 text-white px-8 sm:px-12 lg:px-24 py-4 rounded-md text-md lg:text-xl lg:text-2xl whitespace-nowrap">
+                                CV - Germany
+                                <br />
+                                <div className="text-xs pt-2">(including personal data)</div>
+                            </Link>
+                        </div>
+                    </div>
+
+
+                    <h2 className="pt-56 text-white text-3xl tracking-headline">WEBSITE TECHNOLOGY STACK</h2>
                     <div className="text-base text-white pt-24">
                         This website is crafted with state-of-the-art technology, employing a robust stack that ensures a seamless user experience and top-notch performance.
                         Each facet of this technology ensemble has been thoughtfully chosen to deliver a secure, responsive, and impeccable user experience.
@@ -46,8 +70,7 @@ export const Projects: React.FC<Props> = (props: Props) => {
                             <h3 className="text-2xl text-white">Frontend</h3>
                             <div>
                                 <ul className="list-disc text-base text-white list-inside">
-                                    <li>Next.js</li>
-                                    <li>React.js</li>
+                                    <li>Next.js & React.js</li>
                                     <li>TypeScript</li>
                                     <li>React Query</li>
                                     <li>Tailwind CSS</li>
@@ -59,7 +82,7 @@ export const Projects: React.FC<Props> = (props: Props) => {
                             <div>
                                 <ul className="list-disc text-base text-white list-inside">
                                     <li>C#</li>
-                                    <li>.NET 5</li>
+                                    <li>.NET 8</li>
                                     <li>Entity Framework</li>
                                     <li>REST</li>
                                 </ul>
@@ -88,22 +111,21 @@ export const Projects: React.FC<Props> = (props: Props) => {
                                 <ul className="list-disc text-base text-white list-inside">
                                     <li>Docker</li>
                                     <li>Terraform</li>
-                                    <li>Ansible</li>
                                     <li>Packer</li>
-                                    <li>AWS</li>
-                                    <li>IAM</li>
-                                    <li>VPC</li>
-                                    <li>EKS</li>
-                                    <li>NAT</li>
+                                    <li>AWS VPC</li>
+                                    <li>AWS IAM</li>
+                                    <li>AWS EKS</li>
+                                    <li>AWS NAT</li>
+                                    <li>AWS S3</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div className="pt-24">
+                    <div className="pt-12">
                         <div>
                             <h3 className="text-2xl text-white">Services</h3>
                             <div className="pt-8 text-white">
-                                <PersonalWebsiteServicesTable></PersonalWebsiteServicesTable>
+                                <PersonalWebsiteServicesTable />
                             </div>
                         </div>
                     </div>

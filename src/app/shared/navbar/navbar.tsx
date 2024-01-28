@@ -112,7 +112,7 @@ export const NavBar: React.FC<Props> = (props: Props) => {
                                     href="/work"
                                     className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium whitespace-nowrap"
                                 >
-                                    WORK & CV
+                                    WORK & REFERENCES
                                 </Link>
                                 <Link
                                     href="/reports"
@@ -127,7 +127,7 @@ export const NavBar: React.FC<Props> = (props: Props) => {
                                     href="/projects"
                                     className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium"
                                 >
-                                    PROJECTS
+                                    PROJECTS & CV
                                 </Link>
                             </div>
                         </div>
@@ -157,7 +157,7 @@ export const NavBar: React.FC<Props> = (props: Props) => {
                                 href="/work"
                                 className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium whitespace-nowrap"
                             >
-                                WORK & CV
+                                WORK & REFERENCES
                             </Link>
                         </li>
                         <li className="my-4">
@@ -174,7 +174,7 @@ export const NavBar: React.FC<Props> = (props: Props) => {
                                 href="/projects"
                                 className="transition text-white hover:bg-gray-300 hover:bg-opacity-30  hover:text-white px-3 py-2 rounded-md text-base font-medium"
                             >
-                                PROJECTS
+                                PROJECTS & CV
                             </Link>
                         </li>
 

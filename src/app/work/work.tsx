@@ -4,6 +4,8 @@ import React from "react";
 import { IndividualWork } from "@/src/app/shared/workIndividualOrGroup/individualWork";
 import { GroupWork } from "@/src/app/shared/workIndividualOrGroup/groupWork";
 import { cv_germany_link, cv_international_link } from "@/src/app/shared/constants/constants";
+import Image from "next/image";
+import * as constants from "@/src/app/shared/constants/constants";
 
 interface Props { }
 
@@ -12,218 +14,255 @@ export const Work: React.FC<Props> = (props: Props) => {
         <div>
             <NavBar></NavBar>
             <div>
-                <div className="pt-36 sm:pt-56 pb-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-                    <h2 className="text-black text-3xl tracking-headline">WORK</h2>
+                <div className="pt-36 sm:pt-56 pb-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 ">
+                    <h2 className="text-black text-3xl tracking-headline">WORK & REFERENCES</h2>
                     <div className="text-base text-black pt-24">
-                        Over the years I have encountered many technologies and gained experience in numerous areas. I
-                        love to learn new technologies and to examine them for advantages and disadvantages compared to
-                        the already known alternatives. Since some projects could be private, arent even published on
-                        github or mentioned at my CV, here is a small snipped of my work.
+                        Discover a snipped of the portfolio of crafted work and successfull client projects.
+                        With a proven track record, the close customer relationship and the resulting delivery of fitting results is shown.
+                        From scaling company customer by successfull marketing efforts over developing applications of all kinds to
+                        the management of cloud environments our dedication becomes apparent.
+                        This kind of end-to-end responsibility can be experience by you too.
                     </div>
-                    <div className="pt-24">
-                        <h3 className="text-2xl text-black">During freetime</h3>
-                        <div className="pl-1">
-                            <IndividualWork color="black"></IndividualWork>
+                    <div className="pt-32 pb-32 flex justify-between gap-16">
+                        <div>
+                            <h3 className="text-2xl text-black">Topnotch</h3>
+                            <div className="py-6">
+                                <div className="py-4">
+                                    Company
+                                </div>
+                                <div>
+                                    Topnotch is a review-sharing platform where users can evaluate competing state of the art offerings.
+                                    It serves as a hub for product- and service provider to reach a global audience, while users can discover and
+                                    engage with a diverse range of their offerings.
+                                    Topnotch implements a platform business model including actors like viewer, advertisers and
+                                    content creators like product manufacturers or service providers (companies).
+                                    Topnotch tries to build a community ecosystem to address questions like “What is the best off-road automobile” or
+                                    “What is the best platform to release on first web, mobile or Desktop”.
+                                </div>
+                                <div className="py-4 pt-8">
+                                    Solution
+                                </div>
+                                <div>
+                                    Topnotch is a company based of entrepreneurial work which emphasizes the hands-on competition of different offerings.
+                                    Most of the decisions were open for discussion.
+                                    The main focus was to work on modeling the business domain and prototyping a first web application.
+                                    The infrastructure was set up in the cloud environment for the resulting frontend and backend.
+                                    In addition, the SEO was optimized by optimizing the website by targeting selected keywords and
+                                    setting up SEO tools especially in the Google environment.
+                                </div>
+                            </div>
                         </div>
-                        <div className="pt-4">
-                            <ul className="list-disc text-base text-black list-inside">
-                                <li>
-                                    Voyager
-                                    <ul className="list-inside pl-4">
-                                        <li>Spring Boot Microservice regarding career opportunities</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    Darwin
-                                    <ul className="list-inside pl-4">
-                                        <li>Basic (Micro-) Service to handle identity management</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    AWS infrastructure
-                                    <ul className="list-inside pl-4">
-                                        <li>Created cloud-plattform for all kinds of projects</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    Azure Infrastructure
-                                    <ul className="list-inside pl-4">
-                                        <li>Create cloud-plattform in comparison to AWS</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    Unity ml-agents
-                                    <ul className="list-inside pl-4">
-                                        <li>Simulation in which a cap has to find its parking slot</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    General AI-forcast projects
-                                    <ul className="list-inside pl-4">
-                                        <li>stocks</li>
-                                        <li>mnist</li>
-                                        <li>sinus / cosinus with a controlled amount of pertubations</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="pt-24">
-                        <h3 className="text-2xl text-black">
-                            Results of course work at university - M.Sc. Computer Science
-                        </h3>
-                        <div className="pl-1">
-                            <GroupWork color="black"></GroupWork>
-                        </div>
-                        <div className="pt-4">
-                            <ul className="list-disc text-base text-black list-inside">
-                                <li>
-                                    “Conino” Maturity Index
-                                    <ul className="list-inside pl-4">
-                                        <li>
-                                            Portal / Webapp to evaluate the maturity level of your own (future) company
-                                            / venture
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    “HealthCareCareer”
-                                    <ul className="list-inside pl-4">
-                                        <li>
-                                            Portal / Webapp to create an own Business Model through leveraging of
-                                            Business Model Pattern by Gassmann et al.
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    IT Secruity - Handling of Numbers {">"} 2^64
-                                    <ul className="list-inside pl-4">
-                                        <li>Implemented own BigInteger-Representation through bit-shift-operations</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    NVIDIA - CUDA programming
-                                    <ul className="list-inside pl-4">
-                                        <li>
-                                            The calculation of the gaussian convolution of an image and the conversation
-                                            of rgb to ycbcr
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
+                        <div>
+                            <Image
+                                src={"/static/images/topnotch_logo.svg"}
+                                alt="Snippet master thesis website"
+                                width={0}
+                                height={0}
+                                className="w-[128rem]"
+                                priority={true}
+                                quality={100}
+                                unoptimized={constants.static_site}
+                            />
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="bg-main-color">
+            <div className="bg-main-color text-white">
                 <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-                    <h3 className="text-2xl text-white">Big Data - Research Group & internship</h3>
-                    <div className="pl-1">
-                        <GroupWork color="white"></GroupWork>
-                    </div>
-                    <div className="pt-4">
-                        <ul className="list-disc text-base text-white list-inside">
-                            <li>
-                                AI - libraries
-                                <ul className="list-inside pl-4">
-                                    <li>Evaluation and Comparison of Tensorflow & MXNet</li>
-                                </ul>
-                            </li>
-                            <li>
-                                Neural Network forecasts
-                                <ul className="list-inside pl-4">
-                                    <li>non-harmonic periodic functions</li>
-                                </ul>
-                            </li>
-                            <li>
-                                Real-time streaming
-                                <ul className="list-inside pl-4">
-                                    <li>Evaluation and Comparison of Spark & Flink</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="pt-24">
-                        <h3 className="text-2xl text-white">
-                            Results of course work at university - B.A. Computer Science
-                        </h3>
-                        <div className="pl-1">
-                            <GroupWork color="white"></GroupWork>
+                    <div className="flex justify-between gap-16">
+                        <div>
+                            <h3 className="text-2xl">Lebenserinnerungen e. V.</h3>
+                            <div className="py-6">
+                                <div className="py-4">
+                                    Company
+                                </div>
+                                <div>
+                                    The association promotes personal, verbal and biographical storytelling with storytelling opportunities.
+                                    It provides formats and suggestions for shared storytelling and promotes projects that serve this purpose.
+                                </div>
+                                <div className="py-4 pt-8">
+                                    Solution
+                                </div>
+                                <div>
+                                    The customer has an existing html website as a baseline.
+                                    Content cannot be added or maintained.
+                                    The focus was to address this issues by expanding website capabilities and the website maintainability.
+                                    The website was rebuilt using Wordpress to meet the requirements.
+                                    For the page builder Elementor was selected and should help the team to update the website by themself.
+                                    The service included the developing on the corporate identity.
+                                    Especially the corporate design and the corporate language.
+                                    At the end, the team received training on how to add their own content to the Wordpress site.
+                                </div>
+                            </div>
                         </div>
-                        <div className="pt-4">
-                            <ul className="list-disc text-base text-white list-inside">
-                                <li>
-                                    Thesis: “Neuronale Netze - Prognosen zum Caching von Dokumenten”
-                                    <ul className="list-inside pl-4">
-                                        <li>
-                                            Created software-infrastructure in a given hardware-cluster (kubernetes,
-                                            spark, hdfs, nfs, ...)
-                                        </li>
-                                        <li>
-                                            Analysed an extend amount of Log-Data of Cern via Spark (e.g. feature
-                                            engineering & data preparation)
-                                        </li>
-                                        <li>
-                                            Created RNN to predict if this document has to be cached / will be accesed
-                                            later
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    AnSearch Webapp
-                                    <ul className="list-inside pl-4">
-                                        <li>
-                                            Search engine to display current police reports taken from the official
-                                            police-website using TF-IDF / Levenshtein-algorithm
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    Music API
-                                    <ul className="list-inside pl-4">
-                                        <li>
-                                            Interface to deliver a music list / playlist for a static set of song names
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
+                        <div>
+                            <Image
+                                src={"/static/images/lebenserinnerungen.png"}
+                                alt="Snippet master thesis website"
+                                width={0}
+                                height={0}
+                                className="w-[128rem]"
+                                priority={true}
+                                quality={100}
+                                unoptimized={constants.static_site}
+                            />
                         </div>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-                    <h2 className="text-black text-3xl tracking-headline">Curriculum Vitae</h2>
-                    <div className="text-base text-black pt-24">
-                        In the past a created my CV. As each company needs a unique set of skills, I usually create a
-                        separate CV for each job application. Nevertheless I created a general CV too, to provide some
-                        insights if someone I am not familiar with, wants to get some impressions.
+                <div className="pb-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+                    <div className="flex justify-between gap-16">
+                        <div>
+                            <h3 className="text-2xl">Bitlabs.global</h3>
+                            <div className="py-6">
+                                <div className="py-4">
+                                    Company
+                                </div>
+                                <div>
+                                    Bitlabs is a venture specializing in process and product development and consulting for customers.
+                                    They have been providing this service since 2022.
+                                    Their goal is to help businesses thrive by providing them with the tools needed to succeed.
+                                </div>
+                                <div className="py-4 pt-8">
+                                    Solution
+                                </div>
+                                <div>
+                                    The customer needed web presence to to get first customer in the regional environment.
+                                    SEO was an important aspect.
+                                    To address the problem the development of a corporate identity for the customer was started.
+                                    The website-design was refined based on coporate identity.
+                                    The website was development utilizing SEO-friendly server-side-rendering (SSR).
+                                    The next step was to improve the marketing by further optimizing SEO on the application and web-space level.
+                                    Data streams of website analytics were put into place to analyze current visitors and potential customers.
+                                    A Google Business Profile/GMB was created.
+                                    After only three month the customer was getting 15+ request/month via the developed website alone.
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <Image
+                                src={"/static/images/snippetBitlabs.png"}
+                                alt="Snippet master thesis website"
+                                width={0}
+                                height={0}
+                                className="w-[128rem]"
+                                priority={true}
+                                quality={100}
+                                unoptimized={constants.static_site}
+                            />
+                        </div>
                     </div>
-                    <div className="flex justify-evenly pt-24">
-                        <a
-                            href={cv_international_link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="transition bg-white text-main-color border border-main-color font-bold py-2 px-4 rounded w-1/4 text-center shadow hover:bg-main-color hover:text-white"
-                        >
-                            CV - International
-                            <br />
-                            <div className="text-xs pt-2">(without personal data like image)</div>
-                        </a>
-                        <a
-                            href={cv_germany_link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="transition bg-white text-main-color border border-main-color font-bold py-2 px-4 rounded w-1/4 text-center shadow hover:bg-main-color hover:text-white"
-                        >
-                            CV - Germany
-                            <br />
-                            <div className="text-xs pt-2">(including personal data like image)</div>
-                        </a>
+                </div>
+            </div >
+
+            <div className="">
+                <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+                    <div className="flex justify-between gap-16">
+                        <div>
+                            <h3 className="text-2xl text-black">Master-Thesis - HTW Berlin, Charité Berlin</h3>
+                            <div className="pl-1">
+                                <div className="text-xs" style={{ color: "black" }}>
+                                    “WEB APPLICATION FOR DEVELOPING PLATFORM-BASED BUSINESS MODELS IN THE CONTEXT OF DIGITAL HEALTH”
+                                </div>
+                            </div>
+
+                            <div className="py-6">
+                                <div className="py-4">
+                                    Domain
+                                </div>
+                                <div>
+                                    The thesis covers the development of a web application (self-service) for the collaborative creation
+                                    of platform-based business models in the Digital Health sector.
+                                    The challenges include establishing the theoretical foundations, focusing on the systematic
+                                    of business model development, which entails identifying, describing, and analyzing these models, as well as selecting an appropriate systematic.
+                                    Additionally, implementing the business model development process according to the chosen systematic
+                                    involves developing algorithms for computer-assisted implementation and integrating these algorithms into the context effectively.
+                                </div>
+                                <div className="py-4">
+                                    Solution
+                                </div>
+                                <div>
+                                    Various approaches to business model development were examined.
+                                    One particularly promising systematic for business model development was selected.
+                                    IT system and architecture was establiched according to the selected approach.
+                                    That includes designing  algorithms and appropriate domain models for the consistency matrix,
+                                    the computation of the strategy bundles, to conduct the cluster analysis and the calculation of the characteristics matrix.
+                                    The theoretical foundation was implemented through a Proof of Concept (PoC) in form of a web application.
+                                    Finally the integration of the algorithm and the domain model was successfully achieved.
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <Image
+                                src={"/static/images/masterSnippetWebsite.svg"}
+                                alt="Snippet master thesis website"
+                                width={0}
+                                height={0}
+                                className="w-[128rem]"
+                                priority={true}
+                                quality={100}
+                                unoptimized={constants.static_site}
+                            />
+                        </div>
+                    </div>
+                    <div className="pt-16 flex justify-between gap-16">
+                        <div>
+                            <h3 className="text-2xl text-black">Bachelor-Thesis - HTW Berlin, Charité Berlin</h3>
+                            <div className="pl-1">
+                                <div className="text-xs" style={{ color: "black" }}>
+                                    “NEURAL NETWORKS - PREDICTION-BASED CACHING OF DOCUMENTS”
+                                </div>
+                            </div>
+                            <div className="py-6">
+                                <div className="py-4">
+                                    Domain
+                                </div>
+                                <div>
+                                    The thesis covers the creation and integration of a system that determines whether any given document
+                                    will be accessed again within a specified time period based on past document accesses.
+                                    Scalability investigations are conducted regarding the number of computers utilized.
+                                    Challenges encompass three distinct areas.
+                                    <ul className="list-disc text-base text-black list-outside pl-8">
+                                        <li>Development of the system infrastructure: orchestration of compute nodes for the neural network</li>
+                                        <li>Data analysis to get insights of the data: feature engineering for the neural network</li>
+                                        <li>Development of a neural network</li>
+                                    </ul>
+                                </div>
+                                <div className="py-4">
+                                    Solution
+                                </div>
+                                <div>
+                                    Achievements have been made across all critical areas: infrastructure, data analysis and neural network.
+                                    On the infrastructure site virtual servers have been deployed.
+                                    These servers formed the computing cluster by installing spark (data processing) alongsite with kubernetes (neural network processing) orchestration.
+                                    The distributed storage was managed by NFS.
+                                    In the realm of data analysis for Gigabytes of data, HDFS and Spark with Scala have been utilized,
+                                    complemented by the RDD-API and Dataframe-API for streamlined processing.
+                                    The data preprocessing involved the creation of batches tailored for computation with RNNs.
+                                    A Recurrent Neural Network architecture was designed and implemented to tackle the classification problem.
+                                    The network includes an encoder (Relu), Recurrent Layer (tanh) and a Decoder (Softmax).
+                                    The Cost function is defined by argmax(Cross Entropy+L2-Regularization).
+                                    For the optimization Gradient Descent (Adam Optimizer) was utilized.
+                                    For research purposes PyTorch & MXNet and for the distributed training Tensorflow were used.
+                                    Training Time was about several hours.
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <Image
+                                src={"/static/images/bachelorSnippedNetwork.svg"}
+                                alt="Snippet master thesis website"
+                                width={0}
+                                height={0}
+                                className="w-[128rem]"
+                                priority={true}
+                                quality={100}
+                                unoptimized={constants.static_site}
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
             <Footer></Footer>
-        </div>
+        </div >
     );
 };

@@ -8,6 +8,7 @@ import { showcaseData } from "../shared/utils/showcaseData";
 import { LandingpageButton } from "../shared/landingpagebutton/landingpagebutton";
 import { LandingpageSocialmediaButton } from "../shared/landingpageSocialmediaButton/landingpageSocialmediaButton";
 import * as constants from "@/src/app/shared/constants/constants";
+import { ContactForm } from "../shared/contactform/contactform";
 
 export interface Props { }
 
@@ -118,6 +119,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                             <li>
                                 Search engine optimization (SEO)
                             </li>
+                            <li>Marketing AI Adviser for automated services</li>
                             <li>
                                 Support and maintenance
                             </li>
@@ -216,7 +218,7 @@ export const Home: React.FC<Props> = (props: Props) => {
 
                         <div className="flex justify-evenly flex-col md:flex-row">
                             <div className="my-8 w-full">
-                                <h3 className="text-2xl text-white py-4">Frontend</h3>
+                                <h3 className="text-2xl text-white py-4">Frontend & Mobile</h3>
                                 <ul className="list-disc text-base text-white list-inside">
                                     <li>Angular</li>
                                     <li>Next.js</li>
@@ -225,6 +227,47 @@ export const Home: React.FC<Props> = (props: Props) => {
                                     <li>Bootstrap</li>
                                     <li>Material Design</li>
                                     <li>Tailwind CSS</li>
+                                    <li>Flutter</li>
+                                    <li>Responsive Design</li>
+                                    <li>Android Studios</li>
+                                    <li>Unity</li>
+                                </ul>
+                            </div>
+                            <div className="my-8 w-full">
+                                <h3 className="text-2xl text-white py-4">Marketing (AI) Advising</h3>
+                                <ul className="list-disc text-base text-white list-inside">
+                                    <li>
+                                        SEO
+                                        <ul className="list-disc text-base text-white list-inside indent-4">
+                                            <li>Google Seach Console (GSC)</li>
+                                            <li>Google Analytics (GA4) & Tag Manager</li>
+                                            <li>Google keyword planner</li>
+                                            <li>Bing Webmaster</li>
+                                            <li>Ahrefs & SEMrush</li>
+                                            <li>Lighthouse</li>
+                                            <li>Screaming frog</li>
+                                            <li>Schema.org</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Local Visibility
+                                        <ul className="list-disc text-base text-white list-inside indent-4">
+                                            <li>Google Business Profile (GMB)</li>
+                                            <li>Bing Places</li>
+                                            <li>Apple Business Connect</li>
+                                            <li>Amazon KDP</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Social Media
+                                        <ul className="list-disc text-base text-white list-inside indent-4">
+                                            <li>video: visla, pictory, woxo</li>
+                                            <li>image: midjourney, firefly</li>
+                                            <li>content: tweethunter, jasper, perplexity</li>
+                                            <li>auto-posting: hootsuite, socialbee</li>
+                                            <li>automation: zapier</li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </div>
                             <div className="my-8 w-full">
@@ -235,15 +278,6 @@ export const Home: React.FC<Props> = (props: Props) => {
                                     <li>Affinity</li>
                                     <li>Photoshop</li>
                                     <li>Lightroom</li>
-                                </ul>
-                            </div>
-                            <div className="my-8 w-full">
-                                <h3 className="text-2xl text-white py-4">Mobile</h3>
-                                <ul className="list-disc text-base text-white list-inside">
-                                    <li>Flutter</li>
-                                    <li>Responsive Design</li>
-                                    <li>Android Studios</li>
-                                    <li>Unity</li>
                                 </ul>
                             </div>
                         </div>
@@ -313,6 +347,16 @@ export const Home: React.FC<Props> = (props: Props) => {
                             </div>
                         </div>
                     </div>
+
+                    <div className="py-16 flex justify-center flex-col items-center gap-4">
+                        <div className="text-xl sm:text-3xl lg:text-3xl">
+                            DONT BE SHY - Say Hi
+                        </div>
+                        <div>
+                            Someone has to make the first click. Guaranteed feedback within 24 hours.
+                        </div>
+                    </div>
+                    <ContactForm />
                 </div>
             </div>
             <Footer />

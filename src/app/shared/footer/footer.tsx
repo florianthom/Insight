@@ -50,7 +50,7 @@ export const Footer: React.FC<Props> = (props: Props) => {
                             </Link>
                             <div className="my-4 text-gray-600">|</div>
                             <Link href="/work" className="m-4 min-w-flex-100 text-center hover:underline">
-                                Work & CV
+                                Work & REFERENCES
                             </Link>
                             <div className="my-4 text-gray-600">|</div>
                             <Link href="/reports" className="m-4 min-w-flex-100 text-center hover:underline">
@@ -58,7 +58,7 @@ export const Footer: React.FC<Props> = (props: Props) => {
                             </Link>
                             <div className="my-4 text-gray-600">|</div>
                             <Link href="/projects" className="m-4 min-w-flex-100 text-center hover:underline">
-                                Projects
+                                Projects & CV
                             </Link>
                             <div className="my-4 text-gray-600">|</div>
                             <Link href="/contact" className="m-4 min-w-flex-100 text-center hover:underline">

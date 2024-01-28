@@ -1,9 +1,9 @@
 import { NextPage } from "next";
 import React from "react";
 import Head from "next/head";
-import { Work } from "@/src/app/work/work";
+import { Work } from "@/src/app/work/work_old";
 
-interface Props {}
+interface Props { }
 
 const WorkPage: NextPage<Props> = (props: Props) => {
     return (
