@@ -10,6 +10,7 @@ export const personal_address_zipcode = "13125";
 export const personal_address_state = "Berlin";
 export const personal_address_country = "Germany";
 export const personal_phone_number = "+49 (0) 15203749443";
+export const business_phone_number = "+49 (0) 1741822069";
 
 export const firstPage = 1;
 export const pageSize = 10;

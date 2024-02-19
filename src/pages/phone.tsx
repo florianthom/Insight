@@ -3,7 +3,7 @@ import * as constants from "../app/shared/constants/constants";
 import Head from "next/head";
 import { NavBar } from "@/src/app/shared/navbar/navbar";
 
-interface Props {}
+interface Props { }
 
 const PhonePage: NextPage<Props> = (props: Props) => {
     return (
@@ -17,7 +17,7 @@ const PhonePage: NextPage<Props> = (props: Props) => {
             </Head>
             <NavBar></NavBar>
             <div className="pt-56">
-                If you want to contact me you can also call me under phone number {constants.personal_phone_number}.
+                If you want to contact me you can also call me under phone number {constants.personal_phone_number} (private) or {constants.business_phone_number} (business).
             </div>
         </main>
     );
