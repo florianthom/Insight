@@ -1,8 +1,8 @@
 import { Showcase } from "../models/Showcase"
 
 const topnotch: Showcase = {
-    title: "Topnotch: Worlds state of the art - Whats your take?",
-    description: "Web application to get an overview about worlds state of the art across various global domains, providing insights into the cutting- edge technologies, innovations, and trends shaping the contemporary world. You ever wanted whats the best bike for tracking or whats the best family car and why - here you are at the right place.",
+    title: "Topnotch: Worlds state of the art - What's your take?",
+    description: "Web application to get an overview about worlds state of the art across various global domains, providing insights into the cutting- edge technologies, innovations, and trends shaping the contemporary world. You ever wanted to know what's the best bike for mountain biking or what's the best family car and why - here you are in the right place.",
     imagePath: "/static/images/topnotch-logo.png",
 }
 
@@ -14,7 +14,7 @@ const lebenserinnerungen: Showcase = {
 
 const cloudTemplate: Showcase = {
     title: "Cloud Architecture Solution Template",
-    description: "Cloud Architecture Solution Template: A starting point for cloud applications with terraform and ansible. AWS cluster solution utilizing aws eks with focus on secrurity and scalability.",
+    description: "Cloud Architecture Solution Template: A starting point for cloud applications with terraform and ansible. AWS cluster solution utilizing aws eks with focus on security and scalability.",
     imagePath: "/static/images/infra-aws.png",
 }
 

@@ -69,9 +69,8 @@ export const Home: React.FC<Props> = (props: Props) => {
                 <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
                     <h2 className="text-white text-3xl tracking-headline">SERVICES & OFFERING</h2>
                     <div className="text-base text-white pt-24">
-                        Tailored end-to-end thinking covering the holistic product life cycle.
-                        Consulting Services designed to cater to your unique needs.
                         Explore my range of offerings, designed to elevate your digital presence and empower your business.
+                        Consulting Services designed to cater to your unique needs.
                         From innovative web development to cutting-edge IT solutions, discover how I can bring your vision to life.
                         Explore my comprehensive services below and take the first step towards transforming your digital landscape.
                     </div>
@@ -140,8 +139,8 @@ export const Home: React.FC<Props> = (props: Props) => {
                     </h2>
                     <div className="text-base text-black pt-24">
                         Explore a snipped of my references, professional showcases and insightful observations.
-                        This examples highlights the depth of my expertise and the quality of my work.
-                        Take a look into a range of references, industry insights, and showcases that speak to my experience and commitment to delivering excellent results.
+                        These examples highlight the depth of my expertise and the quality of my work.
+                        Look into a range of references, industry insights, and showcases that speak to my experience and commitment to delivering excellent results.
                         Single projects are open source.
                         Feel free to check them out on{" "}
                         <a className="hover:underline" href={github_link} target="_blank" rel="noopener noreferrer">
@@ -162,7 +161,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                     </div>
 
                     <div className="text-base text-black pt-24">
-                        This represents only a selection. If you want to check out other iniviatives, I provide a separate projects page.
+                        This represents only a selection. If you want to check out other initiatives, there is a separate projects page.
                     </div>
                 </div>
             </div>

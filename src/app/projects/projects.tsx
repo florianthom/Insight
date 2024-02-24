@@ -37,9 +37,9 @@ export const Projects: React.FC<Props> = (props: Props) => {
                     <div className="">
                         <h2 className="text-3xl tracking-headline">Curriculum Vitae</h2>
                         <div className="text-base pt-24">
-                            In the past a created my CV. As each company needs a unique set of skills, I usually create a
-                            separate CV for each job application. Nevertheless I created a general CV too, to provide some
-                            insights if someone I am not familiar with, wants to get some impressions.
+                            In the past a created my CV.
+                            As each company needs a unique set of skills, I usually create a separate CV for each job application.
+                            Nevertheless, to provide some first insights I am publishing a general CV here too.
                         </div>
                         <div className="flex justify-evenly pt-24">
                             <Link href={constants.cv_international_link} target="_blank" rel="noopener noreferrer" className="font-medium tracking-wide transition-colors border-2 border-gray-200 hover:border-gray-400 backdrop-blur-sm bg-main-color bg-main-color drop-shadow-xl bg-opacity-50 text-white px-8 sm:px-12 lg:px-24 py-4 rounded-md text-md lg:text-xl lg:text-2xl whitespace-nowrap">

@@ -17,11 +17,10 @@ export const Work: React.FC<Props> = (props: Props) => {
                 <div className="pt-36 sm:pt-56 pb-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 ">
                     <h2 className="text-black text-3xl tracking-headline">WORK & REFERENCES</h2>
                     <div className="text-base text-black pt-24">
-                        Discover a snipped of the portfolio of crafted work and successfull client projects.
-                        With a proven track record, the close customer relationship and the resulting delivery of fitting results is shown.
-                        From scaling company customer by successfull marketing efforts over developing applications of all kinds to
-                        the management of cloud environments our dedication becomes apparent.
-                        This kind of end-to-end responsibility can be experience by you too.
+                        Discover a snipped of the portfolio of crafted work and successful client projects.
+                        Our proven track record demonstrates our ability to cultivate strong customer relationships and consistently deliver tailored results.
+                        Whether it&apos;s expanding your client base through successful marketing initiatives, developing various applications, or effectively managing cloud environments, our dedication shines through.
+                        This kind of end-to-end responsibility can be experienced by you too.
                     </div>
                     <div className="pt-32 pb-32 flex justify-between gap-16">
                         <div>
@@ -32,7 +31,7 @@ export const Work: React.FC<Props> = (props: Props) => {
                                 </div>
                                 <div>
                                     Topnotch is a review-sharing platform where users can evaluate competing state of the art offerings.
-                                    It serves as a hub for product- and service provider to reach a global audience, while users can discover and
+                                    It serves as a hub for product- and service providers to reach a global audience, while users can discover and
                                     engage with a diverse range of their offerings.
                                     Topnotch implements a platform business model including actors like viewer, advertisers and
                                     content creators like product manufacturers or service providers (companies).
@@ -43,9 +42,9 @@ export const Work: React.FC<Props> = (props: Props) => {
                                     Solution
                                 </div>
                                 <div>
-                                    Topnotch is a company based of entrepreneurial work which emphasizes the hands-on competition of different offerings.
+                                    Topnotch is a company based on entrepreneurial work which emphasizes the hands-on competition of different offerings.
                                     Most of the decisions were open for discussion.
-                                    The main focus was to work on modeling the business domain and prototyping a first web application.
+                                    The focus was mainly to work on modeling the business domain and prototyping a first web application.
                                     The infrastructure was set up in the cloud environment for the resulting frontend and backend.
                                     In addition, the SEO was optimized by optimizing the website by targeting selected keywords and
                                     setting up SEO tools especially in the Google environment.
@@ -86,7 +85,7 @@ export const Work: React.FC<Props> = (props: Props) => {
                                 <div>
                                     The customer has an existing html website as a baseline.
                                     Content cannot be added or maintained.
-                                    The focus was to address this issues by expanding website capabilities and the website maintainability.
+                                    The focus was to address these issues by expanding the website capabilities maintainability.
                                     The website was rebuilt using Wordpress to meet the requirements.
                                     For the page builder Elementor was selected and should help the team to update the website by themself.
                                     The service included the developing on the corporate identity.
@@ -126,15 +125,15 @@ export const Work: React.FC<Props> = (props: Props) => {
                                     Solution
                                 </div>
                                 <div>
-                                    The customer needed web presence to to get first customer in the regional environment.
+                                    The customer needed a web presence to get their first customers in the surrounding area.
                                     SEO was an important aspect.
                                     To address the problem the development of a corporate identity for the customer was started.
-                                    The website-design was refined based on coporate identity.
+                                    The website design was refined based on corporate identity.
                                     The website was development utilizing SEO-friendly server-side-rendering (SSR).
                                     The next step was to improve the marketing by further optimizing SEO on the application and web-space level.
                                     Data streams of website analytics were put into place to analyze current visitors and potential customers.
                                     A Google Business Profile/GMB was created.
-                                    After only three month the customer was getting 15+ request/month via the developed website alone.
+                                    After only three months the customer was getting 15+ request/month via the developed website alone.
                                 </div>
                             </div>
                         </div>
@@ -183,11 +182,11 @@ export const Work: React.FC<Props> = (props: Props) => {
                                 <div>
                                     Various approaches to business model development were examined.
                                     One particularly promising systematic for business model development was selected.
-                                    IT system and architecture was establiched according to the selected approach.
+                                    IT system and architecture was established according to the selected approach.
                                     That includes designing  algorithms and appropriate domain models for the consistency matrix,
-                                    the computation of the strategy bundles, to conduct the cluster analysis and the calculation of the characteristics matrix.
-                                    The theoretical foundation was implemented through a Proof of Concept (PoC) in form of a web application.
-                                    Finally the integration of the algorithm and the domain model was successfully achieved.
+                                    the computation of the strategy bundles, to conduct the cluster analysis and the calculation of the characteristic&apos;s matrix.
+                                    The theoretical foundation was implemented through a Proof of Concept (PoC) in the form of a web application.
+                                    Finally, the integration of the algorithm and the domain model was successfully achieved.
                                 </div>
                             </div>
                         </div>
@@ -218,7 +217,7 @@ export const Work: React.FC<Props> = (props: Props) => {
                                 </div>
                                 <div>
                                     The thesis covers the creation and integration of a system that determines whether any given document
-                                    will be accessed again within a specified time period based on past document accesses.
+                                    will be accessed again within a specified period based on past document accesses.
                                     Scalability investigations are conducted regarding the number of computers utilized.
                                     Challenges encompass three distinct areas.
                                     <ul className="list-disc text-base text-black list-outside pl-8">
@@ -231,9 +230,9 @@ export const Work: React.FC<Props> = (props: Props) => {
                                     Solution
                                 </div>
                                 <div>
-                                    Achievements have been made across all critical areas: infrastructure, data analysis and neural network.
+                                    Achievements have been made across all critical areas: infrastructure, data analysis and the neural network.
                                     On the infrastructure site virtual servers have been deployed.
-                                    These servers formed the computing cluster by installing spark (data processing) alongsite with kubernetes (neural network processing) orchestration.
+                                    These servers formed the computing cluster by installing spark (data processing) alongside with kubernetes (neural network processing) orchestration.
                                     The distributed storage was managed by NFS.
                                     In the realm of data analysis for Gigabytes of data, HDFS and Spark with Scala have been utilized,
                                     complemented by the RDD-API and Dataframe-API for streamlined processing.
