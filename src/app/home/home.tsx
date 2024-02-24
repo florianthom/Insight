@@ -179,14 +179,13 @@ export const Home: React.FC<Props> = (props: Props) => {
                             <div className="my-8 w-full">
                                 <h3 className="text-2xl text-white py-4">Backend</h3>
                                 <ul className="list-disc text-base text-white list-inside">
-                                    <li>C# - Asp.net</li>
+                                    <li>C# - .NET / Asp.net</li>
                                     <li>Java - Spring Boot</li>
-                                    <li>Python - Django</li>
-                                    <li>OpenApi / Swagger</li>
-                                    <li>Rest / GraphQL</li>
-                                    <li>Protobuf</li>
+                                    <li>Rest - OpenApi / Swagger</li>
+                                    {/* <li>GraphQL - Apollo</li> */}
                                     <li>Databases - Postgres SQL</li>
                                     <li>Docker (Compose)</li>
+                                    <li>Kubernetes</li>
                                     <li>Clean Architecture</li>
                                     <li>Domain Driven Design</li>
                                 </ul>
@@ -206,7 +205,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                                         </ul>
                                     </li>
                                     <li>Infrastructure as Code - Terraform</li>
-                                    <li>CI/CD - Jenkins, Gitlab</li>
+                                    <li>CI/CD - Jenkins, Gitlab, Argo CD (GitOps)</li>
                                 </ul>
                             </div>
                         </div>
@@ -220,16 +219,10 @@ export const Home: React.FC<Props> = (props: Props) => {
                                 <h3 className="text-2xl text-white py-4">Frontend & Mobile</h3>
                                 <ul className="list-disc text-base text-white list-inside">
                                     <li>Angular</li>
-                                    <li>Next.js</li>
-                                    <li>React.js</li>
-                                    <li>D3.js</li>
-                                    <li>Bootstrap</li>
+                                    <li>React / Next.js</li>
+                                    <li>Flutter</li>
                                     <li>Material Design</li>
                                     <li>Tailwind CSS</li>
-                                    <li>Flutter</li>
-                                    <li>Responsive Design</li>
-                                    <li>Android Studios</li>
-                                    <li>Unity</li>
                                 </ul>
                             </div>
                             <div className="my-8 w-full">
@@ -298,15 +291,10 @@ export const Home: React.FC<Props> = (props: Props) => {
                                 <h3 className="text-2xl py-4">Big Data & Data Science</h3>
                                 <ul className="list-disc text-base list-inside">
                                     <li>Terminal</li>
-                                    <li>Shell/Bash-Scripting</li>
-                                    <li>Scala</li>
+                                    <li>Shell-Scripting</li>
                                     <li>Python</li>
-                                    <li>Spark</li>
-                                    <li>Flink</li>
-                                    <li>MapReduce</li>
+                                    <li>Spark & Flink</li>
                                     <li>Hadoop</li>
-                                    <li>Graphviz dot</li>
-                                    <li>Gnuplot</li>
                                 </ul>
                             </div>
                             <div className="my-8 w-full">
@@ -323,31 +311,22 @@ export const Home: React.FC<Props> = (props: Props) => {
                             <div className="my-8 w-full">
                                 <h3 className="text-2xl py-4">Artificial Intelligence</h3>
                                 <ul className="list-disc text-base list-inside">
-                                    <li>Algebra</li>
-                                    <li>Analysis</li>
-                                    <li>Geometry</li>
+                                    <li>Algebra & Analysis</li>
                                     <li>Stochastic</li>
-                                    <li>Regression</li>
-                                    <li>Classification</li>
+                                    <li>Regression & Classification</li>
                                     <li>Backpropagation</li>
                                     <li>ANN</li>
-                                    <li>Basic RNN</li>
-                                    <li>LSTM (-Gates)</li>
-                                    <li>GRU (-Gates)</li>
-                                    <li>Transformer</li>
+                                    <li>RNN, LSTM/GRU, Transformer</li>
                                     <li>CNN</li>
                                     <li>GAN</li>
-                                    <li>Jupyter</li>
                                     <li>Tensorflow</li>
                                     <li>PyTorch</li>
-                                    <li>MxNet</li>
-                                    <li>Unity ml-gents</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
 
-                    <div className="py-16 flex justify-center flex-col items-center gap-4">
+                    <div className="pt-48 pb-16 flex justify-center flex-col items-center gap-4">
                         <div className="text-xl sm:text-3xl lg:text-3xl">
                             DONT BE SHY - Say Hi
                         </div>
