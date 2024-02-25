@@ -19,7 +19,7 @@ export const Footer: React.FC<Props> = (props: Props) => {
         <>
             <footer>
                 <div className="bg-main-color-light">
-                    <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+                    <div className="py-32 max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
                         <div className="flex justify-center">
                             <Image
                                 src={"/static/images/florianthom_koenigsberg_white_withslogan.svg"}
@@ -43,7 +43,7 @@ export const Footer: React.FC<Props> = (props: Props) => {
                     </div>
                 </div>
                 <div className="py-8 bg-main-color text-white">
-                    <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+                    <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
                         <div className="flex justify-evenly flex-wrap">
                             <Link href="/" className="m-4 min-w-flex-100 text-center hover:underline">
                                 Home

@@ -66,7 +66,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                 </div>
             </div>
             <div id="services" className="bg-main-color">
-                <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+                <div className="py-32 max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
                     <h2 className="text-white text-3xl tracking-headline">SERVICES & OFFERING</h2>
                     <div className="text-base text-white pt-24">
                         Explore my range of offerings, designed to elevate your digital presence and empower your business.
@@ -133,7 +133,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                 </div>
             </div>
             <div>
-                <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+                <div className="py-32 max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
                     <h2 className="text-black text-3xl tracking-headline-mobile sm:tracking-headline">
                         REFERENCES & SHOWCASES
                     </h2>
@@ -166,7 +166,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                 </div>
             </div>
             <div id="skills" className="bg-main-color">
-                <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+                <div className="py-32 max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
                     <h2 className="text-white text-3xl tracking-headline">SKILLS</h2>
                     <div className="text-base text-white pt-24">
                         Over the years I encountered many technologies and gained experience in numerous areas. I love
@@ -277,7 +277,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                 </div>
             </div>
             <div>
-                <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+                <div className="py-32 max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
                     <h2 className="text-black text-3xl tracking-headline">FURTHER KNOWLEDGE</h2>
                     <div className="text-base text-black pt-24">
                         Exploring additional Insights: a closer look at my supplementary knowledge.

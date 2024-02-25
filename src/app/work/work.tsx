@@ -14,7 +14,7 @@ export const Work: React.FC<Props> = (props: Props) => {
         <div>
             <NavBar></NavBar>
             <div>
-                <div className="pt-36 sm:pt-56 pb-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 ">
+                <div className="pt-36 sm:pt-56 pb-32 max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 ">
                     <h2 className="text-black text-3xl tracking-headline">WORK & REFERENCES</h2>
                     <div className="text-base text-black pt-24">
                         Discover a snipped of the portfolio of crafted work and successful client projects.
@@ -67,7 +67,7 @@ export const Work: React.FC<Props> = (props: Props) => {
                 </div>
             </div>
             <div className="bg-main-color text-white">
-                <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+                <div className="py-32 max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
                     <div className="flex justify-between gap-16">
                         <div>
                             <h3 className="text-2xl">Lebenserinnerungen e. V.</h3>
@@ -108,7 +108,7 @@ export const Work: React.FC<Props> = (props: Props) => {
                         </div>
                     </div>
                 </div>
-                <div className="pb-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+                <div className="pb-32 max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
                     <div className="flex justify-between gap-16">
                         <div>
                             <h3 className="text-2xl">Bitlabs.global</h3>
@@ -154,7 +154,7 @@ export const Work: React.FC<Props> = (props: Props) => {
             </div >
 
             <div className="">
-                <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+                <div className="py-32 max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
                     <div className="flex justify-between gap-16">
                         <div>
                             <h3 className="text-2xl text-black">Master-Thesis - HTW Berlin, Charité Berlin</h3>

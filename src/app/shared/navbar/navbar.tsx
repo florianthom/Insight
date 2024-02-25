@@ -47,7 +47,7 @@ export const NavBar: React.FC<Props> = (props: Props) => {
                 ""
             }
         >
-            <div className="max-w-7xl mx-auto px-3 md:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto px-6 md:px-6 lg:px-8">
                 <div className="relative flex items-center justify-between h-14 sm:h-16 transition-all">
                     <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
                         <button

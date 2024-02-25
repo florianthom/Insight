@@ -12,7 +12,7 @@ export const Work_Old: React.FC<Props> = (props: Props) => {
         <div>
             <NavBar></NavBar>
             <div>
-                <div className="pt-36 sm:pt-56 pb-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+                <div className="pt-36 sm:pt-56 pb-32 max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
                     <h2 className="text-black text-3xl tracking-headline">WORK & REFERENCES</h2>
                     <div className="text-base text-black pt-24">
                         Over the years I have encountered many technologies and gained experience in numerous areas. I
@@ -116,7 +116,7 @@ export const Work_Old: React.FC<Props> = (props: Props) => {
                 </div>
             </div>
             <div className="bg-main-color">
-                <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+                <div className="py-32 max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
                     <h3 className="text-2xl text-white">Big Data - Research Group & internship</h3>
                     <div className="pl-1">
                         <GroupWork color="white"></GroupWork>
@@ -192,7 +192,7 @@ export const Work_Old: React.FC<Props> = (props: Props) => {
                 </div>
             </div>
             <div>
-                <div className="py-32 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+                <div className="py-32 max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
                     <h2 className="text-black text-3xl tracking-headline">Curriculum Vitae</h2>
                     <div className="text-base text-black pt-24">
                         In the past a created my CV. As each company needs a unique set of skills, I usually create a
