@@ -221,6 +221,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                                     <li>Angular</li>
                                     <li>React / Next.js</li>
                                     <li>Flutter</li>
+                                    <li>Wordpress</li>
                                     <li>Material Design</li>
                                     <li>Tailwind CSS</li>
                                 </ul>
@@ -266,7 +267,6 @@ export const Home: React.FC<Props> = (props: Props) => {
                                 <h3 className="text-2xl text-white py-4">Design & Visualization</h3>
                                 <ul className="list-disc text-base text-white list-inside">
                                     <li>Figma</li>
-                                    <li>Wordpress</li>
                                     <li>Affinity</li>
                                     <li>Photoshop</li>
                                     <li>Lightroom</li>
@@ -285,9 +285,9 @@ export const Home: React.FC<Props> = (props: Props) => {
                         This section sheds light on various supplementary areas I&apos;ve cultivated, offering a glimpse
                         into additional competencies that enrich my professional repertoire.
                     </div>
-                    <div className="text-base text-black pt-24">
-                        <div className="flex justify-evenly flex-col md:flex-row">
-                            <div className="my-8 w-full">
+                    <div className="text-base text-black pt-12 md:pt-24">
+                        <div className="flex justify-around flex-col md:flex-row">
+                            <div className="my-8">
                                 <h3 className="text-2xl py-4">Big Data & Data Science</h3>
                                 <ul className="list-disc text-base list-inside">
                                     <li>Terminal</li>
@@ -297,7 +297,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                                     <li>Hadoop</li>
                                 </ul>
                             </div>
-                            <div className="my-8 w-full">
+                            {/* <div className="my-8 w-full">
                                 <h3 className="text-2xl py-4">IOT</h3>
                                 <ul className="list-disc text-base list-inside">
                                     <li>TI MSP430G2553</li>
@@ -307,8 +307,8 @@ export const Home: React.FC<Props> = (props: Props) => {
                                     <li>TI EnergyTrace Technology</li>
                                     <li>Ultra-Low Power Advisor</li>
                                 </ul>
-                            </div>
-                            <div className="my-8 w-full">
+                            </div> */}
+                            <div className="my-8">
                                 <h3 className="text-2xl py-4">Artificial Intelligence</h3>
                                 <ul className="list-disc text-base list-inside">
                                     <li>Algebra & Analysis</li>
