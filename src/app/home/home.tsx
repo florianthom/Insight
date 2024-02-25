@@ -70,7 +70,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                     <h2 className="text-white text-3xl tracking-headline">SERVICES & OFFERING</h2>
                     <div className="text-base text-white pt-24">
                         Explore my range of offerings, designed to elevate your digital presence and empower your business.
-                        Consulting Services designed to cater to your unique needs.
+                        Consulting Services designed to cover your unique needs.
                         From innovative web development to cutting-edge IT solutions, discover how I can bring your vision to life.
                         Explore my comprehensive services below and take the first step towards transforming your digital landscape.
                     </div>
