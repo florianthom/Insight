@@ -29,7 +29,7 @@ export const BC: React.FC<Props> = (props: Props) => {
                                 width={0}
                                 height={0}
                                 priority={true}
-                                style={{ width: "25%", height: "auto" }}
+                                style={{ width: "20%", height: "auto" }}
                                 unoptimized={constants.static_site}
                             />
                         </div>

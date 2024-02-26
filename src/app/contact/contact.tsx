@@ -44,7 +44,9 @@ export const Contact: React.FC<Props> = (props: Props) => {
                         <div className="text-base py-4">
                             Opting for my services allows you to benefit from...
                         </div>
-                        <ul className="list-disc text-base list-inside space-y-4">
+
+
+                        <ul className="list-disc text-base list-outside pl-4 space-y-4">
                             <li>
                                 Fresh Perspectives: Leverage the energy and creativity for innovative solutions tailored to your business.
                             </li>

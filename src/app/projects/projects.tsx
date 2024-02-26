@@ -18,9 +18,14 @@ export const Projects: React.FC<Props> = (props: Props) => {
                     <h2 className="text-black text-3xl tracking-headline">SOFTWARE REPOSITORY</h2>
                     <div className="text-base text-black pt-24">
                         My software repository is primarily hosted on{" "}
-                        <a className="hover:underline" href={constants.github_link} target="_blank" rel="noopener noreferrer">
+                        <Link
+                            href={constants.github_link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-base whitespace-nowrap underline"
+                        >
                             GitHub
-                        </a>
+                        </Link>
                         , encompassing a range of both public and private repositories.
                         I&apos;m proud to present a curated selection of projects below, each accompanied by detailed information to provide you with a comprehensive understanding of my work.
                         These projects reflect a blend of my expertise and dedication to crafting innovative solutions.
@@ -41,13 +46,15 @@ export const Projects: React.FC<Props> = (props: Props) => {
                             As each company needs a unique set of skills, I usually create a separate CV for each job application.
                             Nevertheless, to provide some first insights I am publishing a general CV here too.
                         </div>
-                        <div className="flex justify-evenly pt-24">
-                            <Link href={constants.cv_international_link} target="_blank" rel="noopener noreferrer" className="font-medium tracking-wide transition-colors border-2 border-gray-200 hover:border-gray-400 backdrop-blur-sm bg-main-color bg-main-color drop-shadow-xl bg-opacity-50 text-white px-8 sm:px-12 lg:px-24 py-4 rounded-md text-md lg:text-xl lg:text-2xl whitespace-nowrap">
+                        <div className="flex justify-evenly pt-24 flex-col items-center md:flex-row space-y-8 md:space-y-0">
+
+                            {/* px-8 sm:px-16 lg:px-24 py-4 */}
+                            <Link href={constants.cv_international_link} target="_blank" rel="noopener noreferrer" className="font-medium tracking-wide transition-colors border-2 border-gray-200 hover:border-gray-400 backdrop-blur-sm bg-main-color bg-main-color drop-shadow-xl bg-opacity-50 text-white rounded-md text-md lg:text-xl lg:text-2xl whitespace-nowrap text-center py-4 w-4/6 md:w-2/6">
                                 CV - International
                                 <br />
                                 <div className="text-xs pt-2">(without personal data)</div>
                             </Link>
-                            <Link href={constants.cv_germany_link} target="_blank" rel="noopener noreferrer" className="font-medium tracking-wide transition-colors border-2 border-gray-200 hover:border-gray-400 backdrop-blur-sm bg-main-color bg-main-color drop-shadow-xl bg-opacity-50 text-white px-8 sm:px-12 lg:px-24 py-4 rounded-md text-md lg:text-xl lg:text-2xl whitespace-nowrap">
+                            <Link href={constants.cv_germany_link} target="_blank" rel="noopener noreferrer" className="font-medium tracking-wide transition-colors border-2 border-gray-200 hover:border-gray-400 backdrop-blur-sm bg-main-color bg-main-color drop-shadow-xl bg-opacity-50 text-white rounded-md text-md lg:text-xl lg:text-2xl whitespace-nowrap text-center py-4 w-4/6 md:w-2/6">
                                 CV - Germany
                                 <br />
                                 <div className="text-xs pt-2">(including personal data)</div>
@@ -65,7 +72,8 @@ export const Projects: React.FC<Props> = (props: Props) => {
                         Interested in a deeper dive into how these components collaborate to shape a top-tier website?
                         Feel free to inquire for further insights or detailed information!
                     </div>
-                    <div className="pt-24 flex justify-between flex-wrap">
+                    {/* flex-wrap flex-col md:flex-row*/}
+                    <div className="pt-24 flex justify-between flex-wrap gap-x-8">
                         <div className="my-8">
                             <h3 className="text-2xl text-white">Frontend</h3>
                             <div>
@@ -102,6 +110,7 @@ export const Projects: React.FC<Props> = (props: Props) => {
                             <div>
                                 <ul className="list-disc text-base text-white list-inside">
                                     <li>Postgres</li>
+                                    <li>.NET Entity Framework Core</li>
                                 </ul>
                             </div>
                         </div>
@@ -130,8 +139,8 @@ export const Projects: React.FC<Props> = (props: Props) => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
             <Footer></Footer>
-        </div>
+        </div >
     );
 };

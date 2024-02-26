@@ -9,6 +9,7 @@ import { LandingpageButton } from "../shared/landingpagebutton/landingpagebutton
 import { LandingpageSocialmediaButton } from "../shared/landingpageSocialmediaButton/landingpageSocialmediaButton";
 import * as constants from "@/src/app/shared/constants/constants";
 import { ContactForm } from "../shared/contactform/contactform";
+import Link from "next/link";
 
 export interface Props { }
 
@@ -168,10 +169,15 @@ export const Home: React.FC<Props> = (props: Props) => {
                         Look into a range of references, industry insights, and showcases that speak to my experience and commitment to delivering excellent results.
                         Single projects are open source.
                         Feel free to check them out on{" "}
-                        <a className="hover:underline" href={github_link} target="_blank" rel="noopener noreferrer">
+                        <Link
+                            href={constants.github_link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-base whitespace-nowrap underline"
+                        >
                             github
-                        </a>
-                        .
+                        </Link>
+                        {" "} page.
                     </div>
 
                     <div className="py-8">
@@ -186,7 +192,14 @@ export const Home: React.FC<Props> = (props: Props) => {
                     </div>
 
                     <div className="text-base text-black pt-24">
-                        This represents only a selection. If you want to check out other initiatives, there is a separate projects page.
+                        This represents only a selection. If you want to check out other initiatives, there is a separate {" "}
+                        <Link
+                            href="/projects"
+                            className="text-base whitespace-nowrap underline"
+                        >
+                            projects
+                        </Link>
+                        {" "} page.
                     </div>
                 </div>
             </div>
@@ -199,7 +212,6 @@ export const Home: React.FC<Props> = (props: Props) => {
                         already known alternatives.
                     </div>
                     <div className="text-base text-white pt-24">
-                        {/* <div className="flex justify-between items-center md:items-stretch flex-col md:flex-row"> */}
                         <div className="flex justify-evenly flex-col md:flex-row">
                             <div className="my-8 w-full">
                                 <h3 className="text-2xl text-white py-4">Backend</h3>
