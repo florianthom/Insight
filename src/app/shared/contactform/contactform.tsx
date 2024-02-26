@@ -54,7 +54,7 @@ export const ContactForm: React.FC<Props> = (props: Props) => {
                     <label htmlFor="floating_message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"></label>
                 </div>
                 <div className="flex justify-center py-8">
-                    <button type="submit" className="text-white bg-main-color focus:ring-4 focus:outline-none font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 border">Submit</button>
+                    <button type="submit" className="text-white bg-main-color focus:ring-4 focus:outline-none font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center border">Submit</button>
                 </div>
             </form >
         </>

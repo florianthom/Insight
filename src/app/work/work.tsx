@@ -1,9 +1,6 @@
 import { NavBar } from "@/src/app/shared/navbar/navbar";
 import { Footer } from "@/src/app/shared/footer/footer";
 import React from "react";
-import { IndividualWork } from "@/src/app/shared/workIndividualOrGroup/individualWork";
-import { GroupWork } from "@/src/app/shared/workIndividualOrGroup/groupWork";
-import { cv_germany_link, cv_international_link } from "@/src/app/shared/constants/constants";
 import Image from "next/image";
 import * as constants from "@/src/app/shared/constants/constants";
 
@@ -18,11 +15,11 @@ export const Work: React.FC<Props> = (props: Props) => {
                     <h2 className="text-black text-3xl tracking-headline">WORK & REFERENCES</h2>
                     <div className="text-base text-black pt-24">
                         Discover a snipped of the portfolio of crafted work and successful client projects.
-                        Our proven track record demonstrates our ability to cultivate strong customer relationships and consistently deliver tailored results.
-                        Whether it&apos;s expanding your client base through successful marketing initiatives, developing various applications, or effectively managing cloud environments, our dedication shines through.
+                        The proven track record demonstrates the ability to cultivate strong customer relationships and consistently deliver tailored results.
+                        Whether it&apos;s expanding your client base through successful marketing initiatives, developing various applications, or effectively managing cloud environments, the dedication shines through.
                         This kind of end-to-end responsibility can be experienced by you too.
                     </div>
-                    <div className="pt-32 pb-32 flex justify-between gap-16">
+                    <div className="pt-32 pb-32 flex justify-between gap-16 flex-col lg:flex-row">
                         <div>
                             <h3 className="text-2xl text-black">Topnotch</h3>
                             <div className="py-6">
@@ -51,13 +48,13 @@ export const Work: React.FC<Props> = (props: Props) => {
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div className="flex justify-center my-auto">
                             <Image
                                 src={"/static/images/topnotch_logo.svg"}
-                                alt="Snippet master thesis website"
+                                alt="Cover of the work for topnotch"
                                 width={0}
                                 height={0}
-                                className="w-[128rem]"
+                                className="w-[32rem] lg:w-[128rem]"
                                 priority={true}
                                 quality={100}
                                 unoptimized={constants.static_site}
@@ -68,7 +65,7 @@ export const Work: React.FC<Props> = (props: Props) => {
             </div>
             <div className="bg-main-color text-white">
                 <div className="py-32 max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
-                    <div className="flex justify-between gap-16">
+                    <div className="flex justify-between gap-16 flex-col lg:flex-row">
                         <div>
                             <h3 className="text-2xl">Lebenserinnerungen e. V.</h3>
                             <div className="py-6">
@@ -94,13 +91,13 @@ export const Work: React.FC<Props> = (props: Props) => {
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div className="flex justify-center my-auto">
                             <Image
                                 src={"/static/images/lebenserinnerungen.png"}
-                                alt="Snippet master thesis website"
+                                alt="Cover of the work for lebenserinnerungen"
                                 width={0}
                                 height={0}
-                                className="w-[128rem]"
+                                className="w-[32rem] lg:w-[128rem]"
                                 priority={true}
                                 quality={100}
                                 unoptimized={constants.static_site}
@@ -109,7 +106,7 @@ export const Work: React.FC<Props> = (props: Props) => {
                     </div>
                 </div>
                 <div className="pb-32 max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
-                    <div className="flex justify-between gap-16">
+                    <div className="flex justify-between gap-16 flex-col lg:flex-row">
                         <div>
                             <h3 className="text-2xl">Bitlabs.global</h3>
                             <div className="py-6">
@@ -137,13 +134,13 @@ export const Work: React.FC<Props> = (props: Props) => {
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div className="flex justify-center my-auto">
                             <Image
                                 src={"/static/images/snippetBitlabs.png"}
-                                alt="Snippet master thesis website"
+                                alt="Cover of the work for bitlabs"
                                 width={0}
                                 height={0}
-                                className="w-[128rem]"
+                                className="w-[32rem] lg:w-[128rem]"
                                 priority={true}
                                 quality={100}
                                 unoptimized={constants.static_site}
@@ -155,7 +152,7 @@ export const Work: React.FC<Props> = (props: Props) => {
 
             <div className="">
                 <div className="py-32 max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
-                    <div className="flex justify-between gap-16">
+                    <div className="flex justify-between gap-16 flex-col lg:flex-row">
                         <div>
                             <h3 className="text-2xl text-black">Master-Thesis - HTW Berlin, Charité Berlin</h3>
                             <div className="pl-1">
@@ -190,20 +187,20 @@ export const Work: React.FC<Props> = (props: Props) => {
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div className="flex justify-center my-auto">
                             <Image
                                 src={"/static/images/masterSnippetWebsite.svg"}
                                 alt="Snippet master thesis website"
                                 width={0}
                                 height={0}
-                                className="w-[128rem]"
+                                className="w-[32rem] lg:w-[128rem]"
                                 priority={true}
                                 quality={100}
                                 unoptimized={constants.static_site}
                             />
                         </div>
                     </div>
-                    <div className="pt-16 flex justify-between gap-16">
+                    <div className="pt-16 flex justify-between gap-16 flex-col lg:flex-row">
                         <div>
                             <h3 className="text-2xl text-black">Bachelor-Thesis - HTW Berlin, Charité Berlin</h3>
                             <div className="pl-1">
@@ -246,13 +243,13 @@ export const Work: React.FC<Props> = (props: Props) => {
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div className="flex justify-center my-auto">
                             <Image
                                 src={"/static/images/bachelorSnippedNetwork.svg"}
-                                alt="Snippet master thesis website"
+                                alt="Snippet bachelor thesis website"
                                 width={0}
                                 height={0}
-                                className="w-[128rem]"
+                                className="w-[32rem] lg:w-[128rem]"
                                 priority={true}
                                 quality={100}
                                 unoptimized={constants.static_site}

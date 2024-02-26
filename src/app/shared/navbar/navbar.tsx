@@ -118,33 +118,27 @@ export const NavBar: React.FC<Props> = (props: Props) => {
                                     href="/reports"
                                     className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium whitespace-nowrap"
                                 >
-                                    {/* <a className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium whitespace-nowrap">
-                                        REPORTS & TALKS
-                                    </a> */}
                                     REPORTS & TALKS
                                 </Link>
                                 <Link
                                     href="/projects"
-                                    className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium"
+                                    className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium whitespace-nowrap"
                                 >
                                     PROJECTS & CV
                                 </Link>
                             </div>
                         </div>
                     </div>
-                    <div className="absolute inset-y-0 right-0 flex items-center pr-2 md:static md:inset-auto md:ml-6 md:pr-0 hidden md:block md:ml-16">
+                    <div className="absolute inset-y-0 right-0 flex items-center pr-2 md:static md:inset-auto md:ml-6 md:pr-0 hidden md:block md:ml-24">
                         <Link
                             href="/contact"
-                            className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium"
+                            className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-8 py-2 rounded-md text-base font-medium"
                         >
-                            {/* <a className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium">
-                                CONTACT
-                            </a> */}
                             CONTACT
                         </Link>
                         <Link
                             href="/imprint"
-                            className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-3 py-2 rounded-md text-base font-medium"
+                            className="transition text-white hover:bg-gray-300 hover:bg-opacity-30 hover:text-white px-8 py-2 rounded-md text-base font-medium"
                         >
                             IMPRINT
                         </Link>

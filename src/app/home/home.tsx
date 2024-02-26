@@ -78,7 +78,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                         <h2 className="text-2xl text-white py-8">
                             Portfolio
                         </h2>
-                        <ul className="list-disc text-base text-white list-inside space-y-4">
+                        <ul className="list-disc text-base text-white list-outside space-y-4 pl-4">
                             <li>
                                 Conducting As-Is analysis: Evaluate your current situation
                             </li>
@@ -192,10 +192,10 @@ export const Home: React.FC<Props> = (props: Props) => {
                             </div>
                             <div className="my-8 w-full">
                                 <h3 className="text-2xl text-white py-4">Cloud & DevOps</h3>
-                                <ul className="list-disc text-base text-white list-inside">
+                                <ul className="list-disc text-base text-white list-outside pl-4">
                                     <li>
                                         Cloud Provider AWS, Azure
-                                        <ul className="list-disc text-base text-white list-inside indent-4">
+                                        <ul className="list-disc text-base text-white list-outside pl-4">
                                             <li>Network: VPC, VNet</li>
                                             <li>Compute - ECS, ACA / EKS, AKS</li>
                                             <li>Database - RDS, Azure SQL Database / Dynamo DB, Cosmos DB</li>
