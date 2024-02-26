@@ -78,57 +78,82 @@ export const Home: React.FC<Props> = (props: Props) => {
                         <h2 className="text-2xl text-white py-8">
                             Portfolio
                         </h2>
-                        <ul className="list-disc text-base text-white list-outside space-y-4 pl-4">
-                            <li>
-                                Conducting As-Is analysis: Evaluate your current situation
-                            </li>
-                            <li>
-                                Setup agile project management
-                            </li>
-                            <li>
-                                Webdesign and UX optimization
-                            </li>
-                            <li>
-                                Wordpress (CMS) development
-                            </li>
-                            <li>
-                                General software development: extend your system landscape
-                            </li>
-                            <li>
-                                Website development
-                            </li>
-                            <li>
-                                Web application development
-                            </li>
-                            <li>
-                                Cloud migration assistance
-                            </li>
-                            <li>
-                                Cloud infrastructure development
-                            </li>
-                            <li>
-                                Application Launch assistance
-                            </li>
-                            <li>
-                                User Support services
-                            </li>
-                            <li>
-                                Hosting and operator services
-                            </li>
-                            <li>
-                                Search engine optimization (SEO)
-                            </li>
-                            <li>Marketing AI Adviser for automated services</li>
-                            <li>
-                                Support and maintenance
-                            </li>
-                            <li>
-                                Conducting training sessions
-                            </li>
-                            <li>
-                                Consulting in further areas of skills
-                            </li>
-                        </ul>
+
+                        <div className="py-4">
+                            <div className="text-base text-white">Contract & Project Consulting</div>
+                            <ul className="list-disc text-base text-white list-outside space-y-0 pl-4">
+                                <li>
+                                    Independent screening & advising of dev-projects before you sign them: We add ideas and save you money
+                                </li>
+                                <li>
+                                    Independent as-is analysis of a project: We evaluate the projects state and make it transparent
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="py-4">
+                            <div className="text-base text-white">Product Development</div>
+                            <ul className="list-disc text-base text-white list-outside space-y-0 pl-4">
+                                <li>
+                                    Web Application development
+                                </li>
+                                <li>
+                                    Wordpress (CMS) development
+                                </li>
+                                <li>
+                                    Webdesign and UX optimization
+                                </li>
+                                <li>
+                                    Support and maintenance
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="py-4">
+                            <div className="text-base text-white">Cloud consulting</div>
+                            <ul className="list-disc text-base text-white list-outside space-y-0 pl-4">
+                                <li>
+                                    Infrastructure Assessment
+                                </li>
+                                <li>
+                                    Cloud migration
+                                </li>
+                                <li>
+                                    Cloud workload modernization
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="py-4">
+                            <div className="text-base text-white">Education & Staff Development</div>
+                            <ul className="list-disc text-base text-white list-outside space-y-0 pl-4">
+                                <li>
+                                    Tech-Talk showcasing topic of interest
+                                </li>
+                                <li>
+                                    Workshop covering topic of interest
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="py-4">
+                            <div className="text-base text-white">Digital Marketing</div>
+                            <ul className="list-disc text-base text-white list-outside space-y-0 pl-4">
+                                <li>
+                                    SEO & SEM & SMM
+                                </li>
+                                <li>
+                                    Affiliate marketing
+                                </li>
+                                <li>
+                                    AI Adviser for automated services
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="py-4">
+                            <div className="text-base text-white">Process consulting</div>
+                            <ul className="list-disc text-base text-white list-outside space-y-0 pl-4">
+                                <li>
+                                    Setup agile project management
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
