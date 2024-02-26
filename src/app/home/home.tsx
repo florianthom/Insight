@@ -94,30 +94,30 @@ export const Home: React.FC<Props> = (props: Props) => {
                             <div className="text-base text-white">Product Development</div>
                             <ul className="list-disc text-base text-white list-outside space-y-0 pl-4">
                                 <li>
-                                    Web Application development
+                                    Web Application Development
                                 </li>
                                 <li>
-                                    Wordpress (CMS) development
+                                    Wordpress (CMS) Development
                                 </li>
                                 <li>
-                                    Webdesign and UX optimization
+                                    Webdesign and UX Optimization
                                 </li>
                                 <li>
-                                    Support and maintenance
+                                    Support and Maintenance
                                 </li>
                             </ul>
                         </div>
                         <div className="py-4">
-                            <div className="text-base text-white">Cloud consulting</div>
+                            <div className="text-base text-white">Cloud Consulting</div>
                             <ul className="list-disc text-base text-white list-outside space-y-0 pl-4">
                                 <li>
                                     Infrastructure Assessment
                                 </li>
                                 <li>
-                                    Cloud migration
+                                    Cloud Migration
                                 </li>
                                 <li>
-                                    Cloud workload modernization
+                                    Cloud Workload Modernization
                                 </li>
                             </ul>
                         </div>
@@ -147,7 +147,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                             </ul>
                         </div>
                         <div className="py-4">
-                            <div className="text-base text-white">Process consulting</div>
+                            <div className="text-base text-white">Process Consulting</div>
                             <ul className="list-disc text-base text-white list-outside space-y-0 pl-4">
                                 <li>
                                     Setup agile project management
