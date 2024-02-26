@@ -156,7 +156,7 @@ export const Work: React.FC<Props> = (props: Props) => {
                         <div>
                             <h3 className="text-2xl text-black">Master-Thesis - HTW Berlin, Charité Berlin</h3>
                             <div className="pl-1">
-                                <div className="text-xs" style={{ color: "black" }}>
+                                <div className="text-xs py-2" style={{ color: "black" }}>
                                     “WEB APPLICATION FOR DEVELOPING PLATFORM-BASED BUSINESS MODELS IN THE CONTEXT OF DIGITAL HEALTH”
                                 </div>
                             </div>
@@ -204,7 +204,7 @@ export const Work: React.FC<Props> = (props: Props) => {
                         <div>
                             <h3 className="text-2xl text-black">Bachelor-Thesis - HTW Berlin, Charité Berlin</h3>
                             <div className="pl-1">
-                                <div className="text-xs" style={{ color: "black" }}>
+                                <div className="text-xs py-2" style={{ color: "black" }}>
                                     “NEURAL NETWORKS - PREDICTION-BASED CACHING OF DOCUMENTS”
                                 </div>
                             </div>
