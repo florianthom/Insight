@@ -1,7 +1,6 @@
 {
     "name": "insight",
     "version": "0.2.0",
-    "private": false,
     "scripts": {
         "dev": "next dev",
         "build": "next build",

@@ -254,4 +254,49 @@ export const redirectList = [
         destination: "/twitter",
         permanent: false,
     },
+    {
+        source: "/e-rechnung",
+        destination: "/erechnung",
+        permanent: false,
+    },
+    {
+        source: "/rechnung",
+        destination: "/erechnung",
+        permanent: false,
+    },
+    {
+        source: "/rechnungsoftware",
+        destination: "/erechnung",
+        permanent: false,
+    },
+    {
+        source: "/rechnungssoftware",
+        destination: "/erechnung",
+        permanent: false,
+    },
+    {
+        source: "/erechnungssoftware",
+        destination: "/erechnung",
+        permanent: false,
+    },
+    {
+        source: "/einvoice",
+        destination: "/erechnung",
+        permanent: false,
+    },
+    {
+        source: "/e-invoice",
+        destination: "/erechnung",
+        permanent: false,
+    },
+    {
+        source: "/elektronik-rechnung",
+        destination: "/erechnung",
+        permanent: false,
+    },
+    {
+        source: "/elektronik-rechnung.de",
+        destination: "/erechnung",
+        permanent: false,
+    },
 ];

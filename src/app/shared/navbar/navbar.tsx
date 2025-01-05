@@ -36,7 +36,7 @@ export const NavBar: React.FC<Props> = (props: Props) => {
         <nav
             className={
                 "top-0 left-0 right-0 fixed transition-all duration-500 overflow-hidden z-50 " +
-                (scrollState === "top" ? "p-1 sm:p-4" : "p-0") +
+                (scrollState === "top" ? "py-2 sm:py-5" : "py-0 sm:py-2") +
                 (scrollState === "top"
                     ? // tailwind = mobile first (sm != mobile) = ohne prefix = mobile and wenn man dann sagt: "height-1 sm:height-5..."
                     // dann heißt dass, dass mobile=height-1 und alles darüber hinaus = height-5
@@ -86,6 +86,9 @@ export const NavBar: React.FC<Props> = (props: Props) => {
                             </div>
                         </button>
                     </div>
+                    
+                    
+                    
                     <div className="flex-1 flex items-center justify-center md:items-stretch md:justify-start">
                         <Link
                             href="/"
@@ -144,8 +147,11 @@ export const NavBar: React.FC<Props> = (props: Props) => {
                         </Link>
                     </div>
                 </div>
+
+                {/* ------ */}
+                
                 <div className={"transition-all " + (burgerMenuOpenState ? "max-h-72" : "max-h-0 opacity-0")}>
-                    <ul className="text-white text-base font-medium pt-5">
+                    <ul className={burgerMenuOpenState ? "" : "hidden " + "text-white text-base font-medium"}>
                         <li className="my-4">
                             <Link
                                 href="/work"
@@ -190,6 +196,9 @@ export const NavBar: React.FC<Props> = (props: Props) => {
                         </li>
                     </ul>
                 </div>
+
+                {/* ------ */}
+
             </div>
         </nav>
     );

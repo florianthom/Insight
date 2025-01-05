@@ -2,6 +2,8 @@ import { NextPage } from "next";
 import React from "react";
 import { Home } from "@/src/app/home/home";
 import Head from "next/head";
+import {bgBlack} from "next/dist/lib/picocolors";
+import {NavBar} from "@/src/app/shared/navbar/navbar";
 
 interface Props { }
 
@@ -25,6 +27,7 @@ const IndexPage: NextPage<Props> = (props: Props) => {
                     content="FLORIAN THOM - Freelancer covering professional services in IT and Media. From webapps to cloud expertise I offer tailored solutions to elevate your business."
                 />
             </Head>
+            
             <Home />
         </main>
     );

@@ -33,9 +33,9 @@ export const Home: React.FC<Props> = (props: Props) => {
                     quality={100}
                     unoptimized={constants.static_site}
                 />
-                <NavBar />
+                <NavBar/>
                 <div className="absolute inset-0 flex justify-center items-center transform">
-                    <div className="max-w-[50%]">
+                    <div className="max-w-[66%] md:max-w-[50%]">
                         <div className="flex justify-start items-center pt-24 gap-8">
                             <Image
                                 src={"/static/images/florianthom_koenigsberg_logo_white.svg"}
@@ -56,13 +56,19 @@ export const Home: React.FC<Props> = (props: Props) => {
                             From webapps to cloud expertise I offer tailored solutions to elevate your business.
                         </h2>
                         <div className="pt-10 flex justify-start gap-4">
-                            <LandingpageSocialmediaButton link={linkedin_link} size={28} iconPath={"/static/images/linkedIn_transparent.png"} />
-                            <LandingpageSocialmediaButton link={github_link} size={28} iconPath={"/static/images/github_transparent.png"} />
-                            <LandingpageSocialmediaButton link={"mailto:" + email_string} size={28} iconPath={"/static/images/mail_tranparent.png"} />
-                            <LandingpageSocialmediaButton link={twitter_link} size={26} iconPath={"/static/images/x_logo_transparent.png"} />
-                            <LandingpageSocialmediaButton link={discord_link} size={28} iconPath={"/static/images/discord_transparent.png"} />
+                            <LandingpageSocialmediaButton link={"mailto:" + email_string} size={28}
+                                                          iconPath={"/static/images/mail_tranparent.png"}/>
+                            <LandingpageSocialmediaButton link={linkedin_link} size={28}
+                                                          iconPath={"/static/images/linkedIn_transparent.png"}/>
+                            <LandingpageSocialmediaButton link={github_link} size={28}
+                                                          iconPath={"/static/images/github_transparent.png"}/>
+                            <LandingpageSocialmediaButton link={twitter_link} size={26}
+                                                          iconPath={"/static/images/x_logo_transparent.png"}/>
                         </div>
-                        <LandingpageButton />
+                        <div className="pt-8 md:pt-20 flex justify-between items-stretch flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-24">
+                            <LandingpageButton displayName={"Service Portfolio"} link={"/#services"} className={"flex-1"}/>
+                            <LandingpageButton displayName={"E-Rechnung Software"} link={constants.erechnungWebsite} className={"flex-1"}/>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -70,10 +76,10 @@ export const Home: React.FC<Props> = (props: Props) => {
                 <div className="py-32 max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
                     <h2 className="text-white text-3xl tracking-headline">SERVICES & OFFERING</h2>
                     <div className="text-base text-white pt-24">
-                        Explore my range of offerings, designed to elevate your digital presence and empower your business.
-                        Consulting Services designed to cover your unique needs.
-                        From innovative web development to cutting-edge IT solutions, discover how I can bring your vision to life.
-                        Explore my comprehensive services below and take the first step towards transforming your digital landscape.
+                        Explore my offerings, designed to guide your digital presence and support your business.
+                        Consulting Services designed to cover your unique needs:
+                        From web development to comprehensive IT solutions, discover how I can bring your vision to life.
+                        Explore my services below and get an idea in which areas i can help you.
                     </div>
                     <div className="pt-16 pb-8">
                         <h2 className="text-2xl text-white py-8">
@@ -84,7 +90,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                             <div className="text-base text-white">Contract & Project Consulting</div>
                             <ul className="list-disc text-base text-white list-outside space-y-0 pl-4">
                                 <li>
-                                    Independent screening & advising of dev-projects before you sign them: We add ideas and save you money
+                                    Independent screening & advising of upcomming projects before you sign them: We add ideas and save you money
                                 </li>
                                 <li>
                                     Independent as-is analysis of a project: We evaluate the projects state and make it transparent
@@ -95,16 +101,13 @@ export const Home: React.FC<Props> = (props: Props) => {
                             <div className="text-base text-white">Product Development</div>
                             <ul className="list-disc text-base text-white list-outside space-y-0 pl-4">
                                 <li>
-                                    Web Application Development
+                                    Web-/ Desktop Application Development
+                                </li>
+                                <li>
+                                    API-/ Backend Services Development
                                 </li>
                                 <li>
                                     Wordpress (CMS) Development
-                                </li>
-                                <li>
-                                    Webdesign and UX Optimization
-                                </li>
-                                <li>
-                                    Support and Maintenance
                                 </li>
                             </ul>
                         </div>
@@ -112,7 +115,13 @@ export const Home: React.FC<Props> = (props: Props) => {
                             <div className="text-base text-white">Cloud Consulting</div>
                             <ul className="list-disc text-base text-white list-outside space-y-0 pl-4">
                                 <li>
-                                    Infrastructure Assessment
+                                    Cloud Architecture: Best Practices and Automation
+                                </li>
+                                <li>
+                                    Cloud Infrastructure: Performance, Scalability, Cost Optimization,
+                                </li>
+                                <li>
+                                    Cloud Security and Compliance
                                 </li>
                                 <li>
                                     Cloud Migration
@@ -130,28 +139,6 @@ export const Home: React.FC<Props> = (props: Props) => {
                                 </li>
                                 <li>
                                     Workshop covering topic of interest
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="py-4">
-                            <div className="text-base text-white">Digital Marketing</div>
-                            <ul className="list-disc text-base text-white list-outside space-y-0 pl-4">
-                                <li>
-                                    SEO & SEM & SMM
-                                </li>
-                                <li>
-                                    Affiliate marketing
-                                </li>
-                                <li>
-                                    AI Adviser for automated services
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="py-4">
-                            <div className="text-base text-white">Process Consulting</div>
-                            <ul className="list-disc text-base text-white list-outside space-y-0 pl-4">
-                                <li>
-                                    Setup agile project management
                                 </li>
                             </ul>
                         </div>
@@ -182,22 +169,22 @@ export const Home: React.FC<Props> = (props: Props) => {
 
                     <div className="py-8">
                         <div className="px-4 py-24 flex justify-around items-center lg:items-stretch flex-col lg:flex-row space-y-12 lg:space-y-0">
-                            <ShowcaseCard showcaseData={showcaseData.topnotch} imageBorderOffset={true} />
+                            <ShowcaseCard showcaseData={showcaseData.elektronikRechnung} />
                             <ShowcaseCard showcaseData={showcaseData.lebenserinnerungen} />
                         </div>
                         <div className="px-4 py-16 flex justify-around items-center lg:items-stretch flex-col lg:flex-row space-y-12 lg:space-y-0">
+                            <ShowcaseCard showcaseData={showcaseData.topnotch} imageBorderOffset={true} />
                             <ShowcaseCard showcaseData={showcaseData.cloudTemplate} />
-                            <ShowcaseCard showcaseData={showcaseData.ptolemy} />
                         </div>
                     </div>
 
                     <div className="text-base text-black pt-24">
-                        This represents only a selection. If you want to check out other initiatives, there is a separate {" "}
+                        This represents a selection. If you want to check out other initiatives, there is a separate {" "}
                         <Link
-                            href="/projects"
+                            href="/work"
                             className="text-base whitespace-nowrap underline"
                         >
-                            projects
+                            Work & References
                         </Link>
                         {" "} page.
                     </div>
@@ -207,7 +194,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                 <div className="py-32 max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
                     <h2 className="text-white text-3xl tracking-headline">SKILLS</h2>
                     <div className="text-base text-white pt-24">
-                        Over the years I encountered many technologies and gained experience in numerous areas. I love
+                        I encountered many technologies and gained experience in numerous areas. I love
                         to learn new technologies and to examine them for advantages and disadvantages compared to the
                         already known alternatives.
                     </div>
@@ -217,11 +204,11 @@ export const Home: React.FC<Props> = (props: Props) => {
                                 <h3 className="text-2xl text-white py-4">Backend</h3>
                                 <ul className="list-disc text-base text-white list-inside">
                                     <li>C# - .NET / Asp.net</li>
-                                    <li>Java - Spring Boot</li>
+                                    <li>Java - Spring Boot, Spring Batch</li>
                                     <li>Rest - OpenApi / Swagger</li>
                                     {/* <li>GraphQL - Apollo</li> */}
-                                    <li>Databases - Postgres SQL</li>
-                                    <li>Docker (Compose)</li>
+                                    <li>Databases - Postgres SQL, MongoDB</li>
+                                    <li>Docker (Compose), Helm</li>
                                     <li>Kubernetes</li>
                                     <li>Clean Architecture</li>
                                     <li>Domain Driven Design</li>
@@ -235,13 +222,13 @@ export const Home: React.FC<Props> = (props: Props) => {
                                         <ul className="list-disc text-base text-white list-outside pl-4">
                                             <li>Network: VPC, VNet</li>
                                             <li>Compute - ECS, ACA / EKS, AKS</li>
-                                            <li>Database - RDS, Azure SQL Database / Dynamo DB, Cosmos DB</li>
+                                            <li>Database - RDS, DocumentDB, DynamoDB, Azure SQL</li>
                                             <li>Storage - S3, Blob Storage</li>
                                             <li>Analytics - OpenSearch, Elastic Cloud</li>
                                             <li>Security - IAM, MS Entra (External) Id</li>
                                         </ul>
                                     </li>
-                                    <li>Infrastructure as Code - Terraform</li>
+                                    <li>Infrastructure as Code - Terraform, Pulumi</li>
                                     <li>CI/CD - Jenkins, Gitlab, Argo CD (GitOps)</li>
                                 </ul>
                             </div>
@@ -317,10 +304,8 @@ export const Home: React.FC<Props> = (props: Props) => {
                 <div className="py-32 max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
                     <h2 className="text-black text-3xl tracking-headline">FURTHER KNOWLEDGE</h2>
                     <div className="text-base text-black pt-24">
-                        Exploring additional Insights: a closer look at my supplementary knowledge.
-                        In addition to my primary skills, I invite you to explore a complementary range of knowledge and insights.
-                        This section sheds light on various supplementary areas I&apos;ve cultivated, offering a glimpse
-                        into additional competencies that enrich my professional repertoire.
+                        Exploring additional Insights:  Here is my supplementary knowledge.
+                        In addition to my primary skills, take a look at my complementary knowledge and insights which I mostly developed by doing side-projects and hobbies.
                     </div>
                     <div className="text-base text-black pt-12 md:pt-24">
                         <div className="flex justify-around flex-col md:flex-row">
@@ -365,7 +350,7 @@ export const Home: React.FC<Props> = (props: Props) => {
 
                     <div className="pt-48 pb-16 flex justify-center flex-col items-center gap-4">
                         <div className="text-xl sm:text-3xl lg:text-3xl">
-                            DONT BE SHY - Say Hi
+                            Have a Project in Mind? Let’s Discuss
                         </div>
                         <div>
                             Someone has to make the first click. Guaranteed feedback within 24 hours.
