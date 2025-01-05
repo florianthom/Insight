@@ -170,7 +170,7 @@ export const Work: React.FC<Props> = (props: Props) => {
                                         organizes and implements storytelling projects of various kinds in order
                                         to
                                         facilitate spontaneous, authentic storytelling. Storytelling requires
-                                        listening, and that is something that people don't allow each other
+                                        listening, and that is something that people don&apos;t allow each other
                                         enough,
                                         especially when it comes to strangers. The association not only promotes
                                         storytelling, but also listening.
