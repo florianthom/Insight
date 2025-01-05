@@ -280,6 +280,11 @@ export const redirectList = [
         permanent: false,
     },
     {
+        source: "/invoice",
+        destination: "/erechnung",
+        permanent: false,
+    },
+    {
         source: "/einvoice",
         destination: "/erechnung",
         permanent: false,

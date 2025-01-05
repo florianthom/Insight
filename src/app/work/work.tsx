@@ -32,7 +32,6 @@ export const Work: React.FC<Props> = (props: Props) => {
                             <div>
                                 <h3 className="text-2xl text-black">Elektronik-Rechnung</h3>
                                 <div className="text-xs py-2" style={{color: "black"}}>
-
                                     Link to the {" "}
                                     <Link href={constants.erechnungWebsite} target="_blank" rel="noopener noreferrer"
                                           className="underline font-medium tracking-wide">
@@ -131,6 +130,7 @@ export const Work: React.FC<Props> = (props: Props) => {
                                     </div>
                                 </div>
                                 <div className="flex justify-center my-auto shadow-md">
+                                    <Link href={constants.erechnungWebsite} target="_blank" rel="noopener noreferrer">
                                     <Image
                                         src={"/static/images/elektronikrechnung.png"}
                                         alt="Cover of the work for elektronik-rechnung"
@@ -141,6 +141,7 @@ export const Work: React.FC<Props> = (props: Props) => {
                                         quality={100}
                                         unoptimized={constants.static_site}
                                     />
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -196,6 +197,7 @@ export const Work: React.FC<Props> = (props: Props) => {
                                 </div>
                             </div>
                             <div className="flex justify-center my-auto shadow-md">
+                                <Link href={constants.lebenserinnerungenWebsite} target="_blank" rel="noopener noreferrer">
                                 <Image
                                     src={"/static/images/lebenserinnerungen.png"}
                                     alt="Cover of the work for lebenserinnerungen"
@@ -206,6 +208,7 @@ export const Work: React.FC<Props> = (props: Props) => {
                                     quality={100}
                                     unoptimized={constants.static_site}
                                 />
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -283,11 +286,6 @@ export const Work: React.FC<Props> = (props: Props) => {
                         </div>
                     </div>
                 </div>
-                
-                
-                
-                
-                
                 <div className="pb-32 max-w-7xl mx-auto px-6 sm:px-6 lg:px-8" id="bitlabs">
                     <div className="flex justify-between gap-16 flex-col lg:flex-row">
                         <div>
@@ -349,13 +347,17 @@ export const Work: React.FC<Props> = (props: Props) => {
                         <div>
                             <h3 className="text-2xl text-black">Master-Thesis - HTW Berlin, Charité
                                 Berlin</h3>
-                            <div className="pl-1">
                                 <div className="text-xs py-2" style={{color: "black"}}>
                                     “WEB APPLICATION FOR DEVELOPING PLATFORM-BASED BUSINESS MODELS IN THE
                                     CONTEXT OF DIGITAL HEALTH”
                                 </div>
-                            </div>
-
+                                <div className="text-xs py-2" style={{color: "black"}}>
+                                    Link to the {" "}
+                                    <Link href={constants.masterThesisLink} target="_blank" rel="noopener noreferrer"
+                                          className="underline font-medium tracking-wide">
+                                        thesis
+                                    </Link>
+                                </div>
                             <div className="py-6">
                                 <div className="py-4">
                                     Domain
@@ -400,6 +402,7 @@ export const Work: React.FC<Props> = (props: Props) => {
                             </div>
                         </div>
                         <div className="flex justify-center my-auto shadow-md">
+                            <Link href={constants.masterThesisLink} target="_blank" rel="noopener noreferrer">
                             <Image
                                 src={"/static/images/masterSnippetWebsite.svg"}
                                 alt="Snippet master thesis website"
@@ -410,16 +413,22 @@ export const Work: React.FC<Props> = (props: Props) => {
                                 quality={100}
                                 unoptimized={constants.static_site}
                             />
+                            </Link>
                         </div>
                     </div>
                     <div className="pt-16 flex justify-between gap-16 flex-col lg:flex-row">
                         <div>
                             <h3 className="text-2xl text-black">Bachelor-Thesis - HTW Berlin, Charité
                                 Berlin</h3>
-                            <div className="pl-1">
-                                <div className="text-xs py-2" style={{color: "black"}}>
-                                    “NEURAL NETWORKS - PREDICTION-BASED CACHING OF DOCUMENTS”
-                                </div>
+                            <div className="text-xs py-2" style={{color: "black"}}>
+                                “NEURAL NETWORKS - PREDICTION-BASED CACHING OF DOCUMENTS”
+                            </div>
+                            <div className="text-xs py-2" style={{color: "black"}}>
+                                Link to the {" "}
+                                <Link href={constants.bachelorThesisLink} target="_blank" rel="noopener noreferrer"
+                                      className="underline font-medium tracking-wide">
+                                    thesis
+                                </Link>
                             </div>
                             <div className="py-6">
                                 <div className="py-4">
@@ -479,16 +488,18 @@ export const Work: React.FC<Props> = (props: Props) => {
                             </div>
                         </div>
                         <div className="flex justify-center my-auto">
-                            <Image
-                                src={"/static/images/bachelorSnippedNetwork.svg"}
-                                alt="Snippet bachelor thesis website"
-                                width={0}
-                                height={0}
-                                className="w-[32rem] lg:w-[128rem]"
+                            <Link href={constants.bachelorThesisLink} target="_blank" rel="noopener noreferrer">
+                                <Image
+                                    src={"/static/images/bachelorSnippedNetwork.svg"}
+                                    alt="Snippet bachelor thesis website"
+                                    width={0}
+                                    height={0}
+                                    className="w-[32rem] lg:w-[128rem]"
                                 priority={true}
                                 quality={100}
                                 unoptimized={constants.static_site}
                             />
+                            </Link>
                         </div>
                     </div>
                 </div>
