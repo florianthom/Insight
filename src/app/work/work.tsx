@@ -1,9 +1,9 @@
-import {NavBar} from "@/src/app/shared/navbar/navbar";
-import {Footer} from "@/src/app/shared/footer/footer";
+import { NavBar } from "@/src/app/shared/navbar/navbar";
+import { Footer } from "@/src/app/shared/footer/footer";
 import React from "react";
 import Image from "next/image";
 import * as constants from "@/src/app/shared/constants/constants";
-import {lebenserinnerungenWebsite} from "@/src/app/shared/constants/constants";
+import { lebenserinnerungenWebsite } from "@/src/app/shared/constants/constants";
 import Link from "next/link";
 
 interface Props {
@@ -26,114 +26,114 @@ export const Work: React.FC<Props> = (props: Props) => {
                         This kind of end-to-end responsibility can be experienced by you too.
                     </div>
 
-                    
-                    <div className="py-32 max-w-7xl mx-auto" id="elektronikrechnung">
+
+                    <div className="py-32 max-w-7xl mx-auto" id="erechnungkit">
                         <div className="flex justify-between gap-16 flex-col lg:flex-row">
                             <div>
-                                <h3 className="text-2xl text-black">Elektronik-Rechnung</h3>
-                                <div className="text-xs py-2" style={{color: "black"}}>
+                                <h3 className="text-2xl text-black">E-Rechnung-Kit</h3>
+                                <div className="text-xs py-2" style={{ color: "black" }}>
                                     Link to the {" "}
                                     <Link href={constants.erechnungWebsite} target="_blank" rel="noopener noreferrer"
-                                          className="underline font-medium tracking-wide">
+                                        className="underline font-medium tracking-wide">
                                         website
                                     </Link>
                                 </div>
-                                    <div className="py-6">
-                                        <div className="py-4">
-                                            Situation
-                                        </div>
-                                        <div>
-                                            Electronic invoices (e-invoices) are digital documents that contain
-                                            invoice
-                                            information in a structured and standardized format. In contrast to
-                                            traditional
-                                            paper or PDF invoices, e-invoices offer numerous advantages in terms
-                                            of
-                                            efficiency, accuracy and compliance.
-                                            In the context of e-invoices in Germany and Europe, the
-                                            Zugferd/Factur-X or
-                                            XRechnung standards are particularly relevant. Some of these
-                                            standards in
-                                            particular are complicated to understand, time-consuming to
-                                            implement and
-                                            impractical to use, which makes dealing with e-invoicing challenging
-                                            for
-                                            many of
-                                            those affected. It must be simple and understandable! In the area of
-                                            e-invoicing, the link between this over-regulation and the users
-                                            should now
-                                            be
-                                            created, which does not require a large IT department within the
-                                            company.
-                                        </div>
-                                        <div className="py-4 pt-8">
-                                            Solution
-                                        </div>
-                                        <div>
-                                            The objective is to offer practical solutions for e-invoices and
-                                            accounting
-                                            for
-                                            SMEs so that they can concentrate on the important parts of their
-                                            business.
-                                            The user is supported by the fact that e-invoices (=
-                                            machine-readable
-                                            format)
-                                            are prepared for a review by an actual person, e.g. when an invoice
-                                            is
-                                            received.
-                                            Otherwise, when an invoice is viewed, the user would have to dive
-                                            into a XML
-                                            file with a data format with different standards (Zugferd,
-                                            XRechnung) in
-                                            different variants (Profile Basic, Profile EN16991, CIUS, Extension,
-                                            ...) in
-                                            different syntaxes (CII, UBL) with different versions. Automated
-                                            validation
-                                            is
-                                            also offered, in short: is this invoice correct? This is essential
-                                            for
-                                            e-invoices, as they must comply with business rules (BR) in
-                                            accordance with
-                                            EU
-                                            Directive EN16931 and the national version (the German CIUS). An
-                                            example of
-                                            this
-                                            is given with an excerpt from BR-47: Each sales tax
-                                            breakdown &apos;VAT
-                                            BREAKDOWN&apos; (BG-23) must be defined via a coded designation of a
-                                            sales
-                                            tax
-                                            category&apos; VAT category code&apos; (BT-118).
-                                            The user is also supported in the creation of e-invoices.
-                                            Specifically, the
-                                            user
-                                            is guided through the creation of an e-invoice so that complicated
-                                            gray
-                                            areas
-                                            are deliberately avoided.
-                                            To implement these requirements, a core component and frontends
-                                            based on it
-                                            were
-                                            written for various platforms such as Microsoft Outlook (especially
-                                            for
-                                            invoice
-                                            receipt), Windows-Desktop (PC) and web. The core along with the web api
-                                            was
-                                            written in
-                                            .Net Standard 2.0 and .Net 8 and integrates the processing logic for the
-                                            described
-                                            use cases as well as the interface to the payment processor (Stripe).
-                                            The integration into Microsoft Outlook was implemented using MS Outlook VSTO
-                                            Customization
-                                            (Classic Outlook) and MS Outlook Addin (New Outlook).
-                                        </div>
+                                <div className="py-6">
+                                    <div className="py-4">
+                                        Situation
+                                    </div>
+                                    <div>
+                                        Electronic invoices (e-invoices) are digital documents that contain
+                                        invoice
+                                        information in a structured and standardized format. In contrast to
+                                        traditional
+                                        paper or PDF invoices, e-invoices offer numerous advantages in terms
+                                        of
+                                        efficiency, accuracy and compliance.
+                                        In the context of e-invoices in Germany and Europe, the
+                                        Zugferd/Factur-X or
+                                        XRechnung standards are particularly relevant. Some of these
+                                        standards in
+                                        particular are complicated to understand, time-consuming to
+                                        implement and
+                                        impractical to use, which makes dealing with e-invoicing challenging
+                                        for
+                                        many of
+                                        those affected. It must be simple and understandable! In the area of
+                                        e-invoicing, the link between this over-regulation and the users
+                                        should now
+                                        be
+                                        created, which does not require a large IT department within the
+                                        company.
+                                    </div>
+                                    <div className="py-4 pt-8">
+                                        Solution
+                                    </div>
+                                    <div>
+                                        The objective is to offer practical solutions for e-invoices and
+                                        accounting
+                                        for
+                                        SMEs so that they can concentrate on the important parts of their
+                                        business.
+                                        The user is supported by the fact that e-invoices (=
+                                        machine-readable
+                                        format)
+                                        are prepared for a review by an actual person, e.g. when an invoice
+                                        is
+                                        received.
+                                        Otherwise, when an invoice is viewed, the user would have to dive
+                                        into a XML
+                                        file with a data format with different standards (Zugferd,
+                                        XRechnung) in
+                                        different variants (Profile Basic, Profile EN16991, CIUS, Extension,
+                                        ...) in
+                                        different syntaxes (CII, UBL) with different versions. Automated
+                                        validation
+                                        is
+                                        also offered, in short: is this invoice correct? This is essential
+                                        for
+                                        e-invoices, as they must comply with business rules (BR) in
+                                        accordance with
+                                        EU
+                                        Directive EN16931 and the national version (the German CIUS). An
+                                        example of
+                                        this
+                                        is given with an excerpt from BR-47: Each sales tax
+                                        breakdown &apos;VAT
+                                        BREAKDOWN&apos; (BG-23) must be defined via a coded designation of a
+                                        sales
+                                        tax
+                                        category&apos; VAT category code&apos; (BT-118).
+                                        The user is also supported in the creation of e-invoices.
+                                        Specifically, the
+                                        user
+                                        is guided through the creation of an e-invoice so that complicated
+                                        gray
+                                        areas
+                                        are deliberately avoided.
+                                        To implement these requirements, a core component and frontends
+                                        based on it
+                                        were
+                                        written for various platforms such as Microsoft Outlook (especially
+                                        for
+                                        invoice
+                                        receipt), Windows-Desktop (PC) and web. The core along with the web api
+                                        was
+                                        written in
+                                        .Net Standard 2.0 and .Net 8 and integrates the processing logic for the
+                                        described
+                                        use cases as well as the interface to the payment processor (Stripe).
+                                        The integration into Microsoft Outlook was implemented using MS Outlook VSTO
+                                        Customization
+                                        (Classic Outlook) and MS Outlook Addin (New Outlook).
                                     </div>
                                 </div>
-                                <div className="flex justify-center my-auto shadow-md">
-                                    <Link href={constants.erechnungWebsite} target="_blank" rel="noopener noreferrer">
+                            </div>
+                            <div className="flex justify-center my-auto shadow-md">
+                                <Link href={constants.erechnungWebsite} target="_blank" rel="noopener noreferrer">
                                     <Image
-                                        src={"/static/images/elektronikrechnung.png"}
-                                        alt="Cover of the work for elektronik-rechnung"
+                                        src={"/static/images/erechnungkit.png"}
+                                        alt="Cover of the work for E-Rechnung-Kit"
                                         width={0}
                                         height={0}
                                         className="w-[80rem] lg:w-[320rem]"
@@ -141,19 +141,19 @@ export const Work: React.FC<Props> = (props: Props) => {
                                         quality={100}
                                         unoptimized={constants.static_site}
                                     />
-                                    </Link>
-                                </div>
+                                </Link>
                             </div>
                         </div>
-                        <div className="pb-32 max-w-7xl mx-auto" id="lebenserinnerungen">
+                    </div>
+                    <div className="pb-32 max-w-7xl mx-auto" id="lebenserinnerungen">
                         <div className="flex justify-between gap-16 flex-col lg:flex-row">
                             <div>
                                 <h3 className="text-2xl">Lebenserinnerungen e. V.</h3>
-                                    <div className="text-xs py-2" style={{color: "black"}}>
-                                        Link to the {" "}
-                                        <Link href={constants.lebenserinnerungenWebsite} target="_blank" rel="noopener noreferrer" className="underline font-medium tracking-wide">
-                                            website
-                                        </Link>
+                                <div className="text-xs py-2" style={{ color: "black" }}>
+                                    Link to the {" "}
+                                    <Link href={constants.lebenserinnerungenWebsite} target="_blank" rel="noopener noreferrer" className="underline font-medium tracking-wide">
+                                        website
+                                    </Link>
                                 </div>
                                 <div className="py-6">
                                     <div className="py-4">
@@ -198,16 +198,16 @@ export const Work: React.FC<Props> = (props: Props) => {
                             </div>
                             <div className="flex justify-center my-auto shadow-md">
                                 <Link href={constants.lebenserinnerungenWebsite} target="_blank" rel="noopener noreferrer">
-                                <Image
-                                    src={"/static/images/lebenserinnerungen.png"}
-                                    alt="Cover of the work for lebenserinnerungen"
-                                    width={0}
-                                    height={0}
-                                    className="w-[32rem] lg:w-[128rem]"
-                                    priority={true}
-                                    quality={100}
-                                    unoptimized={constants.static_site}
-                                />
+                                    <Image
+                                        src={"/static/images/lebenserinnerungen.png"}
+                                        alt="Cover of the work for lebenserinnerungen"
+                                        width={0}
+                                        height={0}
+                                        className="w-[32rem] lg:w-[128rem]"
+                                        priority={true}
+                                        quality={100}
+                                        unoptimized={constants.static_site}
+                                    />
                                 </Link>
                             </div>
                         </div>
@@ -347,17 +347,17 @@ export const Work: React.FC<Props> = (props: Props) => {
                         <div>
                             <h3 className="text-2xl text-black">Master-Thesis - HTW Berlin, Charité
                                 Berlin</h3>
-                                <div className="text-xs py-2" style={{color: "black"}}>
-                                    “WEB APPLICATION FOR DEVELOPING PLATFORM-BASED BUSINESS MODELS IN THE
-                                    CONTEXT OF DIGITAL HEALTH”
-                                </div>
-                                <div className="text-xs py-2" style={{color: "black"}}>
-                                    Link to the {" "}
-                                    <Link href={constants.masterThesisLink} target="_blank" rel="noopener noreferrer"
-                                          className="underline font-medium tracking-wide">
-                                        thesis
-                                    </Link>
-                                </div>
+                            <div className="text-xs py-2" style={{ color: "black" }}>
+                                “WEB APPLICATION FOR DEVELOPING PLATFORM-BASED BUSINESS MODELS IN THE
+                                CONTEXT OF DIGITAL HEALTH”
+                            </div>
+                            <div className="text-xs py-2" style={{ color: "black" }}>
+                                Link to the {" "}
+                                <Link href={constants.masterThesisLink} target="_blank" rel="noopener noreferrer"
+                                    className="underline font-medium tracking-wide">
+                                    thesis
+                                </Link>
+                            </div>
                             <div className="py-6">
                                 <div className="py-4">
                                     Domain
@@ -403,16 +403,16 @@ export const Work: React.FC<Props> = (props: Props) => {
                         </div>
                         <div className="flex justify-center my-auto shadow-md">
                             <Link href={constants.masterThesisLink} target="_blank" rel="noopener noreferrer">
-                            <Image
-                                src={"/static/images/masterSnippetWebsite.svg"}
-                                alt="Snippet master thesis website"
-                                width={0}
-                                height={0}
-                                className="w-[32rem] lg:w-[128rem]"
-                                priority={true}
-                                quality={100}
-                                unoptimized={constants.static_site}
-                            />
+                                <Image
+                                    src={"/static/images/masterSnippetWebsite.svg"}
+                                    alt="Snippet master thesis website"
+                                    width={0}
+                                    height={0}
+                                    className="w-[32rem] lg:w-[128rem]"
+                                    priority={true}
+                                    quality={100}
+                                    unoptimized={constants.static_site}
+                                />
                             </Link>
                         </div>
                     </div>
@@ -420,13 +420,13 @@ export const Work: React.FC<Props> = (props: Props) => {
                         <div>
                             <h3 className="text-2xl text-black">Bachelor-Thesis - HTW Berlin, Charité
                                 Berlin</h3>
-                            <div className="text-xs py-2" style={{color: "black"}}>
+                            <div className="text-xs py-2" style={{ color: "black" }}>
                                 “NEURAL NETWORKS - PREDICTION-BASED CACHING OF DOCUMENTS”
                             </div>
-                            <div className="text-xs py-2" style={{color: "black"}}>
+                            <div className="text-xs py-2" style={{ color: "black" }}>
                                 Link to the {" "}
                                 <Link href={constants.bachelorThesisLink} target="_blank" rel="noopener noreferrer"
-                                      className="underline font-medium tracking-wide">
+                                    className="underline font-medium tracking-wide">
                                     thesis
                                 </Link>
                             </div>
@@ -495,10 +495,10 @@ export const Work: React.FC<Props> = (props: Props) => {
                                     width={0}
                                     height={0}
                                     className="w-[32rem] lg:w-[128rem]"
-                                priority={true}
-                                quality={100}
-                                unoptimized={constants.static_site}
-                            />
+                                    priority={true}
+                                    quality={100}
+                                    unoptimized={constants.static_site}
+                                />
                             </Link>
                         </div>
                     </div>

@@ -47,5 +47,5 @@ export const steuernummer = "35/559/02433";
 export const ustIdNr = "DE364343694";
 export const bachelorThesisLink = "https://drive.google.com/file/d/1p69V3yyBbd2jg8mD9Kp1RiihVDHIHv7c/view?usp=share_link";
 export const masterThesisLink = "https://drive.google.com/file/d/1mwT_PbmN2TtcIsKoAVMDjEiQczfEjObs/view?usp=share_link"
-export const erechnungWebsite = "https://elektronik-rechnung.de";
+export const erechnungWebsite = "https://E-Rechnung-Kit.de";
 export const lebenserinnerungenWebsite = "https://lebenserinnerungen.org";

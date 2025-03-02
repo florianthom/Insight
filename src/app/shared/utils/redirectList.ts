@@ -1,3 +1,5 @@
+import * as constants from "@/src/app/shared/constants/constants";
+
 export const redirectList = [
     {
         source: "/home",
@@ -302,6 +304,46 @@ export const redirectList = [
     {
         source: "/elektronik-rechnung.de",
         destination: "/erechnung",
+        permanent: false,
+    },
+    {
+        source: "/e-rechnung-kit",
+        destination: "/erechnung",
+        permanent: false,
+    },
+    {
+        source: "/e-rechnung-kit.de",
+        destination: "/erechnung",
+        permanent: false,
+    },
+    {
+        source: "/e-rechnungs-kit",
+        destination: "/erechnung",
+        permanent: false,
+    },
+    {
+        source: "/erechnungkit",
+        destination: "/erechnung",
+        permanent: false,
+    },
+    {
+        source: "/erechnungskit",
+        destination: "/erechnung",
+        permanent: false,
+    },
+    {
+        source: "/thesis",
+        destination: "/masterthesis",
+        permanent: false,
+    },
+    {
+        source: "/master",
+        destination: "/masterthesis",
+        permanent: false,
+    },
+    {
+        source: "/bachelor",
+        destination: "/bachelorthesis",
         permanent: false,
     },
 ];

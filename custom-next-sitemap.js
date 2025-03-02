@@ -19,6 +19,9 @@ module.exports = {
         "/wishlist",
         "/xing",
         "/phone",
+        "/erechnung",
+        "/masterthesis",
+        "/bachelorthesis"
     ],
     sitemapSize: 5000,
     robotsTxtOptions: {

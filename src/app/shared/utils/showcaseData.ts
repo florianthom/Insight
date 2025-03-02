@@ -1,10 +1,10 @@
 import { Showcase } from "../models/Showcase"
 
-const elektronikRechnung: Showcase = {
-    title: "Elektronik-Rechnung.de: E-invoicing for SME's in Germany the easy way",
-    description: "Elektronik-Rechnung.de enables you to display and process e-invoices of common industry standards like Factur-X / ZUGFeRD and XRechnung in the respective formats (UBL/CII), variants (CIUS or extension / profiles) or versions on platforms like Microsoft Outlook, nativ Windows-Desktop and Web.",
-    imagePath: "/static/images/elektronikrechnung.png",
-    link: "/work/#elektronikrechnung"
+const erechnungkit: Showcase = {
+    title: "E-Rechnung-Kit.de: E-invoicing for SME's in Germany the easy way",
+    description: "E-Rechnung-Kit.de enables you to display and process e-invoices of common industry standards like Factur-X / ZUGFeRD and XRechnung in the respective formats (UBL/CII), variants (CIUS or extension / profiles) or versions on platforms like Microsoft Outlook, nativ Windows-Desktop and Web.",
+    imagePath: "/static/images/erechnungkit.png",
+    link: "/work/#erechnungkit"
 }
 
 const lebenserinnerungen: Showcase = {
@@ -40,12 +40,12 @@ interface ShowcaseData {
     lebenserinnerungen: Showcase,
     cloudTemplate: Showcase,
     ptolemy: Showcase,
-    elektronikRechnung: Showcase,
+    erechnungkit: Showcase,
 }
 export const showcaseData: ShowcaseData = {
     topnotch,
     lebenserinnerungen,
     cloudTemplate,
     ptolemy,
-    elektronikRechnung
+    erechnungkit
 }

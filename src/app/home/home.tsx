@@ -33,7 +33,7 @@ export const Home: React.FC<Props> = (props: Props) => {
                     quality={100}
                     unoptimized={constants.static_site}
                 />
-                <NavBar/>
+                <NavBar />
                 <div className="absolute inset-0 flex justify-center items-center transform">
                     <div className="max-w-[66%] md:max-w-[50%]">
                         <div className="flex justify-start items-center pt-24 gap-8">
@@ -57,17 +57,17 @@ export const Home: React.FC<Props> = (props: Props) => {
                         </h2>
                         <div className="pt-10 flex justify-start gap-4">
                             <LandingpageSocialmediaButton link={"mailto:" + email_string} size={28}
-                                                          iconPath={"/static/images/mail_tranparent.png"}/>
+                                iconPath={"/static/images/mail_tranparent.png"} />
                             <LandingpageSocialmediaButton link={linkedin_link} size={28}
-                                                          iconPath={"/static/images/linkedIn_transparent.png"}/>
+                                iconPath={"/static/images/linkedIn_transparent.png"} />
                             <LandingpageSocialmediaButton link={github_link} size={28}
-                                                          iconPath={"/static/images/github_transparent.png"}/>
+                                iconPath={"/static/images/github_transparent.png"} />
                             <LandingpageSocialmediaButton link={twitter_link} size={26}
-                                                          iconPath={"/static/images/x_logo_transparent.png"}/>
+                                iconPath={"/static/images/x_logo_transparent.png"} />
                         </div>
                         <div className="pt-8 md:pt-20 flex justify-between items-stretch flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-24">
-                            <LandingpageButton displayName={"Service Portfolio"} link={"/#services"} className={"flex-1"}/>
-                            <LandingpageButton displayName={"E-Rechnung Software"} link={constants.erechnungWebsite} className={"flex-1"}/>
+                            <LandingpageButton displayName={"Service Portfolio"} link={"/#services"} className={"flex-1"} />
+                            <LandingpageButton displayName={"E-Rechnung Software"} link={constants.erechnungWebsite} className={"flex-1"} />
                         </div>
                     </div>
                 </div>
@@ -169,7 +169,7 @@ export const Home: React.FC<Props> = (props: Props) => {
 
                     <div className="py-8">
                         <div className="px-4 py-24 flex justify-around items-center lg:items-stretch flex-col lg:flex-row space-y-12 lg:space-y-0">
-                            <ShowcaseCard showcaseData={showcaseData.elektronikRechnung} />
+                            <ShowcaseCard showcaseData={showcaseData.erechnungkit} />
                             <ShowcaseCard showcaseData={showcaseData.lebenserinnerungen} />
                         </div>
                         <div className="px-4 py-16 flex justify-around items-center lg:items-stretch flex-col lg:flex-row space-y-12 lg:space-y-0">
